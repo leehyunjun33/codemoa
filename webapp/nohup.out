@@ -1,0 +1,442 @@
+
+Date: 2019-05-15T10:25:06.780Z
+Hash: 52247e88629d2c20cc1c
+Time: 13908ms
+chunk {es2015-polyfills} es2015-polyfills.js, es2015-polyfills.js.map (es2015-polyfills) 284 kB [initial] [rendered]
+chunk {main} main.js, main.js.map (main) 13.1 kB [initial] [rendered]
+chunk {polyfills} polyfills.js, polyfills.js.map (polyfills) 236 kB [initial] [rendered]
+chunk {runtime} runtime.js, runtime.js.map (runtime) 6.08 kB [entry] [rendered]
+chunk {styles} styles.js, styles.js.map (styles) 16.6 kB [initial] [rendered]
+chunk {vendor} vendor.js, vendor.js.map (vendor) 3.45 MB [initial] [rendered]
+
+Date: 2019-05-15T10:25:38.974Z - Hash: 7cc8910a4953881abb77 - Time: 5023ms
+5 unchanged chunks
+chunk {main} main.js, main.js.map (main) 13.1 kB [initial] [rendered]
+
+Date: 2019-05-15T10:41:18.527Z - Hash: 7cc8910a4953881abb77 - Time: 1829ms
+6 unchanged chunks
+
+Date: 2019-05-15T10:41:19.081Z - Hash: 7cc8910a4953881abb77 - Time: 294ms
+6 unchanged chunks
+
+ERROR in node_modules/rxjs/Observable.d.ts(1,15): error TS2307: Cannot find module 'rxjs-compat/Observable'.
+node_modules/rxjs/Subject.d.ts(1,15): error TS2307: Cannot find module 'rxjs-compat/Subject'.
+src/app/app-routing.module.ts(3,27): error TS2307: Cannot find module '@ng-bootstrap/ng-bootstrap'.
+src/app/app.module.ts(1,20): error TS2307: Cannot find module 'jquery'.
+src/app/pages/component/accordion/accordion.component.ts(2,37): error TS2307: Cannot find module '@ng-bootstrap/ng-bootstrap'.
+src/app/pages/component/alert/alert.component.ts(2,10): error TS2305: Module '"../../../../../node_modules/rxjs/Subject"' has no exported member 'Subject'.
+src/app/pages/component/carousel/carousel.component.ts(2,35): error TS2307: Cannot find module '@ng-bootstrap/ng-bootstrap'.
+src/app/pages/component/component.module.ts(5,29): error TS2307: Cannot find module '@angular/http'.
+src/app/pages/component/component.module.ts(7,27): error TS2307: Cannot find module '@ng-bootstrap/ng-bootstrap'.
+src/app/pages/component/datepicker/datepicker.component.ts(2,44): error TS2307: Cannot find module '@ng-bootstrap/ng-bootstrap'.
+src/app/pages/component/modal/modal.component.ts(6,8): error TS2307: Cannot find module '@ng-bootstrap/ng-bootstrap'.
+src/app/pages/component/pagination/pagination.component.ts(2,37): error TS2307: Cannot find module '@ng-bootstrap/ng-bootstrap'.
+src/app/pages/component/progressbar/progressbar.component.ts(2,38): error TS2307: Cannot find module '@ng-bootstrap/ng-bootstrap'.
+src/app/pages/component/tabs/tabs.component.ts(2,35): error TS2307: Cannot find module '@ng-bootstrap/ng-bootstrap'.
+src/app/pages/component/timepicker/timepicker.component.ts(2,31): error TS2307: Cannot find module '@ng-bootstrap/ng-bootstrap'.
+src/app/pages/component/typehead/typehead.component.ts(2,10): error TS2305: Module '"../../../../../node_modules/rxjs/Observable"' has no exported member 'Observable'.
+src/app/pages/component/typehead/typehead.component.ts(3,40): error TS2307: Cannot find module '@angular/http'.
+src/app/shared/breadcrumb/breadcrumb.component.ts(21,8): error TS2339: Property 'filter' does not exist on type 'Observable<Event>'.
+src/app/shared/header-navigation/navigation.component.ts(2,27): error TS2307: Cannot find module '@ng-bootstrap/ng-bootstrap'.
+
+
+Date: 2019-05-15T10:57:13.773Z - Hash: 893735e33bd389edd078 - Time: 14883ms
+3 unchanged chunks
+chunk {component-component-module} component-component-module.js, component-component-module.js.map (component-component-module) 227 kB  [rendered]
+chunk {main} main.js, main.js.map (main) 14.7 kB [initial] [rendered]
+chunk {pages-pages-module} pages-pages-module.js, pages-pages-module.js.map (pages-pages-module) 40.4 kB  [rendered]
+chunk {runtime} runtime.js, runtime.js.map (runtime) 8.88 kB [entry] [rendered]
+chunk {starter-starter-module} starter-starter-module.js, starter-starter-module.js.map (starter-starter-module) 1.06 kB  [rendered]
+chunk {vendor} vendor.js, vendor.js.map (vendor) 4.07 MB [initial] [rendered]
+
+ERROR in ./src/app/pages/starter/starter.module.ts
+Module build failed (from ./node_modules/@ngtools/webpack/src/index.js):
+Error: /home/ec2-user/codingmoa/webapp/src/app/pages/starter/starter.module.ts is missing from the TypeScript compilation. Please make sure it is in your tsconfig via the 'files' or 'include' property.
+    at AngularCompilerPlugin.getCompiledFile (/home/ec2-user/codingmoa/webapp/node_modules/@ngtools/webpack/src/angular_compiler_plugin.js:752:23)
+    at plugin.done.then (/home/ec2-user/codingmoa/webapp/node_modules/@ngtools/webpack/src/loader.js:41:31)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7)
+ERROR in ./src/app/pages/component/component.module.ts
+Module not found: Error: Can't resolve '@angular/http' in '/home/ec2-user/codingmoa/webapp/src/app/pages/component'
+ERROR in ./src/app/pages/component/typehead/typehead.component.ts
+Module not found: Error: Can't resolve '@angular/http' in '/home/ec2-user/codingmoa/webapp/src/app/pages/component/typehead'
+ERROR in ./src/app/app-routing.module.ts
+Module not found: Error: Can't resolve '@ng-bootstrap/ng-bootstrap' in '/home/ec2-user/codingmoa/webapp/src/app'
+ERROR in ./src/app/pages/component/component.module.ts
+Module not found: Error: Can't resolve '@ng-bootstrap/ng-bootstrap' in '/home/ec2-user/codingmoa/webapp/src/app/pages/component'
+ERROR in ./src/app/pages/component/carousel/carousel.component.ts
+Module not found: Error: Can't resolve '@ng-bootstrap/ng-bootstrap' in '/home/ec2-user/codingmoa/webapp/src/app/pages/component/carousel'
+ERROR in ./src/app/pages/component/datepicker/datepicker.component.ts
+Module not found: Error: Can't resolve '@ng-bootstrap/ng-bootstrap' in '/home/ec2-user/codingmoa/webapp/src/app/pages/component/datepicker'
+ERROR in ./src/app/pages/component/modal/modal.component.ts
+Module not found: Error: Can't resolve '@ng-bootstrap/ng-bootstrap' in '/home/ec2-user/codingmoa/webapp/src/app/pages/component/modal'
+ERROR in ./src/app/pages/component/progressbar/progressbar.component.ts
+Module not found: Error: Can't resolve '@ng-bootstrap/ng-bootstrap' in '/home/ec2-user/codingmoa/webapp/src/app/pages/component/progressbar'
+ERROR in ./src/app/pages/component/typehead/typehead.component.ts
+Module not found: Error: Can't resolve 'rxjs/Observable' in '/home/ec2-user/codingmoa/webapp/src/app/pages/component/typehead'
+ERROR in ./src/app/pages/component/alert/alert.component.ts
+Module not found: Error: Can't resolve 'rxjs/Subject' in '/home/ec2-user/codingmoa/webapp/src/app/pages/component/alert'
+ERROR in ./src/app/pages/component/typehead/typehead.component.ts
+Module not found: Error: Can't resolve 'rxjs/add/observable/of' in '/home/ec2-user/codingmoa/webapp/src/app/pages/component/typehead'
+ERROR in ./src/app/pages/component/typehead/typehead.component.ts
+Module not found: Error: Can't resolve 'rxjs/add/operator/catch' in '/home/ec2-user/codingmoa/webapp/src/app/pages/component/typehead'
+ERROR in ./src/app/pages/component/alert/alert.component.ts
+Module not found: Error: Can't resolve 'rxjs/add/operator/debounceTime' in '/home/ec2-user/codingmoa/webapp/src/app/pages/component/alert'
+ERROR in ./src/app/pages/component/typehead/typehead.component.ts
+Module not found: Error: Can't resolve 'rxjs/add/operator/debounceTime' in '/home/ec2-user/codingmoa/webapp/src/app/pages/component/typehead'
+ERROR in ./src/app/pages/component/typehead/typehead.component.ts
+Module not found: Error: Can't resolve 'rxjs/add/operator/distinctUntilChanged' in '/home/ec2-user/codingmoa/webapp/src/app/pages/component/typehead'
+ERROR in ./src/app/pages/component/typehead/typehead.component.ts
+Module not found: Error: Can't resolve 'rxjs/add/operator/do' in '/home/ec2-user/codingmoa/webapp/src/app/pages/component/typehead'
+ERROR in ./src/app/shared/breadcrumb/breadcrumb.component.ts
+Module not found: Error: Can't resolve 'rxjs/add/operator/filter' in '/home/ec2-user/codingmoa/webapp/src/app/shared/breadcrumb'
+ERROR in ./src/app/pages/component/typehead/typehead.component.ts
+Module not found: Error: Can't resolve 'rxjs/add/operator/map' in '/home/ec2-user/codingmoa/webapp/src/app/pages/component/typehead'
+ERROR in ./src/app/shared/breadcrumb/breadcrumb.component.ts
+Module not found: Error: Can't resolve 'rxjs/add/operator/map' in '/home/ec2-user/codingmoa/webapp/src/app/shared/breadcrumb'
+ERROR in ./src/app/shared/breadcrumb/breadcrumb.component.ts
+Module not found: Error: Can't resolve 'rxjs/add/operator/mergeMap' in '/home/ec2-user/codingmoa/webapp/src/app/shared/breadcrumb'
+ERROR in ./src/app/pages/component/typehead/typehead.component.ts
+Module not found: Error: Can't resolve 'rxjs/add/operator/switchMap' in '/home/ec2-user/codingmoa/webapp/src/app/pages/component/typehead'
+
+Date: 2019-05-15T10:57:17.680Z - Hash: e933d0dbc91d19d892d3 - Time: 3607ms
+8 unchanged chunks
+chunk {starter-starter-module} starter-starter-module.js, starter-starter-module.js.map (starter-starter-module) 4.53 kB  [rendered]
+
+ERROR in ./src/app/pages/component/component.module.ts
+Module not found: Error: Can't resolve '@angular/http' in '/home/ec2-user/codingmoa/webapp/src/app/pages/component'
+ERROR in ./src/app/pages/component/typehead/typehead.component.ts
+Module not found: Error: Can't resolve '@angular/http' in '/home/ec2-user/codingmoa/webapp/src/app/pages/component/typehead'
+ERROR in ./src/app/app-routing.module.ts
+Module not found: Error: Can't resolve '@ng-bootstrap/ng-bootstrap' in '/home/ec2-user/codingmoa/webapp/src/app'
+ERROR in ./src/app/pages/component/component.module.ts
+Module not found: Error: Can't resolve '@ng-bootstrap/ng-bootstrap' in '/home/ec2-user/codingmoa/webapp/src/app/pages/component'
+ERROR in ./src/app/pages/component/carousel/carousel.component.ts
+Module not found: Error: Can't resolve '@ng-bootstrap/ng-bootstrap' in '/home/ec2-user/codingmoa/webapp/src/app/pages/component/carousel'
+ERROR in ./src/app/pages/component/datepicker/datepicker.component.ts
+Module not found: Error: Can't resolve '@ng-bootstrap/ng-bootstrap' in '/home/ec2-user/codingmoa/webapp/src/app/pages/component/datepicker'
+ERROR in ./src/app/pages/component/modal/modal.component.ts
+Module not found: Error: Can't resolve '@ng-bootstrap/ng-bootstrap' in '/home/ec2-user/codingmoa/webapp/src/app/pages/component/modal'
+ERROR in ./src/app/pages/component/progressbar/progressbar.component.ts
+Module not found: Error: Can't resolve '@ng-bootstrap/ng-bootstrap' in '/home/ec2-user/codingmoa/webapp/src/app/pages/component/progressbar'
+ERROR in ./src/app/pages/component/typehead/typehead.component.ts
+Module not found: Error: Can't resolve 'rxjs/Observable' in '/home/ec2-user/codingmoa/webapp/src/app/pages/component/typehead'
+ERROR in ./src/app/pages/component/alert/alert.component.ts
+Module not found: Error: Can't resolve 'rxjs/Subject' in '/home/ec2-user/codingmoa/webapp/src/app/pages/component/alert'
+ERROR in ./src/app/pages/component/typehead/typehead.component.ts
+Module not found: Error: Can't resolve 'rxjs/add/observable/of' in '/home/ec2-user/codingmoa/webapp/src/app/pages/component/typehead'
+ERROR in ./src/app/pages/component/typehead/typehead.component.ts
+Module not found: Error: Can't resolve 'rxjs/add/operator/catch' in '/home/ec2-user/codingmoa/webapp/src/app/pages/component/typehead'
+ERROR in ./src/app/pages/component/alert/alert.component.ts
+Module not found: Error: Can't resolve 'rxjs/add/operator/debounceTime' in '/home/ec2-user/codingmoa/webapp/src/app/pages/component/alert'
+ERROR in ./src/app/pages/component/typehead/typehead.component.ts
+Module not found: Error: Can't resolve 'rxjs/add/operator/debounceTime' in '/home/ec2-user/codingmoa/webapp/src/app/pages/component/typehead'
+ERROR in ./src/app/pages/component/typehead/typehead.component.ts
+Module not found: Error: Can't resolve 'rxjs/add/operator/distinctUntilChanged' in '/home/ec2-user/codingmoa/webapp/src/app/pages/component/typehead'
+ERROR in ./src/app/pages/component/typehead/typehead.component.ts
+Module not found: Error: Can't resolve 'rxjs/add/operator/do' in '/home/ec2-user/codingmoa/webapp/src/app/pages/component/typehead'
+ERROR in ./src/app/shared/breadcrumb/breadcrumb.component.ts
+Module not found: Error: Can't resolve 'rxjs/add/operator/filter' in '/home/ec2-user/codingmoa/webapp/src/app/shared/breadcrumb'
+ERROR in ./src/app/pages/component/typehead/typehead.component.ts
+Module not found: Error: Can't resolve 'rxjs/add/operator/map' in '/home/ec2-user/codingmoa/webapp/src/app/pages/component/typehead'
+ERROR in ./src/app/shared/breadcrumb/breadcrumb.component.ts
+Module not found: Error: Can't resolve 'rxjs/add/operator/map' in '/home/ec2-user/codingmoa/webapp/src/app/shared/breadcrumb'
+ERROR in ./src/app/shared/breadcrumb/breadcrumb.component.ts
+Module not found: Error: Can't resolve 'rxjs/add/operator/mergeMap' in '/home/ec2-user/codingmoa/webapp/src/app/shared/breadcrumb'
+ERROR in ./src/app/pages/component/typehead/typehead.component.ts
+Module not found: Error: Can't resolve 'rxjs/add/operator/switchMap' in '/home/ec2-user/codingmoa/webapp/src/app/pages/component/typehead'
+
+ERROR in node_modules/rxjs/Observable.d.ts(1,15): error TS2307: Cannot find module 'rxjs-compat/Observable'.
+node_modules/rxjs/Subject.d.ts(1,15): error TS2307: Cannot find module 'rxjs-compat/Subject'.
+src/app/app-routing.module.ts(3,27): error TS2307: Cannot find module '@ng-bootstrap/ng-bootstrap'.
+src/app/app.module.ts(1,20): error TS2307: Cannot find module 'jquery'.
+src/app/pages/component/accordion/accordion.component.ts(2,37): error TS2307: Cannot find module '@ng-bootstrap/ng-bootstrap'.
+src/app/pages/component/alert/alert.component.ts(2,10): error TS2305: Module '"../../../../../node_modules/rxjs/Subject"' has no exported member 'Subject'.
+src/app/pages/component/carousel/carousel.component.ts(2,35): error TS2307: Cannot find module '@ng-bootstrap/ng-bootstrap'.
+src/app/pages/component/component.module.ts(5,29): error TS2307: Cannot find module '@angular/http'.
+src/app/pages/component/component.module.ts(7,27): error TS2307: Cannot find module '@ng-bootstrap/ng-bootstrap'.
+src/app/pages/component/datepicker/datepicker.component.ts(2,44): error TS2307: Cannot find module '@ng-bootstrap/ng-bootstrap'.
+src/app/pages/component/modal/modal.component.ts(6,8): error TS2307: Cannot find module '@ng-bootstrap/ng-bootstrap'.
+src/app/pages/component/pagination/pagination.component.ts(2,37): error TS2307: Cannot find module '@ng-bootstrap/ng-bootstrap'.
+src/app/pages/component/progressbar/progressbar.component.ts(2,38): error TS2307: Cannot find module '@ng-bootstrap/ng-bootstrap'.
+src/app/pages/component/tabs/tabs.component.ts(2,35): error TS2307: Cannot find module '@ng-bootstrap/ng-bootstrap'.
+src/app/pages/component/timepicker/timepicker.component.ts(2,31): error TS2307: Cannot find module '@ng-bootstrap/ng-bootstrap'.
+src/app/pages/component/typehead/typehead.component.ts(2,10): error TS2305: Module '"../../../../../node_modules/rxjs/Observable"' has no exported member 'Observable'.
+src/app/pages/component/typehead/typehead.component.ts(3,40): error TS2307: Cannot find module '@angular/http'.
+src/app/shared/breadcrumb/breadcrumb.component.ts(21,8): error TS2339: Property 'filter' does not exist on type 'Observable<Event>'.
+src/app/shared/header-navigation/navigation.component.ts(2,27): error TS2307: Cannot find module '@ng-bootstrap/ng-bootstrap'.
+
+
+Date: 2019-05-15T10:58:04.744Z - Hash: e933d0dbc91d19d892d3 - Time: 1455ms
+9 unchanged chunks
+
+ERROR in ./src/app/pages/component/component.module.ts
+Module not found: Error: Can't resolve '@angular/http' in '/home/ec2-user/codingmoa/webapp/src/app/pages/component'
+ERROR in ./src/app/pages/component/typehead/typehead.component.ts
+Module not found: Error: Can't resolve '@angular/http' in '/home/ec2-user/codingmoa/webapp/src/app/pages/component/typehead'
+ERROR in ./src/app/app-routing.module.ts
+Module not found: Error: Can't resolve '@ng-bootstrap/ng-bootstrap' in '/home/ec2-user/codingmoa/webapp/src/app'
+ERROR in ./src/app/pages/component/component.module.ts
+Module not found: Error: Can't resolve '@ng-bootstrap/ng-bootstrap' in '/home/ec2-user/codingmoa/webapp/src/app/pages/component'
+ERROR in ./src/app/pages/component/carousel/carousel.component.ts
+Module not found: Error: Can't resolve '@ng-bootstrap/ng-bootstrap' in '/home/ec2-user/codingmoa/webapp/src/app/pages/component/carousel'
+ERROR in ./src/app/pages/component/datepicker/datepicker.component.ts
+Module not found: Error: Can't resolve '@ng-bootstrap/ng-bootstrap' in '/home/ec2-user/codingmoa/webapp/src/app/pages/component/datepicker'
+ERROR in ./src/app/pages/component/modal/modal.component.ts
+Module not found: Error: Can't resolve '@ng-bootstrap/ng-bootstrap' in '/home/ec2-user/codingmoa/webapp/src/app/pages/component/modal'
+ERROR in ./src/app/pages/component/progressbar/progressbar.component.ts
+Module not found: Error: Can't resolve '@ng-bootstrap/ng-bootstrap' in '/home/ec2-user/codingmoa/webapp/src/app/pages/component/progressbar'
+ERROR in ./src/app/pages/component/typehead/typehead.component.ts
+Module not found: Error: Can't resolve 'rxjs/Observable' in '/home/ec2-user/codingmoa/webapp/src/app/pages/component/typehead'
+ERROR in ./src/app/pages/component/alert/alert.component.ts
+Module not found: Error: Can't resolve 'rxjs/Subject' in '/home/ec2-user/codingmoa/webapp/src/app/pages/component/alert'
+ERROR in ./src/app/pages/component/typehead/typehead.component.ts
+Module not found: Error: Can't resolve 'rxjs/add/observable/of' in '/home/ec2-user/codingmoa/webapp/src/app/pages/component/typehead'
+ERROR in ./src/app/pages/component/typehead/typehead.component.ts
+Module not found: Error: Can't resolve 'rxjs/add/operator/catch' in '/home/ec2-user/codingmoa/webapp/src/app/pages/component/typehead'
+ERROR in ./src/app/pages/component/alert/alert.component.ts
+Module not found: Error: Can't resolve 'rxjs/add/operator/debounceTime' in '/home/ec2-user/codingmoa/webapp/src/app/pages/component/alert'
+ERROR in ./src/app/pages/component/typehead/typehead.component.ts
+Module not found: Error: Can't resolve 'rxjs/add/operator/debounceTime' in '/home/ec2-user/codingmoa/webapp/src/app/pages/component/typehead'
+ERROR in ./src/app/pages/component/typehead/typehead.component.ts
+Module not found: Error: Can't resolve 'rxjs/add/operator/distinctUntilChanged' in '/home/ec2-user/codingmoa/webapp/src/app/pages/component/typehead'
+ERROR in ./src/app/pages/component/typehead/typehead.component.ts
+Module not found: Error: Can't resolve 'rxjs/add/operator/do' in '/home/ec2-user/codingmoa/webapp/src/app/pages/component/typehead'
+ERROR in ./src/app/shared/breadcrumb/breadcrumb.component.ts
+Module not found: Error: Can't resolve 'rxjs/add/operator/filter' in '/home/ec2-user/codingmoa/webapp/src/app/shared/breadcrumb'
+ERROR in ./src/app/pages/component/typehead/typehead.component.ts
+Module not found: Error: Can't resolve 'rxjs/add/operator/map' in '/home/ec2-user/codingmoa/webapp/src/app/pages/component/typehead'
+ERROR in ./src/app/shared/breadcrumb/breadcrumb.component.ts
+Module not found: Error: Can't resolve 'rxjs/add/operator/map' in '/home/ec2-user/codingmoa/webapp/src/app/shared/breadcrumb'
+ERROR in ./src/app/shared/breadcrumb/breadcrumb.component.ts
+Module not found: Error: Can't resolve 'rxjs/add/operator/mergeMap' in '/home/ec2-user/codingmoa/webapp/src/app/shared/breadcrumb'
+ERROR in ./src/app/pages/component/typehead/typehead.component.ts
+Module not found: Error: Can't resolve 'rxjs/add/operator/switchMap' in '/home/ec2-user/codingmoa/webapp/src/app/pages/component/typehead'
+
+ERROR in node_modules/rxjs/Observable.d.ts(1,15): error TS2307: Cannot find module 'rxjs-compat/Observable'.
+node_modules/rxjs/Subject.d.ts(1,15): error TS2307: Cannot find module 'rxjs-compat/Subject'.
+src/app/app-routing.module.ts(3,27): error TS2307: Cannot find module '@ng-bootstrap/ng-bootstrap'.
+src/app/app.module.ts(1,20): error TS2307: Cannot find module 'jquery'.
+src/app/pages/component/accordion/accordion.component.ts(2,37): error TS2307: Cannot find module '@ng-bootstrap/ng-bootstrap'.
+src/app/pages/component/alert/alert.component.ts(2,10): error TS2305: Module '"../../../../../node_modules/rxjs/Subject"' has no exported member 'Subject'.
+src/app/pages/component/carousel/carousel.component.ts(2,35): error TS2307: Cannot find module '@ng-bootstrap/ng-bootstrap'.
+src/app/pages/component/component.module.ts(5,29): error TS2307: Cannot find module '@angular/http'.
+src/app/pages/component/component.module.ts(7,27): error TS2307: Cannot find module '@ng-bootstrap/ng-bootstrap'.
+src/app/pages/component/datepicker/datepicker.component.ts(2,44): error TS2307: Cannot find module '@ng-bootstrap/ng-bootstrap'.
+src/app/pages/component/modal/modal.component.ts(6,8): error TS2307: Cannot find module '@ng-bootstrap/ng-bootstrap'.
+src/app/pages/component/pagination/pagination.component.ts(2,37): error TS2307: Cannot find module '@ng-bootstrap/ng-bootstrap'.
+src/app/pages/component/progressbar/progressbar.component.ts(2,38): error TS2307: Cannot find module '@ng-bootstrap/ng-bootstrap'.
+src/app/pages/component/tabs/tabs.component.ts(2,35): error TS2307: Cannot find module '@ng-bootstrap/ng-bootstrap'.
+src/app/pages/component/timepicker/timepicker.component.ts(2,31): error TS2307: Cannot find module '@ng-bootstrap/ng-bootstrap'.
+src/app/pages/component/typehead/typehead.component.ts(2,10): error TS2305: Module '"../../../../../node_modules/rxjs/Observable"' has no exported member 'Observable'.
+src/app/pages/component/typehead/typehead.component.ts(3,40): error TS2307: Cannot find module '@angular/http'.
+src/app/shared/breadcrumb/breadcrumb.component.ts(21,8): error TS2339: Property 'filter' does not exist on type 'Observable<Event>'.
+src/app/shared/header-navigation/navigation.component.ts(2,27): error TS2307: Cannot find module '@ng-bootstrap/ng-bootstrap'.
+
+
+Date: 2019-05-15T11:04:51.462Z
+Hash: 75cff311751f329c33f7
+Time: 21157ms
+chunk {es2015-polyfills} es2015-polyfills.js, es2015-polyfills.js.map (es2015-polyfills) 284 kB [initial] [rendered]
+chunk {main} main.js, main.js.map (main) 622 bytes [initial] [rendered]
+chunk {polyfills} polyfills.js, polyfills.js.map (polyfills) 93 kB [initial] [rendered]
+chunk {runtime} runtime.js, runtime.js.map (runtime) 6.08 kB [entry] [rendered]
+chunk {styles} styles.js, styles.js.map (styles) 16.6 kB [initial] [rendered]
+
+ERROR in node_modules/rxjs/Observable.d.ts(1,15): error TS2307: Cannot find module 'rxjs-compat/Observable'.
+node_modules/rxjs/Subject.d.ts(1,15): error TS2307: Cannot find module 'rxjs-compat/Subject'.
+src/app/app-routing.module.ts(3,27): error TS2307: Cannot find module '@ng-bootstrap/ng-bootstrap'.
+src/app/app.module.ts(1,20): error TS2307: Cannot find module 'jquery'.
+src/app/pages/component/accordion/accordion.component.ts(2,37): error TS2307: Cannot find module '@ng-bootstrap/ng-bootstrap'.
+src/app/pages/component/alert/alert.component.ts(2,10): error TS2305: Module '"../../../../../node_modules/rxjs/Subject"' has no exported member 'Subject'.
+src/app/pages/component/carousel/carousel.component.ts(2,35): error TS2307: Cannot find module '@ng-bootstrap/ng-bootstrap'.
+src/app/pages/component/component.module.ts(5,29): error TS2307: Cannot find module '@angular/http'.
+src/app/pages/component/component.module.ts(7,27): error TS2307: Cannot find module '@ng-bootstrap/ng-bootstrap'.
+src/app/pages/component/datepicker/datepicker.component.ts(2,44): error TS2307: Cannot find module '@ng-bootstrap/ng-bootstrap'.
+src/app/pages/component/modal/modal.component.ts(6,8): error TS2307: Cannot find module '@ng-bootstrap/ng-bootstrap'.
+src/app/pages/component/pagination/pagination.component.ts(2,37): error TS2307: Cannot find module '@ng-bootstrap/ng-bootstrap'.
+src/app/pages/component/progressbar/progressbar.component.ts(2,38): error TS2307: Cannot find module '@ng-bootstrap/ng-bootstrap'.
+src/app/pages/component/tabs/tabs.component.ts(2,35): error TS2307: Cannot find module '@ng-bootstrap/ng-bootstrap'.
+src/app/pages/component/timepicker/timepicker.component.ts(2,31): error TS2307: Cannot find module '@ng-bootstrap/ng-bootstrap'.
+src/app/pages/component/typehead/typehead.component.ts(2,10): error TS2305: Module '"../../../../../node_modules/rxjs/Observable"' has no exported member 'Observable'.
+src/app/pages/component/typehead/typehead.component.ts(3,40): error TS2307: Cannot find module '@angular/http'.
+src/app/shared/breadcrumb/breadcrumb.component.ts(21,8): error TS2339: Property 'filter' does not exist on type 'Observable<Event>'.
+src/app/shared/header-navigation/navigation.component.ts(2,27): error TS2307: Cannot find module '@ng-bootstrap/ng-bootstrap'.
+
+
+ERROR in node_modules/rxjs/Observable.d.ts(1,15): error TS2307: Cannot find module 'rxjs-compat/Observable'.
+node_modules/rxjs/Subject.d.ts(1,15): error TS2307: Cannot find module 'rxjs-compat/Subject'.
+src/app/app-routing.module.ts(3,27): error TS2307: Cannot find module '@ng-bootstrap/ng-bootstrap'.
+src/app/app.module.ts(1,20): error TS2307: Cannot find module 'jquery'.
+src/app/pages/component/accordion/accordion.component.ts(2,37): error TS2307: Cannot find module '@ng-bootstrap/ng-bootstrap'.
+src/app/pages/component/alert/alert.component.ts(2,10): error TS2305: Module '"../../../../../node_modules/rxjs/Subject"' has no exported member 'Subject'.
+src/app/pages/component/carousel/carousel.component.ts(2,35): error TS2307: Cannot find module '@ng-bootstrap/ng-bootstrap'.
+src/app/pages/component/component.module.ts(5,29): error TS2307: Cannot find module '@angular/http'.
+src/app/pages/component/component.module.ts(7,27): error TS2307: Cannot find module '@ng-bootstrap/ng-bootstrap'.
+src/app/pages/component/datepicker/datepicker.component.ts(2,44): error TS2307: Cannot find module '@ng-bootstrap/ng-bootstrap'.
+src/app/pages/component/modal/modal.component.ts(6,8): error TS2307: Cannot find module '@ng-bootstrap/ng-bootstrap'.
+src/app/pages/component/pagination/pagination.component.ts(2,37): error TS2307: Cannot find module '@ng-bootstrap/ng-bootstrap'.
+src/app/pages/component/progressbar/progressbar.component.ts(2,38): error TS2307: Cannot find module '@ng-bootstrap/ng-bootstrap'.
+src/app/pages/component/tabs/tabs.component.ts(2,35): error TS2307: Cannot find module '@ng-bootstrap/ng-bootstrap'.
+src/app/pages/component/timepicker/timepicker.component.ts(2,31): error TS2307: Cannot find module '@ng-bootstrap/ng-bootstrap'.
+src/app/pages/component/typehead/typehead.component.ts(2,10): error TS2305: Module '"../../../../../node_modules/rxjs/Observable"' has no exported member 'Observable'.
+src/app/pages/component/typehead/typehead.component.ts(3,40): error TS2307: Cannot find module '@angular/http'.
+src/app/shared/breadcrumb/breadcrumb.component.ts(21,8): error TS2339: Property 'filter' does not exist on type 'Observable<Event>'.
+src/app/shared/header-navigation/navigation.component.ts(2,27): error TS2307: Cannot find module '@ng-bootstrap/ng-bootstrap'.
+
+
+Date: 2019-05-15T11:41:13.451Z - Hash: 11a84c4e0ed810bb2c0a - Time: 22428ms
+2 unchanged chunks
+chunk {component-component-module} component-component-module.js, component-component-module.js.map (component-component-module) 227 kB  [rendered]
+chunk {main} main.js, main.js.map (main) 14.4 kB [initial] [rendered]
+chunk {pages-pages-module} pages-pages-module.js, pages-pages-module.js.map (pages-pages-module) 40.4 kB  [rendered]
+chunk {polyfills} polyfills.js, polyfills.js.map (polyfills) 236 kB [initial] [rendered]
+chunk {runtime} runtime.js, runtime.js.map (runtime) 8.88 kB [entry] [rendered]
+chunk {starter-starter-module} starter-starter-module.js, starter-starter-module.js.map (starter-starter-module) 4.53 kB  [rendered]
+chunk {vendor} vendor.js, vendor.js.map (vendor) 4.07 MB [initial] [rendered]
+
+ERROR in ./src/app/pages/component/component.module.ts
+Module not found: Error: Can't resolve '@angular/http' in '/home/ec2-user/codingmoa/webapp/src/app/pages/component'
+ERROR in ./src/app/pages/component/typehead/typehead.component.ts
+Module not found: Error: Can't resolve '@angular/http' in '/home/ec2-user/codingmoa/webapp/src/app/pages/component/typehead'
+ERROR in ./src/app/app-routing.module.ts
+Module not found: Error: Can't resolve '@ng-bootstrap/ng-bootstrap' in '/home/ec2-user/codingmoa/webapp/src/app'
+ERROR in ./src/app/pages/component/component.module.ts
+Module not found: Error: Can't resolve '@ng-bootstrap/ng-bootstrap' in '/home/ec2-user/codingmoa/webapp/src/app/pages/component'
+ERROR in ./src/app/pages/component/carousel/carousel.component.ts
+Module not found: Error: Can't resolve '@ng-bootstrap/ng-bootstrap' in '/home/ec2-user/codingmoa/webapp/src/app/pages/component/carousel'
+ERROR in ./src/app/pages/component/datepicker/datepicker.component.ts
+Module not found: Error: Can't resolve '@ng-bootstrap/ng-bootstrap' in '/home/ec2-user/codingmoa/webapp/src/app/pages/component/datepicker'
+ERROR in ./src/app/pages/component/modal/modal.component.ts
+Module not found: Error: Can't resolve '@ng-bootstrap/ng-bootstrap' in '/home/ec2-user/codingmoa/webapp/src/app/pages/component/modal'
+ERROR in ./src/app/pages/component/progressbar/progressbar.component.ts
+Module not found: Error: Can't resolve '@ng-bootstrap/ng-bootstrap' in '/home/ec2-user/codingmoa/webapp/src/app/pages/component/progressbar'
+ERROR in ./src/app/pages/component/typehead/typehead.component.ts
+Module not found: Error: Can't resolve 'rxjs/Observable' in '/home/ec2-user/codingmoa/webapp/src/app/pages/component/typehead'
+ERROR in ./src/app/pages/component/alert/alert.component.ts
+Module not found: Error: Can't resolve 'rxjs/Subject' in '/home/ec2-user/codingmoa/webapp/src/app/pages/component/alert'
+ERROR in ./src/app/pages/component/typehead/typehead.component.ts
+Module not found: Error: Can't resolve 'rxjs/add/observable/of' in '/home/ec2-user/codingmoa/webapp/src/app/pages/component/typehead'
+ERROR in ./src/app/pages/component/typehead/typehead.component.ts
+Module not found: Error: Can't resolve 'rxjs/add/operator/catch' in '/home/ec2-user/codingmoa/webapp/src/app/pages/component/typehead'
+ERROR in ./src/app/pages/component/alert/alert.component.ts
+Module not found: Error: Can't resolve 'rxjs/add/operator/debounceTime' in '/home/ec2-user/codingmoa/webapp/src/app/pages/component/alert'
+ERROR in ./src/app/pages/component/typehead/typehead.component.ts
+Module not found: Error: Can't resolve 'rxjs/add/operator/debounceTime' in '/home/ec2-user/codingmoa/webapp/src/app/pages/component/typehead'
+ERROR in ./src/app/pages/component/typehead/typehead.component.ts
+Module not found: Error: Can't resolve 'rxjs/add/operator/distinctUntilChanged' in '/home/ec2-user/codingmoa/webapp/src/app/pages/component/typehead'
+ERROR in ./src/app/pages/component/typehead/typehead.component.ts
+Module not found: Error: Can't resolve 'rxjs/add/operator/do' in '/home/ec2-user/codingmoa/webapp/src/app/pages/component/typehead'
+ERROR in ./src/app/shared/breadcrumb/breadcrumb.component.ts
+Module not found: Error: Can't resolve 'rxjs/add/operator/filter' in '/home/ec2-user/codingmoa/webapp/src/app/shared/breadcrumb'
+ERROR in ./src/app/pages/component/typehead/typehead.component.ts
+Module not found: Error: Can't resolve 'rxjs/add/operator/map' in '/home/ec2-user/codingmoa/webapp/src/app/pages/component/typehead'
+ERROR in ./src/app/shared/breadcrumb/breadcrumb.component.ts
+Module not found: Error: Can't resolve 'rxjs/add/operator/map' in '/home/ec2-user/codingmoa/webapp/src/app/shared/breadcrumb'
+ERROR in ./src/app/shared/breadcrumb/breadcrumb.component.ts
+Module not found: Error: Can't resolve 'rxjs/add/operator/mergeMap' in '/home/ec2-user/codingmoa/webapp/src/app/shared/breadcrumb'
+ERROR in ./src/app/pages/component/typehead/typehead.component.ts
+Module not found: Error: Can't resolve 'rxjs/add/operator/switchMap' in '/home/ec2-user/codingmoa/webapp/src/app/pages/component/typehead'
+
+Date: 2019-05-15T11:41:16.914Z - Hash: 11a84c4e0ed810bb2c0a - Time: 3157ms
+9 unchanged chunks
+
+ERROR in ./src/app/pages/component/component.module.ts
+Module not found: Error: Can't resolve '@angular/http' in '/home/ec2-user/codingmoa/webapp/src/app/pages/component'
+ERROR in ./src/app/pages/component/typehead/typehead.component.ts
+Module not found: Error: Can't resolve '@angular/http' in '/home/ec2-user/codingmoa/webapp/src/app/pages/component/typehead'
+ERROR in ./src/app/app-routing.module.ts
+Module not found: Error: Can't resolve '@ng-bootstrap/ng-bootstrap' in '/home/ec2-user/codingmoa/webapp/src/app'
+ERROR in ./src/app/pages/component/component.module.ts
+Module not found: Error: Can't resolve '@ng-bootstrap/ng-bootstrap' in '/home/ec2-user/codingmoa/webapp/src/app/pages/component'
+ERROR in ./src/app/pages/component/carousel/carousel.component.ts
+Module not found: Error: Can't resolve '@ng-bootstrap/ng-bootstrap' in '/home/ec2-user/codingmoa/webapp/src/app/pages/component/carousel'
+ERROR in ./src/app/pages/component/datepicker/datepicker.component.ts
+Module not found: Error: Can't resolve '@ng-bootstrap/ng-bootstrap' in '/home/ec2-user/codingmoa/webapp/src/app/pages/component/datepicker'
+ERROR in ./src/app/pages/component/modal/modal.component.ts
+Module not found: Error: Can't resolve '@ng-bootstrap/ng-bootstrap' in '/home/ec2-user/codingmoa/webapp/src/app/pages/component/modal'
+ERROR in ./src/app/pages/component/progressbar/progressbar.component.ts
+Module not found: Error: Can't resolve '@ng-bootstrap/ng-bootstrap' in '/home/ec2-user/codingmoa/webapp/src/app/pages/component/progressbar'
+ERROR in ./src/app/pages/component/typehead/typehead.component.ts
+Module not found: Error: Can't resolve 'rxjs/Observable' in '/home/ec2-user/codingmoa/webapp/src/app/pages/component/typehead'
+ERROR in ./src/app/pages/component/alert/alert.component.ts
+Module not found: Error: Can't resolve 'rxjs/Subject' in '/home/ec2-user/codingmoa/webapp/src/app/pages/component/alert'
+ERROR in ./src/app/pages/component/typehead/typehead.component.ts
+Module not found: Error: Can't resolve 'rxjs/add/observable/of' in '/home/ec2-user/codingmoa/webapp/src/app/pages/component/typehead'
+ERROR in ./src/app/pages/component/typehead/typehead.component.ts
+Module not found: Error: Can't resolve 'rxjs/add/operator/catch' in '/home/ec2-user/codingmoa/webapp/src/app/pages/component/typehead'
+ERROR in ./src/app/pages/component/alert/alert.component.ts
+Module not found: Error: Can't resolve 'rxjs/add/operator/debounceTime' in '/home/ec2-user/codingmoa/webapp/src/app/pages/component/alert'
+ERROR in ./src/app/pages/component/typehead/typehead.component.ts
+Module not found: Error: Can't resolve 'rxjs/add/operator/debounceTime' in '/home/ec2-user/codingmoa/webapp/src/app/pages/component/typehead'
+ERROR in ./src/app/pages/component/typehead/typehead.component.ts
+Module not found: Error: Can't resolve 'rxjs/add/operator/distinctUntilChanged' in '/home/ec2-user/codingmoa/webapp/src/app/pages/component/typehead'
+ERROR in ./src/app/pages/component/typehead/typehead.component.ts
+Module not found: Error: Can't resolve 'rxjs/add/operator/do' in '/home/ec2-user/codingmoa/webapp/src/app/pages/component/typehead'
+ERROR in ./src/app/shared/breadcrumb/breadcrumb.component.ts
+Module not found: Error: Can't resolve 'rxjs/add/operator/filter' in '/home/ec2-user/codingmoa/webapp/src/app/shared/breadcrumb'
+ERROR in ./src/app/pages/component/typehead/typehead.component.ts
+Module not found: Error: Can't resolve 'rxjs/add/operator/map' in '/home/ec2-user/codingmoa/webapp/src/app/pages/component/typehead'
+ERROR in ./src/app/shared/breadcrumb/breadcrumb.component.ts
+Module not found: Error: Can't resolve 'rxjs/add/operator/map' in '/home/ec2-user/codingmoa/webapp/src/app/shared/breadcrumb'
+ERROR in ./src/app/shared/breadcrumb/breadcrumb.component.ts
+Module not found: Error: Can't resolve 'rxjs/add/operator/mergeMap' in '/home/ec2-user/codingmoa/webapp/src/app/shared/breadcrumb'
+ERROR in ./src/app/pages/component/typehead/typehead.component.ts
+Module not found: Error: Can't resolve 'rxjs/add/operator/switchMap' in '/home/ec2-user/codingmoa/webapp/src/app/pages/component/typehead'
+
+ERROR in node_modules/rxjs/Observable.d.ts(1,15): error TS2307: Cannot find module 'rxjs-compat/Observable'.
+node_modules/rxjs/Subject.d.ts(1,15): error TS2307: Cannot find module 'rxjs-compat/Subject'.
+src/app/app-routing.module.ts(3,27): error TS2307: Cannot find module '@ng-bootstrap/ng-bootstrap'.
+src/app/app.module.ts(1,20): error TS2307: Cannot find module 'jquery'.
+src/app/pages/component/accordion/accordion.component.ts(2,37): error TS2307: Cannot find module '@ng-bootstrap/ng-bootstrap'.
+src/app/pages/component/alert/alert.component.ts(2,10): error TS2305: Module '"../../../../../node_modules/rxjs/Subject"' has no exported member 'Subject'.
+src/app/pages/component/carousel/carousel.component.ts(2,35): error TS2307: Cannot find module '@ng-bootstrap/ng-bootstrap'.
+src/app/pages/component/component.module.ts(5,29): error TS2307: Cannot find module '@angular/http'.
+src/app/pages/component/component.module.ts(7,27): error TS2307: Cannot find module '@ng-bootstrap/ng-bootstrap'.
+src/app/pages/component/datepicker/datepicker.component.ts(2,44): error TS2307: Cannot find module '@ng-bootstrap/ng-bootstrap'.
+src/app/pages/component/modal/modal.component.ts(6,8): error TS2307: Cannot find module '@ng-bootstrap/ng-bootstrap'.
+src/app/pages/component/pagination/pagination.component.ts(2,37): error TS2307: Cannot find module '@ng-bootstrap/ng-bootstrap'.
+src/app/pages/component/progressbar/progressbar.component.ts(2,38): error TS2307: Cannot find module '@ng-bootstrap/ng-bootstrap'.
+src/app/pages/component/tabs/tabs.component.ts(2,35): error TS2307: Cannot find module '@ng-bootstrap/ng-bootstrap'.
+src/app/pages/component/timepicker/timepicker.component.ts(2,31): error TS2307: Cannot find module '@ng-bootstrap/ng-bootstrap'.
+src/app/pages/component/typehead/typehead.component.ts(2,10): error TS2305: Module '"../../../../../node_modules/rxjs/Observable"' has no exported member 'Observable'.
+src/app/pages/component/typehead/typehead.component.ts(3,40): error TS2307: Cannot find module '@angular/http'.
+src/app/shared/breadcrumb/breadcrumb.component.ts(21,8): error TS2339: Property 'filter' does not exist on type 'Observable<Event>'.
+src/app/shared/header-navigation/navigation.component.ts(2,27): error TS2307: Cannot find module '@ng-bootstrap/ng-bootstrap'.
+
+
+Date: 2019-05-15T11:56:21.354Z
+Hash: 75cff311751f329c33f7
+Time: 21818ms
+chunk {es2015-polyfills} es2015-polyfills.js, es2015-polyfills.js.map (es2015-polyfills) 284 kB [initial] [rendered]
+chunk {main} main.js, main.js.map (main) 622 bytes [initial] [rendered]
+chunk {polyfills} polyfills.js, polyfills.js.map (polyfills) 93 kB [initial] [rendered]
+chunk {runtime} runtime.js, runtime.js.map (runtime) 6.08 kB [entry] [rendered]
+chunk {styles} styles.js, styles.js.map (styles) 16.6 kB [initial] [rendered]
+
+ERROR in node_modules/rxjs/Observable.d.ts(1,15): error TS2307: Cannot find module 'rxjs-compat/Observable'.
+node_modules/rxjs/Subject.d.ts(1,15): error TS2307: Cannot find module 'rxjs-compat/Subject'.
+src/app/app-routing.module.ts(3,27): error TS2307: Cannot find module '@ng-bootstrap/ng-bootstrap'.
+src/app/app.module.ts(1,20): error TS2307: Cannot find module 'jquery'.
+src/app/pages/component/accordion/accordion.component.ts(2,37): error TS2307: Cannot find module '@ng-bootstrap/ng-bootstrap'.
+src/app/pages/component/alert/alert.component.ts(2,10): error TS2305: Module '"../../../../../node_modules/rxjs/Subject"' has no exported member 'Subject'.
+src/app/pages/component/carousel/carousel.component.ts(2,35): error TS2307: Cannot find module '@ng-bootstrap/ng-bootstrap'.
+src/app/pages/component/component.module.ts(5,29): error TS2307: Cannot find module '@angular/http'.
+src/app/pages/component/component.module.ts(7,27): error TS2307: Cannot find module '@ng-bootstrap/ng-bootstrap'.
+src/app/pages/component/datepicker/datepicker.component.ts(2,44): error TS2307: Cannot find module '@ng-bootstrap/ng-bootstrap'.
+src/app/pages/component/modal/modal.component.ts(6,8): error TS2307: Cannot find module '@ng-bootstrap/ng-bootstrap'.
+src/app/pages/component/pagination/pagination.component.ts(2,37): error TS2307: Cannot find module '@ng-bootstrap/ng-bootstrap'.
+src/app/pages/component/progressbar/progressbar.component.ts(2,38): error TS2307: Cannot find module '@ng-bootstrap/ng-bootstrap'.
+src/app/pages/component/tabs/tabs.component.ts(2,35): error TS2307: Cannot find module '@ng-bootstrap/ng-bootstrap'.
+src/app/pages/component/timepicker/timepicker.component.ts(2,31): error TS2307: Cannot find module '@ng-bootstrap/ng-bootstrap'.
+src/app/pages/component/typehead/typehead.component.ts(2,10): error TS2305: Module '"../../../../../node_modules/rxjs/Observable"' has no exported member 'Observable'.
+src/app/pages/component/typehead/typehead.component.ts(3,40): error TS2307: Cannot find module '@angular/http'.
+src/app/shared/breadcrumb/breadcrumb.component.ts(21,8): error TS2339: Property 'filter' does not exist on type 'Observable<Event>'.
+src/app/shared/header-navigation/navigation.component.ts(2,27): error TS2307: Cannot find module '@ng-bootstrap/ng-bootstrap'.
+
+Your global Angular CLI version (7.3.9) is greater than your local
+version (7.0.3). The local Angular CLI version is used.
+
+To disable this warning use "ng config -g cli.warnings.versionMismatch false".
+Schema validation failed with the following errors:
+  Data path "" should NOT have additional properties(es5BrowserSupport).

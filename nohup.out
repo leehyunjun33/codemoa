@@ -1,0 +1,338 @@
+
+> codingmoa@1.0.0 start /home/ec2-user/codingmoa
+> cd webapp; ng build ; cd .. ;tsc; nodemon ./build/main.js;
+
+
+Date: 2019-05-15T10:23:47.849Z
+Hash: 52247e88629d2c20cc1c
+Time: 12637ms
+chunk {es2015-polyfills} es2015-polyfills.js, es2015-polyfills.js.map (es2015-polyfills) 284 kB [initial] [rendered]
+chunk {main} main.js, main.js.map (main) 13.1 kB [initial] [rendered]
+chunk {polyfills} polyfills.js, polyfills.js.map (polyfills) 236 kB [initial] [rendered]
+chunk {runtime} runtime.js, runtime.js.map (runtime) 6.08 kB [entry] [rendered]
+chunk {styles} styles.js, styles.js.map (styles) 16.6 kB [initial] [rendered]
+chunk {vendor} vendor.js, vendor.js.map (vendor) 3.45 MB [initial] [rendered]
+src/main.ts(1,26): error TS7016: Could not find a declaration file for module 'express'. '/home/ec2-user/codingmoa/node_modules/express/index.js' implicitly has an 'any' type.
+  Try `npm install @types/express` if it exists or add a new declaration (.d.ts) file containing `declare module 'express';`
+src/main.ts(13,24): error TS2580: Cannot find name 'process'. Do you need to install type definitions for node? Try `npm i @types/node`.
+src/main.ts(40,34): error TS2304: Cannot find name '__dirname'.
+[33m[nodemon] 1.19.0[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching: *.*[39m
+[32m[nodemon] starting `node ./build/main.js`[39m
+Listening at http://localhost:3000/
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./build/main.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./build/main.js`[39m
+Listening at http://localhost:3000/
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./build/main.js`[39m
+Listening at http://localhost:3000/
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./build/main.js`[39m
+Listening at http://localhost:3000/
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./build/main.js`[39m
+Listening at http://localhost:3000/
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./build/main.js`[39m
+Listening at http://localhost:3000/
+sh: line 1: 10211 Killed                  nodemon ./build/main.js
+npm ERR! code ELIFECYCLE
+npm ERR! errno 137
+npm ERR! codingmoa@1.0.0 start: `cd webapp; ng build ; cd .. ;tsc; nodemon ./build/main.js;`
+npm ERR! Exit status 137
+npm ERR! 
+npm ERR! Failed at the codingmoa@1.0.0 start script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /root/.npm/_logs/2019-05-15T11_02_44_863Z-debug.log
+
+> codingmoa@1.0.0 start /home/ec2-user/codingmoa
+> cd webapp; ng build ; cd .. ;tsc; nodemon ./build/main.js;
+
+
+Date: 2019-05-15T11:04:55.075Z
+Hash: 75cff311751f329c33f7
+Time: 17796ms
+chunk {es2015-polyfills} es2015-polyfills.js, es2015-polyfills.js.map (es2015-polyfills) 284 kB [initial] [rendered]
+chunk {main} main.js, main.js.map (main) 622 bytes [initial] [rendered]
+chunk {polyfills} polyfills.js, polyfills.js.map (polyfills) 93 kB [initial] [rendered]
+chunk {runtime} runtime.js, runtime.js.map (runtime) 6.08 kB [entry] [rendered]
+chunk {styles} styles.js, styles.js.map (styles) 16.6 kB [initial] [rendered]
+
+ERROR in node_modules/rxjs/Observable.d.ts(1,15): error TS2307: Cannot find module 'rxjs-compat/Observable'.
+node_modules/rxjs/Subject.d.ts(1,15): error TS2307: Cannot find module 'rxjs-compat/Subject'.
+src/app/app-routing.module.ts(3,27): error TS2307: Cannot find module '@ng-bootstrap/ng-bootstrap'.
+src/app/app.module.ts(1,20): error TS2307: Cannot find module 'jquery'.
+src/app/pages/component/accordion/accordion.component.ts(2,37): error TS2307: Cannot find module '@ng-bootstrap/ng-bootstrap'.
+src/app/pages/component/alert/alert.component.ts(2,10): error TS2305: Module '"../../../../../node_modules/rxjs/Subject"' has no exported member 'Subject'.
+src/app/pages/component/carousel/carousel.component.ts(2,35): error TS2307: Cannot find module '@ng-bootstrap/ng-bootstrap'.
+src/app/pages/component/component.module.ts(5,29): error TS2307: Cannot find module '@angular/http'.
+src/app/pages/component/component.module.ts(7,27): error TS2307: Cannot find module '@ng-bootstrap/ng-bootstrap'.
+src/app/pages/component/datepicker/datepicker.component.ts(2,44): error TS2307: Cannot find module '@ng-bootstrap/ng-bootstrap'.
+src/app/pages/component/modal/modal.component.ts(6,8): error TS2307: Cannot find module '@ng-bootstrap/ng-bootstrap'.
+src/app/pages/component/pagination/pagination.component.ts(2,37): error TS2307: Cannot find module '@ng-bootstrap/ng-bootstrap'.
+src/app/pages/component/progressbar/progressbar.component.ts(2,38): error TS2307: Cannot find module '@ng-bootstrap/ng-bootstrap'.
+src/app/pages/component/tabs/tabs.component.ts(2,35): error TS2307: Cannot find module '@ng-bootstrap/ng-bootstrap'.
+src/app/pages/component/timepicker/timepicker.component.ts(2,31): error TS2307: Cannot find module '@ng-bootstrap/ng-bootstrap'.
+src/app/pages/component/typehead/typehead.component.ts(2,10): error TS2305: Module '"../../../../../node_modules/rxjs/Observable"' has no exported member 'Observable'.
+src/app/pages/component/typehead/typehead.component.ts(3,40): error TS2307: Cannot find module '@angular/http'.
+src/app/shared/breadcrumb/breadcrumb.component.ts(21,8): error TS2339: Property 'filter' does not exist on type 'Observable<Event>'.
+src/app/shared/header-navigation/navigation.component.ts(2,27): error TS2307: Cannot find module '@ng-bootstrap/ng-bootstrap'.
+
+src/main.ts(1,26): error TS7016: Could not find a declaration file for module 'express'. '/home/ec2-user/codingmoa/node_modules/express/index.js' implicitly has an 'any' type.
+  Try `npm install @types/express` if it exists or add a new declaration (.d.ts) file containing `declare module 'express';`
+src/main.ts(13,24): error TS2580: Cannot find name 'process'. Do you need to install type definitions for node? Try `npm i @types/node`.
+src/main.ts(40,34): error TS2304: Cannot find name '__dirname'.
+[33m[nodemon] 1.19.0[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching: *.*[39m
+[32m[nodemon] starting `node ./build/main.js`[39m
+Listening at http://localhost:3000/
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./build/main.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./build/main.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./build/main.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./build/main.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./build/main.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./build/main.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./build/main.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./build/main.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./build/main.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./build/main.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./build/main.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./build/main.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./build/main.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./build/main.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./build/main.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./build/main.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./build/main.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./build/main.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./build/main.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./build/main.js`[39m
+Listening at http://localhost:3000/
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./build/main.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./build/main.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./build/main.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./build/main.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./build/main.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./build/main.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./build/main.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./build/main.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./build/main.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./build/main.js`[39m
+Listening at http://localhost:3000/
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./build/main.js`[39m
+Listening at http://localhost:3000/
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./build/main.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./build/main.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./build/main.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./build/main.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./build/main.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./build/main.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./build/main.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./build/main.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./build/main.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./build/main.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./build/main.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./build/main.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./build/main.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./build/main.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./build/main.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./build/main.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./build/main.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./build/main.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./build/main.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./build/main.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./build/main.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./build/main.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./build/main.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./build/main.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./build/main.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./build/main.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./build/main.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./build/main.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./build/main.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./build/main.js`[39m
+Listening at http://localhost:3000/
+
+> codingmoa@1.0.0 start /home/ec2-user/codingmoa
+> cd webapp; ng build ; cd .. ;tsc; nodemon ./build/main.js;
+
+
+Date: 2019-05-15T11:56:24.297Z
+Hash: 75cff311751f329c33f7
+Time: 18640ms
+chunk {es2015-polyfills} es2015-polyfills.js, es2015-polyfills.js.map (es2015-polyfills) 284 kB [initial] [rendered]
+chunk {main} main.js, main.js.map (main) 622 bytes [initial] [rendered]
+chunk {polyfills} polyfills.js, polyfills.js.map (polyfills) 93 kB [initial] [rendered]
+chunk {runtime} runtime.js, runtime.js.map (runtime) 6.08 kB [entry] [rendered]
+chunk {styles} styles.js, styles.js.map (styles) 16.6 kB [initial] [rendered]
+
+ERROR in node_modules/rxjs/Observable.d.ts(1,15): error TS2307: Cannot find module 'rxjs-compat/Observable'.
+node_modules/rxjs/Subject.d.ts(1,15): error TS2307: Cannot find module 'rxjs-compat/Subject'.
+src/app/app-routing.module.ts(3,27): error TS2307: Cannot find module '@ng-bootstrap/ng-bootstrap'.
+src/app/app.module.ts(1,20): error TS2307: Cannot find module 'jquery'.
+src/app/pages/component/accordion/accordion.component.ts(2,37): error TS2307: Cannot find module '@ng-bootstrap/ng-bootstrap'.
+src/app/pages/component/alert/alert.component.ts(2,10): error TS2305: Module '"../../../../../node_modules/rxjs/Subject"' has no exported member 'Subject'.
+src/app/pages/component/carousel/carousel.component.ts(2,35): error TS2307: Cannot find module '@ng-bootstrap/ng-bootstrap'.
+src/app/pages/component/component.module.ts(5,29): error TS2307: Cannot find module '@angular/http'.
+src/app/pages/component/component.module.ts(7,27): error TS2307: Cannot find module '@ng-bootstrap/ng-bootstrap'.
+src/app/pages/component/datepicker/datepicker.component.ts(2,44): error TS2307: Cannot find module '@ng-bootstrap/ng-bootstrap'.
+src/app/pages/component/modal/modal.component.ts(6,8): error TS2307: Cannot find module '@ng-bootstrap/ng-bootstrap'.
+src/app/pages/component/pagination/pagination.component.ts(2,37): error TS2307: Cannot find module '@ng-bootstrap/ng-bootstrap'.
+src/app/pages/component/progressbar/progressbar.component.ts(2,38): error TS2307: Cannot find module '@ng-bootstrap/ng-bootstrap'.
+src/app/pages/component/tabs/tabs.component.ts(2,35): error TS2307: Cannot find module '@ng-bootstrap/ng-bootstrap'.
+src/app/pages/component/timepicker/timepicker.component.ts(2,31): error TS2307: Cannot find module '@ng-bootstrap/ng-bootstrap'.
+src/app/pages/component/typehead/typehead.component.ts(2,10): error TS2305: Module '"../../../../../node_modules/rxjs/Observable"' has no exported member 'Observable'.
+src/app/pages/component/typehead/typehead.component.ts(3,40): error TS2307: Cannot find module '@angular/http'.
+src/app/shared/breadcrumb/breadcrumb.component.ts(21,8): error TS2339: Property 'filter' does not exist on type 'Observable<Event>'.
+src/app/shared/header-navigation/navigation.component.ts(2,27): error TS2307: Cannot find module '@ng-bootstrap/ng-bootstrap'.
+
+src/main.ts(1,26): error TS7016: Could not find a declaration file for module 'express'. '/home/ec2-user/codingmoa/node_modules/express/index.js' implicitly has an 'any' type.
+  Try `npm install @types/express` if it exists or add a new declaration (.d.ts) file containing `declare module 'express';`
+src/main.ts(13,24): error TS2580: Cannot find name 'process'. Do you need to install type definitions for node? Try `npm i @types/node`.
+src/main.ts(40,34): error TS2304: Cannot find name '__dirname'.
+sh: nodemon: command not found
+npm ERR! file sh
+npm ERR! code ELIFECYCLE
+npm ERR! errno ENOENT
+npm ERR! syscall spawn
+npm ERR! codingmoa@1.0.0 start: `cd webapp; ng build ; cd .. ;tsc; nodemon ./build/main.js;`
+npm ERR! spawn ENOENT
+npm ERR! 
+npm ERR! Failed at the codingmoa@1.0.0 start script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /root/.npm/_logs/2019-05-15T11_56_27_729Z-debug.log
+
+> codingmoa@1.0.0 start /home/ec2-user/codingmoa
+> cd webapp; ng build ; cd .. ;tsc; nodemon ./build/main.js;
+
+Your global Angular CLI version (7.3.9) is greater than your local
+version (7.0.3). The local Angular CLI version is used.
+
+To disable this warning use "ng config -g cli.warnings.versionMismatch false".
+Schema validation failed with the following errors:
+  Data path "" should NOT have additional properties(es5BrowserSupport).
+[33m[nodemon] 1.19.0[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching: *.*[39m
+[32m[nodemon] starting `node ./build/main.js`[39m
+Listening at http://localhost:3000/
+sh: line 1:  4483 Killed                  nodemon ./build/main.js
+npm ERR! code ELIFECYCLE
+npm ERR! errno 137
+npm ERR! codingmoa@1.0.0 start: `cd webapp; ng build ; cd .. ;tsc; nodemon ./build/main.js;`
+npm ERR! Exit status 137
+npm ERR! 
+npm ERR! Failed at the codingmoa@1.0.0 start script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /root/.npm/_logs/2019-05-15T12_57_47_247Z-debug.log
