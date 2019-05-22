@@ -9,6 +9,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SpinnerComponent } from './shared/spinner.component';
+//import { UserComponent } from './pages/user/user.module';
 
 @NgModule({
   declarations: [AppComponent, SpinnerComponent],
@@ -18,6 +19,8 @@ import { SpinnerComponent } from './shared/spinner.component';
     FormsModule,
     HttpClientModule,
     AppRoutingModule
+    
+    
   ],
   providers: [
     {

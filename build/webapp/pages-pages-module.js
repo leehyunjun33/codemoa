@@ -180,6 +180,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
 /* harmony import */ var _pages_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./pages.component */ "./src/app/pages/pages.component.ts");
+/* harmony import */ var _user_user_module__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./user/user.module */ "./src/app/pages/user/user.module.ts");
+
 
 
 
@@ -192,6 +194,10 @@ var routes = [
             {
                 path: 'starter',
                 loadChildren: './starter/starter.module#StarterModule'
+            },
+            {
+                path: 'user',
+                component: _user_user_module__WEBPACK_IMPORTED_MODULE_4__["UserComponent"]
             },
             {
                 path: 'component',
@@ -262,6 +268,9 @@ var PageComponent = /** @class */ (function () {
         if (this.router.url === '/') {
             this.router.navigate(['/starter']);
         }
+        else if (this.router.url === '/user') {
+            this.router.navigate(['/user']);
+        }
     };
     PageComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
@@ -297,6 +306,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _shared_header_navigation_navigation_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../shared/header-navigation/navigation.component */ "./src/app/shared/header-navigation/navigation.component.ts");
 /* harmony import */ var _shared_sidebar_sidebar_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../shared/sidebar/sidebar.component */ "./src/app/shared/sidebar/sidebar.component.ts");
 /* harmony import */ var _shared_breadcrumb_breadcrumb_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../shared/breadcrumb/breadcrumb.component */ "./src/app/shared/breadcrumb/breadcrumb.component.ts");
+/* harmony import */ var _user_user_module__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./user/user.module */ "./src/app/pages/user/user.module.ts");
+
 
 
 
@@ -311,6 +322,7 @@ var PagesModule = /** @class */ (function () {
     }
     PagesModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
+            declarations: [_user_user_module__WEBPACK_IMPORTED_MODULE_9__["UserComponent"]],
             imports: [
                 _angular_common__WEBPACK_IMPORTED_MODULE_2__["CommonModule"],
                 _pages_routing_module__WEBPACK_IMPORTED_MODULE_3__["PagesRoutingModule"]
@@ -325,6 +337,101 @@ var PagesModule = /** @class */ (function () {
         })
     ], PagesModule);
     return PagesModule;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/pages/user/user.component.html":
+/*!************************************************!*\
+  !*** ./src/app/pages/user/user.component.html ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"row\">\r\n    <div class=\"col-12\">\r\n        <div class=\"card\">\r\n            <div class=\"card-body\">\r\n                <a href=\"/user\">{{subtitle}}</a>\r\n                \r\n                \r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>"
+
+/***/ }),
+
+/***/ "./src/app/pages/user/user.component.ts":
+/*!**********************************************!*\
+  !*** ./src/app/pages/user/user.component.ts ***!
+  \**********************************************/
+/*! exports provided: UserComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "UserComponent", function() { return UserComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+
+
+var UserComponent = /** @class */ (function () {
+    function UserComponent() {
+        this.subtitle = 'This is some text within a card block.';
+        console.log(this.subtitle);
+    }
+    UserComponent.prototype.ngAfterViewInit = function () { };
+    UserComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            template: __webpack_require__(/*! ./user.component.html */ "./src/app/pages/user/user.component.html")
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
+    ], UserComponent);
+    return UserComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/pages/user/user.module.ts":
+/*!*******************************************!*\
+  !*** ./src/app/pages/user/user.module.ts ***!
+  \*******************************************/
+/*! exports provided: UserModule */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "UserModule", function() { return UserModule; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/fesm5/common.js");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm5/forms.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+/* harmony import */ var _user_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./user.component */ "./src/app/pages/user/user.component.ts");
+
+
+
+
+
+
+var routes = [
+    {
+        path: '',
+        data: {
+            title: 'user Page',
+            urls: [
+                { title: 'Dashboard', url: '/dashboard' },
+                { title: 'user Page' }
+            ]
+        },
+        component: _user_component__WEBPACK_IMPORTED_MODULE_5__["UserComponent"]
+    }
+];
+var UserModule = /** @class */ (function () {
+    function UserModule() {
+    }
+    UserModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
+            imports: [_angular_forms__WEBPACK_IMPORTED_MODULE_3__["FormsModule"], _angular_common__WEBPACK_IMPORTED_MODULE_2__["CommonModule"], _angular_router__WEBPACK_IMPORTED_MODULE_4__["RouterModule"].forChild(routes)],
+            declarations: [_user_component__WEBPACK_IMPORTED_MODULE_5__["UserComponent"]]
+        })
+    ], UserModule);
+    return UserModule;
 }());
 
 

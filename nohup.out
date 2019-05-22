@@ -1,21 +1,110 @@
 
 > codingmoa@1.0.0 start /home/ec2-user/codingmoa
+> tsc; nodemon ./build/main.js;
+
+[33m[nodemon] 1.19.0[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching: *.*[39m
+[32m[nodemon] starting `node ./build/main.js`[39m
+events.js:183
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: EBADF: bad file descriptor, read
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! codingmoa@1.0.0 start: `tsc; nodemon ./build/main.js;`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the codingmoa@1.0.0 start script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /root/.npm/_logs/2019-05-16T07_41_52_501Z-debug.log
+
+> codingmoa@1.0.0 start /home/ec2-user/codingmoa
+> tsc; nodemon ./build/main.js;
+
+[33m[nodemon] 1.19.0[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching: *.*[39m
+[32m[nodemon] starting `node ./build/main.js`[39m
+events.js:183
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: EBADF: bad file descriptor, read
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! codingmoa@1.0.0 start: `tsc; nodemon ./build/main.js;`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the codingmoa@1.0.0 start script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /root/.npm/_logs/2019-05-16T07_44_54_220Z-debug.log
+
+> codingmoa@1.0.0 start /home/ec2-user/codingmoa
 > cd webapp; ng build ; cd .. ;tsc; nodemon ./build/main.js;
 
 
-Date: 2019-05-15T10:23:47.849Z
-Hash: 52247e88629d2c20cc1c
-Time: 12637ms
-chunk {es2015-polyfills} es2015-polyfills.js, es2015-polyfills.js.map (es2015-polyfills) 284 kB [initial] [rendered]
-chunk {main} main.js, main.js.map (main) 13.1 kB [initial] [rendered]
-chunk {polyfills} polyfills.js, polyfills.js.map (polyfills) 236 kB [initial] [rendered]
-chunk {runtime} runtime.js, runtime.js.map (runtime) 6.08 kB [entry] [rendered]
-chunk {styles} styles.js, styles.js.map (styles) 16.6 kB [initial] [rendered]
-chunk {vendor} vendor.js, vendor.js.map (vendor) 3.45 MB [initial] [rendered]
-src/main.ts(1,26): error TS7016: Could not find a declaration file for module 'express'. '/home/ec2-user/codingmoa/node_modules/express/index.js' implicitly has an 'any' type.
-  Try `npm install @types/express` if it exists or add a new declaration (.d.ts) file containing `declare module 'express';`
-src/main.ts(13,24): error TS2580: Cannot find name 'process'. Do you need to install type definitions for node? Try `npm i @types/node`.
-src/main.ts(40,34): error TS2304: Cannot find name '__dirname'.
+Date: 2019-05-16T07:51:40.990Z
+Hash: e70863b4a38d0c7f09e2
+Time: 22754ms
+chunk {common} common.js, common.js.map (common) 3.22 kB  [rendered]
+chunk {component-component-module} component-component-module.js, component-component-module.js.map (component-component-module) 322 kB  [rendered]
+chunk {es2015-polyfills} es2015-polyfills.js, es2015-polyfills.js.map (es2015-polyfills) 266 kB [initial] [rendered]
+chunk {main} main.js, main.js.map (main) 14.4 kB [initial] [rendered]
+chunk {pages-pages-module} pages-pages-module.js, pages-pages-module.js.map (pages-pages-module) 47.8 kB  [rendered]
+chunk {polyfills} polyfills.js, polyfills.js.map (polyfills) 223 kB [initial] [rendered]
+chunk {runtime} runtime.js, runtime.js.map (runtime) 8.9 kB [entry] [rendered]
+chunk {scripts} scripts.js, scripts.js.map (scripts) 180 kB [entry] [rendered]
+chunk {starter-starter-module} starter-starter-module.js, starter-starter-module.js.map (starter-starter-module) 4.53 kB  [rendered]
+chunk {styles} styles.js, styles.js.map (styles) 2.71 MB [initial] [rendered]
+chunk {vendor} vendor.js, vendor.js.map (vendor) 4.83 MB [initial] [rendered]
+[33m[nodemon] 1.19.0[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching: *.*[39m
+[32m[nodemon] starting `node ./build/main.js`[39m
+events.js:183
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: EBADF: bad file descriptor, read
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! codingmoa@1.0.0 start: `cd webapp; ng build ; cd .. ;tsc; nodemon ./build/main.js;`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the codingmoa@1.0.0 start script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /root/.npm/_logs/2019-05-16T07_51_46_591Z-debug.log
+
+> codingmoa@1.0.0 start /home/ec2-user/codingmoa
+> cd webapp; ng build --watch; cd .. ;tsc; nodemon ./build/main.js;
+
+
+Date: 2019-05-16T07:57:19.100Z
+Hash: e70863b4a38d0c7f09e2
+Time: 255794ms
+chunk {common} common.js, common.js.map (common) 3.22 kB  [rendered]
+chunk {component-component-module} component-component-module.js, component-component-module.js.map (component-component-module) 322 kB  [rendered]
+chunk {es2015-polyfills} es2015-polyfills.js, es2015-polyfills.js.map (es2015-polyfills) 266 kB [initial] [rendered]
+chunk {main} main.js, main.js.map (main) 14.4 kB [initial] [rendered]
+chunk {pages-pages-module} pages-pages-module.js, pages-pages-module.js.map (pages-pages-module) 47.8 kB  [rendered]
+chunk {polyfills} polyfills.js, polyfills.js.map (polyfills) 223 kB [initial] [rendered]
+chunk {runtime} runtime.js, runtime.js.map (runtime) 8.9 kB [entry] [rendered]
+chunk {scripts} scripts.js, scripts.js.map (scripts) 180 kB [entry] [rendered]
+chunk {starter-starter-module} starter-starter-module.js, starter-starter-module.js.map (starter-starter-module) 4.53 kB  [rendered]
+chunk {styles} styles.js, styles.js.map (styles) 2.71 MB [initial] [rendered]
+chunk {vendor} vendor.js, vendor.js.map (vendor) 4.83 MB [initial] [rendered]
+
+> codingmoa@1.0.0 start /home/ec2-user/codingmoa
+> tsc; nodemon ./build/main.js;
+
 [33m[nodemon] 1.19.0[39m
 [33m[nodemon] to restart at any time, enter `rs`[39m
 [33m[nodemon] watching: *.*[39m
@@ -26,6 +115,31 @@ Listening at http://localhost:3000/
 [32m[nodemon] restarting due to changes...[39m
 [32m[nodemon] restarting due to changes...[39m
 [32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./build/main.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./build/main.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./build/main.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
 [32m[nodemon] starting `node ./build/main.js`[39m
 [32m[nodemon] restarting due to changes...[39m
 [32m[nodemon] restarting due to changes...[39m
@@ -33,74 +147,16 @@ Listening at http://localhost:3000/
 [32m[nodemon] restarting due to changes...[39m
 [32m[nodemon] restarting due to changes...[39m
 [32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] starting `node ./build/main.js`[39m
 Listening at http://localhost:3000/
 [32m[nodemon] restarting due to changes...[39m
 [32m[nodemon] starting `node ./build/main.js`[39m
-Listening at http://localhost:3000/
-[32m[nodemon] restarting due to changes...[39m
 [32m[nodemon] restarting due to changes...[39m
 [32m[nodemon] starting `node ./build/main.js`[39m
 Listening at http://localhost:3000/
-[32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] starting `node ./build/main.js`[39m
-Listening at http://localhost:3000/
-[32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] starting `node ./build/main.js`[39m
-Listening at http://localhost:3000/
-sh: line 1: 10211 Killed                  nodemon ./build/main.js
-npm ERR! code ELIFECYCLE
-npm ERR! errno 137
-npm ERR! codingmoa@1.0.0 start: `cd webapp; ng build ; cd .. ;tsc; nodemon ./build/main.js;`
-npm ERR! Exit status 137
-npm ERR! 
-npm ERR! Failed at the codingmoa@1.0.0 start script.
-npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
-
-npm ERR! A complete log of this run can be found in:
-npm ERR!     /root/.npm/_logs/2019-05-15T11_02_44_863Z-debug.log
 
 > codingmoa@1.0.0 start /home/ec2-user/codingmoa
-> cd webapp; ng build ; cd .. ;tsc; nodemon ./build/main.js;
+> tsc; nodemon ./build/main.js;
 
-
-Date: 2019-05-15T11:04:55.075Z
-Hash: 75cff311751f329c33f7
-Time: 17796ms
-chunk {es2015-polyfills} es2015-polyfills.js, es2015-polyfills.js.map (es2015-polyfills) 284 kB [initial] [rendered]
-chunk {main} main.js, main.js.map (main) 622 bytes [initial] [rendered]
-chunk {polyfills} polyfills.js, polyfills.js.map (polyfills) 93 kB [initial] [rendered]
-chunk {runtime} runtime.js, runtime.js.map (runtime) 6.08 kB [entry] [rendered]
-chunk {styles} styles.js, styles.js.map (styles) 16.6 kB [initial] [rendered]
-
-ERROR in node_modules/rxjs/Observable.d.ts(1,15): error TS2307: Cannot find module 'rxjs-compat/Observable'.
-node_modules/rxjs/Subject.d.ts(1,15): error TS2307: Cannot find module 'rxjs-compat/Subject'.
-src/app/app-routing.module.ts(3,27): error TS2307: Cannot find module '@ng-bootstrap/ng-bootstrap'.
-src/app/app.module.ts(1,20): error TS2307: Cannot find module 'jquery'.
-src/app/pages/component/accordion/accordion.component.ts(2,37): error TS2307: Cannot find module '@ng-bootstrap/ng-bootstrap'.
-src/app/pages/component/alert/alert.component.ts(2,10): error TS2305: Module '"../../../../../node_modules/rxjs/Subject"' has no exported member 'Subject'.
-src/app/pages/component/carousel/carousel.component.ts(2,35): error TS2307: Cannot find module '@ng-bootstrap/ng-bootstrap'.
-src/app/pages/component/component.module.ts(5,29): error TS2307: Cannot find module '@angular/http'.
-src/app/pages/component/component.module.ts(7,27): error TS2307: Cannot find module '@ng-bootstrap/ng-bootstrap'.
-src/app/pages/component/datepicker/datepicker.component.ts(2,44): error TS2307: Cannot find module '@ng-bootstrap/ng-bootstrap'.
-src/app/pages/component/modal/modal.component.ts(6,8): error TS2307: Cannot find module '@ng-bootstrap/ng-bootstrap'.
-src/app/pages/component/pagination/pagination.component.ts(2,37): error TS2307: Cannot find module '@ng-bootstrap/ng-bootstrap'.
-src/app/pages/component/progressbar/progressbar.component.ts(2,38): error TS2307: Cannot find module '@ng-bootstrap/ng-bootstrap'.
-src/app/pages/component/tabs/tabs.component.ts(2,35): error TS2307: Cannot find module '@ng-bootstrap/ng-bootstrap'.
-src/app/pages/component/timepicker/timepicker.component.ts(2,31): error TS2307: Cannot find module '@ng-bootstrap/ng-bootstrap'.
-src/app/pages/component/typehead/typehead.component.ts(2,10): error TS2305: Module '"../../../../../node_modules/rxjs/Observable"' has no exported member 'Observable'.
-src/app/pages/component/typehead/typehead.component.ts(3,40): error TS2307: Cannot find module '@angular/http'.
-src/app/shared/breadcrumb/breadcrumb.component.ts(21,8): error TS2339: Property 'filter' does not exist on type 'Observable<Event>'.
-src/app/shared/header-navigation/navigation.component.ts(2,27): error TS2307: Cannot find module '@ng-bootstrap/ng-bootstrap'.
-
-src/main.ts(1,26): error TS7016: Could not find a declaration file for module 'express'. '/home/ec2-user/codingmoa/node_modules/express/index.js' implicitly has an 'any' type.
-  Try `npm install @types/express` if it exists or add a new declaration (.d.ts) file containing `declare module 'express';`
-src/main.ts(13,24): error TS2580: Cannot find name 'process'. Do you need to install type definitions for node? Try `npm i @types/node`.
-src/main.ts(40,34): error TS2304: Cannot find name '__dirname'.
 [33m[nodemon] 1.19.0[39m
 [33m[nodemon] to restart at any time, enter `rs`[39m
 [33m[nodemon] watching: *.*[39m
@@ -109,46 +165,15 @@ Listening at http://localhost:3000/
 [32m[nodemon] restarting due to changes...[39m
 [32m[nodemon] restarting due to changes...[39m
 [32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] starting `node ./build/main.js`[39m
-[32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] starting `node ./build/main.js`[39m
 [32m[nodemon] restarting due to changes...[39m
 [32m[nodemon] restarting due to changes...[39m
 [32m[nodemon] restarting due to changes...[39m
 [32m[nodemon] restarting due to changes...[39m
 [32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] starting `node ./build/main.js`[39m
 [32m[nodemon] restarting due to changes...[39m
 [32m[nodemon] restarting due to changes...[39m
 [32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] starting `node ./build/main.js`[39m
 [32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] starting `node ./build/main.js`[39m
-[32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] starting `node ./build/main.js`[39m
-[32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] starting `node ./build/main.js`[39m
-[32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] starting `node ./build/main.js`[39m
-[32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] starting `node ./build/main.js`[39m
-[32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] starting `node ./build/main.js`[39m
-[32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] starting `node ./build/main.js`[39m
-[32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] starting `node ./build/main.js`[39m
-[32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] starting `node ./build/main.js`[39m
-[32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] starting `node ./build/main.js`[39m
 [32m[nodemon] restarting due to changes...[39m
 [32m[nodemon] restarting due to changes...[39m
 [32m[nodemon] restarting due to changes...[39m
@@ -158,33 +183,19 @@ Listening at http://localhost:3000/
 [32m[nodemon] restarting due to changes...[39m
 [32m[nodemon] starting `node ./build/main.js`[39m
 [32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] starting `node ./build/main.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
 [32m[nodemon] restarting due to changes...[39m
 [32m[nodemon] starting `node ./build/main.js`[39m
 [32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] starting `node ./build/main.js`[39m
 [32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] starting `node ./build/main.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
 Listening at http://localhost:3000/
 [32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] starting `node ./build/main.js`[39m
-[32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] starting `node ./build/main.js`[39m
-[32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] starting `node ./build/main.js`[39m
-[32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] starting `node ./build/main.js`[39m
-[32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] starting `node ./build/main.js`[39m
-[32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] starting `node ./build/main.js`[39m
-[32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] starting `node ./build/main.js`[39m
-[32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] starting `node ./build/main.js`[39m
-[32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] starting `node ./build/main.js`[39m
 [32m[nodemon] restarting due to changes...[39m
 [32m[nodemon] starting `node ./build/main.js`[39m
 Listening at http://localhost:3000/
@@ -193,67 +204,31 @@ Listening at http://localhost:3000/
 Listening at http://localhost:3000/
 [32m[nodemon] restarting due to changes...[39m
 [32m[nodemon] starting `node ./build/main.js`[39m
-[32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] starting `node ./build/main.js`[39m
+Listening at http://localhost:3000/
 [32m[nodemon] restarting due to changes...[39m
 [32m[nodemon] starting `node ./build/main.js`[39m
+Listening at http://localhost:3000/
 [32m[nodemon] restarting due to changes...[39m
 [32m[nodemon] starting `node ./build/main.js`[39m
-[32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] starting `node ./build/main.js`[39m
+Listening at http://localhost:3000/
 [32m[nodemon] restarting due to changes...[39m
 [32m[nodemon] starting `node ./build/main.js`[39m
+Listening at http://localhost:3000/
 [32m[nodemon] restarting due to changes...[39m
 [32m[nodemon] starting `node ./build/main.js`[39m
-[32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] starting `node ./build/main.js`[39m
+Listening at http://localhost:3000/
 [32m[nodemon] restarting due to changes...[39m
 [32m[nodemon] starting `node ./build/main.js`[39m
+Listening at http://localhost:3000/
 [32m[nodemon] restarting due to changes...[39m
 [32m[nodemon] starting `node ./build/main.js`[39m
-[32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] starting `node ./build/main.js`[39m
+Listening at http://localhost:3000/
 [32m[nodemon] restarting due to changes...[39m
 [32m[nodemon] starting `node ./build/main.js`[39m
+Listening at http://localhost:3000/
 [32m[nodemon] restarting due to changes...[39m
 [32m[nodemon] starting `node ./build/main.js`[39m
-[32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] starting `node ./build/main.js`[39m
-[32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] starting `node ./build/main.js`[39m
-[32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] starting `node ./build/main.js`[39m
-[32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] starting `node ./build/main.js`[39m
-[32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] starting `node ./build/main.js`[39m
-[32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] starting `node ./build/main.js`[39m
-[32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] starting `node ./build/main.js`[39m
-[32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] starting `node ./build/main.js`[39m
-[32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] starting `node ./build/main.js`[39m
-[32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] starting `node ./build/main.js`[39m
-[32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] starting `node ./build/main.js`[39m
-[32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] starting `node ./build/main.js`[39m
-[32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] starting `node ./build/main.js`[39m
-[32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] starting `node ./build/main.js`[39m
-[32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] starting `node ./build/main.js`[39m
+Listening at http://localhost:3000/
 [32m[nodemon] restarting due to changes...[39m
 [32m[nodemon] starting `node ./build/main.js`[39m
 [32m[nodemon] restarting due to changes...[39m
@@ -261,78 +236,1085 @@ Listening at http://localhost:3000/
 Listening at http://localhost:3000/
 
 > codingmoa@1.0.0 start /home/ec2-user/codingmoa
-> cd webapp; ng build ; cd .. ;tsc; nodemon ./build/main.js;
+> tsc; nodemon ./build/main.js;
 
+[33m[nodemon] 1.19.0[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching: *.*[39m
+[32m[nodemon] starting `node ./build/main.js`[39m
+events.js:183
+      throw er; // Unhandled 'error' event
+      ^
 
-Date: 2019-05-15T11:56:24.297Z
-Hash: 75cff311751f329c33f7
-Time: 18640ms
-chunk {es2015-polyfills} es2015-polyfills.js, es2015-polyfills.js.map (es2015-polyfills) 284 kB [initial] [rendered]
-chunk {main} main.js, main.js.map (main) 622 bytes [initial] [rendered]
-chunk {polyfills} polyfills.js, polyfills.js.map (polyfills) 93 kB [initial] [rendered]
-chunk {runtime} runtime.js, runtime.js.map (runtime) 6.08 kB [entry] [rendered]
-chunk {styles} styles.js, styles.js.map (styles) 16.6 kB [initial] [rendered]
-
-ERROR in node_modules/rxjs/Observable.d.ts(1,15): error TS2307: Cannot find module 'rxjs-compat/Observable'.
-node_modules/rxjs/Subject.d.ts(1,15): error TS2307: Cannot find module 'rxjs-compat/Subject'.
-src/app/app-routing.module.ts(3,27): error TS2307: Cannot find module '@ng-bootstrap/ng-bootstrap'.
-src/app/app.module.ts(1,20): error TS2307: Cannot find module 'jquery'.
-src/app/pages/component/accordion/accordion.component.ts(2,37): error TS2307: Cannot find module '@ng-bootstrap/ng-bootstrap'.
-src/app/pages/component/alert/alert.component.ts(2,10): error TS2305: Module '"../../../../../node_modules/rxjs/Subject"' has no exported member 'Subject'.
-src/app/pages/component/carousel/carousel.component.ts(2,35): error TS2307: Cannot find module '@ng-bootstrap/ng-bootstrap'.
-src/app/pages/component/component.module.ts(5,29): error TS2307: Cannot find module '@angular/http'.
-src/app/pages/component/component.module.ts(7,27): error TS2307: Cannot find module '@ng-bootstrap/ng-bootstrap'.
-src/app/pages/component/datepicker/datepicker.component.ts(2,44): error TS2307: Cannot find module '@ng-bootstrap/ng-bootstrap'.
-src/app/pages/component/modal/modal.component.ts(6,8): error TS2307: Cannot find module '@ng-bootstrap/ng-bootstrap'.
-src/app/pages/component/pagination/pagination.component.ts(2,37): error TS2307: Cannot find module '@ng-bootstrap/ng-bootstrap'.
-src/app/pages/component/progressbar/progressbar.component.ts(2,38): error TS2307: Cannot find module '@ng-bootstrap/ng-bootstrap'.
-src/app/pages/component/tabs/tabs.component.ts(2,35): error TS2307: Cannot find module '@ng-bootstrap/ng-bootstrap'.
-src/app/pages/component/timepicker/timepicker.component.ts(2,31): error TS2307: Cannot find module '@ng-bootstrap/ng-bootstrap'.
-src/app/pages/component/typehead/typehead.component.ts(2,10): error TS2305: Module '"../../../../../node_modules/rxjs/Observable"' has no exported member 'Observable'.
-src/app/pages/component/typehead/typehead.component.ts(3,40): error TS2307: Cannot find module '@angular/http'.
-src/app/shared/breadcrumb/breadcrumb.component.ts(21,8): error TS2339: Property 'filter' does not exist on type 'Observable<Event>'.
-src/app/shared/header-navigation/navigation.component.ts(2,27): error TS2307: Cannot find module '@ng-bootstrap/ng-bootstrap'.
-
-src/main.ts(1,26): error TS7016: Could not find a declaration file for module 'express'. '/home/ec2-user/codingmoa/node_modules/express/index.js' implicitly has an 'any' type.
-  Try `npm install @types/express` if it exists or add a new declaration (.d.ts) file containing `declare module 'express';`
-src/main.ts(13,24): error TS2580: Cannot find name 'process'. Do you need to install type definitions for node? Try `npm i @types/node`.
-src/main.ts(40,34): error TS2304: Cannot find name '__dirname'.
-sh: nodemon: command not found
-npm ERR! file sh
-npm ERR! code ELIFECYCLE
-npm ERR! errno ENOENT
-npm ERR! syscall spawn
-npm ERR! codingmoa@1.0.0 start: `cd webapp; ng build ; cd .. ;tsc; nodemon ./build/main.js;`
-npm ERR! spawn ENOENT
-npm ERR! 
-npm ERR! Failed at the codingmoa@1.0.0 start script.
-npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
-
-npm ERR! A complete log of this run can be found in:
-npm ERR!     /root/.npm/_logs/2019-05-15T11_56_27_729Z-debug.log
+Error: listen EADDRINUSE :::3000
+    at Server.setupListenHandle [as _listen2] (net.js:1360:14)
+    at listenInCluster (net.js:1401:12)
+    at Server.listen (net.js:1485:7)
+    at Function.listen (/home/ec2-user/codingmoa/node_modules/express/lib/application.js:618:24)
+    at Server.config (/home/ec2-user/codingmoa/build/main.js:29:18)
+    at new Server (/home/ec2-user/codingmoa/build/main.js:25:14)
+    at Function.bootstrap (/home/ec2-user/codingmoa/build/main.js:49:16)
+    at Object.<anonymous> (/home/ec2-user/codingmoa/build/main.js:54:8)
+    at Module._compile (module.js:653:30)
+    at Object.Module._extensions..js (module.js:664:10)
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
 
 > codingmoa@1.0.0 start /home/ec2-user/codingmoa
-> cd webapp; ng build ; cd .. ;tsc; nodemon ./build/main.js;
+> tsc; nodemon ./build/main.js;
 
-Your global Angular CLI version (7.3.9) is greater than your local
-version (7.0.3). The local Angular CLI version is used.
-
-To disable this warning use "ng config -g cli.warnings.versionMismatch false".
-Schema validation failed with the following errors:
-  Data path "" should NOT have additional properties(es5BrowserSupport).
 [33m[nodemon] 1.19.0[39m
 [33m[nodemon] to restart at any time, enter `rs`[39m
 [33m[nodemon] watching: *.*[39m
 [32m[nodemon] starting `node ./build/main.js`[39m
 Listening at http://localhost:3000/
-sh: line 1:  4483 Killed                  nodemon ./build/main.js
-npm ERR! code ELIFECYCLE
-npm ERR! errno 137
-npm ERR! codingmoa@1.0.0 start: `cd webapp; ng build ; cd .. ;tsc; nodemon ./build/main.js;`
-npm ERR! Exit status 137
-npm ERR! 
-npm ERR! Failed at the codingmoa@1.0.0 start script.
-npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+error connecting: Error: connect ECONNREFUSED 127.0.0.1:3306
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1191:14)
+    --------------------
+    at Protocol._enqueue (/home/ec2-user/codingmoa/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+    at Protocol.handshake (/home/ec2-user/codingmoa/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+    at Connection.connect (/home/ec2-user/codingmoa/node_modules/mysql/lib/Connection.js:119:18)
+    at Object.<anonymous> (/home/ec2-user/codingmoa/build/main.js:13:6)
+    at Module._compile (module.js:653:30)
+    at Object.Module._extensions..js (module.js:664:10)
+    at Module.load (module.js:566:32)
+    at tryModuleLoad (module.js:506:12)
+    at Function.Module._load (module.js:498:3)
+    at Function.Module.runMain (module.js:694:10)
+{ Error: connect ECONNREFUSED 127.0.0.1:3306
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1191:14)
+    --------------------
+    at Protocol._enqueue (/home/ec2-user/codingmoa/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+    at Protocol.handshake (/home/ec2-user/codingmoa/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+    at Connection.connect (/home/ec2-user/codingmoa/node_modules/mysql/lib/Connection.js:119:18)
+    at Object.<anonymous> (/home/ec2-user/codingmoa/build/main.js:13:6)
+    at Module._compile (module.js:653:30)
+    at Object.Module._extensions..js (module.js:664:10)
+    at Module.load (module.js:566:32)
+    at tryModuleLoad (module.js:506:12)
+    at Function.Module._load (module.js:498:3)
+    at Function.Module.runMain (module.js:694:10)
+  errno: 'ECONNREFUSED',
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 3306,
+  fatal: true }
+rows undefined
+fields undefined
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./build/main.js`[39m
+Listening at http://localhost:3000/
+error connecting: Error: connect ECONNREFUSED 127.0.0.1:3306
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1191:14)
+    --------------------
+    at Protocol._enqueue (/home/ec2-user/codingmoa/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+    at Protocol.handshake (/home/ec2-user/codingmoa/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+    at Connection.connect (/home/ec2-user/codingmoa/node_modules/mysql/lib/Connection.js:119:18)
+    at Object.<anonymous> (/home/ec2-user/codingmoa/build/main.js:13:6)
+    at Module._compile (module.js:653:30)
+    at Object.Module._extensions..js (module.js:664:10)
+    at Module.load (module.js:566:32)
+    at tryModuleLoad (module.js:506:12)
+    at Function.Module._load (module.js:498:3)
+    at Function.Module.runMain (module.js:694:10)
+{ Error: connect ECONNREFUSED 127.0.0.1:3306
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1191:14)
+    --------------------
+    at Protocol._enqueue (/home/ec2-user/codingmoa/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+    at Protocol.handshake (/home/ec2-user/codingmoa/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+    at Connection.connect (/home/ec2-user/codingmoa/node_modules/mysql/lib/Connection.js:119:18)
+    at Object.<anonymous> (/home/ec2-user/codingmoa/build/main.js:13:6)
+    at Module._compile (module.js:653:30)
+    at Object.Module._extensions..js (module.js:664:10)
+    at Module.load (module.js:566:32)
+    at tryModuleLoad (module.js:506:12)
+    at Function.Module._load (module.js:498:3)
+    at Function.Module.runMain (module.js:694:10)
+  errno: 'ECONNREFUSED',
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 3306,
+  fatal: true }
+rows undefined
+fields undefined
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./build/main.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./build/main.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+Listening at http://localhost:3000/
+error connecting: Error: connect ECONNREFUSED 127.0.0.1:3306
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1191:14)
+    --------------------
+    at Protocol._enqueue (/home/ec2-user/codingmoa/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+    at Protocol.handshake (/home/ec2-user/codingmoa/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+    at Connection.connect (/home/ec2-user/codingmoa/node_modules/mysql/lib/Connection.js:119:18)
+    at Object.<anonymous> (/home/ec2-user/codingmoa/build/main.js:13:6)
+    at Module._compile (module.js:653:30)
+    at Object.Module._extensions..js (module.js:664:10)
+    at Module.load (module.js:566:32)
+    at tryModuleLoad (module.js:506:12)
+    at Function.Module._load (module.js:498:3)
+    at Function.Module.runMain (module.js:694:10)
+{ Error: connect ECONNREFUSED 127.0.0.1:3306
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1191:14)
+    --------------------
+    at Protocol._enqueue (/home/ec2-user/codingmoa/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+    at Protocol.handshake (/home/ec2-user/codingmoa/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+    at Connection.connect (/home/ec2-user/codingmoa/node_modules/mysql/lib/Connection.js:119:18)
+    at Object.<anonymous> (/home/ec2-user/codingmoa/build/main.js:13:6)
+    at Module._compile (module.js:653:30)
+    at Object.Module._extensions..js (module.js:664:10)
+    at Module.load (module.js:566:32)
+    at tryModuleLoad (module.js:506:12)
+    at Function.Module._load (module.js:498:3)
+    at Function.Module.runMain (module.js:694:10)
+  errno: 'ECONNREFUSED',
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 3306,
+  fatal: true }
+rows undefined
+fields undefined
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./build/main.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./build/main.js`[39m
+Listening at http://localhost:3000/
+error connecting: Error: connect ECONNREFUSED 127.0.0.1:3306
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1191:14)
+    --------------------
+    at Protocol._enqueue (/home/ec2-user/codingmoa/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+    at Protocol.handshake (/home/ec2-user/codingmoa/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+    at Connection.connect (/home/ec2-user/codingmoa/node_modules/mysql/lib/Connection.js:119:18)
+    at Object.<anonymous> (/home/ec2-user/codingmoa/build/main.js:13:6)
+    at Module._compile (module.js:653:30)
+    at Object.Module._extensions..js (module.js:664:10)
+    at Module.load (module.js:566:32)
+    at tryModuleLoad (module.js:506:12)
+    at Function.Module._load (module.js:498:3)
+    at Function.Module.runMain (module.js:694:10)
+{ Error: connect ECONNREFUSED 127.0.0.1:3306
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1191:14)
+    --------------------
+    at Protocol._enqueue (/home/ec2-user/codingmoa/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+    at Protocol.handshake (/home/ec2-user/codingmoa/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+    at Connection.connect (/home/ec2-user/codingmoa/node_modules/mysql/lib/Connection.js:119:18)
+    at Object.<anonymous> (/home/ec2-user/codingmoa/build/main.js:13:6)
+    at Module._compile (module.js:653:30)
+    at Object.Module._extensions..js (module.js:664:10)
+    at Module.load (module.js:566:32)
+    at tryModuleLoad (module.js:506:12)
+    at Function.Module._load (module.js:498:3)
+    at Function.Module.runMain (module.js:694:10)
+  errno: 'ECONNREFUSED',
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 3306,
+  fatal: true }
+rows undefined
+fields undefined
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./build/main.js`[39m
+Listening at http://localhost:3000/
+error connecting: Error: connect ECONNREFUSED 127.0.0.1:3306
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1191:14)
+    --------------------
+    at Protocol._enqueue (/home/ec2-user/codingmoa/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+    at Protocol.handshake (/home/ec2-user/codingmoa/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+    at Connection.connect (/home/ec2-user/codingmoa/node_modules/mysql/lib/Connection.js:119:18)
+    at Object.<anonymous> (/home/ec2-user/codingmoa/build/main.js:13:6)
+    at Module._compile (module.js:653:30)
+    at Object.Module._extensions..js (module.js:664:10)
+    at Module.load (module.js:566:32)
+    at tryModuleLoad (module.js:506:12)
+    at Function.Module._load (module.js:498:3)
+    at Function.Module.runMain (module.js:694:10)
+{ Error: connect ECONNREFUSED 127.0.0.1:3306
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1191:14)
+    --------------------
+    at Protocol._enqueue (/home/ec2-user/codingmoa/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+    at Protocol.handshake (/home/ec2-user/codingmoa/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+    at Connection.connect (/home/ec2-user/codingmoa/node_modules/mysql/lib/Connection.js:119:18)
+    at Object.<anonymous> (/home/ec2-user/codingmoa/build/main.js:13:6)
+    at Module._compile (module.js:653:30)
+    at Object.Module._extensions..js (module.js:664:10)
+    at Module.load (module.js:566:32)
+    at tryModuleLoad (module.js:506:12)
+    at Function.Module._load (module.js:498:3)
+    at Function.Module.runMain (module.js:694:10)
+  errno: 'ECONNREFUSED',
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 3306,
+  fatal: true }
+rows undefined
+fields undefined
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./build/main.js`[39m
+Listening at http://localhost:3000/
+error connecting: Error: connect ECONNREFUSED 127.0.0.1:3306
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1191:14)
+    --------------------
+    at Protocol._enqueue (/home/ec2-user/codingmoa/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+    at Protocol.handshake (/home/ec2-user/codingmoa/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+    at Connection.connect (/home/ec2-user/codingmoa/node_modules/mysql/lib/Connection.js:119:18)
+    at Object.<anonymous> (/home/ec2-user/codingmoa/build/main.js:13:6)
+    at Module._compile (module.js:653:30)
+    at Object.Module._extensions..js (module.js:664:10)
+    at Module.load (module.js:566:32)
+    at tryModuleLoad (module.js:506:12)
+    at Function.Module._load (module.js:498:3)
+    at Function.Module.runMain (module.js:694:10)
+{ Error: connect ECONNREFUSED 127.0.0.1:3306
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1191:14)
+    --------------------
+    at Protocol._enqueue (/home/ec2-user/codingmoa/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+    at Protocol.handshake (/home/ec2-user/codingmoa/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+    at Connection.connect (/home/ec2-user/codingmoa/node_modules/mysql/lib/Connection.js:119:18)
+    at Object.<anonymous> (/home/ec2-user/codingmoa/build/main.js:13:6)
+    at Module._compile (module.js:653:30)
+    at Object.Module._extensions..js (module.js:664:10)
+    at Module.load (module.js:566:32)
+    at tryModuleLoad (module.js:506:12)
+    at Function.Module._load (module.js:498:3)
+    at Function.Module.runMain (module.js:694:10)
+  errno: 'ECONNREFUSED',
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 3306,
+  fatal: true }
+rows undefined
+fields undefined
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./build/main.js`[39m
+Listening at http://localhost:3000/
+error connecting: Error: connect ECONNREFUSED 127.0.0.1:3306
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1191:14)
+    --------------------
+    at Protocol._enqueue (/home/ec2-user/codingmoa/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+    at Protocol.handshake (/home/ec2-user/codingmoa/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+    at Connection.connect (/home/ec2-user/codingmoa/node_modules/mysql/lib/Connection.js:119:18)
+    at Object.<anonymous> (/home/ec2-user/codingmoa/build/main.js:13:6)
+    at Module._compile (module.js:653:30)
+    at Object.Module._extensions..js (module.js:664:10)
+    at Module.load (module.js:566:32)
+    at tryModuleLoad (module.js:506:12)
+    at Function.Module._load (module.js:498:3)
+    at Function.Module.runMain (module.js:694:10)
+{ Error: connect ECONNREFUSED 127.0.0.1:3306
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1191:14)
+    --------------------
+    at Protocol._enqueue (/home/ec2-user/codingmoa/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+    at Protocol.handshake (/home/ec2-user/codingmoa/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+    at Connection.connect (/home/ec2-user/codingmoa/node_modules/mysql/lib/Connection.js:119:18)
+    at Object.<anonymous> (/home/ec2-user/codingmoa/build/main.js:13:6)
+    at Module._compile (module.js:653:30)
+    at Object.Module._extensions..js (module.js:664:10)
+    at Module.load (module.js:566:32)
+    at tryModuleLoad (module.js:506:12)
+    at Function.Module._load (module.js:498:3)
+    at Function.Module.runMain (module.js:694:10)
+  errno: 'ECONNREFUSED',
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 3306,
+  fatal: true }
+rows undefined
+fields undefined
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./build/main.js`[39m
+Listening at http://localhost:3000/
+error connecting: Error: connect ECONNREFUSED 127.0.0.1:3306
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1191:14)
+    --------------------
+    at Protocol._enqueue (/home/ec2-user/codingmoa/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+    at Protocol.handshake (/home/ec2-user/codingmoa/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+    at Connection.connect (/home/ec2-user/codingmoa/node_modules/mysql/lib/Connection.js:119:18)
+    at Object.<anonymous> (/home/ec2-user/codingmoa/build/main.js:13:6)
+    at Module._compile (module.js:653:30)
+    at Object.Module._extensions..js (module.js:664:10)
+    at Module.load (module.js:566:32)
+    at tryModuleLoad (module.js:506:12)
+    at Function.Module._load (module.js:498:3)
+    at Function.Module.runMain (module.js:694:10)
+{ Error: connect ECONNREFUSED 127.0.0.1:3306
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1191:14)
+    --------------------
+    at Protocol._enqueue (/home/ec2-user/codingmoa/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+    at Protocol.handshake (/home/ec2-user/codingmoa/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+    at Connection.connect (/home/ec2-user/codingmoa/node_modules/mysql/lib/Connection.js:119:18)
+    at Object.<anonymous> (/home/ec2-user/codingmoa/build/main.js:13:6)
+    at Module._compile (module.js:653:30)
+    at Object.Module._extensions..js (module.js:664:10)
+    at Module.load (module.js:566:32)
+    at tryModuleLoad (module.js:506:12)
+    at Function.Module._load (module.js:498:3)
+    at Function.Module.runMain (module.js:694:10)
+  errno: 'ECONNREFUSED',
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 3306,
+  fatal: true }
+rows undefined
+fields undefined
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./build/main.js`[39m
+Listening at http://localhost:3000/
+error connecting: Error: connect ECONNREFUSED 127.0.0.1:3306
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1191:14)
+    --------------------
+    at Protocol._enqueue (/home/ec2-user/codingmoa/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+    at Protocol.handshake (/home/ec2-user/codingmoa/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+    at Connection.connect (/home/ec2-user/codingmoa/node_modules/mysql/lib/Connection.js:119:18)
+    at Object.<anonymous> (/home/ec2-user/codingmoa/build/main.js:13:6)
+    at Module._compile (module.js:653:30)
+    at Object.Module._extensions..js (module.js:664:10)
+    at Module.load (module.js:566:32)
+    at tryModuleLoad (module.js:506:12)
+    at Function.Module._load (module.js:498:3)
+    at Function.Module.runMain (module.js:694:10)
+{ Error: connect ECONNREFUSED 127.0.0.1:3306
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1191:14)
+    --------------------
+    at Protocol._enqueue (/home/ec2-user/codingmoa/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+    at Protocol.handshake (/home/ec2-user/codingmoa/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+    at Connection.connect (/home/ec2-user/codingmoa/node_modules/mysql/lib/Connection.js:119:18)
+    at Object.<anonymous> (/home/ec2-user/codingmoa/build/main.js:13:6)
+    at Module._compile (module.js:653:30)
+    at Object.Module._extensions..js (module.js:664:10)
+    at Module.load (module.js:566:32)
+    at tryModuleLoad (module.js:506:12)
+    at Function.Module._load (module.js:498:3)
+    at Function.Module.runMain (module.js:694:10)
+  errno: 'ECONNREFUSED',
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 3306,
+  fatal: true }
+rows undefined
+fields undefined
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./build/main.js`[39m
+Listening at http://localhost:3000/
+error connecting: Error: connect ECONNREFUSED 127.0.0.1:3306
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1191:14)
+    --------------------
+    at Protocol._enqueue (/home/ec2-user/codingmoa/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+    at Protocol.handshake (/home/ec2-user/codingmoa/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+    at Connection.connect (/home/ec2-user/codingmoa/node_modules/mysql/lib/Connection.js:119:18)
+    at Object.<anonymous> (/home/ec2-user/codingmoa/build/main.js:13:6)
+    at Module._compile (module.js:653:30)
+    at Object.Module._extensions..js (module.js:664:10)
+    at Module.load (module.js:566:32)
+    at tryModuleLoad (module.js:506:12)
+    at Function.Module._load (module.js:498:3)
+    at Function.Module.runMain (module.js:694:10)
+{ Error: connect ECONNREFUSED 127.0.0.1:3306
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1191:14)
+    --------------------
+    at Protocol._enqueue (/home/ec2-user/codingmoa/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+    at Protocol.handshake (/home/ec2-user/codingmoa/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+    at Connection.connect (/home/ec2-user/codingmoa/node_modules/mysql/lib/Connection.js:119:18)
+    at Object.<anonymous> (/home/ec2-user/codingmoa/build/main.js:13:6)
+    at Module._compile (module.js:653:30)
+    at Object.Module._extensions..js (module.js:664:10)
+    at Module.load (module.js:566:32)
+    at tryModuleLoad (module.js:506:12)
+    at Function.Module._load (module.js:498:3)
+    at Function.Module.runMain (module.js:694:10)
+  errno: 'ECONNREFUSED',
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 3306,
+  fatal: true }
+rows undefined
+fields undefined
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./build/main.js`[39m
+Listening at http://localhost:3000/
+error connecting: Error: connect ECONNREFUSED 127.0.0.1:3306
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1191:14)
+    --------------------
+    at Protocol._enqueue (/home/ec2-user/codingmoa/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+    at Protocol.handshake (/home/ec2-user/codingmoa/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+    at Connection.connect (/home/ec2-user/codingmoa/node_modules/mysql/lib/Connection.js:119:18)
+    at Object.<anonymous> (/home/ec2-user/codingmoa/build/main.js:13:6)
+    at Module._compile (module.js:653:30)
+    at Object.Module._extensions..js (module.js:664:10)
+    at Module.load (module.js:566:32)
+    at tryModuleLoad (module.js:506:12)
+    at Function.Module._load (module.js:498:3)
+    at Function.Module.runMain (module.js:694:10)
+{ Error: connect ECONNREFUSED 127.0.0.1:3306
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1191:14)
+    --------------------
+    at Protocol._enqueue (/home/ec2-user/codingmoa/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+    at Protocol.handshake (/home/ec2-user/codingmoa/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+    at Connection.connect (/home/ec2-user/codingmoa/node_modules/mysql/lib/Connection.js:119:18)
+    at Object.<anonymous> (/home/ec2-user/codingmoa/build/main.js:13:6)
+    at Module._compile (module.js:653:30)
+    at Object.Module._extensions..js (module.js:664:10)
+    at Module.load (module.js:566:32)
+    at tryModuleLoad (module.js:506:12)
+    at Function.Module._load (module.js:498:3)
+    at Function.Module.runMain (module.js:694:10)
+  errno: 'ECONNREFUSED',
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 3306,
+  fatal: true }
+rows undefined
+fields undefined
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./build/main.js`[39m
+Listening at http://localhost:3000/
+error connecting: Error: connect ECONNREFUSED 127.0.0.1:3306
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1191:14)
+    --------------------
+    at Protocol._enqueue (/home/ec2-user/codingmoa/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+    at Protocol.handshake (/home/ec2-user/codingmoa/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+    at Connection.connect (/home/ec2-user/codingmoa/node_modules/mysql/lib/Connection.js:119:18)
+    at Object.<anonymous> (/home/ec2-user/codingmoa/build/main.js:13:6)
+    at Module._compile (module.js:653:30)
+    at Object.Module._extensions..js (module.js:664:10)
+    at Module.load (module.js:566:32)
+    at tryModuleLoad (module.js:506:12)
+    at Function.Module._load (module.js:498:3)
+    at Function.Module.runMain (module.js:694:10)
+{ Error: connect ECONNREFUSED 127.0.0.1:3306
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1191:14)
+    --------------------
+    at Protocol._enqueue (/home/ec2-user/codingmoa/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+    at Protocol.handshake (/home/ec2-user/codingmoa/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+    at Connection.connect (/home/ec2-user/codingmoa/node_modules/mysql/lib/Connection.js:119:18)
+    at Object.<anonymous> (/home/ec2-user/codingmoa/build/main.js:13:6)
+    at Module._compile (module.js:653:30)
+    at Object.Module._extensions..js (module.js:664:10)
+    at Module.load (module.js:566:32)
+    at tryModuleLoad (module.js:506:12)
+    at Function.Module._load (module.js:498:3)
+    at Function.Module.runMain (module.js:694:10)
+  errno: 'ECONNREFUSED',
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 3306,
+  fatal: true }
+rows undefined
+fields undefined
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./build/main.js`[39m
+Listening at http://localhost:3000/
+error connecting: Error: connect ECONNREFUSED 127.0.0.1:3306
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1191:14)
+    --------------------
+    at Protocol._enqueue (/home/ec2-user/codingmoa/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+    at Protocol.handshake (/home/ec2-user/codingmoa/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+    at Connection.connect (/home/ec2-user/codingmoa/node_modules/mysql/lib/Connection.js:119:18)
+    at Object.<anonymous> (/home/ec2-user/codingmoa/build/main.js:13:6)
+    at Module._compile (module.js:653:30)
+    at Object.Module._extensions..js (module.js:664:10)
+    at Module.load (module.js:566:32)
+    at tryModuleLoad (module.js:506:12)
+    at Function.Module._load (module.js:498:3)
+    at Function.Module.runMain (module.js:694:10)
+{ Error: connect ECONNREFUSED 127.0.0.1:3306
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1191:14)
+    --------------------
+    at Protocol._enqueue (/home/ec2-user/codingmoa/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+    at Protocol.handshake (/home/ec2-user/codingmoa/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+    at Connection.connect (/home/ec2-user/codingmoa/node_modules/mysql/lib/Connection.js:119:18)
+    at Object.<anonymous> (/home/ec2-user/codingmoa/build/main.js:13:6)
+    at Module._compile (module.js:653:30)
+    at Object.Module._extensions..js (module.js:664:10)
+    at Module.load (module.js:566:32)
+    at tryModuleLoad (module.js:506:12)
+    at Function.Module._load (module.js:498:3)
+    at Function.Module.runMain (module.js:694:10)
+  errno: 'ECONNREFUSED',
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 3306,
+  fatal: true }
+rows undefined
+fields undefined
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./build/main.js`[39m
+Listening at http://localhost:3000/
+error connecting: Error: connect ECONNREFUSED 127.0.0.1:3306
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1191:14)
+    --------------------
+    at Protocol._enqueue (/home/ec2-user/codingmoa/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+    at Protocol.handshake (/home/ec2-user/codingmoa/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+    at Connection.connect (/home/ec2-user/codingmoa/node_modules/mysql/lib/Connection.js:119:18)
+    at Object.<anonymous> (/home/ec2-user/codingmoa/build/main.js:13:6)
+    at Module._compile (module.js:653:30)
+    at Object.Module._extensions..js (module.js:664:10)
+    at Module.load (module.js:566:32)
+    at tryModuleLoad (module.js:506:12)
+    at Function.Module._load (module.js:498:3)
+    at Function.Module.runMain (module.js:694:10)
+{ Error: connect ECONNREFUSED 127.0.0.1:3306
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1191:14)
+    --------------------
+    at Protocol._enqueue (/home/ec2-user/codingmoa/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+    at Protocol.handshake (/home/ec2-user/codingmoa/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+    at Connection.connect (/home/ec2-user/codingmoa/node_modules/mysql/lib/Connection.js:119:18)
+    at Object.<anonymous> (/home/ec2-user/codingmoa/build/main.js:13:6)
+    at Module._compile (module.js:653:30)
+    at Object.Module._extensions..js (module.js:664:10)
+    at Module.load (module.js:566:32)
+    at tryModuleLoad (module.js:506:12)
+    at Function.Module._load (module.js:498:3)
+    at Function.Module.runMain (module.js:694:10)
+  errno: 'ECONNREFUSED',
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 3306,
+  fatal: true }
+rows undefined
+fields undefined
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./build/main.js`[39m
+Listening at http://localhost:3000/
+error connecting: Error: connect ECONNREFUSED 127.0.0.1:3306
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1191:14)
+    --------------------
+    at Protocol._enqueue (/home/ec2-user/codingmoa/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+    at Protocol.handshake (/home/ec2-user/codingmoa/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+    at Connection.connect (/home/ec2-user/codingmoa/node_modules/mysql/lib/Connection.js:119:18)
+    at Object.<anonymous> (/home/ec2-user/codingmoa/build/main.js:13:6)
+    at Module._compile (module.js:653:30)
+    at Object.Module._extensions..js (module.js:664:10)
+    at Module.load (module.js:566:32)
+    at tryModuleLoad (module.js:506:12)
+    at Function.Module._load (module.js:498:3)
+    at Function.Module.runMain (module.js:694:10)
+{ Error: connect ECONNREFUSED 127.0.0.1:3306
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1191:14)
+    --------------------
+    at Protocol._enqueue (/home/ec2-user/codingmoa/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+    at Protocol.handshake (/home/ec2-user/codingmoa/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+    at Connection.connect (/home/ec2-user/codingmoa/node_modules/mysql/lib/Connection.js:119:18)
+    at Object.<anonymous> (/home/ec2-user/codingmoa/build/main.js:13:6)
+    at Module._compile (module.js:653:30)
+    at Object.Module._extensions..js (module.js:664:10)
+    at Module.load (module.js:566:32)
+    at tryModuleLoad (module.js:506:12)
+    at Function.Module._load (module.js:498:3)
+    at Function.Module.runMain (module.js:694:10)
+  errno: 'ECONNREFUSED',
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 3306,
+  fatal: true }
+rows undefined
+fields undefined
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./build/main.js`[39m
+Listening at http://localhost:3000/
+error connecting: Error: connect ECONNREFUSED 127.0.0.1:3306
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1191:14)
+    --------------------
+    at Protocol._enqueue (/home/ec2-user/codingmoa/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+    at Protocol.handshake (/home/ec2-user/codingmoa/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+    at Connection.connect (/home/ec2-user/codingmoa/node_modules/mysql/lib/Connection.js:119:18)
+    at Object.<anonymous> (/home/ec2-user/codingmoa/build/main.js:13:6)
+    at Module._compile (module.js:653:30)
+    at Object.Module._extensions..js (module.js:664:10)
+    at Module.load (module.js:566:32)
+    at tryModuleLoad (module.js:506:12)
+    at Function.Module._load (module.js:498:3)
+    at Function.Module.runMain (module.js:694:10)
+{ Error: connect ECONNREFUSED 127.0.0.1:3306
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1191:14)
+    --------------------
+    at Protocol._enqueue (/home/ec2-user/codingmoa/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+    at Protocol.handshake (/home/ec2-user/codingmoa/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+    at Connection.connect (/home/ec2-user/codingmoa/node_modules/mysql/lib/Connection.js:119:18)
+    at Object.<anonymous> (/home/ec2-user/codingmoa/build/main.js:13:6)
+    at Module._compile (module.js:653:30)
+    at Object.Module._extensions..js (module.js:664:10)
+    at Module.load (module.js:566:32)
+    at tryModuleLoad (module.js:506:12)
+    at Function.Module._load (module.js:498:3)
+    at Function.Module.runMain (module.js:694:10)
+  errno: 'ECONNREFUSED',
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 3306,
+  fatal: true }
+rows undefined
+fields undefined
 
-npm ERR! A complete log of this run can be found in:
-npm ERR!     /root/.npm/_logs/2019-05-15T12_57_47_247Z-debug.log
+> codingmoa@1.0.0 start /home/ec2-user/codingmoa
+> tsc; nodemon ./build/main.js;
+
+[33m[nodemon] 1.19.0[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching: *.*[39m
+[32m[nodemon] starting `node ./build/main.js`[39m
+events.js:183
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE :::3000
+    at Server.setupListenHandle [as _listen2] (net.js:1360:14)
+    at listenInCluster (net.js:1401:12)
+    at Server.listen (net.js:1485:7)
+    at Function.listen (/home/ec2-user/codingmoa/node_modules/express/lib/application.js:618:24)
+    at Server.config (/home/ec2-user/codingmoa/build/main.js:29:18)
+    at new Server (/home/ec2-user/codingmoa/build/main.js:25:14)
+    at Function.bootstrap (/home/ec2-user/codingmoa/build/main.js:49:16)
+    at Object.<anonymous> (/home/ec2-user/codingmoa/build/main.js:54:8)
+    at Module._compile (module.js:653:30)
+    at Object.Module._extensions..js (module.js:664:10)
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./build/main.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./build/main.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./build/main.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./build/main.js`[39m
+events.js:183
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE :::3000
+    at Server.setupListenHandle [as _listen2] (net.js:1360:14)
+    at listenInCluster (net.js:1401:12)
+    at Server.listen (net.js:1485:7)
+    at Function.listen (/home/ec2-user/codingmoa/node_modules/express/lib/application.js:618:24)
+    at Server.config (/home/ec2-user/codingmoa/build/main.js:29:18)
+    at new Server (/home/ec2-user/codingmoa/build/main.js:25:14)
+    at Function.bootstrap (/home/ec2-user/codingmoa/build/main.js:49:16)
+    at Object.<anonymous> (/home/ec2-user/codingmoa/build/main.js:54:8)
+    at Module._compile (module.js:653:30)
+    at Object.Module._extensions..js (module.js:664:10)
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./build/main.js`[39m
+events.js:183
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE :::3000
+    at Server.setupListenHandle [as _listen2] (net.js:1360:14)
+    at listenInCluster (net.js:1401:12)
+    at Server.listen (net.js:1485:7)
+    at Function.listen (/home/ec2-user/codingmoa/node_modules/express/lib/application.js:618:24)
+    at Server.config (/home/ec2-user/codingmoa/build/main.js:29:18)
+    at new Server (/home/ec2-user/codingmoa/build/main.js:25:14)
+    at Function.bootstrap (/home/ec2-user/codingmoa/build/main.js:49:16)
+    at Object.<anonymous> (/home/ec2-user/codingmoa/build/main.js:54:8)
+    at Module._compile (module.js:653:30)
+    at Object.Module._extensions..js (module.js:664:10)
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./build/main.js`[39m
+events.js:183
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE :::3000
+    at Server.setupListenHandle [as _listen2] (net.js:1360:14)
+    at listenInCluster (net.js:1401:12)
+    at Server.listen (net.js:1485:7)
+    at Function.listen (/home/ec2-user/codingmoa/node_modules/express/lib/application.js:618:24)
+    at Server.config (/home/ec2-user/codingmoa/build/main.js:29:18)
+    at new Server (/home/ec2-user/codingmoa/build/main.js:25:14)
+    at Function.bootstrap (/home/ec2-user/codingmoa/build/main.js:49:16)
+    at Object.<anonymous> (/home/ec2-user/codingmoa/build/main.js:54:8)
+    at Module._compile (module.js:653:30)
+    at Object.Module._extensions..js (module.js:664:10)
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./build/main.js`[39m
+events.js:183
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE :::3000
+    at Server.setupListenHandle [as _listen2] (net.js:1360:14)
+    at listenInCluster (net.js:1401:12)
+    at Server.listen (net.js:1485:7)
+    at Function.listen (/home/ec2-user/codingmoa/node_modules/express/lib/application.js:618:24)
+    at Server.config (/home/ec2-user/codingmoa/build/main.js:29:18)
+    at new Server (/home/ec2-user/codingmoa/build/main.js:25:14)
+    at Function.bootstrap (/home/ec2-user/codingmoa/build/main.js:49:16)
+    at Object.<anonymous> (/home/ec2-user/codingmoa/build/main.js:54:8)
+    at Module._compile (module.js:653:30)
+    at Object.Module._extensions..js (module.js:664:10)
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./build/main.js`[39m
+events.js:183
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE :::3000
+    at Server.setupListenHandle [as _listen2] (net.js:1360:14)
+    at listenInCluster (net.js:1401:12)
+    at Server.listen (net.js:1485:7)
+    at Function.listen (/home/ec2-user/codingmoa/node_modules/express/lib/application.js:618:24)
+    at Server.config (/home/ec2-user/codingmoa/build/main.js:29:18)
+    at new Server (/home/ec2-user/codingmoa/build/main.js:25:14)
+    at Function.bootstrap (/home/ec2-user/codingmoa/build/main.js:49:16)
+    at Object.<anonymous> (/home/ec2-user/codingmoa/build/main.js:54:8)
+    at Module._compile (module.js:653:30)
+    at Object.Module._extensions..js (module.js:664:10)
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./build/main.js`[39m
+events.js:183
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE :::3000
+    at Server.setupListenHandle [as _listen2] (net.js:1360:14)
+    at listenInCluster (net.js:1401:12)
+    at Server.listen (net.js:1485:7)
+    at Function.listen (/home/ec2-user/codingmoa/node_modules/express/lib/application.js:618:24)
+    at Server.config (/home/ec2-user/codingmoa/build/main.js:29:18)
+    at new Server (/home/ec2-user/codingmoa/build/main.js:25:14)
+    at Function.bootstrap (/home/ec2-user/codingmoa/build/main.js:49:16)
+    at Object.<anonymous> (/home/ec2-user/codingmoa/build/main.js:54:8)
+    at Module._compile (module.js:653:30)
+    at Object.Module._extensions..js (module.js:664:10)
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./build/main.js`[39m
+events.js:183
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE :::3000
+    at Server.setupListenHandle [as _listen2] (net.js:1360:14)
+    at listenInCluster (net.js:1401:12)
+    at Server.listen (net.js:1485:7)
+    at Function.listen (/home/ec2-user/codingmoa/node_modules/express/lib/application.js:618:24)
+    at Server.config (/home/ec2-user/codingmoa/build/main.js:29:18)
+    at new Server (/home/ec2-user/codingmoa/build/main.js:25:14)
+    at Function.bootstrap (/home/ec2-user/codingmoa/build/main.js:49:16)
+    at Object.<anonymous> (/home/ec2-user/codingmoa/build/main.js:54:8)
+    at Module._compile (module.js:653:30)
+    at Object.Module._extensions..js (module.js:664:10)
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./build/main.js`[39m
+events.js:183
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE :::3000
+    at Server.setupListenHandle [as _listen2] (net.js:1360:14)
+    at listenInCluster (net.js:1401:12)
+    at Server.listen (net.js:1485:7)
+    at Function.listen (/home/ec2-user/codingmoa/node_modules/express/lib/application.js:618:24)
+    at Server.config (/home/ec2-user/codingmoa/build/main.js:29:18)
+    at new Server (/home/ec2-user/codingmoa/build/main.js:25:14)
+    at Function.bootstrap (/home/ec2-user/codingmoa/build/main.js:49:16)
+    at Object.<anonymous> (/home/ec2-user/codingmoa/build/main.js:54:8)
+    at Module._compile (module.js:653:30)
+    at Object.Module._extensions..js (module.js:664:10)
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./build/main.js`[39m
+events.js:183
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE :::3000
+    at Server.setupListenHandle [as _listen2] (net.js:1360:14)
+    at listenInCluster (net.js:1401:12)
+    at Server.listen (net.js:1485:7)
+    at Function.listen (/home/ec2-user/codingmoa/node_modules/express/lib/application.js:618:24)
+    at Server.config (/home/ec2-user/codingmoa/build/main.js:29:18)
+    at new Server (/home/ec2-user/codingmoa/build/main.js:25:14)
+    at Function.bootstrap (/home/ec2-user/codingmoa/build/main.js:49:16)
+    at Object.<anonymous> (/home/ec2-user/codingmoa/build/main.js:54:8)
+    at Module._compile (module.js:653:30)
+    at Object.Module._extensions..js (module.js:664:10)
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./build/main.js`[39m
+(node:20636) MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 exit listeners added. Use emitter.setMaxListeners() to increase limit
+events.js:183
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE :::3000
+    at Server.setupListenHandle [as _listen2] (net.js:1360:14)
+    at listenInCluster (net.js:1401:12)
+    at Server.listen (net.js:1485:7)
+    at Function.listen (/home/ec2-user/codingmoa/node_modules/express/lib/application.js:618:24)
+    at Server.config (/home/ec2-user/codingmoa/build/main.js:29:18)
+    at new Server (/home/ec2-user/codingmoa/build/main.js:25:14)
+    at Function.bootstrap (/home/ec2-user/codingmoa/build/main.js:49:16)
+    at Object.<anonymous> (/home/ec2-user/codingmoa/build/main.js:54:8)
+    at Module._compile (module.js:653:30)
+    at Object.Module._extensions..js (module.js:664:10)
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./build/main.js`[39m
+events.js:183
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE :::3000
+    at Server.setupListenHandle [as _listen2] (net.js:1360:14)
+    at listenInCluster (net.js:1401:12)
+    at Server.listen (net.js:1485:7)
+    at Function.listen (/home/ec2-user/codingmoa/node_modules/express/lib/application.js:618:24)
+    at Server.config (/home/ec2-user/codingmoa/build/main.js:29:18)
+    at new Server (/home/ec2-user/codingmoa/build/main.js:25:14)
+    at Function.bootstrap (/home/ec2-user/codingmoa/build/main.js:49:16)
+    at Object.<anonymous> (/home/ec2-user/codingmoa/build/main.js:54:8)
+    at Module._compile (module.js:653:30)
+    at Object.Module._extensions..js (module.js:664:10)
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./build/main.js`[39m
+events.js:183
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE :::3000
+    at Server.setupListenHandle [as _listen2] (net.js:1360:14)
+    at listenInCluster (net.js:1401:12)
+    at Server.listen (net.js:1485:7)
+    at Function.listen (/home/ec2-user/codingmoa/node_modules/express/lib/application.js:618:24)
+    at Server.config (/home/ec2-user/codingmoa/build/main.js:29:18)
+    at new Server (/home/ec2-user/codingmoa/build/main.js:25:14)
+    at Function.bootstrap (/home/ec2-user/codingmoa/build/main.js:49:16)
+    at Object.<anonymous> (/home/ec2-user/codingmoa/build/main.js:54:8)
+    at Module._compile (module.js:653:30)
+    at Object.Module._extensions..js (module.js:664:10)
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./build/main.js`[39m
+events.js:183
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE :::3000
+    at Server.setupListenHandle [as _listen2] (net.js:1360:14)
+    at listenInCluster (net.js:1401:12)
+    at Server.listen (net.js:1485:7)
+    at Function.listen (/home/ec2-user/codingmoa/node_modules/express/lib/application.js:618:24)
+    at Server.config (/home/ec2-user/codingmoa/build/main.js:29:18)
+    at new Server (/home/ec2-user/codingmoa/build/main.js:25:14)
+    at Function.bootstrap (/home/ec2-user/codingmoa/build/main.js:49:16)
+    at Object.<anonymous> (/home/ec2-user/codingmoa/build/main.js:54:8)
+    at Module._compile (module.js:653:30)
+    at Object.Module._extensions..js (module.js:664:10)
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./build/main.js`[39m
+events.js:183
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE :::3000
+    at Server.setupListenHandle [as _listen2] (net.js:1360:14)
+    at listenInCluster (net.js:1401:12)
+    at Server.listen (net.js:1485:7)
+    at Function.listen (/home/ec2-user/codingmoa/node_modules/express/lib/application.js:618:24)
+    at Server.config (/home/ec2-user/codingmoa/build/main.js:29:18)
+    at new Server (/home/ec2-user/codingmoa/build/main.js:25:14)
+    at Function.bootstrap (/home/ec2-user/codingmoa/build/main.js:49:16)
+    at Object.<anonymous> (/home/ec2-user/codingmoa/build/main.js:54:8)
+    at Module._compile (module.js:653:30)
+    at Object.Module._extensions..js (module.js:664:10)
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./build/main.js`[39m
+events.js:183
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE :::3000
+    at Server.setupListenHandle [as _listen2] (net.js:1360:14)
+    at listenInCluster (net.js:1401:12)
+    at Server.listen (net.js:1485:7)
+    at Function.listen (/home/ec2-user/codingmoa/node_modules/express/lib/application.js:618:24)
+    at Server.config (/home/ec2-user/codingmoa/build/main.js:29:18)
+    at new Server (/home/ec2-user/codingmoa/build/main.js:25:14)
+    at Function.bootstrap (/home/ec2-user/codingmoa/build/main.js:49:16)
+    at Object.<anonymous> (/home/ec2-user/codingmoa/build/main.js:54:8)
+    at Module._compile (module.js:653:30)
+    at Object.Module._extensions..js (module.js:664:10)
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./build/main.js`[39m
+events.js:183
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE :::3000
+    at Server.setupListenHandle [as _listen2] (net.js:1360:14)
+    at listenInCluster (net.js:1401:12)
+    at Server.listen (net.js:1485:7)
+    at Function.listen (/home/ec2-user/codingmoa/node_modules/express/lib/application.js:618:24)
+    at Server.config (/home/ec2-user/codingmoa/build/main.js:29:18)
+    at new Server (/home/ec2-user/codingmoa/build/main.js:25:14)
+    at Function.bootstrap (/home/ec2-user/codingmoa/build/main.js:49:16)
+    at Object.<anonymous> (/home/ec2-user/codingmoa/build/main.js:54:8)
+    at Module._compile (module.js:653:30)
+    at Object.Module._extensions..js (module.js:664:10)
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./build/main.js`[39m
+events.js:183
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE :::3000
+    at Server.setupListenHandle [as _listen2] (net.js:1360:14)
+    at listenInCluster (net.js:1401:12)
+    at Server.listen (net.js:1485:7)
+    at Function.listen (/home/ec2-user/codingmoa/node_modules/express/lib/application.js:618:24)
+    at Server.config (/home/ec2-user/codingmoa/build/main.js:29:18)
+    at new Server (/home/ec2-user/codingmoa/build/main.js:25:14)
+    at Function.bootstrap (/home/ec2-user/codingmoa/build/main.js:49:16)
+    at Object.<anonymous> (/home/ec2-user/codingmoa/build/main.js:54:8)
+    at Module._compile (module.js:653:30)
+    at Object.Module._extensions..js (module.js:664:10)
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./build/main.js`[39m
+events.js:183
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE :::3000
+    at Server.setupListenHandle [as _listen2] (net.js:1360:14)
+    at listenInCluster (net.js:1401:12)
+    at Server.listen (net.js:1485:7)
+    at Function.listen (/home/ec2-user/codingmoa/node_modules/express/lib/application.js:618:24)
+    at Server.config (/home/ec2-user/codingmoa/build/main.js:29:18)
+    at new Server (/home/ec2-user/codingmoa/build/main.js:25:14)
+    at Function.bootstrap (/home/ec2-user/codingmoa/build/main.js:49:16)
+    at Object.<anonymous> (/home/ec2-user/codingmoa/build/main.js:54:8)
+    at Module._compile (module.js:653:30)
+    at Object.Module._extensions..js (module.js:664:10)
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./build/main.js`[39m
+events.js:183
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE :::3000
+    at Server.setupListenHandle [as _listen2] (net.js:1360:14)
+    at listenInCluster (net.js:1401:12)
+    at Server.listen (net.js:1485:7)
+    at Function.listen (/home/ec2-user/codingmoa/node_modules/express/lib/application.js:618:24)
+    at Server.config (/home/ec2-user/codingmoa/build/main.js:29:18)
+    at new Server (/home/ec2-user/codingmoa/build/main.js:25:14)
+    at Function.bootstrap (/home/ec2-user/codingmoa/build/main.js:49:16)
+    at Object.<anonymous> (/home/ec2-user/codingmoa/build/main.js:54:8)
+    at Module._compile (module.js:653:30)
+    at Object.Module._extensions..js (module.js:664:10)
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./build/main.js`[39m
+events.js:183
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE :::3000
+    at Server.setupListenHandle [as _listen2] (net.js:1360:14)
+    at listenInCluster (net.js:1401:12)
+    at Server.listen (net.js:1485:7)
+    at Function.listen (/home/ec2-user/codingmoa/node_modules/express/lib/application.js:618:24)
+    at Server.config (/home/ec2-user/codingmoa/build/main.js:29:18)
+    at new Server (/home/ec2-user/codingmoa/build/main.js:25:14)
+    at Function.bootstrap (/home/ec2-user/codingmoa/build/main.js:49:16)
+    at Object.<anonymous> (/home/ec2-user/codingmoa/build/main.js:54:8)
+    at Module._compile (module.js:653:30)
+    at Object.Module._extensions..js (module.js:664:10)
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./build/main.js`[39m
+events.js:183
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE :::3000
+    at Server.setupListenHandle [as _listen2] (net.js:1360:14)
+    at listenInCluster (net.js:1401:12)
+    at Server.listen (net.js:1485:7)
+    at Function.listen (/home/ec2-user/codingmoa/node_modules/express/lib/application.js:618:24)
+    at Server.config (/home/ec2-user/codingmoa/build/main.js:29:18)
+    at new Server (/home/ec2-user/codingmoa/build/main.js:25:14)
+    at Function.bootstrap (/home/ec2-user/codingmoa/build/main.js:50:16)
+    at Object.<anonymous> (/home/ec2-user/codingmoa/build/main.js:55:8)
+    at Module._compile (module.js:653:30)
+    at Object.Module._extensions..js (module.js:664:10)
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m

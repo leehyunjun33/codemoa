@@ -170,6 +170,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+//import { UserComponent } from './pages/user/user.module';
 var AppModule = /** @class */ (function () {
     function AppModule() {
     }

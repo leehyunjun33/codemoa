@@ -14,6 +14,9 @@ export class PageComponent implements OnInit {
         if (this.router.url === '/') {
             this.router.navigate(['/starter']);
         }
+        else if (this.router.url === '/user') {
+            this.router.navigate(['/user']);
+        }
     }
 
 }

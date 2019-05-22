@@ -7,7 +7,7 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"row\">\n    <div class=\"col-12\">\n        <div class=\"card\">\n            <div class=\"card-body\">\n                {{subtitle}}\n                \n                \n            </div>\n        </div>\n    </div>\n</div>"
+module.exports = "<div class=\"row\">\n    <div class=\"col-12\">\n        <div class=\"card\">\n            <div class=\"card-body\">\n                <a routerLink=\"/user\">{{subtitle}}</a>\n             \n                \n            </div>\n        </div>\n    </div>\n</div>"
 
 /***/ }),
 
@@ -28,6 +28,7 @@ __webpack_require__.r(__webpack_exports__);
 var StarterComponent = /** @class */ (function () {
     function StarterComponent() {
         this.subtitle = 'This is some text within a card block.';
+        console.log(this.subtitle);
     }
     StarterComponent.prototype.ngAfterViewInit = function () { };
     StarterComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([

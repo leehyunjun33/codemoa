@@ -440,3 +440,772 @@ version (7.0.3). The local Angular CLI version is used.
 To disable this warning use "ng config -g cli.warnings.versionMismatch false".
 Schema validation failed with the following errors:
   Data path "" should NOT have additional properties(es5BrowserSupport).
+
+Date: 2019-05-16T06:25:36.729Z
+Hash: e70863b4a38d0c7f09e2
+Time: 29389ms
+chunk {common} common.js, common.js.map (common) 3.22 kB  [rendered]
+chunk {component-component-module} component-component-module.js, component-component-module.js.map (component-component-module) 322 kB  [rendered]
+chunk {es2015-polyfills} es2015-polyfills.js, es2015-polyfills.js.map (es2015-polyfills) 266 kB [initial] [rendered]
+chunk {main} main.js, main.js.map (main) 14.4 kB [initial] [rendered]
+chunk {pages-pages-module} pages-pages-module.js, pages-pages-module.js.map (pages-pages-module) 47.8 kB  [rendered]
+chunk {polyfills} polyfills.js, polyfills.js.map (polyfills) 223 kB [initial] [rendered]
+chunk {runtime} runtime.js, runtime.js.map (runtime) 8.9 kB [entry] [rendered]
+chunk {scripts} scripts.js, scripts.js.map (scripts) 180 kB [entry] [rendered]
+chunk {starter-starter-module} starter-starter-module.js, starter-starter-module.js.map (starter-starter-module) 4.53 kB  [rendered]
+chunk {styles} styles.js, styles.js.map (styles) 2.71 MB [initial] [rendered]
+chunk {vendor} vendor.js, vendor.js.map (vendor) 4.83 MB [initial] [rendered]
+
+Date: 2019-05-16T06:40:21.877Z
+Hash: e70863b4a38d0c7f09e2
+Time: 29402ms
+chunk {common} common.js, common.js.map (common) 3.22 kB  [rendered]
+chunk {component-component-module} component-component-module.js, component-component-module.js.map (component-component-module) 322 kB  [rendered]
+chunk {es2015-polyfills} es2015-polyfills.js, es2015-polyfills.js.map (es2015-polyfills) 266 kB [initial] [rendered]
+chunk {main} main.js, main.js.map (main) 14.4 kB [initial] [rendered]
+chunk {pages-pages-module} pages-pages-module.js, pages-pages-module.js.map (pages-pages-module) 47.8 kB  [rendered]
+chunk {polyfills} polyfills.js, polyfills.js.map (polyfills) 223 kB [initial] [rendered]
+chunk {runtime} runtime.js, runtime.js.map (runtime) 8.9 kB [entry] [rendered]
+chunk {scripts} scripts.js, scripts.js.map (scripts) 180 kB [entry] [rendered]
+chunk {starter-starter-module} starter-starter-module.js, starter-starter-module.js.map (starter-starter-module) 4.53 kB  [rendered]
+chunk {styles} styles.js, styles.js.map (styles) 2.71 MB [initial] [rendered]
+chunk {vendor} vendor.js, vendor.js.map (vendor) 4.83 MB [initial] [rendered]
+
+Date: 2019-05-16T06:51:03.816Z
+Hash: e70863b4a38d0c7f09e2
+Time: 23730ms
+chunk {common} common.js, common.js.map (common) 3.22 kB  [rendered]
+chunk {component-component-module} component-component-module.js, component-component-module.js.map (component-component-module) 322 kB  [rendered]
+chunk {es2015-polyfills} es2015-polyfills.js, es2015-polyfills.js.map (es2015-polyfills) 266 kB [initial] [rendered]
+chunk {main} main.js, main.js.map (main) 14.4 kB [initial] [rendered]
+chunk {pages-pages-module} pages-pages-module.js, pages-pages-module.js.map (pages-pages-module) 47.8 kB  [rendered]
+chunk {polyfills} polyfills.js, polyfills.js.map (polyfills) 223 kB [initial] [rendered]
+chunk {runtime} runtime.js, runtime.js.map (runtime) 8.9 kB [entry] [rendered]
+chunk {scripts} scripts.js, scripts.js.map (scripts) 180 kB [entry] [rendered]
+chunk {starter-starter-module} starter-starter-module.js, starter-starter-module.js.map (starter-starter-module) 4.53 kB  [rendered]
+chunk {styles} styles.js, styles.js.map (styles) 2.71 MB [initial] [rendered]
+chunk {vendor} vendor.js, vendor.js.map (vendor) 4.83 MB [initial] [rendered]
+
+Date: 2019-05-16T07:10:11.010Z
+Hash: e70863b4a38d0c7f09e2
+Time: 24429ms
+chunk {common} common.js, common.js.map (common) 3.22 kB  [rendered]
+chunk {component-component-module} component-component-module.js, component-component-module.js.map (component-component-module) 322 kB  [rendered]
+chunk {es2015-polyfills} es2015-polyfills.js, es2015-polyfills.js.map (es2015-polyfills) 266 kB [initial] [rendered]
+chunk {main} main.js, main.js.map (main) 14.4 kB [initial] [rendered]
+chunk {pages-pages-module} pages-pages-module.js, pages-pages-module.js.map (pages-pages-module) 47.8 kB  [rendered]
+chunk {polyfills} polyfills.js, polyfills.js.map (polyfills) 223 kB [initial] [rendered]
+chunk {runtime} runtime.js, runtime.js.map (runtime) 8.9 kB [entry] [rendered]
+chunk {scripts} scripts.js, scripts.js.map (scripts) 180 kB [entry] [rendered]
+chunk {starter-starter-module} starter-starter-module.js, starter-starter-module.js.map (starter-starter-module) 4.53 kB  [rendered]
+chunk {styles} styles.js, styles.js.map (styles) 2.71 MB [initial] [rendered]
+chunk {vendor} vendor.js, vendor.js.map (vendor) 4.83 MB [initial] [rendered]
+
+Date: 2019-05-16T12:59:03.964Z
+Hash: e70863b4a38d0c7f09e2
+Time: 3666325ms
+chunk {common} common.js, common.js.map (common) 3.22 kB  [rendered]
+chunk {component-component-module} component-component-module.js, component-component-module.js.map (component-component-module) 322 kB  [rendered]
+chunk {es2015-polyfills} es2015-polyfills.js, es2015-polyfills.js.map (es2015-polyfills) 266 kB [initial] [rendered]
+chunk {main} main.js, main.js.map (main) 14.4 kB [initial] [rendered]
+chunk {pages-pages-module} pages-pages-module.js, pages-pages-module.js.map (pages-pages-module) 47.8 kB  [rendered]
+chunk {polyfills} polyfills.js, polyfills.js.map (polyfills) 223 kB [initial] [rendered]
+chunk {runtime} runtime.js, runtime.js.map (runtime) 8.9 kB [entry] [rendered]
+chunk {scripts} scripts.js, scripts.js.map (scripts) 180 kB [entry] [rendered]
+chunk {starter-starter-module} starter-starter-module.js, starter-starter-module.js.map (starter-starter-module) 4.53 kB  [rendered]
+chunk {styles} styles.js, styles.js.map (styles) 2.71 MB [initial] [rendered]
+chunk {vendor} vendor.js, vendor.js.map (vendor) 4.83 MB [initial] [rendered]
+
+Date: 2019-05-17T06:12:07.391Z
+Hash: 64e787146a1fea21d37c
+Time: 30793ms
+chunk {common} common.js, common.js.map (common) 3.22 kB  [rendered]
+chunk {component-component-module} component-component-module.js, component-component-module.js.map (component-component-module) 322 kB  [rendered]
+chunk {es2015-polyfills} es2015-polyfills.js, es2015-polyfills.js.map (es2015-polyfills) 266 kB [initial] [rendered]
+chunk {main} main.js, main.js.map (main) 14.5 kB [initial] [rendered]
+chunk {pages-pages-module} pages-pages-module.js, pages-pages-module.js.map (pages-pages-module) 47.8 kB  [rendered]
+chunk {polyfills} polyfills.js, polyfills.js.map (polyfills) 223 kB [initial] [rendered]
+chunk {runtime} runtime.js, runtime.js.map (runtime) 8.9 kB [entry] [rendered]
+chunk {scripts} scripts.js, scripts.js.map (scripts) 180 kB [entry] [rendered]
+chunk {starter-starter-module} starter-starter-module.js, starter-starter-module.js.map (starter-starter-module) 4.53 kB  [rendered]
+chunk {styles} styles.js, styles.js.map (styles) 2.71 MB [initial] [rendered]
+chunk {vendor} vendor.js, vendor.js.map (vendor) 4.83 MB [initial] [rendered]
+
+Date: 2019-05-17T06:13:44.707Z - Hash: 2064d1a94169d43139ae - Time: 9795ms
+10 unchanged chunks
+chunk {main} main.js, main.js.map (main) 14.5 kB [initial] [rendered]
+
+Date: 2019-05-17T06:14:58.967Z - Hash: 247c8d591a742edfd9f9 - Time: 2547ms
+10 unchanged chunks
+chunk {main} main.js, main.js.map (main) 14.5 kB [initial] [rendered]
+
+Date: 2019-05-17T06:19:45.254Z - Hash: 4e51b4578e5f0705eca2 - Time: 2721ms
+10 unchanged chunks
+chunk {starter-starter-module} starter-starter-module.js, starter-starter-module.js.map (starter-starter-module) 4.55 kB  [rendered]
+
+Date: 2019-05-17T06:20:18.135Z - Hash: 9f76c640f701f66f279b - Time: 1096ms
+10 unchanged chunks
+chunk {main} main.js, main.js.map (main) 14.4 kB [initial] [rendered]
+
+Date: 2019-05-17T06:31:44.642Z - Hash: 8fb1d9fed709b207f75f - Time: 3184ms
+10 unchanged chunks
+chunk {main} main.js, main.js.map (main) 14.5 kB [initial] [rendered]
+
+ERROR in src/app/app-routing.module.ts(11,19): error TS2322: Type 'string' is not assignable to type 'Type<any>'.
+
+
+Date: 2019-05-17T06:33:33.870Z - Hash: f5c234becb7b3885af64 - Time: 2014ms
+10 unchanged chunks
+chunk {main} main.js, main.js.map (main) 16.9 kB [initial] [rendered]
+
+Date: 2019-05-17T06:33:36.094Z - Hash: fdb357859f55684b00dc - Time: 925ms
+10 unchanged chunks
+chunk {main} main.js, main.js.map (main) 16.9 kB [initial] [rendered]
+
+Date: 2019-05-17T06:34:05.355Z - Hash: f63695aabf66e1eb12f4 - Time: 911ms
+10 unchanged chunks
+chunk {starter-starter-module} starter-starter-module.js, starter-starter-module.js.map (starter-starter-module) 4.56 kB  [rendered]
+
+Date: 2019-05-17T06:36:41.383Z - Hash: a10646505ee2496be07e - Time: 1817ms
+10 unchanged chunks
+chunk {main} main.js, main.js.map (main) 17.1 kB [initial] [rendered]
+
+Date: 2019-05-17T06:37:25.472Z - Hash: 8daec76989fb8a9e6a2a - Time: 1009ms
+10 unchanged chunks
+chunk {main} main.js, main.js.map (main) 17.1 kB [initial] [rendered]
+
+Date: 2019-05-17T07:48:23.468Z - Hash: c59949206a4a052f9bb3 - Time: 4964ms
+9 unchanged chunks
+chunk {main} main.js, main.js.map (main) 18.1 kB [initial] [rendered]
+chunk {vendor} vendor.js, vendor.js.map (vendor) 5.37 MB [initial] [rendered]
+
+ERROR in ../node_modules/safe-buffer/index.js
+Module not found: Error: Can't resolve 'buffer' in '/home/ec2-user/codingmoa/node_modules/safe-buffer'
+ERROR in ../node_modules/mysql/lib/Connection.js
+Module not found: Error: Can't resolve 'crypto' in '/home/ec2-user/codingmoa/node_modules/mysql/lib'
+ERROR in ../node_modules/mysql/lib/protocol/Auth.js
+Module not found: Error: Can't resolve 'crypto' in '/home/ec2-user/codingmoa/node_modules/mysql/lib/protocol'
+ERROR in ../node_modules/mysql/lib/Pool.js
+Module not found: Error: Can't resolve 'events' in '/home/ec2-user/codingmoa/node_modules/mysql/lib'
+ERROR in ../node_modules/mysql/lib/PoolConnection.js
+Module not found: Error: Can't resolve 'events' in '/home/ec2-user/codingmoa/node_modules/mysql/lib'
+ERROR in ../node_modules/mysql/lib/PoolCluster.js
+Module not found: Error: Can't resolve 'events' in '/home/ec2-user/codingmoa/node_modules/mysql/lib'
+ERROR in ../node_modules/mysql/lib/Connection.js
+Module not found: Error: Can't resolve 'events' in '/home/ec2-user/codingmoa/node_modules/mysql/lib'
+ERROR in ../node_modules/mysql/lib/protocol/sequences/Sequence.js
+Module not found: Error: Can't resolve 'events' in '/home/ec2-user/codingmoa/node_modules/mysql/lib/protocol/sequences'
+ERROR in ../node_modules/readable-stream/lib/_stream_readable.js
+Module not found: Error: Can't resolve 'events' in '/home/ec2-user/codingmoa/node_modules/readable-stream/lib'
+ERROR in ../node_modules/readable-stream/lib/internal/streams/stream-browser.js
+Module not found: Error: Can't resolve 'events' in '/home/ec2-user/codingmoa/node_modules/readable-stream/lib/internal/streams'
+ERROR in ../node_modules/mysql/lib/protocol/sequences/Query.js
+Module not found: Error: Can't resolve 'fs' in '/home/ec2-user/codingmoa/node_modules/mysql/lib/protocol/sequences'
+ERROR in ../node_modules/mysql/lib/Connection.js
+Module not found: Error: Can't resolve 'net' in '/home/ec2-user/codingmoa/node_modules/mysql/lib'
+ERROR in ../node_modules/mysql/lib/protocol/Protocol.js
+Module not found: Error: Can't resolve 'stream' in '/home/ec2-user/codingmoa/node_modules/mysql/lib/protocol'
+ERROR in ../node_modules/mysql/lib/protocol/Timer.js
+Module not found: Error: Can't resolve 'timers' in '/home/ec2-user/codingmoa/node_modules/mysql/lib/protocol'
+ERROR in ../node_modules/mysql/lib/Connection.js
+Module not found: Error: Can't resolve 'tls' in '/home/ec2-user/codingmoa/node_modules/mysql/lib'
+ERROR in ../node_modules/mysql/lib/ConnectionConfig.js
+Module not found: Error: Can't resolve 'url' in '/home/ec2-user/codingmoa/node_modules/mysql/lib'
+ERROR in ../node_modules/mysql/lib/PoolConnection.js
+Module not found: Error: Can't resolve 'util' in '/home/ec2-user/codingmoa/node_modules/mysql/lib'
+ERROR in ../node_modules/mysql/lib/Connection.js
+Module not found: Error: Can't resolve 'util' in '/home/ec2-user/codingmoa/node_modules/mysql/lib'
+ERROR in ../node_modules/mysql/lib/PoolCluster.js
+Module not found: Error: Can't resolve 'util' in '/home/ec2-user/codingmoa/node_modules/mysql/lib'
+ERROR in ../node_modules/mysql/lib/Pool.js
+Module not found: Error: Can't resolve 'util' in '/home/ec2-user/codingmoa/node_modules/mysql/lib'
+ERROR in ../node_modules/mysql/lib/protocol/Protocol.js
+Module not found: Error: Can't resolve 'util' in '/home/ec2-user/codingmoa/node_modules/mysql/lib/protocol'
+ERROR in ../node_modules/mysql/lib/protocol/sequences/Quit.js
+Module not found: Error: Can't resolve 'util' in '/home/ec2-user/codingmoa/node_modules/mysql/lib/protocol/sequences'
+ERROR in ../node_modules/mysql/lib/protocol/sequences/Statistics.js
+Module not found: Error: Can't resolve 'util' in '/home/ec2-user/codingmoa/node_modules/mysql/lib/protocol/sequences'
+ERROR in ../node_modules/mysql/lib/protocol/sequences/Sequence.js
+Module not found: Error: Can't resolve 'util' in '/home/ec2-user/codingmoa/node_modules/mysql/lib/protocol/sequences'
+ERROR in ../node_modules/mysql/lib/protocol/sequences/Query.js
+Module not found: Error: Can't resolve 'util' in '/home/ec2-user/codingmoa/node_modules/mysql/lib/protocol/sequences'
+ERROR in ../node_modules/mysql/lib/protocol/sequences/Handshake.js
+Module not found: Error: Can't resolve 'util' in '/home/ec2-user/codingmoa/node_modules/mysql/lib/protocol/sequences'
+ERROR in ../node_modules/mysql/lib/protocol/sequences/Ping.js
+Module not found: Error: Can't resolve 'util' in '/home/ec2-user/codingmoa/node_modules/mysql/lib/protocol/sequences'
+ERROR in ../node_modules/mysql/lib/protocol/sequences/ChangeUser.js
+Module not found: Error: Can't resolve 'util' in '/home/ec2-user/codingmoa/node_modules/mysql/lib/protocol/sequences'
+
+ERROR in src/main.ts(11,15): error TS2580: Cannot find name 'require'. Do you need to install type definitions for node? Try `npm i @types/node`.
+
+
+Date: 2019-05-17T07:51:29.949Z - Hash: 4acf73d2a3232bfa1ff4 - Time: 1084ms
+10 unchanged chunks
+chunk {main} main.js, main.js.map (main) 18.4 kB [initial] [rendered]
+
+ERROR in ../node_modules/safe-buffer/index.js
+Module not found: Error: Can't resolve 'buffer' in '/home/ec2-user/codingmoa/node_modules/safe-buffer'
+ERROR in ../node_modules/mysql/lib/Connection.js
+Module not found: Error: Can't resolve 'crypto' in '/home/ec2-user/codingmoa/node_modules/mysql/lib'
+ERROR in ../node_modules/mysql/lib/protocol/Auth.js
+Module not found: Error: Can't resolve 'crypto' in '/home/ec2-user/codingmoa/node_modules/mysql/lib/protocol'
+ERROR in ../node_modules/mysql/lib/Connection.js
+Module not found: Error: Can't resolve 'events' in '/home/ec2-user/codingmoa/node_modules/mysql/lib'
+ERROR in ../node_modules/mysql/lib/Pool.js
+Module not found: Error: Can't resolve 'events' in '/home/ec2-user/codingmoa/node_modules/mysql/lib'
+ERROR in ../node_modules/mysql/lib/PoolCluster.js
+Module not found: Error: Can't resolve 'events' in '/home/ec2-user/codingmoa/node_modules/mysql/lib'
+ERROR in ../node_modules/mysql/lib/PoolConnection.js
+Module not found: Error: Can't resolve 'events' in '/home/ec2-user/codingmoa/node_modules/mysql/lib'
+ERROR in ../node_modules/mysql/lib/protocol/sequences/Sequence.js
+Module not found: Error: Can't resolve 'events' in '/home/ec2-user/codingmoa/node_modules/mysql/lib/protocol/sequences'
+ERROR in ../node_modules/readable-stream/lib/_stream_readable.js
+Module not found: Error: Can't resolve 'events' in '/home/ec2-user/codingmoa/node_modules/readable-stream/lib'
+ERROR in ../node_modules/readable-stream/lib/internal/streams/stream-browser.js
+Module not found: Error: Can't resolve 'events' in '/home/ec2-user/codingmoa/node_modules/readable-stream/lib/internal/streams'
+ERROR in ../node_modules/mysql/lib/protocol/sequences/Query.js
+Module not found: Error: Can't resolve 'fs' in '/home/ec2-user/codingmoa/node_modules/mysql/lib/protocol/sequences'
+ERROR in ../node_modules/mysql/lib/Connection.js
+Module not found: Error: Can't resolve 'net' in '/home/ec2-user/codingmoa/node_modules/mysql/lib'
+ERROR in ../node_modules/mysql/lib/protocol/Protocol.js
+Module not found: Error: Can't resolve 'stream' in '/home/ec2-user/codingmoa/node_modules/mysql/lib/protocol'
+ERROR in ../node_modules/mysql/lib/protocol/Timer.js
+Module not found: Error: Can't resolve 'timers' in '/home/ec2-user/codingmoa/node_modules/mysql/lib/protocol'
+ERROR in ../node_modules/mysql/lib/Connection.js
+Module not found: Error: Can't resolve 'tls' in '/home/ec2-user/codingmoa/node_modules/mysql/lib'
+ERROR in ../node_modules/mysql/lib/ConnectionConfig.js
+Module not found: Error: Can't resolve 'url' in '/home/ec2-user/codingmoa/node_modules/mysql/lib'
+ERROR in ../node_modules/mysql/lib/Pool.js
+Module not found: Error: Can't resolve 'util' in '/home/ec2-user/codingmoa/node_modules/mysql/lib'
+ERROR in ../node_modules/mysql/lib/PoolCluster.js
+Module not found: Error: Can't resolve 'util' in '/home/ec2-user/codingmoa/node_modules/mysql/lib'
+ERROR in ../node_modules/mysql/lib/PoolConnection.js
+Module not found: Error: Can't resolve 'util' in '/home/ec2-user/codingmoa/node_modules/mysql/lib'
+ERROR in ../node_modules/mysql/lib/Connection.js
+Module not found: Error: Can't resolve 'util' in '/home/ec2-user/codingmoa/node_modules/mysql/lib'
+ERROR in ../node_modules/mysql/lib/protocol/Protocol.js
+Module not found: Error: Can't resolve 'util' in '/home/ec2-user/codingmoa/node_modules/mysql/lib/protocol'
+ERROR in ../node_modules/mysql/lib/protocol/sequences/Handshake.js
+Module not found: Error: Can't resolve 'util' in '/home/ec2-user/codingmoa/node_modules/mysql/lib/protocol/sequences'
+ERROR in ../node_modules/mysql/lib/protocol/sequences/Ping.js
+Module not found: Error: Can't resolve 'util' in '/home/ec2-user/codingmoa/node_modules/mysql/lib/protocol/sequences'
+ERROR in ../node_modules/mysql/lib/protocol/sequences/Quit.js
+Module not found: Error: Can't resolve 'util' in '/home/ec2-user/codingmoa/node_modules/mysql/lib/protocol/sequences'
+ERROR in ../node_modules/mysql/lib/protocol/sequences/Statistics.js
+Module not found: Error: Can't resolve 'util' in '/home/ec2-user/codingmoa/node_modules/mysql/lib/protocol/sequences'
+ERROR in ../node_modules/mysql/lib/protocol/sequences/Sequence.js
+Module not found: Error: Can't resolve 'util' in '/home/ec2-user/codingmoa/node_modules/mysql/lib/protocol/sequences'
+ERROR in ../node_modules/mysql/lib/protocol/sequences/Query.js
+Module not found: Error: Can't resolve 'util' in '/home/ec2-user/codingmoa/node_modules/mysql/lib/protocol/sequences'
+ERROR in ../node_modules/mysql/lib/protocol/sequences/ChangeUser.js
+Module not found: Error: Can't resolve 'util' in '/home/ec2-user/codingmoa/node_modules/mysql/lib/protocol/sequences'
+
+ERROR in src/main.ts(11,15): error TS2580: Cannot find name 'require'. Do you need to install type definitions for node? Try `npm i @types/node`.
+
+
+Date: 2019-05-17T07:53:39.947Z - Hash: 68d02e64322013b0ad0e - Time: 1040ms
+10 unchanged chunks
+chunk {main} main.js, main.js.map (main) 18.4 kB [initial] [rendered]
+
+ERROR in ../node_modules/safe-buffer/index.js
+Module not found: Error: Can't resolve 'buffer' in '/home/ec2-user/codingmoa/node_modules/safe-buffer'
+ERROR in ../node_modules/mysql/lib/Connection.js
+Module not found: Error: Can't resolve 'crypto' in '/home/ec2-user/codingmoa/node_modules/mysql/lib'
+ERROR in ../node_modules/mysql/lib/protocol/Auth.js
+Module not found: Error: Can't resolve 'crypto' in '/home/ec2-user/codingmoa/node_modules/mysql/lib/protocol'
+ERROR in ../node_modules/mysql/lib/Connection.js
+Module not found: Error: Can't resolve 'events' in '/home/ec2-user/codingmoa/node_modules/mysql/lib'
+ERROR in ../node_modules/mysql/lib/Pool.js
+Module not found: Error: Can't resolve 'events' in '/home/ec2-user/codingmoa/node_modules/mysql/lib'
+ERROR in ../node_modules/mysql/lib/PoolCluster.js
+Module not found: Error: Can't resolve 'events' in '/home/ec2-user/codingmoa/node_modules/mysql/lib'
+ERROR in ../node_modules/mysql/lib/PoolConnection.js
+Module not found: Error: Can't resolve 'events' in '/home/ec2-user/codingmoa/node_modules/mysql/lib'
+ERROR in ../node_modules/mysql/lib/protocol/sequences/Sequence.js
+Module not found: Error: Can't resolve 'events' in '/home/ec2-user/codingmoa/node_modules/mysql/lib/protocol/sequences'
+ERROR in ../node_modules/readable-stream/lib/_stream_readable.js
+Module not found: Error: Can't resolve 'events' in '/home/ec2-user/codingmoa/node_modules/readable-stream/lib'
+ERROR in ../node_modules/readable-stream/lib/internal/streams/stream-browser.js
+Module not found: Error: Can't resolve 'events' in '/home/ec2-user/codingmoa/node_modules/readable-stream/lib/internal/streams'
+ERROR in ../node_modules/mysql/lib/protocol/sequences/Query.js
+Module not found: Error: Can't resolve 'fs' in '/home/ec2-user/codingmoa/node_modules/mysql/lib/protocol/sequences'
+ERROR in ../node_modules/mysql/lib/Connection.js
+Module not found: Error: Can't resolve 'net' in '/home/ec2-user/codingmoa/node_modules/mysql/lib'
+ERROR in ../node_modules/mysql/lib/protocol/Protocol.js
+Module not found: Error: Can't resolve 'stream' in '/home/ec2-user/codingmoa/node_modules/mysql/lib/protocol'
+ERROR in ../node_modules/mysql/lib/protocol/Timer.js
+Module not found: Error: Can't resolve 'timers' in '/home/ec2-user/codingmoa/node_modules/mysql/lib/protocol'
+ERROR in ../node_modules/mysql/lib/Connection.js
+Module not found: Error: Can't resolve 'tls' in '/home/ec2-user/codingmoa/node_modules/mysql/lib'
+ERROR in ../node_modules/mysql/lib/ConnectionConfig.js
+Module not found: Error: Can't resolve 'url' in '/home/ec2-user/codingmoa/node_modules/mysql/lib'
+ERROR in ../node_modules/mysql/lib/Pool.js
+Module not found: Error: Can't resolve 'util' in '/home/ec2-user/codingmoa/node_modules/mysql/lib'
+ERROR in ../node_modules/mysql/lib/PoolCluster.js
+Module not found: Error: Can't resolve 'util' in '/home/ec2-user/codingmoa/node_modules/mysql/lib'
+ERROR in ../node_modules/mysql/lib/PoolConnection.js
+Module not found: Error: Can't resolve 'util' in '/home/ec2-user/codingmoa/node_modules/mysql/lib'
+ERROR in ../node_modules/mysql/lib/Connection.js
+Module not found: Error: Can't resolve 'util' in '/home/ec2-user/codingmoa/node_modules/mysql/lib'
+ERROR in ../node_modules/mysql/lib/protocol/Protocol.js
+Module not found: Error: Can't resolve 'util' in '/home/ec2-user/codingmoa/node_modules/mysql/lib/protocol'
+ERROR in ../node_modules/mysql/lib/protocol/sequences/Handshake.js
+Module not found: Error: Can't resolve 'util' in '/home/ec2-user/codingmoa/node_modules/mysql/lib/protocol/sequences'
+ERROR in ../node_modules/mysql/lib/protocol/sequences/Ping.js
+Module not found: Error: Can't resolve 'util' in '/home/ec2-user/codingmoa/node_modules/mysql/lib/protocol/sequences'
+ERROR in ../node_modules/mysql/lib/protocol/sequences/Quit.js
+Module not found: Error: Can't resolve 'util' in '/home/ec2-user/codingmoa/node_modules/mysql/lib/protocol/sequences'
+ERROR in ../node_modules/mysql/lib/protocol/sequences/Statistics.js
+Module not found: Error: Can't resolve 'util' in '/home/ec2-user/codingmoa/node_modules/mysql/lib/protocol/sequences'
+ERROR in ../node_modules/mysql/lib/protocol/sequences/Sequence.js
+Module not found: Error: Can't resolve 'util' in '/home/ec2-user/codingmoa/node_modules/mysql/lib/protocol/sequences'
+ERROR in ../node_modules/mysql/lib/protocol/sequences/Query.js
+Module not found: Error: Can't resolve 'util' in '/home/ec2-user/codingmoa/node_modules/mysql/lib/protocol/sequences'
+ERROR in ../node_modules/mysql/lib/protocol/sequences/ChangeUser.js
+Module not found: Error: Can't resolve 'util' in '/home/ec2-user/codingmoa/node_modules/mysql/lib/protocol/sequences'
+
+ERROR in src/main.ts(11,15): error TS2580: Cannot find name 'require'. Do you need to install type definitions for node? Try `npm i @types/node`.
+
+
+Date: 2019-05-17T07:54:45.653Z - Hash: 6e602b0ba21375b8a999 - Time: 1185ms
+10 unchanged chunks
+chunk {main} main.js, main.js.map (main) 18.4 kB [initial] [rendered]
+
+ERROR in ../node_modules/safe-buffer/index.js
+Module not found: Error: Can't resolve 'buffer' in '/home/ec2-user/codingmoa/node_modules/safe-buffer'
+ERROR in ../node_modules/mysql/lib/Connection.js
+Module not found: Error: Can't resolve 'crypto' in '/home/ec2-user/codingmoa/node_modules/mysql/lib'
+ERROR in ../node_modules/mysql/lib/protocol/Auth.js
+Module not found: Error: Can't resolve 'crypto' in '/home/ec2-user/codingmoa/node_modules/mysql/lib/protocol'
+ERROR in ../node_modules/mysql/lib/Connection.js
+Module not found: Error: Can't resolve 'events' in '/home/ec2-user/codingmoa/node_modules/mysql/lib'
+ERROR in ../node_modules/mysql/lib/Pool.js
+Module not found: Error: Can't resolve 'events' in '/home/ec2-user/codingmoa/node_modules/mysql/lib'
+ERROR in ../node_modules/mysql/lib/PoolCluster.js
+Module not found: Error: Can't resolve 'events' in '/home/ec2-user/codingmoa/node_modules/mysql/lib'
+ERROR in ../node_modules/mysql/lib/PoolConnection.js
+Module not found: Error: Can't resolve 'events' in '/home/ec2-user/codingmoa/node_modules/mysql/lib'
+ERROR in ../node_modules/mysql/lib/protocol/sequences/Sequence.js
+Module not found: Error: Can't resolve 'events' in '/home/ec2-user/codingmoa/node_modules/mysql/lib/protocol/sequences'
+ERROR in ../node_modules/readable-stream/lib/_stream_readable.js
+Module not found: Error: Can't resolve 'events' in '/home/ec2-user/codingmoa/node_modules/readable-stream/lib'
+ERROR in ../node_modules/readable-stream/lib/internal/streams/stream-browser.js
+Module not found: Error: Can't resolve 'events' in '/home/ec2-user/codingmoa/node_modules/readable-stream/lib/internal/streams'
+ERROR in ../node_modules/mysql/lib/protocol/sequences/Query.js
+Module not found: Error: Can't resolve 'fs' in '/home/ec2-user/codingmoa/node_modules/mysql/lib/protocol/sequences'
+ERROR in ../node_modules/mysql/lib/Connection.js
+Module not found: Error: Can't resolve 'net' in '/home/ec2-user/codingmoa/node_modules/mysql/lib'
+ERROR in ../node_modules/mysql/lib/protocol/Protocol.js
+Module not found: Error: Can't resolve 'stream' in '/home/ec2-user/codingmoa/node_modules/mysql/lib/protocol'
+ERROR in ../node_modules/mysql/lib/protocol/Timer.js
+Module not found: Error: Can't resolve 'timers' in '/home/ec2-user/codingmoa/node_modules/mysql/lib/protocol'
+ERROR in ../node_modules/mysql/lib/Connection.js
+Module not found: Error: Can't resolve 'tls' in '/home/ec2-user/codingmoa/node_modules/mysql/lib'
+ERROR in ../node_modules/mysql/lib/ConnectionConfig.js
+Module not found: Error: Can't resolve 'url' in '/home/ec2-user/codingmoa/node_modules/mysql/lib'
+ERROR in ../node_modules/mysql/lib/Pool.js
+Module not found: Error: Can't resolve 'util' in '/home/ec2-user/codingmoa/node_modules/mysql/lib'
+ERROR in ../node_modules/mysql/lib/PoolCluster.js
+Module not found: Error: Can't resolve 'util' in '/home/ec2-user/codingmoa/node_modules/mysql/lib'
+ERROR in ../node_modules/mysql/lib/PoolConnection.js
+Module not found: Error: Can't resolve 'util' in '/home/ec2-user/codingmoa/node_modules/mysql/lib'
+ERROR in ../node_modules/mysql/lib/Connection.js
+Module not found: Error: Can't resolve 'util' in '/home/ec2-user/codingmoa/node_modules/mysql/lib'
+ERROR in ../node_modules/mysql/lib/protocol/Protocol.js
+Module not found: Error: Can't resolve 'util' in '/home/ec2-user/codingmoa/node_modules/mysql/lib/protocol'
+ERROR in ../node_modules/mysql/lib/protocol/sequences/Handshake.js
+Module not found: Error: Can't resolve 'util' in '/home/ec2-user/codingmoa/node_modules/mysql/lib/protocol/sequences'
+ERROR in ../node_modules/mysql/lib/protocol/sequences/Ping.js
+Module not found: Error: Can't resolve 'util' in '/home/ec2-user/codingmoa/node_modules/mysql/lib/protocol/sequences'
+ERROR in ../node_modules/mysql/lib/protocol/sequences/Quit.js
+Module not found: Error: Can't resolve 'util' in '/home/ec2-user/codingmoa/node_modules/mysql/lib/protocol/sequences'
+ERROR in ../node_modules/mysql/lib/protocol/sequences/Statistics.js
+Module not found: Error: Can't resolve 'util' in '/home/ec2-user/codingmoa/node_modules/mysql/lib/protocol/sequences'
+ERROR in ../node_modules/mysql/lib/protocol/sequences/Sequence.js
+Module not found: Error: Can't resolve 'util' in '/home/ec2-user/codingmoa/node_modules/mysql/lib/protocol/sequences'
+ERROR in ../node_modules/mysql/lib/protocol/sequences/Query.js
+Module not found: Error: Can't resolve 'util' in '/home/ec2-user/codingmoa/node_modules/mysql/lib/protocol/sequences'
+ERROR in ../node_modules/mysql/lib/protocol/sequences/ChangeUser.js
+Module not found: Error: Can't resolve 'util' in '/home/ec2-user/codingmoa/node_modules/mysql/lib/protocol/sequences'
+
+ERROR in src/main.ts(11,15): error TS2580: Cannot find name 'require'. Do you need to install type definitions for node? Try `npm i @types/node`.
+
+
+Date: 2019-05-19T09:57:04.453Z
+Hash: 391d880d75451675f79b
+Time: 24125ms
+chunk {common} common.js, common.js.map (common) 3.22 kB  [rendered]
+chunk {component-component-module} component-component-module.js, component-component-module.js.map (component-component-module) 322 kB  [rendered]
+chunk {es2015-polyfills} es2015-polyfills.js, es2015-polyfills.js.map (es2015-polyfills) 266 kB [initial] [rendered]
+chunk {main} main.js, main.js.map (main) 19.1 kB [initial] [rendered]
+chunk {pages-pages-module} pages-pages-module.js, pages-pages-module.js.map (pages-pages-module) 48.2 kB  [rendered]
+chunk {polyfills} polyfills.js, polyfills.js.map (polyfills) 223 kB [initial] [rendered]
+chunk {runtime} runtime.js, runtime.js.map (runtime) 8.9 kB [entry] [rendered]
+chunk {scripts} scripts.js, scripts.js.map (scripts) 180 kB [entry] [rendered]
+chunk {starter-starter-module} starter-starter-module.js, starter-starter-module.js.map (starter-starter-module) 4.59 kB  [rendered]
+chunk {styles} styles.js, styles.js.map (styles) 2.71 MB [initial] [rendered]
+chunk {vendor} vendor.js, vendor.js.map (vendor) 4.83 MB [initial] [rendered]
+
+Date: 2019-05-19T10:02:26.548Z
+Hash: 391d880d75451675f79b
+Time: 27495ms
+chunk {common} common.js, common.js.map (common) 3.22 kB  [rendered]
+chunk {component-component-module} component-component-module.js, component-component-module.js.map (component-component-module) 322 kB  [rendered]
+chunk {es2015-polyfills} es2015-polyfills.js, es2015-polyfills.js.map (es2015-polyfills) 266 kB [initial] [rendered]
+chunk {main} main.js, main.js.map (main) 19.1 kB [initial] [rendered]
+chunk {pages-pages-module} pages-pages-module.js, pages-pages-module.js.map (pages-pages-module) 48.2 kB  [rendered]
+chunk {polyfills} polyfills.js, polyfills.js.map (polyfills) 223 kB [initial] [rendered]
+chunk {runtime} runtime.js, runtime.js.map (runtime) 8.9 kB [entry] [rendered]
+chunk {scripts} scripts.js, scripts.js.map (scripts) 180 kB [entry] [rendered]
+chunk {starter-starter-module} starter-starter-module.js, starter-starter-module.js.map (starter-starter-module) 4.59 kB  [rendered]
+chunk {styles} styles.js, styles.js.map (styles) 2.71 MB [initial] [rendered]
+chunk {vendor} vendor.js, vendor.js.map (vendor) 4.83 MB [initial] [rendered]
+
+Date: 2019-05-19T10:03:48.790Z - Hash: a826a59c0237d36f9cbd - Time: 10846ms
+9 unchanged chunks
+chunk {main} main.js, main.js.map (main) 16.8 kB [initial] [rendered]
+chunk {pages-pages-module} pages-pages-module.js, pages-pages-module.js.map (pages-pages-module) 50.2 kB  [rendered]
+
+Date: 2019-05-19T10:08:48.312Z - Hash: a826a59c0237d36f9cbd - Time: 2253ms
+11 unchanged chunks
+
+Date: 2019-05-19T10:08:52.500Z - Hash: a826a59c0237d36f9cbd - Time: 940ms
+11 unchanged chunks
+
+Date: 2019-05-19T10:08:53.789Z - Hash: a826a59c0237d36f9cbd - Time: 765ms
+11 unchanged chunks
+
+Date: 2019-05-19T10:09:05.432Z - Hash: a826a59c0237d36f9cbd - Time: 1265ms
+11 unchanged chunks
+
+Date: 2019-05-19T10:12:17.129Z - Hash: 3c7020a6eda2ac049c37 - Time: 1665ms
+9 unchanged chunks
+chunk {main} main.js, main.js.map (main) 16.4 kB [initial] [rendered]
+chunk {pages-pages-module} pages-pages-module.js, pages-pages-module.js.map (pages-pages-module) 48.2 kB  [rendered]
+
+Date: 2019-05-19T10:12:37.637Z - Hash: 4416011a7ced084e5d94 - Time: 1564ms
+10 unchanged chunks
+chunk {main} main.js, main.js.map (main) 16.6 kB [initial] [rendered]
+
+Date: 2019-05-19T10:13:31.178Z - Hash: af84d0291d1cef7d264d - Time: 600ms
+11 unchanged chunks
+
+ERROR in src/app/app.module.ts(22,5): error TS1137: Expression or comma expected.
+src/app/app.module.ts(22,12): error TS1005: ':' expected.
+src/app/app.module.ts(22,30): error TS1005: ',' expected.
+src/app/app.module.ts(22,35): error TS1005: ':' expected.
+src/app/app.module.ts(22,64): error TS1005: ',' expected.
+src/app/app.module.ts(23,3): error TS1136: Property assignment expected.
+src/app/app.module.ts(23,4): error TS1136: Property assignment expected.
+
+
+ERROR in src/app/app.module.ts(22,5): error TS2345: Argument of type '{ declarations: (typeof UserComponent | typeof AppComponent | typeof SpinnerComponent)[]; imports: (typeof BrowserModule | typeof BrowserAnimationsModule)[]; import: { UserComponent: typeof UserComponent; }; from: string; providers: { ...; }[]; bootstrap: (typeof AppComponent)[]; }' is not assignable to parameter of type 'NgModule'.
+  Object literal may only specify known properties, but 'import' does not exist in type 'NgModule'. Did you mean to write 'imports'?
+
+
+Date: 2019-05-19T10:13:41.082Z - Hash: 8572d067519f779c21ca - Time: 1089ms
+10 unchanged chunks
+chunk {main} main.js, main.js.map (main) 16.7 kB [initial] [rendered]
+
+Date: 2019-05-19T10:13:55.220Z - Hash: 998cbbeb0cdf4b511e23 - Time: 999ms
+10 unchanged chunks
+chunk {main} main.js, main.js.map (main) 16.6 kB [initial] [rendered]
+
+Date: 2019-05-19T10:14:50.306Z - Hash: b13a06ae960cc48e319d - Time: 1161ms
+10 unchanged chunks
+chunk {main} main.js, main.js.map (main) 16.6 kB [initial] [rendered]
+
+Date: 2019-05-19T10:15:04.371Z - Hash: 998cbbeb0cdf4b511e23 - Time: 1171ms
+10 unchanged chunks
+chunk {main} main.js, main.js.map (main) 16.6 kB [initial] [rendered]
+
+Date: 2019-05-19T10:15:20.887Z - Hash: 4a98437fa8578e06b51b - Time: 1211ms
+9 unchanged chunks
+chunk {main} main.js, main.js.map (main) 14.5 kB [initial] [rendered]
+chunk {pages-pages-module} pages-pages-module.js, pages-pages-module.js.map (pages-pages-module) 50.2 kB  [rendered]
+
+Date: 2019-05-19T10:15:34.503Z - Hash: 998cbbeb0cdf4b511e23 - Time: 1152ms
+9 unchanged chunks
+chunk {main} main.js, main.js.map (main) 16.6 kB [initial] [rendered]
+chunk {pages-pages-module} pages-pages-module.js, pages-pages-module.js.map (pages-pages-module) 48.2 kB  [rendered]
+
+Date: 2019-05-19T10:15:50.199Z - Hash: e5894a92035135c70fc8 - Time: 1206ms
+10 unchanged chunks
+chunk {main} main.js, main.js.map (main) 18.9 kB [initial] [rendered]
+
+WARNING in ./src/app/app.module.ts 17:59-72
+"export 'UserComponent' was not found in './pages/user/user.module'
+
+ERROR in src/app/app.module.ts(12,10): error TS2305: Module '"/home/ec2-user/codingmoa/webapp/src/app/pages/user/user.module"' has no exported member 'UserComponent'.
+
+
+Date: 2019-05-19T10:16:08.077Z - Hash: c8f4ab4b033a773d8be5 - Time: 1636ms
+10 unchanged chunks
+chunk {main} main.js, main.js.map (main) 19 kB [initial] [rendered]
+
+WARNING in ./src/app/app.module.ts 17:59-72
+"export 'UserComponent' was not found in './pages/user/user.module'
+
+WARNING in ./src/app/app.module.ts 24:16-29
+"export 'UserComponent' was not found in './pages/user/user.module'
+
+ERROR in src/app/app.module.ts(12,10): error TS2305: Module '"/home/ec2-user/codingmoa/webapp/src/app/pages/user/user.module"' has no exported member 'UserComponent'.
+
+
+Date: 2019-05-19T10:20:44.591Z - Hash: cfe1a5e38089bcebac87 - Time: 2017ms
+9 unchanged chunks
+chunk {main} main.js, main.js.map (main) 14.5 kB [initial] [rendered]
+chunk {pages-pages-module} pages-pages-module.js, pages-pages-module.js.map (pages-pages-module) 50.2 kB  [rendered]
+
+Date: 2019-05-19T10:24:31.080Z
+Hash: cfe1a5e38089bcebac87
+Time: 30514ms
+chunk {common} common.js, common.js.map (common) 3.22 kB  [rendered]
+chunk {component-component-module} component-component-module.js, component-component-module.js.map (component-component-module) 322 kB  [rendered]
+chunk {es2015-polyfills} es2015-polyfills.js, es2015-polyfills.js.map (es2015-polyfills) 266 kB [initial] [rendered]
+chunk {main} main.js, main.js.map (main) 14.5 kB [initial] [rendered]
+chunk {pages-pages-module} pages-pages-module.js, pages-pages-module.js.map (pages-pages-module) 50.2 kB  [rendered]
+chunk {polyfills} polyfills.js, polyfills.js.map (polyfills) 223 kB [initial] [rendered]
+chunk {runtime} runtime.js, runtime.js.map (runtime) 8.9 kB [entry] [rendered]
+chunk {scripts} scripts.js, scripts.js.map (scripts) 180 kB [entry] [rendered]
+chunk {starter-starter-module} starter-starter-module.js, starter-starter-module.js.map (starter-starter-module) 4.59 kB  [rendered]
+chunk {styles} styles.js, styles.js.map (styles) 2.71 MB [initial] [rendered]
+chunk {vendor} vendor.js, vendor.js.map (vendor) 4.83 MB [initial] [rendered]
+
+Date: 2019-05-19T10:31:57.405Z - Hash: b5b5a3e20c73c771368e - Time: 10710ms
+10 unchanged chunks
+chunk {pages-pages-module} pages-pages-module.js, pages-pages-module.js.map (pages-pages-module) 52.5 kB  [rendered]
+
+WARNING in ./src/app/pages/pages-routing.module.ts 17:27-40
+"export 'UserComponent' was not found in './user/user.module'
+
+ERROR in src/app/pages/pages-routing.module.ts(4,10): error TS2305: Module '"/home/ec2-user/codingmoa/webapp/src/app/pages/user/user.module"' has no exported member 'UserComponent'.
+
+
+Date: 2019-05-19T10:32:30.963Z - Hash: 73338799f7d38fcfd821 - Time: 2169ms
+10 unchanged chunks
+chunk {pages-pages-module} pages-pages-module.js, pages-pages-module.js.map (pages-pages-module) 52.7 kB  [rendered]
+
+WARNING in ./src/app/pages/pages-routing.module.ts 17:27-40
+"export 'UserComponent' was not found in './user/user.module'
+
+ERROR in src/app/pages/pages-routing.module.ts(4,10): error TS2305: Module '"/home/ec2-user/codingmoa/webapp/src/app/pages/user/user.module"' has no exported member 'UserComponent'.
+
+
+Date: 2019-05-19T10:32:44.647Z - Hash: 57a56b36e8ae0d68848e - Time: 1310ms
+10 unchanged chunks
+chunk {pages-pages-module} pages-pages-module.js, pages-pages-module.js.map (pages-pages-module) 52.7 kB  [rendered]
+
+WARNING in ./src/app/pages/pages.module.ts 19:16-29
+"export 'UserComponent' was not found in './user/user.module'
+
+WARNING in ./src/app/pages/pages-routing.module.ts 17:27-40
+"export 'UserComponent' was not found in './user/user.module'
+
+ERROR in src/app/pages/pages-routing.module.ts(4,10): error TS2305: Module '"/home/ec2-user/codingmoa/webapp/src/app/pages/user/user.module"' has no exported member 'UserComponent'.
+src/app/pages/pages.module.ts(9,10): error TS2305: Module '"/home/ec2-user/codingmoa/webapp/src/app/pages/user/user.module"' has no exported member 'UserComponent'.
+
+
+Date: 2019-05-19T10:34:36.435Z - Hash: 4eaac09f9e4a71c299cc - Time: 1599ms
+10 unchanged chunks
+chunk {pages-pages-module} pages-pages-module.js, pages-pages-module.js.map (pages-pages-module) 52.6 kB  [rendered]
+
+WARNING in ./src/app/pages/pages.module.ts 19:16-29
+"export 'UserComponent' was not found in './user/user.module'
+
+WARNING in ./src/app/pages/pages-routing.module.ts 17:27-40
+"export 'UserComponent' was not found in './user/user.module'
+
+ERROR in src/app/pages/pages-routing.module.ts(4,10): error TS2305: Module '"/home/ec2-user/codingmoa/webapp/src/app/pages/user/user.module"' has no exported member 'UserComponent'.
+src/app/pages/pages.module.ts(9,10): error TS2305: Module '"/home/ec2-user/codingmoa/webapp/src/app/pages/user/user.module"' has no exported member 'UserComponent'.
+
+
+Date: 2019-05-19T10:35:22.103Z - Hash: 995aa5fec6d8151ef61d - Time: 1287ms
+10 unchanged chunks
+chunk {pages-pages-module} pages-pages-module.js, pages-pages-module.js.map (pages-pages-module) 52.6 kB  [rendered]
+
+WARNING in ./src/app/pages/pages-routing.module.ts 17:27-40
+"export 'UserComponent' was not found in './user/user.module'
+
+ERROR in src/app/pages/pages-routing.module.ts(4,10): error TS2305: Module '"/home/ec2-user/codingmoa/webapp/src/app/pages/user/user.module"' has no exported member 'UserComponent'.
+
+
+ERROR in src/app/pages/pages-routing.module.ts(4,10): error TS2305: Module '"/home/ec2-user/codingmoa/webapp/src/app/pages/user/user.module"' has no exported member 'UserComponent'.
+src/app/pages/pages.module.ts(16,5): error TS1117: An object literal cannot have multiple properties with the same name in strict mode.
+src/app/pages/pages.module.ts(16,5): error TS2300: Duplicate identifier 'declarations'.
+
+
+Date: 2019-05-19T10:37:29.800Z - Hash: 79f356c5a454adb4b12f - Time: 2320ms
+10 unchanged chunks
+chunk {pages-pages-module} pages-pages-module.js, pages-pages-module.js.map (pages-pages-module) 52.6 kB  [rendered]
+
+WARNING in ./src/app/pages/pages-routing.module.ts 17:27-40
+"export 'UserComponent' was not found in './user/user.module'
+
+Date: 2019-05-19T10:39:10.314Z - Hash: 26a3ce8c3f957c5abb36 - Time: 1141ms
+10 unchanged chunks
+chunk {pages-pages-module} pages-pages-module.js, pages-pages-module.js.map (pages-pages-module) 52.6 kB  [rendered]
+
+WARNING in ./src/app/pages/pages-routing.module.ts 17:27-40
+"export 'UserComponent' was not found in './user/user.module'
+
+ERROR in src/app/pages/pages-routing.module.ts(4,10): error TS2305: Module '"/home/ec2-user/codingmoa/webapp/src/app/pages/user/user.module"' has no exported member 'UserComponent'.
+src/app/pages/pages.module.ts(16,5): error TS1117: An object literal cannot have multiple properties with the same name in strict mode.
+src/app/pages/pages.module.ts(16,5): error TS2300: Duplicate identifier 'declarations'.
+
+
+Date: 2019-05-19T10:40:16.717Z - Hash: 86411ddd5308f2f0164c - Time: 1708ms
+10 unchanged chunks
+chunk {pages-pages-module} pages-pages-module.js, pages-pages-module.js.map (pages-pages-module) 52.7 kB  [rendered]
+
+WARNING in ./src/app/pages/pages-routing.module.ts 17:27-40
+"export 'UserComponent' was not found in './user/user.module'
+
+ERROR in src/app/pages/pages-routing.module.ts(4,10): error TS2305: Module '"/home/ec2-user/codingmoa/webapp/src/app/pages/user/user.module"' has no exported member 'UserComponent'.
+src/app/pages/pages.module.ts(16,5): error TS1117: An object literal cannot have multiple properties with the same name in strict mode.
+src/app/pages/pages.module.ts(16,5): error TS2300: Duplicate identifier 'declarations'.
+
+
+Date: 2019-05-19T10:40:23.329Z - Hash: b547b73fe9c23d94c9b2 - Time: 956ms
+10 unchanged chunks
+chunk {pages-pages-module} pages-pages-module.js, pages-pages-module.js.map (pages-pages-module) 52.7 kB  [rendered]
+
+WARNING in ./src/app/pages/pages-routing.module.ts 17:27-40
+"export 'UserComponent' was not found in './user/user.module'
+
+ERROR in src/app/pages/pages-routing.module.ts(4,10): error TS2305: Module '"/home/ec2-user/codingmoa/webapp/src/app/pages/user/user.module"' has no exported member 'UserComponent'.
+src/app/pages/pages.module.ts(16,5): error TS1117: An object literal cannot have multiple properties with the same name in strict mode.
+src/app/pages/pages.module.ts(16,5): error TS2300: Duplicate identifier 'declarations'.
+
+
+Date: 2019-05-19T10:41:38.325Z - Hash: dbd6f2b4690d3d41d983 - Time: 868ms
+10 unchanged chunks
+chunk {starter-starter-module} starter-starter-module.js, starter-starter-module.js.map (starter-starter-module) 4.59 kB  [rendered]
+
+WARNING in ./src/app/pages/pages-routing.module.ts 17:27-40
+"export 'UserComponent' was not found in './user/user.module'
+
+ERROR in src/app/pages/pages-routing.module.ts(4,10): error TS2305: Module '"/home/ec2-user/codingmoa/webapp/src/app/pages/user/user.module"' has no exported member 'UserComponent'.
+src/app/pages/pages.module.ts(16,5): error TS1117: An object literal cannot have multiple properties with the same name in strict mode.
+src/app/pages/pages.module.ts(16,5): error TS2300: Duplicate identifier 'declarations'.
+
+
+Date: 2019-05-19T10:41:42.855Z - Hash: 5d0141be8d841e408b70 - Time: 1306ms
+10 unchanged chunks
+chunk {starter-starter-module} starter-starter-module.js, starter-starter-module.js.map (starter-starter-module) 4.56 kB  [rendered]
+
+WARNING in ./src/app/pages/pages-routing.module.ts 17:27-40
+"export 'UserComponent' was not found in './user/user.module'
+
+ERROR in src/app/pages/pages-routing.module.ts(4,10): error TS2305: Module '"/home/ec2-user/codingmoa/webapp/src/app/pages/user/user.module"' has no exported member 'UserComponent'.
+src/app/pages/pages.module.ts(16,5): error TS1117: An object literal cannot have multiple properties with the same name in strict mode.
+src/app/pages/pages.module.ts(16,5): error TS2300: Duplicate identifier 'declarations'.
+
+
+Date: 2019-05-19T10:42:43.520Z - Hash: 9cb7ef9d6e50f08e6f99 - Time: 1053ms
+10 unchanged chunks
+chunk {pages-pages-module} pages-pages-module.js, pages-pages-module.js.map (pages-pages-module) 52.7 kB  [rendered]
+
+WARNING in ./src/app/pages/pages-routing.module.ts 17:27-40
+"export 'UserComponent' was not found in './user/user.module'
+
+ERROR in src/app/pages/pages-routing.module.ts(4,10): error TS2305: Module '"/home/ec2-user/codingmoa/webapp/src/app/pages/user/user.module"' has no exported member 'UserComponent'.
+src/app/pages/pages.module.ts(16,5): error TS1117: An object literal cannot have multiple properties with the same name in strict mode.
+src/app/pages/pages.module.ts(16,5): error TS2300: Duplicate identifier 'declarations'.
+
+
+Date: 2019-05-19T10:45:04.940Z - Hash: 5e507fa59265670b6013 - Time: 1774ms
+10 unchanged chunks
+chunk {pages-pages-module} pages-pages-module.js, pages-pages-module.js.map (pages-pages-module) 50.4 kB  [rendered]
+
+ERROR in src/app/pages/pages.module.ts(16,5): error TS1117: An object literal cannot have multiple properties with the same name in strict mode.
+src/app/pages/pages.module.ts(16,5): error TS2300: Duplicate identifier 'declarations'.
+
+
+Date: 2019-05-19T10:47:03.004Z - Hash: 9cb7ef9d6e50f08e6f99 - Time: 1218ms
+10 unchanged chunks
+chunk {pages-pages-module} pages-pages-module.js, pages-pages-module.js.map (pages-pages-module) 52.7 kB  [rendered]
+
+WARNING in ./src/app/pages/pages-routing.module.ts 17:27-40
+"export 'UserComponent' was not found in './user/user.module'
+
+ERROR in src/app/pages/pages-routing.module.ts(4,10): error TS2305: Module '"/home/ec2-user/codingmoa/webapp/src/app/pages/user/user.module"' has no exported member 'UserComponent'.
+src/app/pages/pages.module.ts(16,5): error TS1117: An object literal cannot have multiple properties with the same name in strict mode.
+src/app/pages/pages.module.ts(16,5): error TS2300: Duplicate identifier 'declarations'.
+
+
+Date: 2019-05-19T10:51:39.912Z - Hash: bfb252dc1d971158164b - Time: 1550ms
+10 unchanged chunks
+chunk {pages-pages-module} pages-pages-module.js, pages-pages-module.js.map (pages-pages-module) 52.7 kB  [rendered]
+
+WARNING in ./src/app/pages/pages.module.ts 16:27-40
+"export 'UserComponent' was not found in './user/user.module'
+
+WARNING in ./src/app/pages/pages-routing.module.ts 17:27-40
+"export 'UserComponent' was not found in './user/user.module'
+
+ERROR in src/app/pages/pages-routing.module.ts(4,10): error TS2305: Module '"/home/ec2-user/codingmoa/webapp/src/app/pages/user/user.module"' has no exported member 'UserComponent'.
+src/app/pages/pages.module.ts(9,10): error TS2305: Module '"/home/ec2-user/codingmoa/webapp/src/app/pages/user/user.module"' has no exported member 'UserComponent'.
+src/app/pages/pages.module.ts(16,5): error TS1117: An object literal cannot have multiple properties with the same name in strict mode.
+src/app/pages/pages.module.ts(16,5): error TS2300: Duplicate identifier 'declarations'.
+
+
+Date: 2019-05-19T10:52:29.583Z - Hash: 9341ef2e38d15fec5e79 - Time: 1013ms
+10 unchanged chunks
+chunk {pages-pages-module} pages-pages-module.js, pages-pages-module.js.map (pages-pages-module) 52.7 kB  [rendered]
+
+WARNING in ./src/app/pages/pages.module.ts 16:27-40
+"export 'UserComponent' was not found in './user/user.module'
+
+WARNING in ./src/app/pages/pages-routing.module.ts 17:27-40
+"export 'UserComponent' was not found in './user/user.module'
+
+ERROR in src/app/pages/pages-routing.module.ts(4,10): error TS2305: Module '"/home/ec2-user/codingmoa/webapp/src/app/pages/user/user.module"' has no exported member 'UserComponent'.
+src/app/pages/pages.module.ts(9,10): error TS2305: Module '"/home/ec2-user/codingmoa/webapp/src/app/pages/user/user.module"' has no exported member 'UserComponent'.
+src/app/pages/pages.module.ts(16,5): error TS1117: An object literal cannot have multiple properties with the same name in strict mode.
+src/app/pages/pages.module.ts(16,5): error TS2300: Duplicate identifier 'declarations'.
+
+
+Date: 2019-05-19T10:54:10.935Z - Hash: b1d62e4af35a03bcd2f3 - Time: 1506ms
+10 unchanged chunks
+chunk {starter-starter-module} starter-starter-module.js, starter-starter-module.js.map (starter-starter-module) 4.59 kB  [rendered]
+
+WARNING in ./src/app/pages/pages.module.ts 16:27-40
+"export 'UserComponent' was not found in './user/user.module'
+
+WARNING in ./src/app/pages/pages-routing.module.ts 17:27-40
+"export 'UserComponent' was not found in './user/user.module'
+
+ERROR in src/app/pages/pages-routing.module.ts(4,10): error TS2305: Module '"/home/ec2-user/codingmoa/webapp/src/app/pages/user/user.module"' has no exported member 'UserComponent'.
+src/app/pages/pages.module.ts(9,10): error TS2305: Module '"/home/ec2-user/codingmoa/webapp/src/app/pages/user/user.module"' has no exported member 'UserComponent'.
+src/app/pages/pages.module.ts(16,5): error TS1117: An object literal cannot have multiple properties with the same name in strict mode.
+src/app/pages/pages.module.ts(16,5): error TS2300: Duplicate identifier 'declarations'.
+
+
+Date: 2019-05-19T10:54:46.385Z - Hash: 08144ab02eca847f1a1d - Time: 1120ms
+10 unchanged chunks
+chunk {pages-pages-module} pages-pages-module.js, pages-pages-module.js.map (pages-pages-module) 52.7 kB  [rendered]
+
+WARNING in ./src/app/pages/pages.module.ts 16:27-40
+"export 'UserComponent' was not found in './user/user.module'
+
+ERROR in src/app/pages/pages.module.ts(9,10): error TS2305: Module '"/home/ec2-user/codingmoa/webapp/src/app/pages/user/user.module"' has no exported member 'UserComponent'.
+src/app/pages/pages.module.ts(16,5): error TS1117: An object literal cannot have multiple properties with the same name in strict mode.
+src/app/pages/pages.module.ts(16,5): error TS2300: Duplicate identifier 'declarations'.
+
+
+Date: 2019-05-19T10:55:02.012Z - Hash: b1d62e4af35a03bcd2f3 - Time: 1687ms
+10 unchanged chunks
+chunk {pages-pages-module} pages-pages-module.js, pages-pages-module.js.map (pages-pages-module) 52.7 kB  [rendered]
+
+WARNING in ./src/app/pages/pages.module.ts 16:27-40
+"export 'UserComponent' was not found in './user/user.module'
+
+WARNING in ./src/app/pages/pages-routing.module.ts 17:27-40
+"export 'UserComponent' was not found in './user/user.module'
+
+ERROR in src/app/pages/pages-routing.module.ts(4,10): error TS2305: Module '"/home/ec2-user/codingmoa/webapp/src/app/pages/user/user.module"' has no exported member 'UserComponent'.
+src/app/pages/pages.module.ts(9,10): error TS2305: Module '"/home/ec2-user/codingmoa/webapp/src/app/pages/user/user.module"' has no exported member 'UserComponent'.
+src/app/pages/pages.module.ts(16,5): error TS1117: An object literal cannot have multiple properties with the same name in strict mode.
+src/app/pages/pages.module.ts(16,5): error TS2300: Duplicate identifier 'declarations'.
+

@@ -6,8 +6,9 @@ import { SIDEBAR_TOGGLE_DIRECTIVES } from '../shared/sidebar.directive';
 import { NavigationComponent } from '../shared/header-navigation/navigation.component';
 import { SidebarComponent } from '../shared/sidebar/sidebar.component';
 import { BreadcrumbComponent } from '../shared/breadcrumb/breadcrumb.component';
-
+import { UserComponent } from './user/user.module';
 @NgModule({
+    declarations: [UserComponent],
     imports: [
         CommonModule,
         PagesRoutingModule

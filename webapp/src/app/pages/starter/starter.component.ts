@@ -6,6 +6,7 @@ export class StarterComponent implements AfterViewInit {
   subtitle: string;
   constructor() {
     this.subtitle = 'This is some text within a card block.';
+    console.log(this.subtitle);
   }
 
   ngAfterViewInit() {}
