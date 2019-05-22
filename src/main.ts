@@ -44,15 +44,6 @@ this.config();
 
 this.routes();
 
-var sql = 'select * from book_ex';
-conn.query(sql, function(err:any, rows:any, fields:any){
-       if(err) console.log(err);
-       console.log('rows', rows); // insertId는 auto_increment설정해 놓았다.(고유한 식별자를 알아낼 수 있는 방법이다.)
-       console.log('fields',fields);
-});
-
-
-
 }
 
 
@@ -66,16 +57,20 @@ this.app.listen(this.PORT, () => {
 
 this.app.use('/', express.static(__dirname + '/webapp'));
 
-
-
-
 console.log(`Listening at http://localhost:${this.PORT}/`);
 
 
 });
 
 
-
+this.app.get('/user', function(req, res){
+    var sql = 'select * from book_ex';
+    conn.query(sql, function(err:any, rows:any, fields:any){
+           if(err) console.log(err);
+           console.log('rows', rows); // insertId는 auto_increment설정해 놓았다.(고유한 식별자를 알아낼 수 있는 방법이다.)
+           console.log('fields',fields);
+    });
+  });
 // var sql = 'INSERT INTO topic (title, description, author) VALUES("Express", "Web framework", "jacob")';
 // conn.query(sql, function(err, rows, fields){
 //     if(err) console.log(err);
