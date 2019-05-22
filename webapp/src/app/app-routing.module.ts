@@ -9,7 +9,6 @@ const routes: Routes = [
     loadChildren: './pages/pages.module#PagesModule'
   },
   { path: '**', redirectTo: '' }
- 
 ];
 
 @NgModule({

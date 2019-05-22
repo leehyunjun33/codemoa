@@ -7,7 +7,7 @@ export class UserComponent implements AfterViewInit {
   constructor() {
     this.subtitle = 'This is some text within a card block.';
     console.log(this.subtitle);
-    
+
   }
 
   ngAfterViewInit() {}
