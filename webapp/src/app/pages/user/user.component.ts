@@ -6,7 +6,7 @@ import { GetinfoProvider } from '../../../providers/getinfo/getinfo';
 export class UserComponent implements AfterViewInit {
   subtitle: string;
   constructor(private getinfoProvider: GetinfoProvider) {
-    this.subtitle = 'This is some text within a card block.';
+    this.subtitle = 'useruser';
     console.log(this.subtitle);
 
   }

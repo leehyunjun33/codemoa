@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import 'rxjs/add/operator/map';
 
-@Injectable()
+ @Injectable({providedIn: 'root'})
 export class GetinfoProvider {
   SERVER_PATH: any = 'http://ec2-13-209-164-128.ap-northeast-2.compute.amazonaws.com:3000/';
   constructor(public http: HttpClient) {

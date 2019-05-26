@@ -26,6 +26,7 @@ import { SpinnerComponent } from './shared/spinner.component';
     {
       provide: LocationStrategy,
       useClass: PathLocationStrategy
+      
     }
   ],
   bootstrap: [AppComponent]
