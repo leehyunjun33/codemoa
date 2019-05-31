@@ -1,10 +1,77 @@
 <div class="row">
     <div class="col-12">
-        <div class="card">
+        <div class="card loginPort">
             <div class="card-body">
-                <a href="/portpolio">{{subtitle}}</a>
-                <button type="button" class="btn btn-outline-primary" (click)="this.dbcall()">안녕하세요</button>
+                <h4 class="card-subtitle">my questions</h4>
+
+                <table id="my_question_table" mat-table class="mat-elevation-z8">   
+                        <tr class="myq table_hover" *ngFor="let question of this.data" (click)="this.qDetail(question)"> 
+                            <td mat-cell>{{question.q_title}}</td>
+                            <td mat-cell>{{question.awn_count}}</td>    
+                        </tr>
+                        
+                </table>
                 
+
+            </div>
+        </div>
+
+        <div class="card loginPort">
+            <div class="card-body">
+                <h4 class="card-subtitle">my awnsers</h4>
+              
+            </div>
+        </div>
+
+        <div class="card loginPort">
+            <div class="card-body">
+                <h4 class="card-subtitle">my lectures</h4>
+
+                <div class="row">
+                        <!-- column -->
+                        <div class="col-lg-3 col-md-6">
+                            <!-- Card -->
+                            <div class="card">
+                                <img class="card-img-top img-responsive" src="assets/images/big/java.PNG" alt="Card image cap">
+                                <div class="card-body">
+                                    <h4 class="card-title">JAVA 기초 1</h4>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <a href="#" class="btn btn-primary">보러가기</a>
+                                </div>
+                            </div>
+                            <!-- Card -->
+                        </div>
+                        <!-- column -->
+                        <!-- column -->
+                        <div class="col-lg-3 col-md-6">
+                            <!-- Card -->
+                            <div class="card">
+                                <img class="card-img-top img-responsive" src="assets/images/big/angular.jpeg" alt="Card image cap">
+                                <div class="card-body">
+                                    <h4 class="card-title">Angular 기초 3</h4>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <a href="#" class="btn btn-primary">보러가기</a>
+                                </div>
+                            </div>
+                            <!-- Card -->
+                        </div>
+                        <!-- column -->
+                        <!-- column -->
+                        <div class="col-lg-3 col-md-6">
+                            <!-- Card -->
+                            <div class="card">
+                                <img class="card-img-top img-responsive" src="assets/images/big/python.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <h4 class="card-title">파이썬 완전 정복</h4>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <a href="#" class="btn btn-primary">보러가기</a>
+                                </div>
+                            </div>
+                            <!-- Card -->
+                        </div>
+                        <!-- column -->
+                    </div>
+              
             </div>
         </div>
     </div>

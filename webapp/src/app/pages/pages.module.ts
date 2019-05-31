@@ -7,10 +7,22 @@ import { NavigationComponent } from '../shared/header-navigation/navigation.comp
 import { SidebarComponent } from '../shared/sidebar/sidebar.component';
 import { BreadcrumbComponent } from '../shared/breadcrumb/breadcrumb.component';
 import { UserComponent } from './user/user.component';
+import { LectureComponent } from './lecture/lecture.component';
+import { PortpolioComponent } from './portpolio/portpolio.component';
+import { QuestionComponent } from './user/question/question.component';
+import { FormsModule } from '@angular/forms';
+import { RegisterComponent } from './register/register.component';
+import { BookmarkComponent } from './bookmark/bookmark.component';
+import { ProfileComponent } from './profile/profile.component';
+import { LoginComponent } from './login/login.component';
+import { LectureDetailComponent } from './lecture/lectureDetail/lectureDetail.component';
+
 @NgModule({
     imports: [
         CommonModule,
-        PagesRoutingModule
+        PagesRoutingModule,
+        FormsModule
+
     ],
     declarations: [
         PageComponent,
@@ -18,7 +30,15 @@ import { UserComponent } from './user/user.component';
         SidebarComponent,
         BreadcrumbComponent,
         UserComponent,
-        SIDEBAR_TOGGLE_DIRECTIVES
+        SIDEBAR_TOGGLE_DIRECTIVES,
+        LectureComponent,
+        PortpolioComponent,
+        QuestionComponent,
+        RegisterComponent,
+        BookmarkComponent,
+        ProfileComponent,
+        LoginComponent,
+        LectureDetailComponent
     ]
 })
 export class PagesModule { }

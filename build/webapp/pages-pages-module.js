@@ -166,6 +166,235 @@ function mergeMap(project, concurrent) {
 
 /***/ }),
 
+/***/ "./src/app/pages/bookmark/bookmark.component.html":
+/*!********************************************************!*\
+  !*** ./src/app/pages/bookmark/bookmark.component.html ***!
+  \********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"row\">\r\n    <div class=\"col-12\">\r\n        <div class=\"card\">\r\n            <div class=\"card-body\">\r\n                bookmark\r\n                \r\n                \r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>"
+
+/***/ }),
+
+/***/ "./src/app/pages/bookmark/bookmark.component.ts":
+/*!******************************************************!*\
+  !*** ./src/app/pages/bookmark/bookmark.component.ts ***!
+  \******************************************************/
+/*! exports provided: BookmarkComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BookmarkComponent", function() { return BookmarkComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+
+
+var BookmarkComponent = /** @class */ (function () {
+    function BookmarkComponent() {
+        this.subtitle = 'bookmark';
+        console.log(this.subtitle);
+    }
+    BookmarkComponent.prototype.ngAfterViewInit = function () { };
+    BookmarkComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            template: __webpack_require__(/*! ./bookmark.component.html */ "./src/app/pages/bookmark/bookmark.component.html")
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
+    ], BookmarkComponent);
+    return BookmarkComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/pages/lecture/lecture.component.html":
+/*!******************************************************!*\
+  !*** ./src/app/pages/lecture/lecture.component.html ***!
+  \******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"row\">\r\n    <div class=\"col-12\">\r\n        <div class=\"card\">\r\n            <div class=\"card-body\">\r\n\r\n\r\n                <h3 class=\"card-title\">현재 강의가 없습니다.</h3>\r\n\r\n\r\n\r\n                <!-- <button type=\"button\" class=\"btn btn-outline-primary\" (click)=\"this.dbcall()\">강의 올리기</button> -->\r\n\r\n                <!-- form(action='upload' method='post' enctype=\"multipart/form-data\")\r\n      input(type='file' name='userfile')\r\n      input(type='submit') -->\r\n\r\n                <form action=\"upload\" method=\"POST\" enctype=\"multipart/form-data\">\r\n                    <input type=\"file\" name=\"userfile\"/>\r\n                    <input type=\"submit\"/>\r\n                </form>\r\n\r\n\r\n\r\n\r\n\r\n                <!-- <video controls>\r\n                    <source src=\"../../../assets/video/small.mp4\"/>\r\n                    <source src=\"../../../assets/video/small.ogv\"/>\r\n                </video> -->\r\n\r\n\r\n\r\n                \r\n                \r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>"
+
+/***/ }),
+
+/***/ "./src/app/pages/lecture/lecture.component.ts":
+/*!****************************************************!*\
+  !*** ./src/app/pages/lecture/lecture.component.ts ***!
+  \****************************************************/
+/*! exports provided: LectureComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LectureComponent", function() { return LectureComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+
+
+var LectureComponent = /** @class */ (function () {
+    function LectureComponent() {
+        this.subtitle = 'lecture';
+        console.log(this.subtitle);
+    }
+    LectureComponent.prototype.dbcall = function () {
+        console.log("db 불러");
+    };
+    LectureComponent.prototype.ngAfterViewInit = function () { };
+    LectureComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            template: __webpack_require__(/*! ./lecture.component.html */ "./src/app/pages/lecture/lecture.component.html")
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
+    ], LectureComponent);
+    return LectureComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/pages/lecture/lectureDetail/lectureDetail.component.html":
+/*!**************************************************************************!*\
+  !*** ./src/app/pages/lecture/lectureDetail/lectureDetail.component.html ***!
+  \**************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"row\">\r\n    <div class=\"col-12\">\r\n        <div class=\"card\">\r\n            <div class=\"card-body\" >\r\n              \r\n                \r\n                \r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>"
+
+/***/ }),
+
+/***/ "./src/app/pages/lecture/lectureDetail/lectureDetail.component.ts":
+/*!************************************************************************!*\
+  !*** ./src/app/pages/lecture/lectureDetail/lectureDetail.component.ts ***!
+  \************************************************************************/
+/*! exports provided: LectureDetailComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LectureDetailComponent", function() { return LectureDetailComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+/* harmony import */ var _providers_getinfo_getinfo__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../../providers/getinfo/getinfo */ "./src/providers/getinfo/getinfo.ts");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/fesm5/common.js");
+
+
+
+
+
+var LectureDetailComponent = /** @class */ (function () {
+    function LectureDetailComponent(router, route, getinfoProvider, location) {
+        this.router = router;
+        this.route = route;
+        this.getinfoProvider = getinfoProvider;
+        this.location = location;
+        this.subtitle = 'lectureDetail';
+        console.log(this.subtitle);
+    }
+    LectureDetailComponent.prototype.ngAfterViewInit = function () {
+        $(function () {
+        });
+    };
+    LectureDetailComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            template: __webpack_require__(/*! ./lectureDetail.component.html */ "./src/app/pages/lecture/lectureDetail/lectureDetail.component.html")
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"], _angular_router__WEBPACK_IMPORTED_MODULE_2__["ActivatedRoute"], _providers_getinfo_getinfo__WEBPACK_IMPORTED_MODULE_3__["GetinfoProvider"], _angular_common__WEBPACK_IMPORTED_MODULE_4__["Location"]])
+    ], LectureDetailComponent);
+    return LectureDetailComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/pages/login/login.component.html":
+/*!**************************************************!*\
+  !*** ./src/app/pages/login/login.component.html ***!
+  \**************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"row\">\r\n    <div class=\"col-12\">\r\n        <div class=\"card\">\r\n            <div class=\"card-body\">\r\n                \r\n                <h4 class=\"card-title\">로그인이 필요한 서비스입니다.</h4>\r\n\r\n                    <div class=\"login-item\">\r\n                            <form #myform=\"ngForm\" (ngSubmit)=\"this.login(myform)\" class=\"form form-login\">\r\n                              <div class=\"mat-form-field form-field f1\">\r\n                                <label class=\"user\" for=\"login-email\"><span class=\"hidden\">Email&nbsp;&nbsp;</span></label>\r\n                                <input matInput name=\"email\" id=\"login-email\" type=\"email\" class=\"form-input\" placeholder=\" Email\" required ngModel>\r\n                              </div>\r\n                      \r\n                              <div class=\"mat-form-field form-field\">\r\n                                <label class=\"lock\" for=\"login-password\"><span class=\"hidden\">Password&nbsp;&nbsp;</span></label>\r\n                                <input matInput name=\"password\" id=\"login-password\" type=\"password\" class=\"form-input\" placeholder=\" Password\" required ngModel>\r\n                              </div><br>\r\n                      \r\n                              <div class=\"mat-form-field form-field\">\r\n                                <input matInput id=\"log_button\" type=\"submit\" value=\"로그인\" class=\"btn-primary\">\r\n                                \r\n                              </div>\r\n                            </form>\r\n\r\n                            <button class=\"btn-info reg\" (click)=\"this.register()\">회원가입</button>\r\n                          </div>\r\n                \r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>"
+
+/***/ }),
+
+/***/ "./src/app/pages/login/login.component.ts":
+/*!************************************************!*\
+  !*** ./src/app/pages/login/login.component.ts ***!
+  \************************************************/
+/*! exports provided: LoginComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LoginComponent", function() { return LoginComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+/* harmony import */ var _providers_getinfo_getinfo__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../providers/getinfo/getinfo */ "./src/providers/getinfo/getinfo.ts");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/fesm5/common.js");
+
+
+
+
+
+var LoginComponent = /** @class */ (function () {
+    function LoginComponent(getinfoProvider, router, loca) {
+        this.getinfoProvider = getinfoProvider;
+        this.router = router;
+        this.loca = loca;
+        this.loginId = '';
+        this.loginPw = '';
+        this.subtitle = 'login';
+        console.log(this.subtitle);
+    }
+    LoginComponent.prototype.login = function (form) {
+        var _this = this;
+        console.log(form);
+        this.getinfoProvider.getLogin({ id: form.value.email, pw: form.value.password }).then(function (data) {
+            var res = data;
+            console.log('data', res.m_email);
+            if (data) {
+                alert(res.m_name + "님 안녕하세요");
+                sessionStorage.setItem("email", res.m_email);
+                sessionStorage.setItem("name", res.m_name);
+                sessionStorage.setItem("id", res.m_id);
+                //console.log(data);
+                _this.loca.go('/');
+                window.location.reload();
+            }
+            else {
+                alert("아이디와 비밀번호를 확인해주세요");
+                _this.loca.go('/');
+                window.location.reload();
+            }
+        });
+    };
+    LoginComponent.prototype.register = function () {
+        this.router.navigate(['/register']);
+    };
+    LoginComponent.prototype.ngAfterViewInit = function () { };
+    LoginComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            template: __webpack_require__(/*! ./login.component.html */ "./src/app/pages/login/login.component.html"),
+            styles: ["#log_button {margin-right : 10px; float : left}\n           .f1 {margin-bottom : 10px;\n               margin-top : 25px;} \n           .reg {}   \n  \n  "]
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_providers_getinfo_getinfo__WEBPACK_IMPORTED_MODULE_3__["GetinfoProvider"], _angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"], _angular_common__WEBPACK_IMPORTED_MODULE_4__["Location"]])
+    ], LoginComponent);
+    return LoginComponent;
+}());
+
+
+
+/***/ }),
+
 /***/ "./src/app/pages/pages-routing.module.ts":
 /*!***********************************************!*\
   !*** ./src/app/pages/pages-routing.module.ts ***!
@@ -180,7 +409,21 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
 /* harmony import */ var _pages_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./pages.component */ "./src/app/pages/pages.component.ts");
-/* harmony import */ var _user_user_module__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./user/user.module */ "./src/app/pages/user/user.module.ts");
+/* harmony import */ var _user_user_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./user/user.component */ "./src/app/pages/user/user.component.ts");
+/* harmony import */ var _lecture_lecture_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./lecture/lecture.component */ "./src/app/pages/lecture/lecture.component.ts");
+/* harmony import */ var _portpolio_portpolio_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./portpolio/portpolio.component */ "./src/app/pages/portpolio/portpolio.component.ts");
+/* harmony import */ var _user_question_question_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./user/question/question.component */ "./src/app/pages/user/question/question.component.ts");
+/* harmony import */ var _register_register_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./register/register.component */ "./src/app/pages/register/register.component.ts");
+/* harmony import */ var _bookmark_bookmark_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./bookmark/bookmark.component */ "./src/app/pages/bookmark/bookmark.component.ts");
+/* harmony import */ var _profile_profile_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./profile/profile.component */ "./src/app/pages/profile/profile.component.ts");
+/* harmony import */ var _login_login_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./login/login.component */ "./src/app/pages/login/login.component.ts");
+
+
+
+
+
+
+
 
 
 
@@ -197,7 +440,35 @@ var routes = [
             },
             {
                 path: 'user',
-                component: _user_user_module__WEBPACK_IMPORTED_MODULE_4__["UserComponent"]
+                component: _user_user_component__WEBPACK_IMPORTED_MODULE_4__["UserComponent"]
+            },
+            {
+                path: 'user/question',
+                component: _user_question_question_component__WEBPACK_IMPORTED_MODULE_7__["QuestionComponent"]
+            },
+            {
+                path: 'lecture',
+                component: _lecture_lecture_component__WEBPACK_IMPORTED_MODULE_5__["LectureComponent"]
+            },
+            {
+                path: 'portpolio',
+                component: _portpolio_portpolio_component__WEBPACK_IMPORTED_MODULE_6__["PortpolioComponent"]
+            },
+            {
+                path: 'register',
+                component: _register_register_component__WEBPACK_IMPORTED_MODULE_8__["RegisterComponent"]
+            },
+            {
+                path: 'login',
+                component: _login_login_component__WEBPACK_IMPORTED_MODULE_11__["LoginComponent"]
+            },
+            {
+                path: 'bookmark',
+                component: _bookmark_bookmark_component__WEBPACK_IMPORTED_MODULE_9__["BookmarkComponent"]
+            },
+            {
+                path: 'profile',
+                component: _profile_profile_component__WEBPACK_IMPORTED_MODULE_10__["ProfileComponent"]
             },
             {
                 path: 'component',
@@ -229,7 +500,7 @@ var PagesRoutingModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<!-- ============================================================== -->\n<!-- Main wrapper - style you can find in pages.scss -->\n<!-- ============================================================== -->\n<div id=\"main-wrapper\">\n    <!-- ============================================================== -->\n    <!-- Topbar header - style you can find in pages.scss -->\n    <!-- ============================================================== -->\n    <app-navigation></app-navigation>\n    <!-- ============================================================== -->\n    <!-- Left Sidebar - style you can find in sidebar.scss  -->\n    <!-- ============================================================== -->\n    <app-sidebar></app-sidebar>\n    <!-- ============================================================== -->\n    <!-- End Left Sidebar - style you can find in sidebar.scss  -->\n    <!-- ============================================================== -->\n    <!-- ============================================================== -->\n    <!-- Page wrapper  -->\n    <!-- ============================================================== -->\n    <div class=\"page-wrapper\">\n        <!-- ============================================================== -->\n        <!-- Container fluid  -->\n        <!-- ============================================================== -->\n        <div class=\"container-fluid\">\n            <app-breadcrumb></app-breadcrumb>\n            <!-- ============================================================== -->\n            <!-- Start Page Content -->\n            <!-- ============================================================== -->\n            <router-outlet></router-outlet>\n            <!-- ============================================================== -->\n            <!-- End Start Page Content -->\n            <!-- ============================================================== -->\n        </div>\n        <!-- ============================================================== -->\n        <!-- End Container fluid  -->\n        <!-- ============================================================== -->\n        <!-- ============================================================== -->\n        <!-- footer -->\n        <!-- ============================================================== -->\n        <footer class=\"footer\">\n            © 2018 Monster Admin by wrappixel.com\n        </footer>\n        <!-- ============================================================== -->\n        <!-- End footer -->\n        <!-- ============================================================== -->\n    </div>\n    <!-- ============================================================== -->\n    <!-- End Page wrapper  -->\n    <!-- ============================================================== -->\n</div>"
+module.exports = "<!-- ============================================================== -->\r\n<!-- Main wrapper - style you can find in pages.scss -->\r\n<!-- ============================================================== -->\r\n<div id=\"main-wrapper\">\r\n    <!-- ============================================================== -->\r\n    <!-- Topbar header - style you can find in pages.scss -->\r\n    <!-- ============================================================== -->\r\n    <app-navigation></app-navigation>\r\n    <!-- ============================================================== -->\r\n    <!-- Left Sidebar - style you can find in sidebar.scss  -->\r\n    <!-- ============================================================== -->\r\n    <app-sidebar></app-sidebar>\r\n    <!-- ============================================================== -->\r\n    <!-- End Left Sidebar - style you can find in sidebar.scss  -->\r\n    <!-- ============================================================== -->\r\n    <!-- ============================================================== -->\r\n    <!-- Page wrapper  -->\r\n    <!-- ============================================================== -->\r\n    <div class=\"page-wrapper\">\r\n        <!-- ============================================================== -->\r\n        <!-- Container fluid  -->\r\n        <!-- ============================================================== -->\r\n        <div class=\"container-fluid\">\r\n            <app-breadcrumb></app-breadcrumb>\r\n            <!-- ============================================================== -->\r\n            <!-- Start Page Content -->\r\n            <!-- ============================================================== -->\r\n            <router-outlet></router-outlet>\r\n            <!-- ============================================================== -->\r\n            <!-- End Start Page Content -->\r\n            <!-- ============================================================== -->\r\n        </div>\r\n        <!-- ============================================================== -->\r\n        <!-- End Container fluid  -->\r\n        <!-- ============================================================== -->\r\n        <!-- ============================================================== -->\r\n        <!-- footer -->\r\n        <!-- ============================================================== -->\r\n        <footer class=\"footer\">\r\n            © COMEMOA\r\n        </footer>\r\n        <!-- ============================================================== -->\r\n        <!-- End footer -->\r\n        <!-- ============================================================== -->\r\n    </div>\r\n    <!-- ============================================================== -->\r\n    <!-- End Page wrapper  -->\r\n    <!-- ============================================================== -->\r\n</div>"
 
 /***/ }),
 
@@ -240,7 +511,7 @@ module.exports = "<!-- =========================================================
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".main-container {\n  margin-top: 60px;\n  margin-left: 235px;\n  padding: 15px;\n  -ms-overflow-x: hidden;\n  overflow-x: hidden;\n  overflow-y: scroll;\n  position: relative;\n  overflow: hidden; }\n\n@media screen and (max-width: 992px) {\n  .main-container {\n    margin-left: 0px !important; } }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9ob21lL2VjMi11c2VyL2NvZGluZ21vYS93ZWJhcHAvc3JjL2FwcC9wYWdlcy9wYWdlcy5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNJLGdCQUFnQjtFQUNoQixrQkFBa0I7RUFDbEIsYUFBYTtFQUNiLHNCQUFzQjtFQUN0QixrQkFBa0I7RUFDbEIsa0JBQWtCO0VBQ2xCLGtCQUFrQjtFQUNsQixnQkFBZ0IsRUFBQTs7QUFHcEI7RUFDSTtJQUNJLDJCQUEyQixFQUFBLEVBQzlCIiwiZmlsZSI6InNyYy9hcHAvcGFnZXMvcGFnZXMuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyIubWFpbi1jb250YWluZXJ7XG4gICAgbWFyZ2luLXRvcDogNjBweDtcbiAgICBtYXJnaW4tbGVmdDogMjM1cHg7XG4gICAgcGFkZGluZzogMTVweDtcbiAgICAtbXMtb3ZlcmZsb3cteDogaGlkZGVuO1xuICAgIG92ZXJmbG93LXg6IGhpZGRlbjtcbiAgICBvdmVyZmxvdy15OiBzY3JvbGw7XG4gICAgcG9zaXRpb246IHJlbGF0aXZlO1xuICAgIG92ZXJmbG93OiBoaWRkZW47XG5cbn1cbkBtZWRpYSBzY3JlZW4gYW5kIChtYXgtd2lkdGg6IDk5MnB4KSB7XG4gICAgLm1haW4tY29udGFpbmVyIHtcbiAgICAgICAgbWFyZ2luLWxlZnQ6IDBweCAhaW1wb3J0YW50O1xuICAgIH1cbn1cbiJdfQ== */"
+module.exports = ".main-container {\n  margin-top: 60px;\n  margin-left: 235px;\n  padding: 15px;\n  -ms-overflow-x: hidden;\n  overflow-x: hidden;\n  overflow-y: scroll;\n  position: relative;\n  overflow: hidden; }\n\n@media screen and (max-width: 992px) {\n  .main-container {\n    margin-left: 0px !important; } }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9ob21lL2VjMi11c2VyL2NvZGluZ21vYS93ZWJhcHAvc3JjL2FwcC9wYWdlcy9wYWdlcy5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNJLGdCQUFnQjtFQUNoQixrQkFBa0I7RUFDbEIsYUFBYTtFQUNiLHNCQUFzQjtFQUN0QixrQkFBa0I7RUFDbEIsa0JBQWtCO0VBQ2xCLGtCQUFrQjtFQUNsQixnQkFBZ0IsRUFBQTs7QUFHcEI7RUFDSTtJQUNJLDJCQUEyQixFQUFBLEVBQzlCIiwiZmlsZSI6InNyYy9hcHAvcGFnZXMvcGFnZXMuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyIubWFpbi1jb250YWluZXJ7XHJcbiAgICBtYXJnaW4tdG9wOiA2MHB4O1xyXG4gICAgbWFyZ2luLWxlZnQ6IDIzNXB4O1xyXG4gICAgcGFkZGluZzogMTVweDtcclxuICAgIC1tcy1vdmVyZmxvdy14OiBoaWRkZW47XHJcbiAgICBvdmVyZmxvdy14OiBoaWRkZW47XHJcbiAgICBvdmVyZmxvdy15OiBzY3JvbGw7XHJcbiAgICBwb3NpdGlvbjogcmVsYXRpdmU7XHJcbiAgICBvdmVyZmxvdzogaGlkZGVuO1xyXG5cclxufVxyXG5AbWVkaWEgc2NyZWVuIGFuZCAobWF4LXdpZHRoOiA5OTJweCkge1xyXG4gICAgLm1haW4tY29udGFpbmVyIHtcclxuICAgICAgICBtYXJnaW4tbGVmdDogMHB4ICFpbXBvcnRhbnQ7XHJcbiAgICB9XHJcbn1cclxuIl19 */"
 
 /***/ }),
 
@@ -268,7 +539,7 @@ var PageComponent = /** @class */ (function () {
         if (this.router.url === '/') {
             this.router.navigate(['/starter']);
         }
-        else if (this.router.url === '/user') {
+        else if (this.router.url === 'user') {
             this.router.navigate(['/user']);
         }
     };
@@ -306,7 +577,25 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _shared_header_navigation_navigation_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../shared/header-navigation/navigation.component */ "./src/app/shared/header-navigation/navigation.component.ts");
 /* harmony import */ var _shared_sidebar_sidebar_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../shared/sidebar/sidebar.component */ "./src/app/shared/sidebar/sidebar.component.ts");
 /* harmony import */ var _shared_breadcrumb_breadcrumb_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../shared/breadcrumb/breadcrumb.component */ "./src/app/shared/breadcrumb/breadcrumb.component.ts");
-/* harmony import */ var _user_user_module__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./user/user.module */ "./src/app/pages/user/user.module.ts");
+/* harmony import */ var _user_user_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./user/user.component */ "./src/app/pages/user/user.component.ts");
+/* harmony import */ var _lecture_lecture_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./lecture/lecture.component */ "./src/app/pages/lecture/lecture.component.ts");
+/* harmony import */ var _portpolio_portpolio_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./portpolio/portpolio.component */ "./src/app/pages/portpolio/portpolio.component.ts");
+/* harmony import */ var _user_question_question_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./user/question/question.component */ "./src/app/pages/user/question/question.component.ts");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm5/forms.js");
+/* harmony import */ var _register_register_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./register/register.component */ "./src/app/pages/register/register.component.ts");
+/* harmony import */ var _bookmark_bookmark_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./bookmark/bookmark.component */ "./src/app/pages/bookmark/bookmark.component.ts");
+/* harmony import */ var _profile_profile_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./profile/profile.component */ "./src/app/pages/profile/profile.component.ts");
+/* harmony import */ var _login_login_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./login/login.component */ "./src/app/pages/login/login.component.ts");
+/* harmony import */ var _lecture_lectureDetail_lectureDetail_component__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./lecture/lectureDetail/lectureDetail.component */ "./src/app/pages/lecture/lectureDetail/lectureDetail.component.ts");
+
+
+
+
+
+
+
+
+
 
 
 
@@ -322,21 +611,321 @@ var PagesModule = /** @class */ (function () {
     }
     PagesModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
-            declarations: [_user_user_module__WEBPACK_IMPORTED_MODULE_9__["UserComponent"]],
             imports: [
                 _angular_common__WEBPACK_IMPORTED_MODULE_2__["CommonModule"],
-                _pages_routing_module__WEBPACK_IMPORTED_MODULE_3__["PagesRoutingModule"]
+                _pages_routing_module__WEBPACK_IMPORTED_MODULE_3__["PagesRoutingModule"],
+                _angular_forms__WEBPACK_IMPORTED_MODULE_13__["FormsModule"]
             ],
             declarations: [
                 _pages_component__WEBPACK_IMPORTED_MODULE_4__["PageComponent"],
                 _shared_header_navigation_navigation_component__WEBPACK_IMPORTED_MODULE_6__["NavigationComponent"],
                 _shared_sidebar_sidebar_component__WEBPACK_IMPORTED_MODULE_7__["SidebarComponent"],
                 _shared_breadcrumb_breadcrumb_component__WEBPACK_IMPORTED_MODULE_8__["BreadcrumbComponent"],
-                _shared_sidebar_directive__WEBPACK_IMPORTED_MODULE_5__["SIDEBAR_TOGGLE_DIRECTIVES"]
+                _user_user_component__WEBPACK_IMPORTED_MODULE_9__["UserComponent"],
+                _shared_sidebar_directive__WEBPACK_IMPORTED_MODULE_5__["SIDEBAR_TOGGLE_DIRECTIVES"],
+                _lecture_lecture_component__WEBPACK_IMPORTED_MODULE_10__["LectureComponent"],
+                _portpolio_portpolio_component__WEBPACK_IMPORTED_MODULE_11__["PortpolioComponent"],
+                _user_question_question_component__WEBPACK_IMPORTED_MODULE_12__["QuestionComponent"],
+                _register_register_component__WEBPACK_IMPORTED_MODULE_14__["RegisterComponent"],
+                _bookmark_bookmark_component__WEBPACK_IMPORTED_MODULE_15__["BookmarkComponent"],
+                _profile_profile_component__WEBPACK_IMPORTED_MODULE_16__["ProfileComponent"],
+                _login_login_component__WEBPACK_IMPORTED_MODULE_17__["LoginComponent"],
+                _lecture_lectureDetail_lectureDetail_component__WEBPACK_IMPORTED_MODULE_18__["LectureDetailComponent"]
             ]
         })
     ], PagesModule);
     return PagesModule;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/pages/portpolio/portpolio.component.html":
+/*!**********************************************************!*\
+  !*** ./src/app/pages/portpolio/portpolio.component.html ***!
+  \**********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"row\">\r\n    <div class=\"col-12\">\r\n        <div class=\"card loginPort\">\r\n            <div class=\"card-body\">\r\n                <h4 class=\"card-subtitle\">my questions</h4>\r\n\r\n                <table id=\"my_question_table\" mat-table class=\"mat-elevation-z8\">   \r\n                        <tr class=\"myq table_hover\" *ngFor=\"let question of this.data\" (click)=\"this.qDetail(question)\"> \r\n                            <td mat-cell>{{question.q_title}}</td>\r\n                            <td mat-cell>{{question.awn_count}}</td>    \r\n                        </tr>\r\n                        \r\n                </table>\r\n                \r\n\r\n            </div>\r\n        </div>\r\n\r\n        <div class=\"card loginPort\">\r\n            <div class=\"card-body\">\r\n                <h4 class=\"card-subtitle\">my awnsers</h4>\r\n              \r\n            </div>\r\n        </div>\r\n\r\n        <div class=\"card loginPort\">\r\n            <div class=\"card-body\">\r\n                <h4 class=\"card-subtitle\">my lectures</h4>\r\n\r\n                <div class=\"row\">\r\n                        <!-- column -->\r\n                        <div class=\"col-lg-3 col-md-6\">\r\n                            <!-- Card -->\r\n                            <div class=\"card\">\r\n                                <img class=\"card-img-top img-responsive\" src=\"assets/images/big/java.PNG\" alt=\"Card image cap\">\r\n                                <div class=\"card-body\">\r\n                                    <h4 class=\"card-title\">JAVA 기초 1</h4>\r\n                                    <p class=\"card-text\">Some quick example text to build on the card title and make up the bulk of the card's content.</p>\r\n                                    <a href=\"#\" class=\"btn btn-primary\">보러가기</a>\r\n                                </div>\r\n                            </div>\r\n                            <!-- Card -->\r\n                        </div>\r\n                        <!-- column -->\r\n                        <!-- column -->\r\n                        <div class=\"col-lg-3 col-md-6\">\r\n                            <!-- Card -->\r\n                            <div class=\"card\">\r\n                                <img class=\"card-img-top img-responsive\" src=\"assets/images/big/angular.jpeg\" alt=\"Card image cap\">\r\n                                <div class=\"card-body\">\r\n                                    <h4 class=\"card-title\">Angular 기초 3</h4>\r\n                                    <p class=\"card-text\">Some quick example text to build on the card title and make up the bulk of the card's content.</p>\r\n                                    <a href=\"#\" class=\"btn btn-primary\">보러가기</a>\r\n                                </div>\r\n                            </div>\r\n                            <!-- Card -->\r\n                        </div>\r\n                        <!-- column -->\r\n                        <!-- column -->\r\n                        <div class=\"col-lg-3 col-md-6\">\r\n                            <!-- Card -->\r\n                            <div class=\"card\">\r\n                                <img class=\"card-img-top img-responsive\" src=\"assets/images/big/python.jpg\" alt=\"Card image cap\">\r\n                                <div class=\"card-body\">\r\n                                    <h4 class=\"card-title\">파이썬 완전 정복</h4>\r\n                                    <p class=\"card-text\">Some quick example text to build on the card title and make up the bulk of the card's content.</p>\r\n                                    <a href=\"#\" class=\"btn btn-primary\">보러가기</a>\r\n                                </div>\r\n                            </div>\r\n                            <!-- Card -->\r\n                        </div>\r\n                        <!-- column -->\r\n                    </div>\r\n              \r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>"
+
+/***/ }),
+
+/***/ "./src/app/pages/portpolio/portpolio.component.ts":
+/*!********************************************************!*\
+  !*** ./src/app/pages/portpolio/portpolio.component.ts ***!
+  \********************************************************/
+/*! exports provided: PortpolioComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PortpolioComponent", function() { return PortpolioComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _providers_getinfo_getinfo__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../providers/getinfo/getinfo */ "./src/providers/getinfo/getinfo.ts");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/fesm5/common.js");
+
+
+
+
+
+var PortpolioComponent = /** @class */ (function () {
+    function PortpolioComponent(getinfoProvider, router, loca) {
+        this.getinfoProvider = getinfoProvider;
+        this.router = router;
+        this.loca = loca;
+        this.data = [];
+        this.subtitle = 'portpolio';
+        console.log(this.subtitle);
+    }
+    PortpolioComponent.prototype.qDetail = function (question) {
+        console.log('왜 안되는거야2222', question);
+        this.router.navigate(['/user/question', question]);
+    };
+    PortpolioComponent.prototype.ngAfterViewInit = function () {
+        var _this = this;
+        var email = sessionStorage.getItem("email");
+        console.log("qemail", email);
+        this.getinfoProvider.getMyQuestion(email).then(function (data) {
+            var res = data;
+            _this.data = res;
+            console.log("qdata", data);
+        });
+        // $(function(){
+        //   $("#loginF").hide();
+        //   if(!sessionStorage.getItem("email")){
+        //     $("#loginF").show();
+        //     $(".loginPort").hide();
+        //   }else{
+        //     $("#loginF").hide();
+        //     $("#log_please").hide();
+        //   }
+        // })
+    };
+    PortpolioComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            template: __webpack_require__(/*! ./portpolio.component.html */ "./src/app/pages/portpolio/portpolio.component.html"),
+            styles: [".myq { margin-bottom : 15px;}\n  #my_question_table {\n    border-collapse: separate;\n    border-spacing: 1px;\n    text-align: left;\n    line-height: 1.5;\n    border-top: 1px solid #ccc;\n  margin : 20px 10px;\n}\n#my_question_table th {\n    padding: 10px;\n    font-weight: bold;\n    vertical-align: top;\n    border-bottom: 1px solid #ccc;\n}\n#my_question_table td {\n    padding: 10px;\n    vertical-align: top;\n    border-bottom: 1px solid #ccc;\n}"]
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_providers_getinfo_getinfo__WEBPACK_IMPORTED_MODULE_2__["GetinfoProvider"], _angular_router__WEBPACK_IMPORTED_MODULE_3__["Router"], _angular_common__WEBPACK_IMPORTED_MODULE_4__["Location"]])
+    ], PortpolioComponent);
+    return PortpolioComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/pages/profile/profile.component.html":
+/*!******************************************************!*\
+  !*** ./src/app/pages/profile/profile.component.html ***!
+  \******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"row\">\r\n    <div class=\"col-12\">\r\n        <div class=\"card\">\r\n            <div class=\"card-body\">\r\n                    <div class=\"card-body\">\r\n                        <h6 class=\"card-category text-gray\">JAVA / python</h6>\r\n                        <h4 class=\"card-title\">이현준</h4>\r\n                        <p class=\"card-description\">\r\n                             Don't be scared of the truth because we need to restart the human foundation in truth And I love you like Kanye loves Kanye I love Rick Owens’ bed design but the back is...\r\n                        </p>\r\n                        <a href=\"#pablo\" class=\"btn btn-danger btn-round\">질문 작성하러가기</a>\r\n                    </div>\r\n                \r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>"
+
+/***/ }),
+
+/***/ "./src/app/pages/profile/profile.component.ts":
+/*!****************************************************!*\
+  !*** ./src/app/pages/profile/profile.component.ts ***!
+  \****************************************************/
+/*! exports provided: ProfileComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ProfileComponent", function() { return ProfileComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+
+
+var ProfileComponent = /** @class */ (function () {
+    function ProfileComponent() {
+        this.subtitle = 'profile';
+        console.log(this.subtitle);
+    }
+    ProfileComponent.prototype.ngAfterViewInit = function () { };
+    ProfileComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            template: __webpack_require__(/*! ./profile.component.html */ "./src/app/pages/profile/profile.component.html")
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
+    ], ProfileComponent);
+    return ProfileComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/pages/register/register.component.html":
+/*!********************************************************!*\
+  !*** ./src/app/pages/register/register.component.html ***!
+  \********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"row\">\r\n    <div class=\"col-12\">\r\n        <div class=\"card\">\r\n            <div class=\"card-body\">\r\n\r\n                    <h4 class=\"card-title\">회원가입</h4>\r\n\r\n                    <div id=\"registerF\" class=\"login-item\">\r\n                            <form #myform=\"ngForm\" (ngSubmit)=\"this.registerInput(myform)\" class=\"form form-login\">\r\n                                <div class=\"form-field\">\r\n                                    <label class=\"user\" for=\"login-email\"><span class=\"hidden\">e-mail</span></label><br>\r\n                                    <input name=\"m_email\" id=\"login-email\" type=\"email\" class=\"form-input\" required ngModel>\r\n                                  </div><br>\r\n                          \r\n                                  <div class=\"form-field\">\r\n                                    <label class=\"lock\" for=\"login-password\"><span class=\"hidden\">password</span></label><br>\r\n                                    <input name=\"m_password\" id=\"login-password\" type=\"password\" class=\"form-input\" required ngModel>\r\n                                    \r\n                                  </div><br>\r\n\r\n                                  <div class=\"form-field\">\r\n                                        <label class=\"lock\" for=\"login-name\"><span class=\"hidden\">name</span></label><br>\r\n                                        <input name=\"m_name\" id=\"login-name\" type=\"text\" class=\"form-input\" required ngModel>\r\n                                        \r\n                                      </div><br>\r\n                          \r\n                                  <div class=\"form-field\">\r\n                                    <input id=\"log_button\" type=\"submit\" value=\"회원가입\" class=\"btn-primary\">\r\n                                </div>\r\n                            </form>\r\n                        </div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>"
+
+/***/ }),
+
+/***/ "./src/app/pages/register/register.component.ts":
+/*!******************************************************!*\
+  !*** ./src/app/pages/register/register.component.ts ***!
+  \******************************************************/
+/*! exports provided: RegisterComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RegisterComponent", function() { return RegisterComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _providers_getinfo_getinfo__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../providers/getinfo/getinfo */ "./src/providers/getinfo/getinfo.ts");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/fesm5/common.js");
+
+
+
+
+var RegisterComponent = /** @class */ (function () {
+    function RegisterComponent(getinfoProvider, location) {
+        this.getinfoProvider = getinfoProvider;
+        this.location = location;
+        this.data = [];
+        this.subtitle = 'register';
+        console.log(this.subtitle);
+    }
+    RegisterComponent.prototype.registerInput = function (form) {
+        var _this = this;
+        this.getinfoProvider.getRegister({ m_email: form.value.m_email, m_password: form.value.m_password, m_name: form.value.m_name }).then(function (data) {
+            var res = data;
+            _this.data = res;
+            console.log(data);
+            if (data) {
+                alert("환영합니다.");
+                _this.location.go('/');
+                window.location.reload();
+            }
+        });
+    };
+    RegisterComponent.prototype.ngAfterViewInit = function () { };
+    RegisterComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            template: __webpack_require__(/*! ./register.component.html */ "./src/app/pages/register/register.component.html")
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_providers_getinfo_getinfo__WEBPACK_IMPORTED_MODULE_2__["GetinfoProvider"], _angular_common__WEBPACK_IMPORTED_MODULE_3__["Location"]])
+    ], RegisterComponent);
+    return RegisterComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/pages/user/question/question.component.html":
+/*!*************************************************************!*\
+  !*** ./src/app/pages/user/question/question.component.html ***!
+  \*************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"row\">\r\n    <div class=\"col-12\">\r\n        <div class=\"card\">\r\n            <div class=\"card-body\" >\r\n                <h3 class=\"card-title\">{{this.data.q_title}}</h3>\r\n                <h6 class=\"card-subtitle\">{{this.data.m_name}}</h6>\r\n\r\n                <input id=\"email_hidden\" type=\"hidden\" value=\"this.data.m_email\"/>\r\n                \r\n                <div border=\"1\">\r\n                    {{this.data.q_content}}<br>\r\n                </div>\r\n                \r\n            </div>\r\n        </div>\r\n\r\n        <div class=\"card\" *ngFor=\"let awnser of this.awnList\">\r\n                <div class=\"card-body\" >\r\n                    <h5 class=\"casd-subtitle\">{{awnser.am_name}}</h5>\r\n                    <p>\r\n                        {{awnser.a_content}}\r\n                    </p>\r\n\r\n                    <!-- *ngIf=\"this.data.m_email != this.emailCheck\"  -->\r\n                    <button class=\"checkBtn btn btn-info btn-circle\"><i class=\"fa fa-check\"></i></button>\r\n                    <button class=\"checkBtn btn btn-warning btn-circle\" placement=\"top\" ngbTooltip=\"즐겨찾기\"><i class=\"fa fa-heart\"></i></button>\r\n                </div>\r\n        </div>\r\n\r\n        \r\n\r\n        <div class=\"card\">\r\n            <div class=\"card-body\" >\r\n                <h4 id=\"noAwntitle\" class=\"card-title\">당신의 답변을 기다리고 있습니다.</h4>\r\n                <div id=\"awnserF\" class=\"login-item\">\r\n                        <form #myform=\"ngForm\" (ngSubmit)=\"this.awnser_input(myform)\" class=\"form form-login\">               \r\n                              <div class=\"form-field\">\r\n                                <label class=\"lock\" for=\"login-password\"><span class=\"hidden\">Awnser</span></label><br>\r\n                                <!-- <input name=\"password\" id=\"login-password\" type=\"password\" class=\"form-input\" placeholder=\"Password\" required ngModel> -->\r\n                                <textarea name=\"a_content\" class=\"form-field\" required ngModel>\r\n    \r\n    \r\n                                </textarea>\r\n                              </div><br>\r\n                      \r\n                              <div class=\"form-field\">\r\n                                <input id=\"aws_button\" type=\"submit\" value=\"답변하기\" class=\"btn-primary\">\r\n                            </div>\r\n                        </form>\r\n                    </div>\r\n                <button *ngIf=\"this.data.m_email != this.emailCheck\" id=\"awnShow\" class=\"btn-primary\">답변하기</button>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>"
+
+/***/ }),
+
+/***/ "./src/app/pages/user/question/question.component.ts":
+/*!***********************************************************!*\
+  !*** ./src/app/pages/user/question/question.component.ts ***!
+  \***********************************************************/
+/*! exports provided: QuestionComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "QuestionComponent", function() { return QuestionComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+/* harmony import */ var _providers_getinfo_getinfo__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../../providers/getinfo/getinfo */ "./src/providers/getinfo/getinfo.ts");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/fesm5/common.js");
+
+
+
+
+
+var QuestionComponent = /** @class */ (function () {
+    function QuestionComponent(router, route, getinfoProvider, location) {
+        this.router = router;
+        this.route = route;
+        this.getinfoProvider = getinfoProvider;
+        this.location = location;
+        this.data = [];
+        this.awnList = [];
+        this.subtitle = 'quest';
+        console.log(this.subtitle);
+        this.emailCheck = sessionStorage.getItem("email");
+    }
+    QuestionComponent.prototype.awnser_input = function (form) {
+        var _this = this;
+        var qid = this.data.q_id;
+        var qname = this.data.m_name;
+        var mname = sessionStorage.getItem("name");
+        this.getinfoProvider.getAwnser({ q_id: qid, q_name: qname, m_name: mname, content: form.value.a_content }).then(function (data) {
+            var res = data;
+            _this.data = res;
+            console.log(data);
+            if (data) {
+                //this.location.go('/user');
+                window.location.reload();
+            }
+        });
+    };
+    QuestionComponent.prototype.ngAfterViewInit = function () {
+        $(function () {
+            $("#awnserF").hide();
+            var email = $("#email_hidden").attr('value');
+            $("#awnShow").on("click", function () {
+                $("#noAwntitle").hide();
+                $("#awnserF").show();
+                $(this).hide();
+            });
+            if (!sessionStorage.getItem("email")) {
+                $("#awnShow").hide();
+            }
+            if (email == sessionStorage.getItem("email")) {
+                $(".checkBtn").hide();
+            }
+        });
+    };
+    QuestionComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        var qdata = this.route.params.subscribe(function (params) {
+            console.log('params2', params);
+            _this.data = params;
+        });
+        //console.log('왓니2222222222222222222222222 ?', this.data);
+        this.getinfoProvider.getAwnserList({ q_id: this.data.q_id }).then(function (data) {
+            var res = data;
+            _this.awnList = res;
+            console.log("awnList", _this.awnList);
+            if (!data) {
+                $("#noAwntitle").hide();
+            }
+        });
+    };
+    QuestionComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            template: __webpack_require__(/*! ./question.component.html */ "./src/app/pages/user/question/question.component.html"),
+            styles: [" .checkBtn { float : right; \n                        margin-left : 10px}\n\n  }"]
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"], _angular_router__WEBPACK_IMPORTED_MODULE_2__["ActivatedRoute"], _providers_getinfo_getinfo__WEBPACK_IMPORTED_MODULE_3__["GetinfoProvider"], _angular_common__WEBPACK_IMPORTED_MODULE_4__["Location"]])
+    ], QuestionComponent);
+    return QuestionComponent;
 }());
 
 
@@ -350,7 +939,7 @@ var PagesModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"row\">\r\n    <div class=\"col-12\">\r\n        <div class=\"card\">\r\n            <div class=\"card-body\">\r\n                <a href=\"/user\">{{subtitle}}</a>\r\n                \r\n                \r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>"
+module.exports = "<div class=\"row\">\r\n    <div class=\"col-12\">\r\n        <div class=\"card\">\r\n            <div class=\"card-body\">      \r\n                <!-- <a href=\"/user\">{{subtitle}}</a> -->\r\n                <!-- <button type=\"button\" class=\"btn btn-outline-primary guswls\"  (click)=\"this.dbcall()\">DB를 불러주세요</button> -->\r\n\r\n                <h3 class=\"card-subtitle\">Q & A</h3>\r\n\r\n                \r\n\r\n                <table id=\"question_table\" mat-table class=\"mat-elevation-z8\">\r\n                    <tr width=50%>\r\n                        <th class=\"th1\" mat-header-cell witdth=\"30%\">작성자</th>\r\n                        <th mat-header-cell width=\"70%\">제목</th>                        \r\n                    </tr>\r\n                    \r\n\r\n                    <tr class=\"table_hover\" *ngFor=\"let question of this.data\" (click)=\"this.qDetail(question)\">\r\n                        <td mat-cell>{{question.m_name}}</td>  \r\n                        <td mat-cell>{{question.q_title}}</td>    \r\n                    </tr>\r\n                    \r\n                </table>\r\n\r\n                <div id=\"questionF\" class=\"login-item\">\r\n                    <form #myform=\"ngForm\" (ngSubmit)=\"this.queust_input(myform)\" class=\"form form-login\">\r\n                        <div class=\"form-field\">\r\n                            <label class=\"user\" for=\"login-email\"><span class=\"hidden\">제목</span></label><br>\r\n                            <input name=\"q_title\" id=\"login-email\" type=\"email\" class=\"form-input\" required ngModel>\r\n                          </div><br>\r\n                  \r\n                          <div class=\"form-field\">\r\n                            <label class=\"lock\" for=\"login-password\"><span class=\"hidden\">Content</span></label><br>\r\n                            <!-- <input name=\"password\" id=\"login-password\" type=\"password\" class=\"form-input\" placeholder=\"Password\" required ngModel> -->\r\n                            <textarea name=\"q_content\" class=\"form-field\" required ngModel>\r\n\r\n\r\n                            </textarea>\r\n                          </div><br>\r\n                  \r\n                          <div class=\"form-field\">\r\n                            <input id=\"log_button\" type=\"submit\" value=\"질문하기\" class=\"btn-primary\">\r\n                        </div>\r\n                    </form>\r\n                </div>\r\n\r\n\r\n\r\n                <br>\r\n\r\n                <button id=\"questButton\" class=\"btn-primary\" (click)=\"this.showForm()\">질문하기</button>\r\n\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>"
 
 /***/ }),
 
@@ -366,72 +955,81 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "UserComponent", function() { return UserComponent; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _providers_getinfo_getinfo__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../providers/getinfo/getinfo */ "./src/providers/getinfo/getinfo.ts");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/fesm5/common.js");
+
+
+
 
 
 var UserComponent = /** @class */ (function () {
-    function UserComponent() {
-        this.subtitle = 'This is some text within a card block.';
+    //qdata: any = [];
+    function UserComponent(getinfoProvider, router, location) {
+        var _this = this;
+        this.getinfoProvider = getinfoProvider;
+        this.router = router;
+        this.location = location;
+        this.data = [];
+        this.getinfoProvider.getUser().then(function (data) {
+            var res = data;
+            _this.data = res;
+        });
+        this.subtitle = 'useruser';
         console.log(this.subtitle);
     }
-    UserComponent.prototype.ngAfterViewInit = function () { };
+    UserComponent.prototype.qDetail = function (question) {
+        console.log('왜 안되는거야2222', question);
+        this.router.navigate(['/user/question', question]);
+    };
+    UserComponent.prototype.showForm = function () {
+        $("#question_table").hide();
+        $("#questionF").show();
+        $("#questButton").hide();
+    };
+    UserComponent.prototype.queust_input = function (form) {
+        var _this = this;
+        var m_name = sessionStorage.getItem("name");
+        var m_email = sessionStorage.getItem("email");
+        this.getinfoProvider.getQuestion({ name: m_name, email: m_email, title: form.value.q_title, content: form.value.q_content }).then(function (data) {
+            var res = data;
+            _this.data = res;
+            console.log(data);
+            if (data) {
+                alert("질문이 작성되었습니다.");
+                _this.location.go('/user');
+                window.location.reload();
+            }
+        });
+    };
+    // dbcall() {
+    //   this.getinfoProvider.getUser().then(
+    //     data => {
+    //       let res: any = data;
+    //      // this.data = res;
+    //      this.data = res;
+    //     }
+    //   );
+    // }
+    UserComponent.prototype.ngAfterViewInit = function () {
+        $(function () {
+            $("#questionF").hide();
+            var t_color = $('.table_hover').css("color");
+            $('.table_hover').hover(function () {
+                $(this).css("color", "#BDBDBD");
+            }, function () {
+                $(this).css("color", t_color);
+            });
+        });
+    };
     UserComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
-            template: __webpack_require__(/*! ./user.component.html */ "./src/app/pages/user/user.component.html")
+            template: __webpack_require__(/*! ./user.component.html */ "./src/app/pages/user/user.component.html"),
+            styles: ["#question_table {\n    border-collapse: separate;\n    border-spacing: 1px;\n    text-align: left;\n    line-height: 1.5;\n    border-top: 1px solid #ccc;\n  margin : 20px 10px;\n}\n#question_table th {\n    padding: 10px;\n    font-weight: bold;\n    vertical-align: top;\n    border-bottom: 1px solid #ccc;\n}\n.th1{\n\n}\n#question_table td {\n    padding: 10px;\n    vertical-align: top;\n    border-bottom: 1px solid #ccc;\n}\n"]
         }),
-        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_providers_getinfo_getinfo__WEBPACK_IMPORTED_MODULE_2__["GetinfoProvider"], _angular_router__WEBPACK_IMPORTED_MODULE_3__["Router"], _angular_common__WEBPACK_IMPORTED_MODULE_4__["Location"]])
     ], UserComponent);
     return UserComponent;
-}());
-
-
-
-/***/ }),
-
-/***/ "./src/app/pages/user/user.module.ts":
-/*!*******************************************!*\
-  !*** ./src/app/pages/user/user.module.ts ***!
-  \*******************************************/
-/*! exports provided: UserModule */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "UserModule", function() { return UserModule; });
-/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/fesm5/common.js");
-/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm5/forms.js");
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
-/* harmony import */ var _user_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./user.component */ "./src/app/pages/user/user.component.ts");
-
-
-
-
-
-
-var routes = [
-    {
-        path: '',
-        data: {
-            title: 'user Page',
-            urls: [
-                { title: 'Dashboard', url: '/dashboard' },
-                { title: 'user Page' }
-            ]
-        },
-        component: _user_component__WEBPACK_IMPORTED_MODULE_5__["UserComponent"]
-    }
-];
-var UserModule = /** @class */ (function () {
-    function UserModule() {
-    }
-    UserModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
-            imports: [_angular_forms__WEBPACK_IMPORTED_MODULE_3__["FormsModule"], _angular_common__WEBPACK_IMPORTED_MODULE_2__["CommonModule"], _angular_router__WEBPACK_IMPORTED_MODULE_4__["RouterModule"].forChild(routes)],
-            declarations: [_user_component__WEBPACK_IMPORTED_MODULE_5__["UserComponent"]]
-        })
-    ], UserModule);
-    return UserModule;
 }());
 
 
@@ -523,7 +1121,7 @@ var BreadcrumbComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<header class=\"topbar\">\n    <nav class=\"navbar top-navbar navbar-expand-md navbar-light\">\n        <!-- ============================================================== -->\n        <!-- Logo -->\n        <!-- ============================================================== -->\n        <div class=\"navbar-header\">\n            <a class=\"navbar-brand\" href=\"#\">\n                <!-- Logo icon -->\n                <b>\n                    <!--You can put here icon as well // <i class=\"wi wi-sunset\"></i> //-->\n                    <!-- Dark Logo icon -->\n                    <img src=\"assets/images/logo-icon.png\" alt=\"homepage\" class=\"dark-logo\" />\n                    <!-- Light Logo icon -->\n                    <img src=\"assets/images/logo-light-icon.png\" alt=\"homepage\" class=\"light-logo\" />\n                </b>\n                <!--End Logo icon -->\n                <!-- Logo text -->\n                <span>\n                    <!-- dark Logo text -->\n                    <img src=\"assets/images/logo-text.png\" alt=\"homepage\" class=\"dark-logo\" />\n                    <!-- Light Logo text -->    \n                    <img src=\"assets/images/logo-light-text.png\" class=\"light-logo\" alt=\"homepage\" />\n                </span> \n            </a>\n        </div>\n        <!-- ============================================================== -->\n        <!-- End Logo -->\n        <!-- ============================================================== -->\n        <div class=\"navbar-collapse\">\n            <!-- ============================================================== -->\n            <!-- toggle and nav items -->\n            <!-- ============================================================== -->\n            <ul class=\"navbar-nav mr-auto mt-md-0 \">\n                <!-- This is  -->\n                <li class=\"nav-item\"> <a class=\"nav-link nav-toggler hidden-lg-up text-muted waves-effect waves-dark\" href=\"javascript:void(0)\"><i class=\"ti-menu\"></i></a> </li>\n            </ul>\n            <!-- ============================================================== -->\n            <!-- User profile and search -->\n            <!-- ============================================================== -->\n            <ul class=\"navbar-nav my-lg-0\">\n                <li class=\"nav-item hidden-sm-down\">\n                    <form class=\"app-search\">\n                        <input type=\"text\" class=\"form-control\" placeholder=\"Search for...\"> <a class=\"srh-btn\"><i class=\"ti-search\"></i></a> </form>\n                </li>\n                <li class=\"nav-item dropdown\">\n                    <a class=\"nav-link dropdown-toggle text-muted waves-effect waves-dark\" href=\"\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\"><img src=\"assets/images/users/1.jpg\" alt=\"user\" class=\"profile-pic\" /></a>\n                    <div class=\"dropdown-menu dropdown-menu-right animated flipInY\">\n                        <ul class=\"dropdown-user\">\n                            <li>\n                                <div class=\"dw-user-box\">\n                                    <div class=\"u-img\"><img src=\"assets/images/users/1.jpg\" alt=\"user\"></div>\n                                    <div class=\"u-text\">\n                                        <h4>Steave Jobs</h4>\n                                        <p class=\"text-muted\">varun@gmail.com</p><a href=\"profile.html\" class=\"btn btn-rounded btn-danger btn-sm\">View Profile</a>\n                                    </div>\n                                </div>\n                            </li>\n                            <li role=\"separator\" class=\"divider\"></li>\n                            <li><a href=\"#\"><i class=\"ti-user\"></i> My Profile</a></li>\n                            <li><a href=\"#\"><i class=\"ti-wallet\"></i> My Balance</a></li>\n                            <li><a href=\"#\"><i class=\"ti-email\"></i> Inbox</a></li>\n                            <li role=\"separator\" class=\"divider\"></li>\n                            <li><a href=\"#\"><i class=\"ti-settings\"></i> Account Setting</a></li>\n                            <li role=\"separator\" class=\"divider\"></li>\n                            <li><a href=\"#\"><i class=\"fa fa-power-off\"></i> Logout</a></li>\n                        </ul>\n                    </div>\n                </li>\n            </ul>\n        </div>\n    </nav>\n</header>"
+module.exports = "<header class=\"topbar\">\r\n    <nav class=\"navbar top-navbar navbar-expand-md navbar-light\">\r\n        <!-- ============================================================== -->\r\n        <!-- Logo -->\r\n        <!-- ============================================================== -->\r\n        <div class=\"navbar-header\">\r\n            <a class=\"navbar-brand\" href=\"/\">\r\n                <!-- Logo icon -->\r\n                <b>\r\n                    <!--You can put here icon as well // <i class=\"wi wi-sunset\"></i> //-->\r\n                    <!-- Dark Logo icon -->\r\n                    <img src=\"assets/images/logo-icon.png\" alt=\"homepage\" class=\"dark-logo\" />\r\n                    <!-- Light Logo icon -->\r\n                    <img src=\"assets/images/logo-light-icon.png\" alt=\"homepage\" class=\"light-logo\" />\r\n                </b>\r\n                <!--End Logo icon -->\r\n                <!-- Logo text -->\r\n                <span>\r\n                    <!-- dark Logo text -->\r\n                    <img src=\"assets/images/logo-text.png\" alt=\"homepage\" class=\"dark-logo\" />\r\n                    <!-- Light Logo text -->    \r\n                    <img src=\"assets/images/logo-light-text.png\" class=\"light-logo\" alt=\"homepage\" />\r\n                </span> \r\n            </a>\r\n        </div>\r\n        <!-- ============================================================== -->\r\n        <!-- End Logo -->\r\n        <!-- ============================================================== -->\r\n        <div class=\"navbar-collapse\">\r\n            <!-- ============================================================== -->\r\n            <!-- toggle and nav items -->\r\n            <!-- ============================================================== -->\r\n            <ul class=\"navbar-nav mr-auto mt-md-0 \">\r\n                <!-- This is  -->\r\n                <li class=\"nav-item\"> <a class=\"nav-link nav-toggler hidden-lg-up text-muted waves-effect waves-dark\" href=\"javascript:void(0)\"><i class=\"ti-menu\"></i></a> </li>\r\n            </ul>\r\n            <!-- ============================================================== -->\r\n            <!-- User profile and search -->\r\n            <!-- ============================================================== -->\r\n            <ul class=\"navbar-nav my-lg-0\">\r\n                <li class=\"nav-item hidden-sm-down\">\r\n                    <form class=\"app-search\">\r\n                        <input type=\"text\" class=\"form-control\" placeholder=\"Search for...\"> <a class=\"srh-btn\"><i class=\"ti-search\"></i></a> </form>\r\n                </li>\r\n                <li class=\"nav-item dropdown\">\r\n                    <!-- <a class=\"nav-link dropdown-toggle text-muted waves-effect waves-dark\" href=\"\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\"><img src=\"assets/images/users/1.jpg\" alt=\"user\" class=\"profile-pic\" /></a> -->\r\n                    <div class=\"dropdown-menu dropdown-menu-right animated flipInY\">\r\n                        <ul class=\"dropdown-user\">\r\n                            <li>\r\n                                <div class=\"dw-user-box\">\r\n                                    <div class=\"u-img\"><img src=\"assets/images/users/ice.jpg\" alt=\"user\"></div>\r\n                                    <div class=\"u-text\">\r\n                                        <h4>Steave Jobs</h4>\r\n                                        <p class=\"text-muted\">varun@gmail.com</p><a href=\"profile.html\" class=\"btn btn-rounded btn-danger btn-sm\">View Profile</a>\r\n                                    </div>\r\n                                </div>\r\n                            </li>\r\n                            <li role=\"separator\" class=\"divider\"></li>\r\n                            <li><a href=\"#\"><i class=\"ti-user\"></i> My Profile</a></li>\r\n                            <li><a href=\"#\"><i class=\"ti-wallet\"></i> My Balance</a></li>\r\n                            <li><a href=\"#\"><i class=\"ti-email\"></i> Inbox</a></li>\r\n                            <li role=\"separator\" class=\"divider\"></li>\r\n                            <li><a href=\"#\"><i class=\"ti-settings\"></i> Account Setting</a></li>\r\n                            <li role=\"separator\" class=\"divider\"></li>\r\n                            <li><a href=\"#\"><i class=\"fa fa-power-off\"></i> Logout</a></li>\r\n                        </ul>\r\n                    </div>\r\n                </li>\r\n            </ul>\r\n        </div>\r\n    </nav>\r\n</header>"
 
 /***/ }),
 
@@ -760,7 +1358,7 @@ var SIDEBAR_TOGGLE_DIRECTIVES = [
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<aside class=\"left-sidebar\">\n    <!-- Sidebar scroll-->\n    <div class=\"scroll-sidebar\">\n        <!-- User profile -->\n        <div class=\"user-profile\">\n            <!-- User profile image -->\n            <div class=\"profile-img\"> <img src=\"assets/images/users/1.jpg\" alt=\"user\" /> </div>\n            <!-- User profile text-->\n            <div class=\"profile-text\"> <a href=\"#\" class=\"dropdown-toggle link u-dropdown\" data-toggle=\"dropdown\" role=\"button\"\n                    aria-haspopup=\"true\" aria-expanded=\"true\">Markarn Doe <span class=\"caret\"></span></a>\n                <div class=\"dropdown-menu animated flipInY\">\n                    <a href=\"#\" class=\"dropdown-item\"><i class=\"ti-user\"></i> My Profile</a>\n                    <a href=\"#\" class=\"dropdown-item\"><i class=\"ti-wallet\"></i> My Balance</a>\n                    <a href=\"#\" class=\"dropdown-item\"><i class=\"ti-email\"></i> Inbox</a>\n                    <div class=\"dropdown-divider\"></div> <a href=\"#\" class=\"dropdown-item\"><i class=\"ti-settings\"></i> Account\n                        Setting\n                    </a>\n                    <div class=\"dropdown-divider\"></div> <a href=\"#\" class=\"dropdown-item\"><i class=\"fa fa-power-off\"></i>\n                        Logout</a>\n                </div>\n            </div>\n        </div>\n        <!-- End User profile text-->\n        <!-- Sidebar navigation-->\n        <nav class=\"sidebar-nav\">\n            <ul id=\"sidebarnav\">\n                <li class=\"nav-devider\"></li>\n                <li [class.active]=\"showMenu === 'starter'\">\n                    <a routerLink=\"/starter\" (click)=\"addExpandClass('starter')\" [routerLinkActive]=\"['router-link-active']\"><i\n                            class=\"mdi mdi-file\"></i><span class=\"hide-menu\">Starter Page</span></a>\n                </li>\n                <li class=\"nav-small-cap\">UI Components</li>\n                <li>\n                    <a routerLink=\"/component/accordion\" (click)=\"addExpandClass('component')\" [routerLinkActive]=\"['router-link-active']\"><i\n                            class=\"mdi mdi-equal\"></i><span class=\"hide-menu\">Accordion</span></a>\n                </li>\n                <li>\n                    <a routerLink=\"/component/alert\" (click)=\"addExpandClass('component')\" [routerLinkActive]=\"['router-link-active']\"><i\n                            class=\"mdi mdi-message-bulleted\"></i><span class=\"hide-menu\">Alert</span></a>\n                </li>\n                <li>\n                    <a routerLink=\"/component/carousel\" (click)=\"addExpandClass('component')\" [routerLinkActive]=\"['router-link-active']\"><i\n                            class=\"mdi mdi-view-carousel\"></i><span class=\"hide-menu\">Carousel</span></a>\n                </li>\n                <li>\n                    <a routerLink=\"/component/dropdown\" (click)=\"addExpandClass('component')\" [routerLinkActive]=\"['router-link-active']\"><i\n                            class=\"mdi mdi-arrange-bring-to-front\"></i><span class=\"hide-menu\">Dropdown - Collapse</span></a>\n                </li>\n                <li>\n                    <a routerLink=\"/component/modal\" (click)=\"addExpandClass('component')\" [routerLinkActive]=\"['router-link-active']\"><i\n                            class=\"mdi mdi-tablet\"></i><span class=\"hide-menu\">Modal</span></a>\n                </li>\n                <li>\n                    <a routerLink=\"/component/pagination\" (click)=\"addExpandClass('component')\" [routerLinkActive]=\"['router-link-active']\"><i\n                            class=\"mdi mdi-backburger\"></i><span class=\"hide-menu\">Pagination</span></a>\n                </li>\n                <li>\n                    <a routerLink=\"/component/poptool\" (click)=\"addExpandClass('component')\" [routerLinkActive]=\"['router-link-active']\"><i\n                            class=\"mdi mdi-image-filter-vintage\"></i><span class=\"hide-menu\">Popover & Tooltip</span></a>\n                </li>\n                <li>\n                    <a routerLink=\"/component/progressbar\" (click)=\"addExpandClass('component')\" [routerLinkActive]=\"['router-link-active']\"><i\n                            class=\"mdi mdi-poll\"></i><span class=\"hide-menu\">Progressbar</span></a>\n                </li>\n                <li>\n                    <a routerLink=\"/component/rating\" (click)=\"addExpandClass('component')\" [routerLinkActive]=\"['router-link-active']\"><i\n                            class=\"mdi mdi-bandcamp\"></i><span class=\"hide-menu\">Ratings</span></a>\n                </li>\n                <li>\n                    <a routerLink=\"/component/tabs\" (click)=\"addExpandClass('component')\" [routerLinkActive]=\"['router-link-active']\"><i\n                            class=\"mdi mdi-sort-variant\"></i><span class=\"hide-menu\">Tabs</span></a>\n                </li>\n                <li>\n                    <a routerLink=\"/component/timepicker\" (click)=\"addExpandClass('component')\" [routerLinkActive]=\"['router-link-active']\"><i\n                            class=\"mdi mdi-calendar-clock\"></i><span class=\"hide-menu\">Timepicker</span></a>\n                </li>\n                <li>\n                    <a routerLink=\"/component/buttons\" (click)=\"addExpandClass('component')\" [routerLinkActive]=\"['router-link-active']\"><i\n                            class=\"mdi mdi-blur-radial\"></i><span class=\"hide-menu\">Button</span></a>\n                </li>\n                <li>\n                    <a routerLink=\"/component/cards\" (click)=\"addExpandClass('component')\" [routerLinkActive]=\"['router-link-active']\"><i\n                            class=\"mdi mdi-arrange-bring-forward\"></i><span class=\"hide-menu\">Card</span></a>\n                </li>\n                <li class=\"m-t-40 p-20\">\n                    <a href=\"https://wrappixel.com/templates/monster-angular-dashboard/\" target=\"_blank\" class=\"btn hidden-sm-down btn-success text-white\">Upgrade\n                        To Pro</a>\n                </li>\n            </ul>\n        </nav>\n        <!-- End Sidebar navigation -->\n    </div>\n    <!-- End Sidebar scroll-->\n    <!-- Bottom points-->\n    <div class=\"sidebar-footer\">\n        <!-- item-->\n        <a href=\"\" class=\"link\" data-toggle=\"tooltip\" title=\"Settings\"><i class=\"ti-settings\"></i></a>\n        <!-- item-->\n        <a href=\"\" class=\"link\" data-toggle=\"tooltip\" title=\"Email\"><i class=\"mdi mdi-gmail\"></i></a>\n        <!-- item-->\n        <a href=\"\" class=\"link\" data-toggle=\"tooltip\" title=\"Logout\"><i class=\"mdi mdi-power\"></i></a>\n    </div>\n    <!-- End Bottom points-->\n</aside>"
+module.exports = "<style>\r\n    #user_name{\r\n        margin-top: 20px;\r\n    }\r\n</style>\r\n\r\n\r\n<aside class=\"left-sidebar\">\r\n    <!-- Sidebar scroll-->\r\n    <div class=\"scroll-sidebar\">\r\n        <!-- User profile -->\r\n        <div class=\"user-profile\">\r\n            <!-- User profile image -->\r\n            <div class=\"profile-img\"> <img id=\"user_img\" src=\"assets/images/users/ice.jpg\" alt=\"user\" /> </div>\r\n            <!-- User profile text-->\r\n            <div class=\"profile-text\"> <span id=\"user_name\"> </span>\r\n                <!-- <div id=\"user_drop\" class=\"dropdown-menu animated flipInY\">\r\n                    <a href=\"#\" class=\"dropdown-item\"><i class=\"ti-user\"></i>프로필</a>\r\n                    <a href=\"#\" class=\"dropdown-item\"><i class=\"ti-wallet\"></i> 즐겨찾기</a>\r\n\r\n                    <div class=\"dropdown-divider\"></div> <a (click)=\"this.logout()\" href=\"#\" class=\"dropdown-item\"><i class=\"fa fa-power-off\"></i>\r\n                        Logout</a>\r\n                </div> -->\r\n            </div>\r\n        </div>\r\n        <!-- End User profile text-->\r\n        <!-- Sidebar navigation-->\r\n        <nav class=\"sidebar-nav\">\r\n            <ul id=\"sidebarnav\">\r\n                <li class=\"nav-devider\"></li>\r\n                <li [class.active]=\"showMenu === 'starter'\">\r\n                    <a routerLink=\"/starter\" (click)=\"addExpandClass('starter')\" [routerLinkActive]=\"['router-link-active']\"><i\r\n                            class=\"mdi mdi-file\"></i><span class=\"hide-menu\">Main</span></a>\r\n                </li>\r\n                <li *ngIf=\"this.email\">\r\n                        <a routerLink=\"/profile\" (click)=\"addExpandClass('component')\" [routerLinkActive]=\"['router-link-active']\"><i\r\n                            class=\"mdi mdi mdi-sort-variant\"></i><span class=\"hide-menu\">프로필</span></a>\r\n                    </li>\r\n                <li class=\"nav-small-cap\">CODEMOA ITEM</li>\r\n                <li>\r\n                    <a routerLink=\"/user\" (click)=\"addExpandClass('component')\" [routerLinkActive]=\"['router-link-active']\"><i\r\n                            class=\"mdi mdi-equal\"></i><span class=\"hide-menu\">질문 및 답변</span></a>\r\n                </li>\r\n                <li>\r\n                    <a routerLink=\"/lecture\" (click)=\"addExpandClass('component')\" [routerLinkActive]=\"['router-link-active']\"><i\r\n                        class=\"mdi mdi-tablet\"> </i><span class=\"hide-menu\">강의</span></a>\r\n                </li>\r\n                <li *ngIf=\"this.email\">\r\n                    <a routerLink=\"/portpolio\" (click)=\"addExpandClass('component')\" [routerLinkActive]=\"['router-link-active']\"><i\r\n                        class=\"mdi mdi-calendar-clock\"></i><span class=\"hide-menu\">포트폴리오</span></a>\r\n                </li>\r\n                <li>\r\n                    <a routerLink=\"/bookmark\" (click)=\"addExpandClass('component')\" [routerLinkActive]=\"['router-link-active']\"><i\r\n                        class=\"mdi mdi mdi-image-filter-vintage\"></i><span class=\"hide-menu\">즐겨찾기</span></a>\r\n                </li>\r\n                \r\n                <li>\r\n                    <a routerLink=\"/component/accordion\" (click)=\"addExpandClass('component')\" [routerLinkActive]=\"['router-link-active']\"><i\r\n                            class=\"mdi mdi-equal\"></i><span class=\"hide-menu\">Accordion</span></a>\r\n                </li>\r\n                <li>\r\n                    <a routerLink=\"/component/alert\" (click)=\"addExpandClass('component')\" [routerLinkActive]=\"['router-link-active']\"><i\r\n                            class=\"mdi mdi-message-bulleted\"></i><span class=\"hide-menu\">Alert</span></a>\r\n                </li>\r\n                <li>\r\n                    <a routerLink=\"/component/carousel\" (click)=\"addExpandClass('component')\" [routerLinkActive]=\"['router-link-active']\"><i\r\n                            class=\"mdi mdi-view-carousel\"></i><span class=\"hide-menu\">Carousel</span></a>\r\n                </li>\r\n                <li>\r\n                    <a routerLink=\"/component/dropdown\" (click)=\"addExpandClass('component')\" [routerLinkActive]=\"['router-link-active']\"><i\r\n                            class=\"mdi mdi-arrange-bring-to-front\"></i><span class=\"hide-menu\">Dropdown - Collapse</span></a>\r\n                </li>\r\n                <li>\r\n                    <a routerLink=\"/component/modal\" (click)=\"addExpandClass('component')\" [routerLinkActive]=\"['router-link-active']\"><i\r\n                            class=\"mdi mdi-tablet\"></i><span class=\"hide-menu\">Modal</span></a>\r\n                </li>\r\n                <li>\r\n                    <a routerLink=\"/component/pagination\" (click)=\"addExpandClass('component')\" [routerLinkActive]=\"['router-link-active']\"><i\r\n                            class=\"mdi mdi-backburger\"></i><span class=\"hide-menu\">Pagination</span></a>\r\n                </li>\r\n                <li>\r\n                    <a routerLink=\"/component/poptool\" (click)=\"addExpandClass('component')\" [routerLinkActive]=\"['router-link-active']\"><i\r\n                            class=\"mdi mdi-image-filter-vintage\"></i><span class=\"hide-menu\">Popover & Tooltip</span></a>\r\n                </li>\r\n                <li>\r\n                    <a routerLink=\"/component/progressbar\" (click)=\"addExpandClass('component')\" [routerLinkActive]=\"['router-link-active']\"><i\r\n                            class=\"mdi mdi-poll\"></i><span class=\"hide-menu\">Progressbar</span></a>\r\n                </li>\r\n                <li>\r\n                    <a routerLink=\"/component/rating\" (click)=\"addExpandClass('component')\" [routerLinkActive]=\"['router-link-active']\"><i\r\n                            class=\"mdi mdi-bandcamp\"></i><span class=\"hide-menu\">Ratings</span></a>\r\n                </li>\r\n                <li>\r\n                    <a routerLink=\"/component/tabs\" (click)=\"addExpandClass('component')\" [routerLinkActive]=\"['router-link-active']\"><i\r\n                            class=\"mdi mdi-sort-variant\"></i><span class=\"hide-menu\">Tabs</span></a>\r\n                </li>\r\n                <li>\r\n                    <a routerLink=\"/component/timepicker\" (click)=\"addExpandClass('component')\" [routerLinkActive]=\"['router-link-active']\"><i\r\n                            class=\"mdi mdi-calendar-clock\"></i><span class=\"hide-menu\">Timepicker</span></a>\r\n                </li>\r\n                <li>\r\n                    <a routerLink=\"/component/buttons\" (click)=\"addExpandClass('component')\" [routerLinkActive]=\"['router-link-active']\"><i\r\n                            class=\"mdi mdi-blur-radial\"></i><span class=\"hide-menu\">Button</span></a>\r\n                </li>\r\n                <li>\r\n                    <a routerLink=\"/component/cards\" (click)=\"addExpandClass('component')\" [routerLinkActive]=\"['router-link-active']\"><i\r\n                            class=\"mdi mdi-arrange-bring-forward\"></i><span class=\"hide-menu\">Card</span></a>\r\n                </li>\r\n            </ul>\r\n        </nav>\r\n        <!-- End Sidebar navigation -->\r\n    </div>\r\n    <!-- End Sidebar scroll-->\r\n    <!-- Bottom points-->\r\n    <div class=\"sidebar-footer\">\r\n        <!-- item-->\r\n        <a href=\"\" class=\"link\" data-toggle=\"tooltip\" title=\"Settings\"><i class=\"ti-settings\"></i></a>\r\n        <!-- item-->\r\n        <a href=\"\" class=\"link\" data-toggle=\"tooltip\" title=\"Email\"><i class=\"mdi mdi-gmail\"></i></a>\r\n        <!-- item-->\r\n        <a id=\"log\" (click)=\"this.logState()\" class=\"link\" data-toggle=\"tooltip\" title=\"Login\"><i class=\"mdi mdi-power\"></i></a>\r\n    </div>\r\n    <!-- End Bottom points-->\r\n</aside>"
 
 /***/ }),
 
@@ -776,15 +1374,34 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SidebarComponent", function() { return SidebarComponent; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/fesm5/common.js");
+
+
 
 
 var SidebarComponent = /** @class */ (function () {
-    function SidebarComponent() {
+    function SidebarComponent(router, location) {
+        this.router = router;
+        this.location = location;
         // this is for the open close
         this.isActive = true;
         this.showMenu = '';
         this.showSubMenu = '';
+        this.email = '';
     }
+    SidebarComponent.prototype.logState = function () {
+        if (!sessionStorage.getItem("email")) {
+            this.router.navigate(['/login']);
+        }
+        else {
+            sessionStorage.removeItem("email");
+            sessionStorage.removeItem("name");
+            sessionStorage.removeItem("id");
+            this.location.go('/');
+            window.location.reload();
+        }
+    };
     SidebarComponent.prototype.addExpandClass = function (element) {
         if (element === this.showMenu) {
             this.showMenu = '0';
@@ -806,6 +1423,7 @@ var SidebarComponent = /** @class */ (function () {
     };
     // End open close
     SidebarComponent.prototype.ngAfterViewInit = function () {
+        this.email = sessionStorage.getItem("email");
         $(function () {
             $('.sidebartoggler').on('click', function () {
                 if ($('body').hasClass('mini-sidebar')) {
@@ -829,6 +1447,16 @@ var SidebarComponent = /** @class */ (function () {
                     // $(".sidebartoggler i").removeClass("ti-menu");
                 }
             });
+            if (!sessionStorage.getItem("email")) {
+                $('#user_img').attr("src", "assets/images/users/logout.jpeg");
+                $('#user_name').text(" ");
+                $('#user_drop').hide();
+                $('#log').attr("title", "Login");
+            }
+            else {
+                $('#user_img').attr("src", "assets/images/users/ice.jpg");
+                $('#user_name').text(sessionStorage.getItem("name"));
+            }
         });
     };
     SidebarComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
@@ -836,9 +1464,149 @@ var SidebarComponent = /** @class */ (function () {
             // tslint:disable-next-line:component-selector
             selector: 'app-sidebar',
             template: __webpack_require__(/*! ./sidebar.component.html */ "./src/app/shared/sidebar/sidebar.component.html")
-        })
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"], _angular_common__WEBPACK_IMPORTED_MODULE_3__["Location"]])
     ], SidebarComponent);
     return SidebarComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/providers/getinfo/getinfo.ts":
+/*!******************************************!*\
+  !*** ./src/providers/getinfo/getinfo.ts ***!
+  \******************************************/
+/*! exports provided: GetinfoProvider */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "GetinfoProvider", function() { return GetinfoProvider; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
+/* harmony import */ var rxjs_add_operator_map__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! rxjs/add/operator/map */ "./node_modules/rxjs-compat/_esm5/add/operator/map.js");
+
+
+
+
+var GetinfoProvider = /** @class */ (function () {
+    function GetinfoProvider(http) {
+        this.http = http;
+        this.SERVER_PATH = 'http://ec2-13-209-164-128.ap-northeast-2.compute.amazonaws.com:3000';
+        // console.log('Hello InfoProvider Provider');
+    }
+    GetinfoProvider.prototype.getUser = function () {
+        var _this = this;
+        return new Promise(function (resolve) {
+            _this.http.get(_this.SERVER_PATH + '/user', { headers: { 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8' } }).
+                subscribe(function (data) {
+                resolve(data);
+            }, function (err) {
+                console.log(err);
+            });
+        });
+    };
+    GetinfoProvider.prototype.getMyQuestion = function (m_email) {
+        var _this = this;
+        return new Promise(function (resolve) {
+            _this.http.get(_this.SERVER_PATH + '/myQuestion?m_email=' + m_email, { headers: { 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8' } }).
+                subscribe(function (data) {
+                resolve(data);
+            }, function (err) {
+                console.log(err);
+            });
+        });
+    };
+    GetinfoProvider.prototype.getQDetail = function (q_id) {
+        var _this = this;
+        return new Promise(function (resolve) {
+            _this.http.get(_this.SERVER_PATH + '/user/question?q_id=' + q_id, { headers: { 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8' } }).
+                subscribe(function (data) {
+                resolve(data);
+            }, function (err) {
+                console.log(err);
+            });
+        });
+    };
+    GetinfoProvider.prototype.getLogin = function (form) {
+        var _this = this;
+        var id = form.id;
+        var pass = form.pw;
+        console.log(id, pass);
+        return new Promise(function (resolve) {
+            _this.http.post(_this.SERVER_PATH + '/login', JSON.stringify({ 'loginid': id, 'loginpw': pass }), { headers: { 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8' } }).
+                subscribe(function (data) {
+                resolve(data);
+            }, function (err) {
+                console.log(err);
+            });
+        });
+    };
+    GetinfoProvider.prototype.getRegister = function (form) {
+        var _this = this;
+        var email = form.m_email;
+        var pass = form.m_password;
+        var name = form.m_name;
+        console.log(email, pass, name);
+        return new Promise(function (resolve) {
+            _this.http.post(_this.SERVER_PATH + '/register', JSON.stringify({ 'm_email': email, 'm_password': pass, 'm_name': name }), { headers: { 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8' } }).
+                subscribe(function (data) {
+                resolve(data);
+            }, function (err) {
+                console.log(err);
+            });
+        });
+    };
+    GetinfoProvider.prototype.getQuestion = function (form) {
+        var _this = this;
+        var name = form.name;
+        var email = form.email;
+        var title = form.title;
+        var content = form.content;
+        return new Promise(function (resolve) {
+            _this.http.post(_this.SERVER_PATH + '/questInput', JSON.stringify({ 'name': name, 'email': email, 'title': title, 'content': content }), { headers: { 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8' } }).
+                subscribe(function (data) {
+                resolve(data);
+            }, function (err) {
+                console.log(err);
+            });
+        });
+    };
+    GetinfoProvider.prototype.getAwnser = function (form) {
+        var _this = this;
+        var q_id = form.q_id;
+        var q_name = form.q_name;
+        var m_name = form.m_name;
+        var content = form.content;
+        return new Promise(function (resolve) {
+            _this.http.post(_this.SERVER_PATH + '/awnserInput', JSON.stringify({ 'q_id': q_id, 'q_name': q_name, 'a_name': m_name, 'content': content }), { headers: { 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8' } }).
+                subscribe(function (data) {
+                resolve(data);
+            }, function (err) {
+                console.log(err);
+            });
+        });
+    };
+    GetinfoProvider.prototype.getAwnserList = function (form) {
+        var _this = this;
+        var q_id = form.q_id;
+        return new Promise(function (resolve) {
+            _this.http.post(_this.SERVER_PATH + '/awnserList', JSON.stringify({ 'q_id': q_id, 'temp': 'temp' }), { headers: { 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8' } }).
+                subscribe(function (data) {
+                resolve(data);
+            }, function (err) {
+                console.log(err);
+            });
+        });
+    };
+    GetinfoProvider = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({ providedIn: 'root' }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"]])
+    ], GetinfoProvider);
+    return GetinfoProvider;
 }());
 
 

@@ -1,9 +1,54 @@
 <div class="row">
     <div class="col-12">
         <div class="card">
-            <div class="card-body">
-                답변해주세요
+            <div class="card-body" >
+                <h3 class="card-title">{{this.data.q_title}}</h3>
+                <h6 class="card-subtitle">{{this.data.m_name}}</h6>
+
+                <input id="email_hidden" type="hidden" value="this.data.m_email"/>
                 
+                <div border="1">
+                    {{this.data.q_content}}<br>
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="card" *ngFor="let awnser of this.awnList">
+                <div class="card-body" >
+                    <h5 class="casd-subtitle">{{awnser.am_name}}</h5>
+                    <p>
+                        {{awnser.a_content}}
+                    </p>
+
+                    <!-- *ngIf="this.data.m_email != this.emailCheck"  -->
+                    <button class="checkBtn btn btn-info btn-circle"><i class="fa fa-check"></i></button>
+                    <button class="checkBtn btn btn-warning btn-circle" placement="top" ngbTooltip="즐겨찾기"><i class="fa fa-heart"></i></button>
+                </div>
+        </div>
+
+        
+
+        <div class="card">
+            <div class="card-body" >
+                <h4 id="noAwntitle" class="card-title">당신의 답변을 기다리고 있습니다.</h4>
+                <div id="awnserF" class="login-item">
+                        <form #myform="ngForm" (ngSubmit)="this.awnser_input(myform)" class="form form-login">               
+                              <div class="form-field">
+                                <label class="lock" for="login-password"><span class="hidden">Awnser</span></label><br>
+                                <!-- <input name="password" id="login-password" type="password" class="form-input" placeholder="Password" required ngModel> -->
+                                <textarea name="a_content" class="form-field" required ngModel>
+    
+    
+                                </textarea>
+                              </div><br>
+                      
+                              <div class="form-field">
+                                <input id="aws_button" type="submit" value="답변하기" class="btn-primary">
+                            </div>
+                        </form>
+                    </div>
+                <button *ngIf="this.data.m_email != this.emailCheck" id="awnShow" class="btn-primary">답변하기</button>
             </div>
         </div>
     </div>

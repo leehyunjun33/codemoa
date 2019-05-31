@@ -1,0 +1,35 @@
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-body">
+
+                    <h4 class="card-title">회원가입</h4>
+
+                    <div id="registerF" class="login-item">
+                            <form #myform="ngForm" (ngSubmit)="this.registerInput(myform)" class="form form-login">
+                                <div class="form-field">
+                                    <label class="user" for="login-email"><span class="hidden">e-mail</span></label><br>
+                                    <input name="m_email" id="login-email" type="email" class="form-input" required ngModel>
+                                  </div><br>
+                          
+                                  <div class="form-field">
+                                    <label class="lock" for="login-password"><span class="hidden">password</span></label><br>
+                                    <input name="m_password" id="login-password" type="password" class="form-input" required ngModel>
+                                    
+                                  </div><br>
+
+                                  <div class="form-field">
+                                        <label class="lock" for="login-name"><span class="hidden">name</span></label><br>
+                                        <input name="m_name" id="login-name" type="text" class="form-input" required ngModel>
+                                        
+                                      </div><br>
+                          
+                                  <div class="form-field">
+                                    <input id="log_button" type="submit" value="회원가입" class="btn-primary">
+                                </div>
+                            </form>
+                        </div>
+            </div>
+        </div>
+    </div>
+</div>

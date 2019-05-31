@@ -5,6 +5,8 @@ import { Routes, RouterModule } from '@angular/router';
 import { GetinfoProvider } from '../../../providers/getinfo/getinfo';
 import { UserComponent } from './user.component';
 
+
+
 const routes: Routes = [
   {
     path: '',

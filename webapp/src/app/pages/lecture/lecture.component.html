@@ -2,8 +2,35 @@
     <div class="col-12">
         <div class="card">
             <div class="card-body">
-                <a href="/lecture">{{subtitle}}</a>
-                <button type="button" class="btn btn-outline-primary" (click)="this.dbcall()">강의입니다.</button>
+
+
+                <h3 class="card-title">현재 강의가 없습니다.</h3>
+
+
+
+                <!-- <button type="button" class="btn btn-outline-primary" (click)="this.dbcall()">강의 올리기</button> -->
+
+                <!-- form(action='upload' method='post' enctype="multipart/form-data")
+      input(type='file' name='userfile')
+      input(type='submit') -->
+
+                <form action="upload" method="POST" enctype="multipart/form-data">
+                    <input type="file" name="userfile"/>
+                    <input type="submit"/>
+                </form>
+
+
+
+
+
+                <!-- <video controls>
+                    <source src="../../../assets/video/small.mp4"/>
+                    <source src="../../../assets/video/small.ogv"/>
+                </video> -->
+
+
+
+                
                 
             </div>
         </div>

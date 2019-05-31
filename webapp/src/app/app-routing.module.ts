@@ -12,7 +12,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes), NgbModule.forRoot()],
+  imports: [RouterModule.forRoot(routes, {useHash: true}), NgbModule.forRoot()],
   exports: [RouterModule]
 })
 export class AppRoutingModule {}

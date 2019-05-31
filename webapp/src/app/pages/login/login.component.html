@@ -1,0 +1,32 @@
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-body">
+                
+                <h4 class="card-title">로그인이 필요한 서비스입니다.</h4>
+
+                    <div class="login-item">
+                            <form #myform="ngForm" (ngSubmit)="this.login(myform)" class="form form-login">
+                              <div class="mat-form-field form-field f1">
+                                <label class="user" for="login-email"><span class="hidden">Email&nbsp;&nbsp;</span></label>
+                                <input matInput name="email" id="login-email" type="email" class="form-input" placeholder=" Email" required ngModel>
+                              </div>
+                      
+                              <div class="mat-form-field form-field">
+                                <label class="lock" for="login-password"><span class="hidden">Password&nbsp;&nbsp;</span></label>
+                                <input matInput name="password" id="login-password" type="password" class="form-input" placeholder=" Password" required ngModel>
+                              </div><br>
+                      
+                              <div class="mat-form-field form-field">
+                                <input matInput id="log_button" type="submit" value="로그인" class="btn-primary">
+                                
+                              </div>
+                            </form>
+
+                            <button class="btn-info reg" (click)="this.register()">회원가입</button>
+                          </div>
+                
+            </div>
+        </div>
+    </div>
+</div>

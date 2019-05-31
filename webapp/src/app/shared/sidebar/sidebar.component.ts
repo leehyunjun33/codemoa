@@ -1,4 +1,6 @@
 import { Component, AfterViewInit, OnInit } from '@angular/core';
+import { Router, RouterLinkActive } from '@angular/router';
+import { Location } from '@angular/common';
 declare var $: any;
 @Component({
   // tslint:disable-next-line:component-selector
@@ -10,6 +12,26 @@ export class SidebarComponent implements AfterViewInit {
   isActive = true;
   showMenu = '';
   showSubMenu = '';
+  email = '';
+
+  constructor(public router: Router, private location: Location) { }
+
+
+  logState(){
+
+    if(!sessionStorage.getItem("email")){
+      this.router.navigate(['/login']);
+    }else{
+      sessionStorage.removeItem("email");
+      sessionStorage.removeItem("name");
+      sessionStorage.removeItem("id");
+      this.location.go('/');
+      window.location.reload();
+    }
+
+
+    
+  }
 
   addExpandClass(element: any) {
     if (element === this.showMenu) {
@@ -30,6 +52,10 @@ export class SidebarComponent implements AfterViewInit {
   }
   // End open close
   ngAfterViewInit() {
+
+    this.email = sessionStorage.getItem("email");
+
+
     $(function() {
       $('.sidebartoggler').on('click', function() {
         if ($('body').hasClass('mini-sidebar')) {
@@ -52,6 +78,22 @@ export class SidebarComponent implements AfterViewInit {
           // $(".sidebartoggler i").removeClass("ti-menu");
         }
       });
+
+
+      if(!sessionStorage.getItem("email")){
+        $('#user_img').attr("src", "assets/images/users/logout.jpeg");
+        $('#user_name').text(" ");
+        $('#user_drop').hide();
+        $('#log').attr("title", "Login");
+      }else{
+        $('#user_img').attr("src", "assets/images/users/ice.jpg");
+        $('#user_name').text(sessionStorage.getItem("name"));
+      }
+
+
     });
+
+
+
   }
 }
