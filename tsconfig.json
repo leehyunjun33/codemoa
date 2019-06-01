@@ -84,7 +84,7 @@
   "include": [
   
   
-  "src/*"
+  "src/*", "src/routes/router.ts"
   
   
   ],
