@@ -210,6 +210,63 @@ var BookmarkComponent = /** @class */ (function () {
 
 /***/ }),
 
+/***/ "./src/app/pages/lecture/createLecture/createLecture.component.html":
+/*!**************************************************************************!*\
+  !*** ./src/app/pages/lecture/createLecture/createLecture.component.html ***!
+  \**************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"row\">\r\n    <div class=\"col-12\">\r\n        <div class=\"card\">\r\n            <div class=\"card-body\" >\r\n                <h5 class=\"card-title\">당신의 재능을 기부해주세요</h5>\r\n                \r\n                \r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>"
+
+/***/ }),
+
+/***/ "./src/app/pages/lecture/createLecture/createLecture.component.ts":
+/*!************************************************************************!*\
+  !*** ./src/app/pages/lecture/createLecture/createLecture.component.ts ***!
+  \************************************************************************/
+/*! exports provided: CreateLectureComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CreateLectureComponent", function() { return CreateLectureComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+/* harmony import */ var _providers_getinfo_getinfo__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../../providers/getinfo/getinfo */ "./src/providers/getinfo/getinfo.ts");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/fesm5/common.js");
+
+
+
+
+
+var CreateLectureComponent = /** @class */ (function () {
+    function CreateLectureComponent(router, route, getinfoProvider, location) {
+        this.router = router;
+        this.route = route;
+        this.getinfoProvider = getinfoProvider;
+        this.location = location;
+        this.subtitle = 'createLecture';
+        console.log(this.subtitle);
+    }
+    CreateLectureComponent.prototype.ngAfterViewInit = function () {
+        $(function () {
+        });
+    };
+    CreateLectureComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            template: __webpack_require__(/*! ./createLecture.component.html */ "./src/app/pages/lecture/createLecture/createLecture.component.html")
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"], _angular_router__WEBPACK_IMPORTED_MODULE_2__["ActivatedRoute"], _providers_getinfo_getinfo__WEBPACK_IMPORTED_MODULE_3__["GetinfoProvider"], _angular_common__WEBPACK_IMPORTED_MODULE_4__["Location"]])
+    ], CreateLectureComponent);
+    return CreateLectureComponent;
+}());
+
+
+
+/***/ }),
+
 /***/ "./src/app/pages/lecture/lecture.component.html":
 /*!******************************************************!*\
   !*** ./src/app/pages/lecture/lecture.component.html ***!
@@ -217,7 +274,7 @@ var BookmarkComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"row\">\r\n    <div class=\"col-12\">\r\n        <div class=\"card\">\r\n            <div class=\"card-body\">\r\n\r\n\r\n                <h3 class=\"card-title\">현재 강의가 없습니다.</h3>\r\n\r\n\r\n\r\n                <!-- <button type=\"button\" class=\"btn btn-outline-primary\" (click)=\"this.dbcall()\">강의 올리기</button> -->\r\n\r\n                <!-- form(action='upload' method='post' enctype=\"multipart/form-data\")\r\n      input(type='file' name='userfile')\r\n      input(type='submit') -->\r\n\r\n                <form action=\"upload\" method=\"POST\" enctype=\"multipart/form-data\">\r\n                    <input type=\"file\" name=\"userfile\"/>\r\n                    <input type=\"submit\"/>\r\n                </form>\r\n\r\n\r\n\r\n\r\n\r\n                <!-- <video controls>\r\n                    <source src=\"../../../assets/video/small.mp4\"/>\r\n                    <source src=\"../../../assets/video/small.ogv\"/>\r\n                </video> -->\r\n\r\n\r\n\r\n                \r\n                \r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>"
+module.exports = "<div class=\"row\">\r\n    <div class=\"col-12\">\r\n        <div class=\"card\">\r\n            <div class=\"card-body\">\r\n                <div class=\"container\">\r\n                        <div class=\"row\">\r\n                          <div class=\"col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3\">\r\n                            <h1 class=\"text-center\">Angular File upload</h1>\r\n                            <form [formGroup]=\"form\" (ngSubmit)=\"onSubmit(fileInput.files)\">\r\n                              <div class=\"form-group\">\r\n                                <img *ngIf=\"imageSrc\" [src]=\"imageSrc\" class=\"avatar\">\r\n                                <div class=\"btns clearfix\">\r\n                                  <label class=\"btn btn-file btn-cancel pull-left\">Pick an video\r\n                                    <input type=\"file\"\r\n                                      (change)=\"onFileChange(fileInput.files)\" #fileInput>\r\n                                  </label>\r\n                                  <button type=\"submit\" class=\"btn btn-save pull-right\"\r\n                                    [disabled]=\"form.invalid || loading\">\r\n                                    Save\r\n                                    <i class=\"fa fa-spinner fa-spin fa-fw\" *ngIf=\"loading\"></i>\r\n                                  </button>\r\n                                </div>\r\n                              </div>\r\n                            </form>\r\n                            <pre>{{ form.value | json }}</pre>\r\n                            <pre>{{ result | json }}</pre>\r\n                          </div>\r\n                        </div>\r\n                      </div>\r\n\r\n\r\n                    \r\n\r\n\r\n\r\n\r\n                <!-- <video controls>\r\n                    <source src=\"../../../assets/video/small.mp4\"/>\r\n                    <source src=\"../../../assets/video/small.ogv\"/>\r\n                </video> -->\r\n\r\n\r\n\r\n                \r\n                \r\n            </div>\r\n        </div>\r\n        <div class=\"card\">\r\n            <div class=\"card-body\">\r\n\r\n                <h5 class=\"card-title\">당신만의 강의를 만들어주세요</h5>\r\n              <button class=\"btn btn-info\" (click)=\"this.creatLecture()\">강의 개설하기</button>\r\n\r\n                \r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>"
 
 /***/ }),
 
@@ -233,22 +290,80 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LectureComponent", function() { return LectureComponent; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm5/forms.js");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+
+
+
 
 
 var LectureComponent = /** @class */ (function () {
-    function LectureComponent() {
+    function LectureComponent(fb, http, router) {
+        this.fb = fb;
+        this.http = http;
+        this.router = router;
+        this.apiUrl = 'http://ec2-13-209-164-128.ap-northeast-2.compute.amazonaws.com:3000';
+        this.loading = false;
+        this.imageSrc = ' ';
         this.subtitle = 'lecture';
         console.log(this.subtitle);
+        this.form = this.fb.group({
+            avatar: ['', _angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].required]
+        });
     }
-    LectureComponent.prototype.dbcall = function () {
-        console.log("db 불러");
+    LectureComponent.prototype.onFileChange = function (files) {
+        var _this = this;
+        if (files && files.length > 0) {
+            // For Preview
+            var file = files[0];
+            var reader_1 = new FileReader();
+            /* 브라우저는 보안 문제로 인해 파일 경로의 참조를 허용하지 않는다.
+              따라서 파일 경로를 img 태그에 바인딩할 수 없다.
+              FileReader.readAsDataURL 메소드를 사용하여 이미지 파일을 읽어
+              base64 인코딩된 스트링 데이터를 취득한 후, img 태그에 바인딩한다. */
+            reader_1.readAsDataURL(file);
+            reader_1.onload = function () {
+                _this.imageSrc = reader_1.result;
+            };
+            /* reactive form에서 input[type="file"]을 지원하지 않는다.
+              즉 파일 선택 시에 값이 폼컨트롤에 set되지 않는다
+              https://github.com/angular/angular.io/issues/3466
+              form validation을 위해 file.name을 폼컨트롤에 set한다. */
+            this.avatar.setValue(file.name);
+        }
+    };
+    LectureComponent.prototype.onSubmit = function (files) {
+        var _this = this;
+        var formData = new FormData();
+        formData.append('avatar', files[0]);
+        this.loading = true;
+        // Send data (payload = formData)
+        console.log(formData.get('avatar'));
+        // 폼데이터를 서버로 전송한다.
+        this.http.post(this.apiUrl + "/upload", formData)
+            .subscribe(function (res) {
+            _this.result = res;
+            _this.loading = false;
+            _this.avatar.setValue(null);
+        });
+    };
+    Object.defineProperty(LectureComponent.prototype, "avatar", {
+        get: function () {
+            return this.form.get('avatar');
+        },
+        enumerable: true,
+        configurable: true
+    });
+    LectureComponent.prototype.creatLecture = function () {
+        this.router.navigate(['/lecture/createLecture']);
     };
     LectureComponent.prototype.ngAfterViewInit = function () { };
     LectureComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
             template: __webpack_require__(/*! ./lecture.component.html */ "./src/app/pages/lecture/lecture.component.html")
         }),
-        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormBuilder"], _angular_common_http__WEBPACK_IMPORTED_MODULE_3__["HttpClient"], _angular_router__WEBPACK_IMPORTED_MODULE_4__["Router"]])
     ], LectureComponent);
     return LectureComponent;
 }());
@@ -417,6 +532,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _bookmark_bookmark_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./bookmark/bookmark.component */ "./src/app/pages/bookmark/bookmark.component.ts");
 /* harmony import */ var _profile_profile_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./profile/profile.component */ "./src/app/pages/profile/profile.component.ts");
 /* harmony import */ var _login_login_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./login/login.component */ "./src/app/pages/login/login.component.ts");
+/* harmony import */ var _lecture_createLecture_createLecture_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./lecture/createLecture/createLecture.component */ "./src/app/pages/lecture/createLecture/createLecture.component.ts");
+
 
 
 
@@ -449,6 +566,10 @@ var routes = [
             {
                 path: 'lecture',
                 component: _lecture_lecture_component__WEBPACK_IMPORTED_MODULE_5__["LectureComponent"]
+            },
+            {
+                path: 'lecture/createLecture',
+                component: _lecture_createLecture_createLecture_component__WEBPACK_IMPORTED_MODULE_12__["CreateLectureComponent"]
             },
             {
                 path: 'portpolio',
@@ -542,6 +663,8 @@ var PageComponent = /** @class */ (function () {
         else if (this.router.url === 'user') {
             this.router.navigate(['/user']);
         }
+        else if (this.router.url === 'profile') {
+        }
     };
     PageComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
@@ -587,6 +710,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _profile_profile_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./profile/profile.component */ "./src/app/pages/profile/profile.component.ts");
 /* harmony import */ var _login_login_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./login/login.component */ "./src/app/pages/login/login.component.ts");
 /* harmony import */ var _lecture_lectureDetail_lectureDetail_component__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./lecture/lectureDetail/lectureDetail.component */ "./src/app/pages/lecture/lectureDetail/lectureDetail.component.ts");
+/* harmony import */ var _lecture_createLecture_createLecture_component__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./lecture/createLecture/createLecture.component */ "./src/app/pages/lecture/createLecture/createLecture.component.ts");
+
 
 
 
@@ -614,7 +739,8 @@ var PagesModule = /** @class */ (function () {
             imports: [
                 _angular_common__WEBPACK_IMPORTED_MODULE_2__["CommonModule"],
                 _pages_routing_module__WEBPACK_IMPORTED_MODULE_3__["PagesRoutingModule"],
-                _angular_forms__WEBPACK_IMPORTED_MODULE_13__["FormsModule"]
+                _angular_forms__WEBPACK_IMPORTED_MODULE_13__["FormsModule"],
+                _angular_forms__WEBPACK_IMPORTED_MODULE_13__["ReactiveFormsModule"]
             ],
             declarations: [
                 _pages_component__WEBPACK_IMPORTED_MODULE_4__["PageComponent"],
@@ -630,7 +756,8 @@ var PagesModule = /** @class */ (function () {
                 _bookmark_bookmark_component__WEBPACK_IMPORTED_MODULE_15__["BookmarkComponent"],
                 _profile_profile_component__WEBPACK_IMPORTED_MODULE_16__["ProfileComponent"],
                 _login_login_component__WEBPACK_IMPORTED_MODULE_17__["LoginComponent"],
-                _lecture_lectureDetail_lectureDetail_component__WEBPACK_IMPORTED_MODULE_18__["LectureDetailComponent"]
+                _lecture_lectureDetail_lectureDetail_component__WEBPACK_IMPORTED_MODULE_18__["LectureDetailComponent"],
+                _lecture_createLecture_createLecture_component__WEBPACK_IMPORTED_MODULE_19__["CreateLectureComponent"]
             ]
         })
     ], PagesModule);
@@ -742,19 +869,30 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ProfileComponent", function() { return ProfileComponent; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+
 
 
 var ProfileComponent = /** @class */ (function () {
-    function ProfileComponent() {
+    function ProfileComponent(router) {
+        this.router = router;
         this.subtitle = 'profile';
         console.log(this.subtitle);
     }
     ProfileComponent.prototype.ngAfterViewInit = function () { };
+    ProfileComponent.prototype.ngOnInit = function () {
+        if (!sessionStorage.getItem("email")) {
+            this.router.navigate(['/login']);
+        }
+        else {
+            this.router.navigate(['/profile']);
+        }
+    };
     ProfileComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
             template: __webpack_require__(/*! ./profile.component.html */ "./src/app/pages/profile/profile.component.html")
         }),
-        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"]])
     ], ProfileComponent);
     return ProfileComponent;
 }());
@@ -834,7 +972,7 @@ var RegisterComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"row\">\r\n    <div class=\"col-12\">\r\n        <div class=\"card\">\r\n            <div class=\"card-body\" >\r\n                <h3 class=\"card-title\">{{this.data.q_title}}</h3>\r\n                <h6 class=\"card-subtitle\">{{this.data.m_name}}</h6>\r\n\r\n                <input id=\"email_hidden\" type=\"hidden\" value=\"this.data.m_email\"/>\r\n                \r\n                <div border=\"1\">\r\n                    {{this.data.q_content}}<br>\r\n                </div>\r\n                \r\n            </div>\r\n        </div>\r\n\r\n        <div class=\"card\" *ngFor=\"let awnser of this.awnList\">\r\n                <div class=\"card-body\" >\r\n                    <h5 class=\"casd-subtitle\">{{awnser.am_name}}</h5>\r\n                    <p>\r\n                        {{awnser.a_content}}\r\n                    </p>\r\n\r\n                    <!-- *ngIf=\"this.data.m_email != this.emailCheck\"  -->\r\n                    <button class=\"checkBtn btn btn-info btn-circle\"><i class=\"fa fa-check\"></i></button>\r\n                    <button class=\"checkBtn btn btn-warning btn-circle\" placement=\"top\" ngbTooltip=\"즐겨찾기\"><i class=\"fa fa-heart\"></i></button>\r\n                </div>\r\n        </div>\r\n\r\n        \r\n\r\n        <div class=\"card\">\r\n            <div class=\"card-body\" >\r\n                <h4 id=\"noAwntitle\" class=\"card-title\">당신의 답변을 기다리고 있습니다.</h4>\r\n                <div id=\"awnserF\" class=\"login-item\">\r\n                        <form #myform=\"ngForm\" (ngSubmit)=\"this.awnser_input(myform)\" class=\"form form-login\">               \r\n                              <div class=\"form-field\">\r\n                                <label class=\"lock\" for=\"login-password\"><span class=\"hidden\">Awnser</span></label><br>\r\n                                <!-- <input name=\"password\" id=\"login-password\" type=\"password\" class=\"form-input\" placeholder=\"Password\" required ngModel> -->\r\n                                <textarea name=\"a_content\" class=\"form-field\" required ngModel>\r\n    \r\n    \r\n                                </textarea>\r\n                              </div><br>\r\n                      \r\n                              <div class=\"form-field\">\r\n                                <input id=\"aws_button\" type=\"submit\" value=\"답변하기\" class=\"btn-primary\">\r\n                            </div>\r\n                        </form>\r\n                    </div>\r\n                <button *ngIf=\"this.data.m_email != this.emailCheck\" id=\"awnShow\" class=\"btn-primary\">답변하기</button>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>"
+module.exports = "<div class=\"row\">\r\n    <div class=\"col-12\">\r\n        <div class=\"card\">\r\n            <div class=\"card-body\" >\r\n                <h3 class=\"card-title\">{{this.data.q_title}}</h3>\r\n                <h6 class=\"card-subtitle\">{{this.data.m_name}}</h6>\r\n\r\n                <input id=\"email_hidden\" type=\"hidden\" value=\"this.data.m_email\"/>\r\n\r\n                <div>\r\n                    {{this.data.q_content}}<br>\r\n                </div>\r\n                \r\n            </div>\r\n        </div>\r\n\r\n        <div class=\"card\" *ngFor=\"let awnser of this.awnList\">\r\n                <div class=\"card-body\" >\r\n                    <h5 class=\"casd-subtitle\">{{awnser.am_name}}</h5>\r\n                    <p>\r\n                        {{awnser.a_content}}\r\n                    </p>\r\n\r\n                    <!-- *ngIf=\"this.data.m_email != this.emailCheck\"  -->\r\n                    <button class=\"checkBtn btn btn-info btn-circle\"><i class=\"fa fa-check\"></i></button>\r\n                    <button class=\"checkBtn btn btn-warning btn-circle\" placement=\"top\" ngbTooltip=\"즐겨찾기\"><i class=\"fa fa-heart\"></i></button>\r\n                </div>\r\n        </div>\r\n\r\n        \r\n\r\n        <div class=\"card\">\r\n            <div class=\"card-body\" >\r\n                <h4 id=\"noAwntitle\" class=\"card-title\">당신의 답변을 기다리고 있습니다.</h4>\r\n                <div id=\"awnserF\" class=\"login-item\">\r\n                        <form #myform=\"ngForm\" (ngSubmit)=\"this.awnser_input(myform)\" class=\"form form-login\">               \r\n                              <div class=\"form-field\">\r\n                                <label class=\"lock\" for=\"login-password\"><span class=\"hidden\">Awnser</span></label><br>\r\n                                <!-- <input name=\"password\" id=\"login-password\" type=\"password\" class=\"form-input\" placeholder=\"Password\" required ngModel> -->\r\n                                <textarea name=\"a_content\" class=\"form-field\" required ngModel>\r\n    \r\n    \r\n                                </textarea>\r\n                              </div><br>\r\n                      \r\n                              <div class=\"form-field\">\r\n                                <input id=\"aws_button\" type=\"submit\" value=\"답변하기\" class=\"btn-primary\">\r\n                            </div>\r\n                        </form>\r\n                    </div>\r\n                <button *ngIf=\"this.data.m_email != this.emailCheck\" id=\"awnShow\" class=\"btn-primary\">답변하기</button>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>"
 
 /***/ }),
 
@@ -939,7 +1077,7 @@ var QuestionComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"row\">\r\n    <div class=\"col-12\">\r\n        <div class=\"card\">\r\n            <div class=\"card-body\">      \r\n                <!-- <a href=\"/user\">{{subtitle}}</a> -->\r\n                <!-- <button type=\"button\" class=\"btn btn-outline-primary guswls\"  (click)=\"this.dbcall()\">DB를 불러주세요</button> -->\r\n\r\n                <h3 class=\"card-subtitle\">Q & A</h3>\r\n\r\n                \r\n\r\n                <table id=\"question_table\" mat-table class=\"mat-elevation-z8\">\r\n                    <tr width=50%>\r\n                        <th class=\"th1\" mat-header-cell witdth=\"30%\">작성자</th>\r\n                        <th mat-header-cell width=\"70%\">제목</th>                        \r\n                    </tr>\r\n                    \r\n\r\n                    <tr class=\"table_hover\" *ngFor=\"let question of this.data\" (click)=\"this.qDetail(question)\">\r\n                        <td mat-cell>{{question.m_name}}</td>  \r\n                        <td mat-cell>{{question.q_title}}</td>    \r\n                    </tr>\r\n                    \r\n                </table>\r\n\r\n                <div id=\"questionF\" class=\"login-item\">\r\n                    <form #myform=\"ngForm\" (ngSubmit)=\"this.queust_input(myform)\" class=\"form form-login\">\r\n                        <div class=\"form-field\">\r\n                            <label class=\"user\" for=\"login-email\"><span class=\"hidden\">제목</span></label><br>\r\n                            <input name=\"q_title\" id=\"login-email\" type=\"email\" class=\"form-input\" required ngModel>\r\n                          </div><br>\r\n                  \r\n                          <div class=\"form-field\">\r\n                            <label class=\"lock\" for=\"login-password\"><span class=\"hidden\">Content</span></label><br>\r\n                            <!-- <input name=\"password\" id=\"login-password\" type=\"password\" class=\"form-input\" placeholder=\"Password\" required ngModel> -->\r\n                            <textarea name=\"q_content\" class=\"form-field\" required ngModel>\r\n\r\n\r\n                            </textarea>\r\n                          </div><br>\r\n                  \r\n                          <div class=\"form-field\">\r\n                            <input id=\"log_button\" type=\"submit\" value=\"질문하기\" class=\"btn-primary\">\r\n                        </div>\r\n                    </form>\r\n                </div>\r\n\r\n\r\n\r\n                <br>\r\n\r\n                <button id=\"questButton\" class=\"btn-primary\" (click)=\"this.showForm()\">질문하기</button>\r\n\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>"
+module.exports = "<div class=\"row\">\r\n    <div class=\"col-12\">\r\n        <div class=\"card\">\r\n            <div class=\"card-body\">      \r\n                <!-- <a href=\"/user\">{{subtitle}}</a> -->\r\n                <!-- <button type=\"button\" class=\"btn btn-outline-primary guswls\"  (click)=\"this.dbcall()\">DB를 불러주세요</button> -->\r\n\r\n                <h3 class=\"card-subtitle\">Q & A</h3>        \r\n\r\n                <table id=\"question_table\" mat-table class=\"mat-elevation-z8\">\r\n                    <tr width=50%>\r\n                        <th class=\"th1\" mat-header-cell witdth=\"30%\">작성자</th>\r\n                        <th mat-header-cell width=\"70%\">제목</th>                        \r\n                    </tr>\r\n                    \r\n\r\n                    <tr class=\"table_hover\" *ngFor=\"let question of this.data\" (click)=\"this.qDetail(question)\">\r\n                        <td mat-cell>{{question.m_name}}</td>  \r\n                        <td mat-cell>{{question.q_title}}</td>    \r\n                    </tr>\r\n                    \r\n                </table>\r\n\r\n                <div id=\"questionF\" class=\"login-item\">\r\n                    <form #myform=\"ngForm\" (ngSubmit)=\"this.queust_input(myform)\" class=\"form form-login\">\r\n                        <div class=\"form-field\">\r\n                            <label class=\"user\" for=\"login-email\"><span class=\"hidden\">제목</span></label><br>\r\n                            <input name=\"q_title\" id=\"login-email\" type=\"email\" class=\"form-input\" required ngModel>\r\n                            </div><br>\r\n\r\n                            <div class=\"form-field\">\r\n                                <label class=\"user\" for=\"login-email\"><span class=\"hidden\">카테고리</span></label><br>\r\n                                <input name=\"category\" id=\"login-email\" type=\"email\" class=\"form-input\" required ngModel>\r\n                            </div><br>\r\n\r\n                  \r\n                          <div class=\"form-field\">\r\n                            <label class=\"lock\" for=\"login-password\"><span class=\"hidden\">Content</span></label><br>\r\n                            <!-- <input name=\"password\" id=\"login-password\" type=\"password\" class=\"form-input\" placeholder=\"Password\" required ngModel> -->\r\n                            <textarea name=\"q_content\" class=\"form-field\" required ngModel>\r\n\r\n\r\n                            </textarea>\r\n                          </div><br>\r\n                  \r\n                          <div class=\"form-field\">\r\n                            <input id=\"log_button\" type=\"submit\" value=\"질문하기\" class=\"btn-primary\">\r\n                        </div>\r\n                    </form>\r\n                </div>\r\n\r\n\r\n\r\n                <br>\r\n\r\n                <button id=\"questButton\" class=\"btn-primary\" (click)=\"this.showForm()\">질문하기</button>\r\n\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>"
 
 /***/ }),
 
@@ -991,7 +1129,7 @@ var UserComponent = /** @class */ (function () {
         var _this = this;
         var m_name = sessionStorage.getItem("name");
         var m_email = sessionStorage.getItem("email");
-        this.getinfoProvider.getQuestion({ name: m_name, email: m_email, title: form.value.q_title, content: form.value.q_content }).then(function (data) {
+        this.getinfoProvider.getQuestion({ name: m_name, email: m_email, title: form.value.q_title, content: form.value.q_content, category: form.value.category }).then(function (data) {
             var res = data;
             _this.data = res;
             console.log(data);
@@ -1002,16 +1140,9 @@ var UserComponent = /** @class */ (function () {
             }
         });
     };
-    // dbcall() {
-    //   this.getinfoProvider.getUser().then(
-    //     data => {
-    //       let res: any = data;
-    //      // this.data = res;
-    //      this.data = res;
-    //     }
-    //   );
-    // }
     UserComponent.prototype.ngAfterViewInit = function () {
+    };
+    UserComponent.prototype.ngOnInit = function () {
         $(function () {
             $("#questionF").hide();
             var t_color = $('.table_hover').css("color");
@@ -1121,7 +1252,7 @@ var BreadcrumbComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<header class=\"topbar\">\r\n    <nav class=\"navbar top-navbar navbar-expand-md navbar-light\">\r\n        <!-- ============================================================== -->\r\n        <!-- Logo -->\r\n        <!-- ============================================================== -->\r\n        <div class=\"navbar-header\">\r\n            <a class=\"navbar-brand\" href=\"/\">\r\n                <!-- Logo icon -->\r\n                <b>\r\n                    <!--You can put here icon as well // <i class=\"wi wi-sunset\"></i> //-->\r\n                    <!-- Dark Logo icon -->\r\n                    <img src=\"assets/images/logo-icon.png\" alt=\"homepage\" class=\"dark-logo\" />\r\n                    <!-- Light Logo icon -->\r\n                    <img src=\"assets/images/logo-light-icon.png\" alt=\"homepage\" class=\"light-logo\" />\r\n                </b>\r\n                <!--End Logo icon -->\r\n                <!-- Logo text -->\r\n                <span>\r\n                    <!-- dark Logo text -->\r\n                    <img src=\"assets/images/logo-text.png\" alt=\"homepage\" class=\"dark-logo\" />\r\n                    <!-- Light Logo text -->    \r\n                    <img src=\"assets/images/logo-light-text.png\" class=\"light-logo\" alt=\"homepage\" />\r\n                </span> \r\n            </a>\r\n        </div>\r\n        <!-- ============================================================== -->\r\n        <!-- End Logo -->\r\n        <!-- ============================================================== -->\r\n        <div class=\"navbar-collapse\">\r\n            <!-- ============================================================== -->\r\n            <!-- toggle and nav items -->\r\n            <!-- ============================================================== -->\r\n            <ul class=\"navbar-nav mr-auto mt-md-0 \">\r\n                <!-- This is  -->\r\n                <li class=\"nav-item\"> <a class=\"nav-link nav-toggler hidden-lg-up text-muted waves-effect waves-dark\" href=\"javascript:void(0)\"><i class=\"ti-menu\"></i></a> </li>\r\n            </ul>\r\n            <!-- ============================================================== -->\r\n            <!-- User profile and search -->\r\n            <!-- ============================================================== -->\r\n            <ul class=\"navbar-nav my-lg-0\">\r\n                <li class=\"nav-item hidden-sm-down\">\r\n                    <form class=\"app-search\">\r\n                        <input type=\"text\" class=\"form-control\" placeholder=\"Search for...\"> <a class=\"srh-btn\"><i class=\"ti-search\"></i></a> </form>\r\n                </li>\r\n                <li class=\"nav-item dropdown\">\r\n                    <!-- <a class=\"nav-link dropdown-toggle text-muted waves-effect waves-dark\" href=\"\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\"><img src=\"assets/images/users/1.jpg\" alt=\"user\" class=\"profile-pic\" /></a> -->\r\n                    <div class=\"dropdown-menu dropdown-menu-right animated flipInY\">\r\n                        <ul class=\"dropdown-user\">\r\n                            <li>\r\n                                <div class=\"dw-user-box\">\r\n                                    <div class=\"u-img\"><img src=\"assets/images/users/ice.jpg\" alt=\"user\"></div>\r\n                                    <div class=\"u-text\">\r\n                                        <h4>Steave Jobs</h4>\r\n                                        <p class=\"text-muted\">varun@gmail.com</p><a href=\"profile.html\" class=\"btn btn-rounded btn-danger btn-sm\">View Profile</a>\r\n                                    </div>\r\n                                </div>\r\n                            </li>\r\n                            <li role=\"separator\" class=\"divider\"></li>\r\n                            <li><a href=\"#\"><i class=\"ti-user\"></i> My Profile</a></li>\r\n                            <li><a href=\"#\"><i class=\"ti-wallet\"></i> My Balance</a></li>\r\n                            <li><a href=\"#\"><i class=\"ti-email\"></i> Inbox</a></li>\r\n                            <li role=\"separator\" class=\"divider\"></li>\r\n                            <li><a href=\"#\"><i class=\"ti-settings\"></i> Account Setting</a></li>\r\n                            <li role=\"separator\" class=\"divider\"></li>\r\n                            <li><a href=\"#\"><i class=\"fa fa-power-off\"></i> Logout</a></li>\r\n                        </ul>\r\n                    </div>\r\n                </li>\r\n            </ul>\r\n        </div>\r\n    </nav>\r\n</header>"
+module.exports = "<header class=\"topbar\" style=\"background: linear-gradient(to left, #0178bc -300%, #00bdda 100%)\">\r\n    <nav class=\"navbar top-navbar navbar-expand-md navbar-light\">\r\n        <!-- ============================================================== -->\r\n        <!-- Logo -->\r\n        <!-- ============================================================== -->\r\n        <div class=\"navbar-header\" style=\"background: linear-gradient(to right, #0178bc 0%, #00bdda 100%)!important\">\r\n            <a class=\"navbar-brand\" href=\"/\">\r\n                <!-- Logo icon -->\r\n                <b>\r\n                    <!--You can put here icon as well // <i class=\"wi wi-sunset\"></i> //-->\r\n                    <!-- Dark Logo icon -->\r\n                    <!-- <img src=\"assets/images/logo-icon.png\" alt=\"homepage\" class=\"dark-logo\" /> -->\r\n                    <!-- Light Logo icon -->\r\n                    <!-- <img src=\"assets/images/logo-light-icon.png\" alt=\"homepage\" class=\"light-logo\" /> -->\r\n                </b>\r\n                <!--End Logo icon -->\r\n                <!-- Logo text -->\r\n                    <!-- dark Logo text -->\r\n                    <img src=\"assets/images/codemoa_logo.png\" style=\"width: 29%;\" alt=\"homepage\" class=\"dark-logo\" />\r\n                    <!-- Light Logo text -->    \r\n                    <img src=\"assets/images/codemoa_logo.png\" style=\"width: 29%;\"  class=\"light-logo\" alt=\"homepage\" />\r\n            </a>\r\n        </div>\r\n        <!-- ============================================================== -->\r\n        <!-- End Logo -->\r\n        <!-- ============================================================== -->\r\n        <div class=\"navbar-collapse\">\r\n            <!-- ============================================================== -->\r\n            <!-- toggle and nav items -->\r\n            <!-- ============================================================== -->\r\n            <ul class=\"navbar-nav mr-auto mt-md-0 \">\r\n                <!-- This is  -->\r\n                <li class=\"nav-item\"> <a class=\"nav-link nav-toggler hidden-lg-up text-muted waves-effect waves-dark\" href=\"javascript:void(0)\"><i class=\"ti-menu\"></i></a> </li>\r\n            </ul>\r\n            <!-- ============================================================== -->\r\n            <!-- User profile and search -->\r\n            <!-- ============================================================== -->\r\n            <ul class=\"navbar-nav my-lg-0\">\r\n                <li class=\"nav-item hidden-sm-down\">\r\n                    <form class=\"app-search\">\r\n                        <input type=\"text\" class=\"form-control\" placeholder=\"Search for...\"> <a class=\"srh-btn\"><i class=\"ti-search\"></i></a> </form>\r\n                </li>\r\n                <li class=\"nav-item dropdown\">\r\n                    <!-- <a class=\"nav-link dropdown-toggle text-muted waves-effect waves-dark\" href=\"\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\"><img src=\"assets/images/users/1.jpg\" alt=\"user\" class=\"profile-pic\" /></a> -->\r\n                    <div class=\"dropdown-menu dropdown-menu-right animated flipInY\">\r\n                        <ul class=\"dropdown-user\">\r\n                            <li>\r\n                                <div class=\"dw-user-box\">\r\n                                    <div class=\"u-img\"><img src=\"assets/images/users/ice.jpg\" alt=\"user\"></div>\r\n                                    <div class=\"u-text\">\r\n                                        <h4>Steave Jobs</h4>\r\n                                        <p class=\"text-muted\">varun@gmail.com</p><a href=\"profile.html\" class=\"btn btn-rounded btn-danger btn-sm\">View Profile</a>\r\n                                    </div>\r\n                                </div>\r\n                            </li>\r\n                            <li role=\"separator\" class=\"divider\"></li>\r\n                            <li><a href=\"#\"><i class=\"ti-user\"></i> My Profile</a></li>\r\n                            <li><a href=\"#\"><i class=\"ti-wallet\"></i> My Balance</a></li>\r\n                            <li><a href=\"#\"><i class=\"ti-email\"></i> Inbox</a></li>\r\n                            <li role=\"separator\" class=\"divider\"></li>\r\n                            <li><a href=\"#\"><i class=\"ti-settings\"></i> Account Setting</a></li>\r\n                            <li role=\"separator\" class=\"divider\"></li>\r\n                            <li><a href=\"#\"><i class=\"fa fa-power-off\"></i> Logout</a></li>\r\n                        </ul>\r\n                    </div>\r\n                </li>\r\n            </ul>\r\n        </div>\r\n    </nav>\r\n</header>"
 
 /***/ }),
 
@@ -1358,7 +1489,7 @@ var SIDEBAR_TOGGLE_DIRECTIVES = [
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<style>\r\n    #user_name{\r\n        margin-top: 20px;\r\n    }\r\n</style>\r\n\r\n\r\n<aside class=\"left-sidebar\">\r\n    <!-- Sidebar scroll-->\r\n    <div class=\"scroll-sidebar\">\r\n        <!-- User profile -->\r\n        <div class=\"user-profile\">\r\n            <!-- User profile image -->\r\n            <div class=\"profile-img\"> <img id=\"user_img\" src=\"assets/images/users/ice.jpg\" alt=\"user\" /> </div>\r\n            <!-- User profile text-->\r\n            <div class=\"profile-text\"> <span id=\"user_name\"> </span>\r\n                <!-- <div id=\"user_drop\" class=\"dropdown-menu animated flipInY\">\r\n                    <a href=\"#\" class=\"dropdown-item\"><i class=\"ti-user\"></i>프로필</a>\r\n                    <a href=\"#\" class=\"dropdown-item\"><i class=\"ti-wallet\"></i> 즐겨찾기</a>\r\n\r\n                    <div class=\"dropdown-divider\"></div> <a (click)=\"this.logout()\" href=\"#\" class=\"dropdown-item\"><i class=\"fa fa-power-off\"></i>\r\n                        Logout</a>\r\n                </div> -->\r\n            </div>\r\n        </div>\r\n        <!-- End User profile text-->\r\n        <!-- Sidebar navigation-->\r\n        <nav class=\"sidebar-nav\">\r\n            <ul id=\"sidebarnav\">\r\n                <li class=\"nav-devider\"></li>\r\n                <li [class.active]=\"showMenu === 'starter'\">\r\n                    <a routerLink=\"/starter\" (click)=\"addExpandClass('starter')\" [routerLinkActive]=\"['router-link-active']\"><i\r\n                            class=\"mdi mdi-file\"></i><span class=\"hide-menu\">Main</span></a>\r\n                </li>\r\n                <li *ngIf=\"this.email\">\r\n                        <a routerLink=\"/profile\" (click)=\"addExpandClass('component')\" [routerLinkActive]=\"['router-link-active']\"><i\r\n                            class=\"mdi mdi mdi-sort-variant\"></i><span class=\"hide-menu\">프로필</span></a>\r\n                    </li>\r\n                <li class=\"nav-small-cap\">CODEMOA ITEM</li>\r\n                <li>\r\n                    <a routerLink=\"/user\" (click)=\"addExpandClass('component')\" [routerLinkActive]=\"['router-link-active']\"><i\r\n                            class=\"mdi mdi-equal\"></i><span class=\"hide-menu\">질문 및 답변</span></a>\r\n                </li>\r\n                <li>\r\n                    <a routerLink=\"/lecture\" (click)=\"addExpandClass('component')\" [routerLinkActive]=\"['router-link-active']\"><i\r\n                        class=\"mdi mdi-tablet\"> </i><span class=\"hide-menu\">강의</span></a>\r\n                </li>\r\n                <li *ngIf=\"this.email\">\r\n                    <a routerLink=\"/portpolio\" (click)=\"addExpandClass('component')\" [routerLinkActive]=\"['router-link-active']\"><i\r\n                        class=\"mdi mdi-calendar-clock\"></i><span class=\"hide-menu\">포트폴리오</span></a>\r\n                </li>\r\n                <li>\r\n                    <a routerLink=\"/bookmark\" (click)=\"addExpandClass('component')\" [routerLinkActive]=\"['router-link-active']\"><i\r\n                        class=\"mdi mdi mdi-image-filter-vintage\"></i><span class=\"hide-menu\">즐겨찾기</span></a>\r\n                </li>\r\n                \r\n                <li>\r\n                    <a routerLink=\"/component/accordion\" (click)=\"addExpandClass('component')\" [routerLinkActive]=\"['router-link-active']\"><i\r\n                            class=\"mdi mdi-equal\"></i><span class=\"hide-menu\">Accordion</span></a>\r\n                </li>\r\n                <li>\r\n                    <a routerLink=\"/component/alert\" (click)=\"addExpandClass('component')\" [routerLinkActive]=\"['router-link-active']\"><i\r\n                            class=\"mdi mdi-message-bulleted\"></i><span class=\"hide-menu\">Alert</span></a>\r\n                </li>\r\n                <li>\r\n                    <a routerLink=\"/component/carousel\" (click)=\"addExpandClass('component')\" [routerLinkActive]=\"['router-link-active']\"><i\r\n                            class=\"mdi mdi-view-carousel\"></i><span class=\"hide-menu\">Carousel</span></a>\r\n                </li>\r\n                <li>\r\n                    <a routerLink=\"/component/dropdown\" (click)=\"addExpandClass('component')\" [routerLinkActive]=\"['router-link-active']\"><i\r\n                            class=\"mdi mdi-arrange-bring-to-front\"></i><span class=\"hide-menu\">Dropdown - Collapse</span></a>\r\n                </li>\r\n                <li>\r\n                    <a routerLink=\"/component/modal\" (click)=\"addExpandClass('component')\" [routerLinkActive]=\"['router-link-active']\"><i\r\n                            class=\"mdi mdi-tablet\"></i><span class=\"hide-menu\">Modal</span></a>\r\n                </li>\r\n                <li>\r\n                    <a routerLink=\"/component/pagination\" (click)=\"addExpandClass('component')\" [routerLinkActive]=\"['router-link-active']\"><i\r\n                            class=\"mdi mdi-backburger\"></i><span class=\"hide-menu\">Pagination</span></a>\r\n                </li>\r\n                <li>\r\n                    <a routerLink=\"/component/poptool\" (click)=\"addExpandClass('component')\" [routerLinkActive]=\"['router-link-active']\"><i\r\n                            class=\"mdi mdi-image-filter-vintage\"></i><span class=\"hide-menu\">Popover & Tooltip</span></a>\r\n                </li>\r\n                <li>\r\n                    <a routerLink=\"/component/progressbar\" (click)=\"addExpandClass('component')\" [routerLinkActive]=\"['router-link-active']\"><i\r\n                            class=\"mdi mdi-poll\"></i><span class=\"hide-menu\">Progressbar</span></a>\r\n                </li>\r\n                <li>\r\n                    <a routerLink=\"/component/rating\" (click)=\"addExpandClass('component')\" [routerLinkActive]=\"['router-link-active']\"><i\r\n                            class=\"mdi mdi-bandcamp\"></i><span class=\"hide-menu\">Ratings</span></a>\r\n                </li>\r\n                <li>\r\n                    <a routerLink=\"/component/tabs\" (click)=\"addExpandClass('component')\" [routerLinkActive]=\"['router-link-active']\"><i\r\n                            class=\"mdi mdi-sort-variant\"></i><span class=\"hide-menu\">Tabs</span></a>\r\n                </li>\r\n                <li>\r\n                    <a routerLink=\"/component/timepicker\" (click)=\"addExpandClass('component')\" [routerLinkActive]=\"['router-link-active']\"><i\r\n                            class=\"mdi mdi-calendar-clock\"></i><span class=\"hide-menu\">Timepicker</span></a>\r\n                </li>\r\n                <li>\r\n                    <a routerLink=\"/component/buttons\" (click)=\"addExpandClass('component')\" [routerLinkActive]=\"['router-link-active']\"><i\r\n                            class=\"mdi mdi-blur-radial\"></i><span class=\"hide-menu\">Button</span></a>\r\n                </li>\r\n                <li>\r\n                    <a routerLink=\"/component/cards\" (click)=\"addExpandClass('component')\" [routerLinkActive]=\"['router-link-active']\"><i\r\n                            class=\"mdi mdi-arrange-bring-forward\"></i><span class=\"hide-menu\">Card</span></a>\r\n                </li>\r\n            </ul>\r\n        </nav>\r\n        <!-- End Sidebar navigation -->\r\n    </div>\r\n    <!-- End Sidebar scroll-->\r\n    <!-- Bottom points-->\r\n    <div class=\"sidebar-footer\">\r\n        <!-- item-->\r\n        <a href=\"\" class=\"link\" data-toggle=\"tooltip\" title=\"Settings\"><i class=\"ti-settings\"></i></a>\r\n        <!-- item-->\r\n        <a href=\"\" class=\"link\" data-toggle=\"tooltip\" title=\"Email\"><i class=\"mdi mdi-gmail\"></i></a>\r\n        <!-- item-->\r\n        <a id=\"log\" (click)=\"this.logState()\" class=\"link\" data-toggle=\"tooltip\" title=\"Login\"><i class=\"mdi mdi-power\"></i></a>\r\n    </div>\r\n    <!-- End Bottom points-->\r\n</aside>"
+module.exports = "<style>\r\n    #user_name{\r\n        margin-top: 20px;\r\n    }\r\n</style>\r\n\r\n\r\n<aside class=\"left-sidebar\">\r\n    <!-- Sidebar scroll-->\r\n    <div class=\"scroll-sidebar\">\r\n        <!-- User profile -->\r\n        <div class=\"user-profile\">\r\n            <!-- User profile image -->\r\n            <div class=\"profile-img\"> <img id=\"user_img\" src=\"assets/images/users/ice.jpg\" alt=\"user\" /> </div>\r\n            <!-- User profile text-->\r\n            <div class=\"profile-text\"> <span id=\"user_name\"> </span>\r\n                <!-- <div id=\"user_drop\" class=\"dropdown-menu animated flipInY\">\r\n                    <a href=\"#\" class=\"dropdown-item\"><i class=\"ti-user\"></i>프로필</a>\r\n                    <a href=\"#\" class=\"dropdown-item\"><i class=\"ti-wallet\"></i> 즐겨찾기</a>\r\n\r\n                    <div class=\"dropdown-divider\"></div> <a (click)=\"this.logout()\" href=\"#\" class=\"dropdown-item\"><i class=\"fa fa-power-off\"></i>\r\n                        Logout</a>\r\n                </div> -->\r\n            </div>\r\n        </div>\r\n        <!-- End User profile text-->\r\n        <!-- Sidebar navigation-->\r\n        <nav class=\"sidebar-nav\">\r\n            <ul id=\"sidebarnav\">\r\n                <li class=\"nav-devider\"></li>\r\n                <li [class.active]=\"showMenu === 'starter'\">\r\n                    <a routerLink=\"/starter\" (click)=\"addExpandClass('starter')\" [routerLinkActive]=\"['router-link-active']\"><i\r\n                            class=\"mdi mdi-file\"></i><span class=\"hide-menu\">Main</span></a>\r\n                </li>\r\n                <li *ngIf=\"this.email\">\r\n                        <a routerLink=\"/profile\" (click)=\"addExpandClass('component')\" [routerLinkActive]=\"['router-link-active']\"><i\r\n                            class=\"mdi mdi mdi-sort-variant\"></i><span class=\"hide-menu\">프로필</span></a>\r\n                    </li>\r\n                <li class=\"nav-small-cap\">CODEMOA ITEM</li>\r\n                <li>\r\n                    <a routerLink=\"/user\" (click)=\"addExpandClass('component')\" [routerLinkActive]=\"['router-link-active']\"><i\r\n                            class=\"mdi mdi-equal\"></i><span class=\"hide-menu\">질문 및 답변</span></a>\r\n                </li>\r\n                <li>\r\n                    <a routerLink=\"/lecture\" (click)=\"addExpandClass('component')\" [routerLinkActive]=\"['router-link-active']\"><i\r\n                        class=\"mdi mdi-tablet\"> </i><span class=\"hide-menu\">강의</span></a>\r\n                </li>\r\n                <li *ngIf=\"this.email\">\r\n                    <a routerLink=\"/portpolio\" (click)=\"addExpandClass('component')\" [routerLinkActive]=\"['router-link-active']\"><i\r\n                        class=\"mdi mdi-calendar-clock\"></i><span class=\"hide-menu\">포트폴리오</span></a>\r\n                </li>\r\n                <li>\r\n                    <a routerLink=\"/bookmark\" (click)=\"addExpandClass('component')\" [routerLinkActive]=\"['router-link-active']\"><i\r\n                        class=\"mdi mdi mdi-image-filter-vintage\"></i><span class=\"hide-menu\">즐겨찾기</span></a>\r\n                </li>\r\n                \r\n                <!-- <li>\r\n                    <a routerLink=\"/component/accordion\" (click)=\"addExpandClass('component')\" [routerLinkActive]=\"['router-link-active']\"><i\r\n                            class=\"mdi mdi-equal\"></i><span class=\"hide-menu\">Accordion</span></a>\r\n                </li>\r\n                <li>\r\n                    <a routerLink=\"/component/alert\" (click)=\"addExpandClass('component')\" [routerLinkActive]=\"['router-link-active']\"><i\r\n                            class=\"mdi mdi-message-bulleted\"></i><span class=\"hide-menu\">Alert</span></a>\r\n                </li>\r\n                <li>\r\n                    <a routerLink=\"/component/carousel\" (click)=\"addExpandClass('component')\" [routerLinkActive]=\"['router-link-active']\"><i\r\n                            class=\"mdi mdi-view-carousel\"></i><span class=\"hide-menu\">Carousel</span></a>\r\n                </li>\r\n                <li>\r\n                    <a routerLink=\"/component/dropdown\" (click)=\"addExpandClass('component')\" [routerLinkActive]=\"['router-link-active']\"><i\r\n                            class=\"mdi mdi-arrange-bring-to-front\"></i><span class=\"hide-menu\">Dropdown - Collapse</span></a>\r\n                </li>\r\n                <li>\r\n                    <a routerLink=\"/component/modal\" (click)=\"addExpandClass('component')\" [routerLinkActive]=\"['router-link-active']\"><i\r\n                            class=\"mdi mdi-tablet\"></i><span class=\"hide-menu\">Modal</span></a>\r\n                </li>\r\n                <li>\r\n                    <a routerLink=\"/component/pagination\" (click)=\"addExpandClass('component')\" [routerLinkActive]=\"['router-link-active']\"><i\r\n                            class=\"mdi mdi-backburger\"></i><span class=\"hide-menu\">Pagination</span></a>\r\n                </li>\r\n                <li>\r\n                    <a routerLink=\"/component/poptool\" (click)=\"addExpandClass('component')\" [routerLinkActive]=\"['router-link-active']\"><i\r\n                            class=\"mdi mdi-image-filter-vintage\"></i><span class=\"hide-menu\">Popover & Tooltip</span></a>\r\n                </li>\r\n                <li>\r\n                    <a routerLink=\"/component/progressbar\" (click)=\"addExpandClass('component')\" [routerLinkActive]=\"['router-link-active']\"><i\r\n                            class=\"mdi mdi-poll\"></i><span class=\"hide-menu\">Progressbar</span></a>\r\n                </li>\r\n                <li>\r\n                    <a routerLink=\"/component/rating\" (click)=\"addExpandClass('component')\" [routerLinkActive]=\"['router-link-active']\"><i\r\n                            class=\"mdi mdi-bandcamp\"></i><span class=\"hide-menu\">Ratings</span></a>\r\n                </li>\r\n                <li>\r\n                    <a routerLink=\"/component/tabs\" (click)=\"addExpandClass('component')\" [routerLinkActive]=\"['router-link-active']\"><i\r\n                            class=\"mdi mdi-sort-variant\"></i><span class=\"hide-menu\">Tabs</span></a>\r\n                </li>\r\n                <li>\r\n                    <a routerLink=\"/component/timepicker\" (click)=\"addExpandClass('component')\" [routerLinkActive]=\"['router-link-active']\"><i\r\n                            class=\"mdi mdi-calendar-clock\"></i><span class=\"hide-menu\">Timepicker</span></a>\r\n                </li>\r\n                <li>\r\n                    <a routerLink=\"/component/buttons\" (click)=\"addExpandClass('component')\" [routerLinkActive]=\"['router-link-active']\"><i\r\n                            class=\"mdi mdi-blur-radial\"></i><span class=\"hide-menu\">Button</span></a>\r\n                </li>\r\n                <li>\r\n                    <a routerLink=\"/component/cards\" (click)=\"addExpandClass('component')\" [routerLinkActive]=\"['router-link-active']\"><i\r\n                            class=\"mdi mdi-arrange-bring-forward\"></i><span class=\"hide-menu\">Card</span></a>\r\n                </li> -->\r\n            </ul>\r\n        </nav>\r\n        <!-- End Sidebar navigation -->\r\n    </div>\r\n    <!-- End Sidebar scroll-->\r\n    <!-- Bottom points-->\r\n    <div class=\"sidebar-footer\">\r\n        <!-- item-->\r\n        <a href=\"\" class=\"link\" data-toggle=\"tooltip\" title=\"Settings\"><i class=\"ti-settings\"></i></a>\r\n        <!-- item-->\r\n        <a href=\"\" class=\"link\" data-toggle=\"tooltip\" title=\"Email\"><i class=\"mdi mdi-gmail\"></i></a>\r\n        <!-- item-->\r\n        <a id=\"log\" (click)=\"this.logState()\" class=\"link\" data-toggle=\"tooltip\" title=\"Login\"><i class=\"mdi mdi-power\"></i></a>\r\n    </div>\r\n    <!-- End Bottom points-->\r\n</aside>"
 
 /***/ }),
 
@@ -1423,7 +1554,6 @@ var SidebarComponent = /** @class */ (function () {
     };
     // End open close
     SidebarComponent.prototype.ngAfterViewInit = function () {
-        this.email = sessionStorage.getItem("email");
         $(function () {
             $('.sidebartoggler').on('click', function () {
                 if ($('body').hasClass('mini-sidebar')) {
@@ -1458,6 +1588,9 @@ var SidebarComponent = /** @class */ (function () {
                 $('#user_name').text(sessionStorage.getItem("name"));
             }
         });
+    };
+    SidebarComponent.prototype.ngOnInit = function () {
+        this.email = sessionStorage.getItem("email");
     };
     SidebarComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
@@ -1566,8 +1699,9 @@ var GetinfoProvider = /** @class */ (function () {
         var email = form.email;
         var title = form.title;
         var content = form.content;
+        var category = form.category;
         return new Promise(function (resolve) {
-            _this.http.post(_this.SERVER_PATH + '/questInput', JSON.stringify({ 'name': name, 'email': email, 'title': title, 'content': content }), { headers: { 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8' } }).
+            _this.http.post(_this.SERVER_PATH + '/questInput', JSON.stringify({ 'name': name, 'email': email, 'title': title, 'content': content, 'category': category }), { headers: { 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8' } }).
                 subscribe(function (data) {
                 resolve(data);
             }, function (err) {

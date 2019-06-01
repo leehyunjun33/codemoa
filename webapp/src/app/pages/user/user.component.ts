@@ -63,7 +63,7 @@ export class UserComponent implements AfterViewInit {
     var m_name = sessionStorage.getItem("name");
     var m_email = sessionStorage.getItem("email");
 
-    this.getinfoProvider.getQuestion({name: m_name, email: m_email, title: form.value.q_title, content: form.value.q_content}).then(
+    this.getinfoProvider.getQuestion({name: m_name, email: m_email, title: form.value.q_title, content: form.value.q_content, category : form.value.category}).then(
       data => {
         let res: any = data;
            this.data = res;
@@ -82,19 +82,12 @@ export class UserComponent implements AfterViewInit {
       }
     );
   }
-
-  // dbcall() {
-  //   this.getinfoProvider.getUser().then(
-  //     data => {
-  //       let res: any = data;
-  //      // this.data = res;
-  //      this.data = res;
-
-  //     }
-  //   );
-
-  // }
   ngAfterViewInit() {
+    
+    
+  }
+  
+  ngOnInit(): void {
     $(function(){
       $("#questionF").hide();
 

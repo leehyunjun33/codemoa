@@ -8686,3 +8686,668 @@ chunk {pages-pages-module} pages-pages-module.js, pages-pages-module.js.map (pag
 
 ERROR in src/app/pages/register/register.module.ts(6,34): error TS2307: Cannot find module './lecture.component'.
 
+
+ERROR in src/app/pages/register/register.module.ts(6,34): error TS2307: Cannot find module './lecture.component'.
+
+
+Date: 2019-05-31T10:27:10.436Z - Hash: c38929dd28704478d636 - Time: 5899ms
+10 unchanged chunks
+chunk {pages-pages-module} pages-pages-module.js, pages-pages-module.js.map (pages-pages-module) 108 kB  [rendered]
+
+Date: 2019-05-31T10:28:27.337Z - Hash: c38929dd28704478d636 - Time: 1573ms
+11 unchanged chunks
+
+Date: 2019-05-31T10:28:28.803Z - Hash: c38929dd28704478d636 - Time: 1146ms
+11 unchanged chunks
+
+ERROR in src/app/pages/register/register.module.ts(6,34): error TS2307: Cannot find module './lecture.component'.
+
+
+ERROR in src/app/pages/register/register.module.ts(6,34): error TS2307: Cannot find module './lecture.component'.
+
+
+Date: 2019-05-31T10:31:22.099Z - Hash: c38929dd28704478d636 - Time: 2250ms
+11 unchanged chunks
+
+ERROR in src/app/pages/register/register.module.ts(6,34): error TS2307: Cannot find module './lecture.component'.
+
+
+Date: 2019-05-31T10:31:34.132Z - Hash: c38929dd28704478d636 - Time: 955ms
+11 unchanged chunks
+
+ERROR in src/app/pages/register/register.module.ts(6,34): error TS2307: Cannot find module './lecture.component'.
+
+
+Date: 2019-05-31T10:32:26.266Z - Hash: 9c0bd5a2d18db5372b20 - Time: 1589ms
+10 unchanged chunks
+chunk {pages-pages-module} pages-pages-module.js, pages-pages-module.js.map (pages-pages-module) 108 kB  [rendered]
+
+ERROR in src/app/pages/register/register.module.ts(6,34): error TS2307: Cannot find module './lecture.component'.
+
+
+Date: 2019-05-31T10:32:34.984Z - Hash: 9c0bd5a2d18db5372b20 - Time: 815ms
+11 unchanged chunks
+
+ERROR in src/app/pages/register/register.module.ts(6,34): error TS2307: Cannot find module './lecture.component'.
+
+
+Date: 2019-05-31T10:32:50.961Z - Hash: 5b041325f851761e80fb - Time: 387ms
+11 unchanged chunks
+
+ERROR in src/app/pages/lecture/lecture.component.ts(21,65): error TS1144: '{' or ';' expected.
+src/app/pages/lecture/lecture.component.ts(21,67): error TS1068: Unexpected token. A constructor, method, accessor, or property was expected.
+src/app/pages/lecture/lecture.component.ts(27,12): error TS1005: ';' expected.
+src/app/pages/lecture/lecture.component.ts(31,21): error TS1005: ';' expected.
+src/app/pages/lecture/lecture.component.ts(32,1): error TS1128: Declaration or statement expected.
+
+
+ERROR in src/app/pages/lecture/lecture.component.ts(8,14): error TS2420: Class 'LectureComponent' incorrectly implements interface 'AfterViewInit'.
+  Property 'ngAfterViewInit' is missing in type 'LectureComponent'.
+src/app/pages/lecture/lecture.component.ts(21,15): error TS2369: A parameter property is only allowed in a constructor implementation.
+src/app/pages/lecture/lecture.component.ts(21,40): error TS2369: A parameter property is only allowed in a constructor implementation.
+src/app/pages/lecture/lecture.component.ts(27,3): error TS2304: Cannot find name 'dbcall'.
+src/app/pages/lecture/lecture.component.ts(31,3): error TS2304: Cannot find name 'ngAfterViewInit'.
+src/app/pages/register/register.module.ts(6,34): error TS2307: Cannot find module './lecture.component'.
+
+
+Date: 2019-05-31T10:32:57.750Z - Hash: 9e38b05559d1e05d1d0c - Time: 1302ms
+10 unchanged chunks
+chunk {pages-pages-module} pages-pages-module.js, pages-pages-module.js.map (pages-pages-module) 108 kB  [rendered]
+
+ERROR in src/app/pages/register/register.module.ts(6,34): error TS2307: Cannot find module './lecture.component'.
+
+
+Date: 2019-05-31T10:33:09.059Z - Hash: 8fe4e9dba8a3756a96e5 - Time: 1164ms
+10 unchanged chunks
+chunk {pages-pages-module} pages-pages-module.js, pages-pages-module.js.map (pages-pages-module) 109 kB  [rendered]
+
+ERROR in src/app/pages/register/register.module.ts(6,34): error TS2307: Cannot find module './lecture.component'.
+
+
+Date: 2019-05-31T10:33:26.610Z - Hash: 5ca06d814290e0670f99 - Time: 1131ms
+10 unchanged chunks
+chunk {pages-pages-module} pages-pages-module.js, pages-pages-module.js.map (pages-pages-module) 110 kB  [rendered]
+
+ERROR in src/app/pages/lecture/lecture.component.ts(43,9): error TS2322: Type 'string | ArrayBuffer' is not assignable to type 'string'.
+  Type 'ArrayBuffer' is not assignable to type 'string'.
+src/app/pages/lecture/lecture.component.ts(50,12): error TS2339: Property 'avatar' does not exist on type 'LectureComponent'.
+src/app/pages/register/register.module.ts(6,34): error TS2307: Cannot find module './lecture.component'.
+
+
+Date: 2019-05-31T10:33:45.073Z - Hash: 3c7734236d929327c5f2 - Time: 2393ms
+10 unchanged chunks
+chunk {pages-pages-module} pages-pages-module.js, pages-pages-module.js.map (pages-pages-module) 110 kB  [rendered]
+
+ERROR in src/app/pages/lecture/lecture.component.ts(43,9): error TS2322: Type 'string | ArrayBuffer' is not assignable to type 'string'.
+  Type 'ArrayBuffer' is not assignable to type 'string'.
+src/app/pages/register/register.module.ts(6,34): error TS2307: Cannot find module './lecture.component'.
+
+
+Date: 2019-05-31T10:34:03.924Z - Hash: 3c7734236d929327c5f2 - Time: 956ms
+11 unchanged chunks
+
+ERROR in src/app/pages/lecture/lecture.component.ts(43,9): error TS2322: Type 'string | ArrayBuffer' is not assignable to type 'string'.
+  Type 'ArrayBuffer' is not assignable to type 'string'.
+src/app/pages/register/register.module.ts(6,34): error TS2307: Cannot find module './lecture.component'.
+
+
+Date: 2019-05-31T10:34:21.498Z - Hash: 3c7734236d929327c5f2 - Time: 1077ms
+11 unchanged chunks
+
+ERROR in src/app/pages/register/register.module.ts(6,34): error TS2307: Cannot find module './lecture.component'.
+
+
+Date: 2019-05-31T10:34:44.971Z - Hash: 3c7734236d929327c5f2 - Time: 1803ms
+11 unchanged chunks
+
+ERROR in src/app/pages/register/register.module.ts(6,34): error TS2307: Cannot find module './lecture.component'.
+
+
+Date: 2019-05-31T10:36:00.239Z - Hash: 3c7734236d929327c5f2 - Time: 1426ms
+11 unchanged chunks
+
+ERROR in src/app/pages/register/register.module.ts(6,34): error TS2307: Cannot find module './lecture.component'.
+
+
+Date: 2019-05-31T10:39:02.223Z - Hash: 3c7734236d929327c5f2 - Time: 2165ms
+11 unchanged chunks
+
+ERROR in src/app/pages/register/register.module.ts(6,34): error TS2307: Cannot find module './lecture.component'.
+
+
+ERROR in src/app/pages/register/register.module.ts(6,34): error TS2307: Cannot find module './lecture.component'.
+
+
+Date: 2019-05-31T10:39:06.847Z - Hash: c7898b35885720462341 - Time: 3907ms
+10 unchanged chunks
+chunk {pages-pages-module} pages-pages-module.js, pages-pages-module.js.map (pages-pages-module) 110 kB  [rendered]
+
+Date: 2019-05-31T10:39:42.848Z - Hash: 4befac9ec0506a80b911 - Time: 1262ms
+10 unchanged chunks
+chunk {main} main.js, main.js.map (main) 14.6 kB [initial] [rendered]
+
+ERROR in src/app/pages/register/register.module.ts(6,34): error TS2307: Cannot find module './lecture.component'.
+
+
+Date: 2019-05-31T10:41:17.923Z - Hash: 4befac9ec0506a80b911 - Time: 1489ms
+11 unchanged chunks
+
+ERROR in src/app/pages/register/register.module.ts(6,34): error TS2307: Cannot find module './lecture.component'.
+
+
+ERROR in src/app/pages/register/register.module.ts(6,34): error TS2307: Cannot find module './lecture.component'.
+
+
+Date: 2019-05-31T10:49:03.523Z - Hash: 2b9998f92b58b073650e - Time: 5624ms
+10 unchanged chunks
+chunk {pages-pages-module} pages-pages-module.js, pages-pages-module.js.map (pages-pages-module) 110 kB  [rendered]
+
+Date: 2019-05-31T10:49:17.936Z - Hash: c2bdd8da7c6fbf535ec8 - Time: 1195ms
+10 unchanged chunks
+chunk {pages-pages-module} pages-pages-module.js, pages-pages-module.js.map (pages-pages-module) 110 kB  [rendered]
+
+ERROR in src/app/pages/lecture/lecture.component.ts(43,14): error TS2339: Property 'imageSrc' does not exist on type 'LectureComponent'.
+src/app/pages/register/register.module.ts(6,34): error TS2307: Cannot find module './lecture.component'.
+
+
+Date: 2019-05-31T10:49:24.185Z - Hash: 2b9998f92b58b073650e - Time: 964ms
+10 unchanged chunks
+chunk {pages-pages-module} pages-pages-module.js, pages-pages-module.js.map (pages-pages-module) 110 kB  [rendered]
+
+ERROR in src/app/pages/register/register.module.ts(6,34): error TS2307: Cannot find module './lecture.component'.
+
+
+Date: 2019-05-31T10:49:28.662Z - Hash: c0d261501a7e5f4ae699 - Time: 996ms
+10 unchanged chunks
+chunk {pages-pages-module} pages-pages-module.js, pages-pages-module.js.map (pages-pages-module) 110 kB  [rendered]
+
+ERROR in src/app/pages/register/register.module.ts(6,34): error TS2307: Cannot find module './lecture.component'.
+
+
+Date: 2019-05-31T10:51:21.292Z - Hash: db00fa73e992c66808c1 - Time: 1942ms
+10 unchanged chunks
+chunk {pages-pages-module} pages-pages-module.js, pages-pages-module.js.map (pages-pages-module) 110 kB  [rendered]
+
+ERROR in src/app/pages/register/register.module.ts(6,34): error TS2307: Cannot find module './lecture.component'.
+
+
+ERROR in src/app/pages/register/register.module.ts(6,34): error TS2307: Cannot find module './lecture.component'.
+
+
+Date: 2019-05-31T10:51:34.751Z - Hash: c0d261501a7e5f4ae699 - Time: 4551ms
+10 unchanged chunks
+chunk {pages-pages-module} pages-pages-module.js, pages-pages-module.js.map (pages-pages-module) 110 kB  [rendered]
+
+Date: 2019-05-31T10:51:45.485Z - Hash: ced357701d90dd59ce5e - Time: 1050ms
+10 unchanged chunks
+chunk {pages-pages-module} pages-pages-module.js, pages-pages-module.js.map (pages-pages-module) 110 kB  [rendered]
+
+ERROR in src/app/pages/register/register.module.ts(6,34): error TS2307: Cannot find module './lecture.component'.
+
+
+Date: 2019-05-31T10:58:01.657Z - Hash: 182271a1cd7f03a09005 - Time: 2073ms
+10 unchanged chunks
+chunk {pages-pages-module} pages-pages-module.js, pages-pages-module.js.map (pages-pages-module) 110 kB  [rendered]
+
+ERROR in src/app/pages/register/register.module.ts(6,34): error TS2307: Cannot find module './lecture.component'.
+
+
+Date: 2019-05-31T11:00:02.094Z - Hash: 4ee1fc06fd302d4e7701 - Time: 1693ms
+10 unchanged chunks
+chunk {pages-pages-module} pages-pages-module.js, pages-pages-module.js.map (pages-pages-module) 110 kB  [rendered]
+
+ERROR in src/app/pages/register/register.module.ts(6,34): error TS2307: Cannot find module './lecture.component'.
+
+
+Date: 2019-05-31T11:01:45.634Z - Hash: 9d8e237f6a6fb27133db - Time: 2185ms
+10 unchanged chunks
+chunk {pages-pages-module} pages-pages-module.js, pages-pages-module.js.map (pages-pages-module) 111 kB  [rendered]
+
+ERROR in src/app/pages/register/register.module.ts(6,34): error TS2307: Cannot find module './lecture.component'.
+
+
+Date: 2019-05-31T11:03:02.753Z - Hash: e47af3dd70ebbc155041 - Time: 1432ms
+10 unchanged chunks
+chunk {pages-pages-module} pages-pages-module.js, pages-pages-module.js.map (pages-pages-module) 111 kB  [rendered]
+
+ERROR in src/app/pages/register/register.module.ts(6,34): error TS2307: Cannot find module './lecture.component'.
+
+
+Date: 2019-05-31T11:03:24.599Z - Hash: 62d3b8f11548a4244eef - Time: 448ms
+11 unchanged chunks
+
+ERROR in src/app/pages/pages.component.ts(28,1): error TS1005: '}' expected.
+
+
+ERROR in src/app/pages/register/register.module.ts(6,34): error TS2307: Cannot find module './lecture.component'.
+
+
+Date: 2019-05-31T11:03:29.387Z - Hash: 62d3b8f11548a4244eef - Time: 318ms
+11 unchanged chunks
+
+ERROR in src/app/pages/pages.component.ts(28,1): error TS1005: '}' expected.
+
+
+ERROR in src/app/pages/register/register.module.ts(6,34): error TS2307: Cannot find module './lecture.component'.
+
+
+Date: 2019-05-31T11:03:44.423Z - Hash: 62d3b8f11548a4244eef - Time: 408ms
+11 unchanged chunks
+
+ERROR in src/app/pages/pages.component.ts(28,1): error TS1005: '}' expected.
+
+
+ERROR in src/app/pages/register/register.module.ts(6,34): error TS2307: Cannot find module './lecture.component'.
+
+
+ERROR in src/app/pages/register/register.module.ts(6,34): error TS2307: Cannot find module './lecture.component'.
+
+
+Date: 2019-05-31T11:04:06.522Z - Hash: e61bc92737cd5e0167c5 - Time: 2709ms
+10 unchanged chunks
+chunk {pages-pages-module} pages-pages-module.js, pages-pages-module.js.map (pages-pages-module) 111 kB  [rendered]
+
+Date: 2019-05-31T11:04:21.649Z - Hash: 1cccc830e74fb180c92b - Time: 5169ms
+10 unchanged chunks
+chunk {pages-pages-module} pages-pages-module.js, pages-pages-module.js.map (pages-pages-module) 111 kB  [rendered]
+
+ERROR in src/app/pages/register/register.module.ts(6,34): error TS2307: Cannot find module './lecture.component'.
+
+
+Date: 2019-05-31T11:04:46.959Z - Hash: b3c6dae2e26a717111ff - Time: 1266ms
+10 unchanged chunks
+chunk {pages-pages-module} pages-pages-module.js, pages-pages-module.js.map (pages-pages-module) 111 kB  [rendered]
+
+ERROR in src/app/pages/register/register.module.ts(6,34): error TS2307: Cannot find module './lecture.component'.
+
+
+Date: 2019-05-31T11:04:48.923Z - Hash: b3c6dae2e26a717111ff - Time: 1035ms
+11 unchanged chunks
+
+ERROR in src/app/pages/register/register.module.ts(6,34): error TS2307: Cannot find module './lecture.component'.
+
+
+Date: 2019-05-31T11:04:53.571Z - Hash: 0f2104a3097599516709 - Time: 1084ms
+10 unchanged chunks
+chunk {pages-pages-module} pages-pages-module.js, pages-pages-module.js.map (pages-pages-module) 111 kB  [rendered]
+
+ERROR in src/app/pages/register/register.module.ts(6,34): error TS2307: Cannot find module './lecture.component'.
+
+
+Date: 2019-05-31T11:06:31.090Z - Hash: 6ad289d2c2aff3efabac - Time: 2658ms
+10 unchanged chunks
+chunk {pages-pages-module} pages-pages-module.js, pages-pages-module.js.map (pages-pages-module) 111 kB  [rendered]
+
+ERROR in src/app/pages/register/register.module.ts(6,34): error TS2307: Cannot find module './lecture.component'.
+
+
+Date: 2019-05-31T11:06:44.447Z - Hash: 6ad289d2c2aff3efabac - Time: 925ms
+11 unchanged chunks
+
+ERROR in src/app/pages/register/register.module.ts(6,34): error TS2307: Cannot find module './lecture.component'.
+
+
+Date: 2019-05-31T11:07:05.926Z - Hash: 0546497d6f2db6911eb0 - Time: 1178ms
+10 unchanged chunks
+chunk {pages-pages-module} pages-pages-module.js, pages-pages-module.js.map (pages-pages-module) 110 kB  [rendered]
+
+ERROR in src/app/pages/register/register.module.ts(6,34): error TS2307: Cannot find module './lecture.component'.
+
+
+Date: 2019-05-31T11:07:43.546Z - Hash: f0ab3f386a2a116bfc0d - Time: 1557ms
+10 unchanged chunks
+chunk {pages-pages-module} pages-pages-module.js, pages-pages-module.js.map (pages-pages-module) 111 kB  [rendered]
+
+ERROR in src/app/pages/profile/profile.component.ts(22,19): error TS2339: Property 'navigate' does not exist on type 'Route'.
+src/app/pages/profile/profile.component.ts(24,19): error TS2339: Property 'navigate' does not exist on type 'Route'.
+src/app/pages/register/register.module.ts(6,34): error TS2307: Cannot find module './lecture.component'.
+
+
+Date: 2019-05-31T11:07:46.056Z - Hash: f0ab3f386a2a116bfc0d - Time: 1090ms
+11 unchanged chunks
+
+ERROR in src/app/pages/profile/profile.component.ts(22,19): error TS2339: Property 'navigate' does not exist on type 'Route'.
+src/app/pages/profile/profile.component.ts(24,19): error TS2339: Property 'navigate' does not exist on type 'Route'.
+src/app/pages/register/register.module.ts(6,34): error TS2307: Cannot find module './lecture.component'.
+
+
+Date: 2019-05-31T11:07:47.582Z - Hash: f0ab3f386a2a116bfc0d - Time: 1236ms
+11 unchanged chunks
+
+ERROR in src/app/pages/profile/profile.component.ts(21,19): error TS2339: Property 'navigate' does not exist on type 'Route'.
+src/app/pages/profile/profile.component.ts(23,19): error TS2339: Property 'navigate' does not exist on type 'Route'.
+src/app/pages/register/register.module.ts(6,34): error TS2307: Cannot find module './lecture.component'.
+
+
+ERROR in src/app/pages/profile/profile.component.ts(22,19): error TS2339: Property 'navigate' does not exist on type 'Route'.
+src/app/pages/profile/profile.component.ts(24,19): error TS2339: Property 'navigate' does not exist on type 'Route'.
+src/app/pages/register/register.module.ts(6,34): error TS2307: Cannot find module './lecture.component'.
+
+
+Date: 2019-05-31T11:08:06.534Z - Hash: f0ab3f386a2a116bfc0d - Time: 17972ms
+11 unchanged chunks
+
+Date: 2019-05-31T11:08:07.850Z - Hash: ac246298e124cb5536d4 - Time: 1053ms
+10 unchanged chunks
+chunk {pages-pages-module} pages-pages-module.js, pages-pages-module.js.map (pages-pages-module) 111 kB  [rendered]
+
+Date: 2019-05-31T11:08:09.024Z - Hash: ac246298e124cb5536d4 - Time: 884ms
+11 unchanged chunks
+
+ERROR in src/app/pages/register/register.module.ts(6,34): error TS2307: Cannot find module './lecture.component'.
+
+
+ERROR in src/app/pages/register/register.module.ts(6,34): error TS2307: Cannot find module './lecture.component'.
+
+
+Date: 2019-05-31T11:08:16.502Z - Hash: ac246298e124cb5536d4 - Time: 894ms
+11 unchanged chunks
+
+ERROR in src/app/pages/register/register.module.ts(6,34): error TS2307: Cannot find module './lecture.component'.
+
+
+Date: 2019-05-31T11:09:08.199Z - Hash: ac246298e124cb5536d4 - Time: 1661ms
+11 unchanged chunks
+
+ERROR in src/app/pages/register/register.module.ts(6,34): error TS2307: Cannot find module './lecture.component'.
+
+
+Date: 2019-05-31T11:11:46.334Z - Hash: 197700bbd8e294aeb44f - Time: 2470ms
+10 unchanged chunks
+chunk {pages-pages-module} pages-pages-module.js, pages-pages-module.js.map (pages-pages-module) 111 kB  [rendered]
+
+ERROR in src/app/pages/register/register.module.ts(6,34): error TS2307: Cannot find module './lecture.component'.
+
+
+Date: 2019-05-31T11:26:05.436Z - Hash: 67af36c9961f664d9476 - Time: 1500ms
+10 unchanged chunks
+chunk {pages-pages-module} pages-pages-module.js, pages-pages-module.js.map (pages-pages-module) 111 kB  [rendered]
+
+ERROR in src/app/pages/register/register.module.ts(6,34): error TS2307: Cannot find module './lecture.component'.
+
+
+Date: 2019-05-31T11:26:35.886Z - Hash: 7948f73a72603b30fa25 - Time: 1093ms
+10 unchanged chunks
+chunk {pages-pages-module} pages-pages-module.js, pages-pages-module.js.map (pages-pages-module) 111 kB  [rendered]
+
+ERROR in src/app/pages/register/register.module.ts(6,34): error TS2307: Cannot find module './lecture.component'.
+
+
+Date: 2019-05-31T11:26:47.203Z - Hash: 8a5d5eb299edb746d6c2 - Time: 1826ms
+10 unchanged chunks
+chunk {pages-pages-module} pages-pages-module.js, pages-pages-module.js.map (pages-pages-module) 111 kB  [rendered]
+
+ERROR in src/app/pages/register/register.module.ts(6,34): error TS2307: Cannot find module './lecture.component'.
+
+
+Date: 2019-05-31T11:26:56.562Z - Hash: 4c4bcf799134f70d6911 - Time: 865ms
+10 unchanged chunks
+chunk {pages-pages-module} pages-pages-module.js, pages-pages-module.js.map (pages-pages-module) 111 kB  [rendered]
+
+ERROR in src/app/pages/register/register.module.ts(6,34): error TS2307: Cannot find module './lecture.component'.
+
+
+Date: 2019-05-31T11:27:09.180Z - Hash: 54063402a433695c0db8 - Time: 1208ms
+10 unchanged chunks
+chunk {pages-pages-module} pages-pages-module.js, pages-pages-module.js.map (pages-pages-module) 111 kB  [rendered]
+
+ERROR in src/app/pages/register/register.module.ts(6,34): error TS2307: Cannot find module './lecture.component'.
+
+
+Date: 2019-05-31T11:27:21.765Z - Hash: b24be5d98134c27fdfcf - Time: 1287ms
+10 unchanged chunks
+chunk {pages-pages-module} pages-pages-module.js, pages-pages-module.js.map (pages-pages-module) 111 kB  [rendered]
+
+ERROR in src/app/pages/register/register.module.ts(6,34): error TS2307: Cannot find module './lecture.component'.
+
+
+Date: 2019-05-31T11:27:45.744Z - Hash: d794ac6733cb1aa74933 - Time: 1436ms
+10 unchanged chunks
+chunk {pages-pages-module} pages-pages-module.js, pages-pages-module.js.map (pages-pages-module) 111 kB  [rendered]
+
+ERROR in src/app/pages/register/register.module.ts(6,34): error TS2307: Cannot find module './lecture.component'.
+
+
+ERROR in src/app/pages/register/register.module.ts(6,34): error TS2307: Cannot find module './lecture.component'.
+
+
+Date: 2019-05-31T11:28:19.783Z - Hash: b016b3caf0c2d64abc9c - Time: 5396ms
+10 unchanged chunks
+chunk {pages-pages-module} pages-pages-module.js, pages-pages-module.js.map (pages-pages-module) 111 kB  [rendered]
+
+Date: 2019-05-31T11:28:23.700Z - Hash: f5fd3ec962969cec7577 - Time: 1262ms
+10 unchanged chunks
+chunk {pages-pages-module} pages-pages-module.js, pages-pages-module.js.map (pages-pages-module) 111 kB  [rendered]
+
+ERROR in src/app/pages/register/register.module.ts(6,34): error TS2307: Cannot find module './lecture.component'.
+
+
+ERROR in src/app/pages/register/register.module.ts(6,34): error TS2307: Cannot find module './lecture.component'.
+
+
+Date: 2019-05-31T11:45:50.188Z - Hash: 95339ffe537e105f77e6 - Time: 3632ms
+10 unchanged chunks
+chunk {pages-pages-module} pages-pages-module.js, pages-pages-module.js.map (pages-pages-module) 111 kB  [rendered]
+
+Date: 2019-05-31T11:46:27.695Z - Hash: 4c19e4fd5debb9bffd70 - Time: 1369ms
+10 unchanged chunks
+chunk {pages-pages-module} pages-pages-module.js, pages-pages-module.js.map (pages-pages-module) 111 kB  [rendered]
+
+ERROR in src/app/pages/register/register.module.ts(6,34): error TS2307: Cannot find module './lecture.component'.
+
+
+ERROR in src/app/pages/register/register.module.ts(6,34): error TS2307: Cannot find module './lecture.component'.
+
+
+Date: 2019-05-31T11:47:26.712Z - Hash: 30fdbab04f6e1bea67e7 - Time: 4572ms
+10 unchanged chunks
+chunk {pages-pages-module} pages-pages-module.js, pages-pages-module.js.map (pages-pages-module) 111 kB  [rendered]
+
+Date: 2019-05-31T11:47:27.898Z - Hash: dc6d5372aa7a731df9c1 - Time: 923ms
+10 unchanged chunks
+chunk {pages-pages-module} pages-pages-module.js, pages-pages-module.js.map (pages-pages-module) 111 kB  [rendered]
+
+ERROR in src/app/pages/register/register.module.ts(6,34): error TS2307: Cannot find module './lecture.component'.
+
+
+Date: 2019-05-31T11:47:38.198Z - Hash: dc6d5372aa7a731df9c1 - Time: 966ms
+11 unchanged chunks
+
+ERROR in src/app/pages/register/register.module.ts(6,34): error TS2307: Cannot find module './lecture.component'.
+
+
+ERROR in src/app/pages/register/register.module.ts(6,34): error TS2307: Cannot find module './lecture.component'.
+
+
+Date: 2019-05-31T11:48:00.088Z - Hash: 702403714d30a884f22a - Time: 4491ms
+10 unchanged chunks
+chunk {pages-pages-module} pages-pages-module.js, pages-pages-module.js.map (pages-pages-module) 112 kB  [rendered]
+
+ERROR in src/app/pages/register/register.module.ts(6,34): error TS2307: Cannot find module './lecture.component'.
+
+
+Date: 2019-05-31T11:48:39.378Z - Hash: b31bf8877366e8945834 - Time: 9687ms
+10 unchanged chunks
+chunk {pages-pages-module} pages-pages-module.js, pages-pages-module.js.map (pages-pages-module) 112 kB  [rendered]
+
+Date: 2019-05-31T11:48:41.101Z - Hash: fae3227053a771e65e5c - Time: 1361ms
+10 unchanged chunks
+chunk {pages-pages-module} pages-pages-module.js, pages-pages-module.js.map (pages-pages-module) 112 kB  [rendered]
+
+ERROR in src/app/pages/register/register.module.ts(6,34): error TS2307: Cannot find module './lecture.component'.
+
+
+Date: 2019-05-31T11:48:55.197Z - Hash: 692c6a3c8026cf111de6 - Time: 907ms
+10 unchanged chunks
+chunk {pages-pages-module} pages-pages-module.js, pages-pages-module.js.map (pages-pages-module) 112 kB  [rendered]
+
+ERROR in src/app/pages/register/register.module.ts(6,34): error TS2307: Cannot find module './lecture.component'.
+
+
+Date: 2019-05-31T11:52:25.507Z - Hash: 90b52cd583d4ecc80253 - Time: 5215ms
+10 unchanged chunks
+chunk {pages-pages-module} pages-pages-module.js, pages-pages-module.js.map (pages-pages-module) 114 kB  [rendered]
+
+ERROR in ./src/app/pages/lecture/createLecture/createLecture.component.ts
+Module not found: Error: Can't resolve './createLecture.component.html' in '/home/ec2-user/codingmoa/webapp/src/app/pages/lecture/createLecture'
+
+ERROR in src/app/pages/register/register.module.ts(6,34): error TS2307: Cannot find module './lecture.component'.
+
+
+Date: 2019-05-31T11:52:29.081Z - Hash: fa42200a51dc7f3f422e - Time: 702ms
+10 unchanged chunks
+chunk {pages-pages-module} pages-pages-module.js, pages-pages-module.js.map (pages-pages-module) 114 kB  [rendered]
+
+ERROR in ./src/app/pages/lecture/createLecture/createLecture.component.ts
+Module not found: Error: Can't resolve './createLecture.component.html' in '/home/ec2-user/codingmoa/webapp/src/app/pages/lecture/createLecture'
+
+ERROR in src/app/pages/register/register.module.ts(6,34): error TS2307: Cannot find module './lecture.component'.
+
+
+Date: 2019-05-31T11:53:03.073Z - Hash: 96d4ff1aed5b58ffb77e - Time: 968ms
+10 unchanged chunks
+chunk {pages-pages-module} pages-pages-module.js, pages-pages-module.js.map (pages-pages-module) 116 kB  [rendered]
+
+Date: 2019-05-31T11:54:02.431Z - Hash: 78e3961b41f6608b45a0 - Time: 736ms
+11 unchanged chunks
+
+ERROR in src/app/pages/lecture/lecture.component.ts(79,3): error TS1003: Identifier expected.
+
+
+ERROR in src/app/pages/register/register.module.ts(6,34): error TS2307: Cannot find module './lecture.component'.
+
+
+Date: 2019-05-31T11:54:32.016Z - Hash: eb137341d4880c1f2e99 - Time: 2716ms
+10 unchanged chunks
+chunk {pages-pages-module} pages-pages-module.js, pages-pages-module.js.map (pages-pages-module) 116 kB  [rendered]
+
+ERROR in src/app/pages/register/register.module.ts(6,34): error TS2307: Cannot find module './lecture.component'.
+
+
+Date: 2019-05-31T11:55:40.617Z - Hash: eb137341d4880c1f2e99 - Time: 1399ms
+11 unchanged chunks
+
+Date: 2019-05-31T11:56:44.215Z - Hash: a14b4db48d66922126ab - Time: 1256ms
+10 unchanged chunks
+chunk {pages-pages-module} pages-pages-module.js, pages-pages-module.js.map (pages-pages-module) 116 kB  [rendered]
+
+ERROR in src/app/pages/register/register.module.ts(6,34): error TS2307: Cannot find module './lecture.component'.
+
+
+Date: 2019-05-31T11:57:58.611Z - Hash: fe1a0bafe9eab940e002 - Time: 1923ms
+10 unchanged chunks
+chunk {pages-pages-module} pages-pages-module.js, pages-pages-module.js.map (pages-pages-module) 116 kB  [rendered]
+
+ERROR in src/app/pages/register/register.module.ts(6,34): error TS2307: Cannot find module './lecture.component'.
+
+
+Date: 2019-05-31T11:58:04.624Z - Hash: 1c105ab3edad8fa3561f - Time: 932ms
+10 unchanged chunks
+chunk {pages-pages-module} pages-pages-module.js, pages-pages-module.js.map (pages-pages-module) 116 kB  [rendered]
+
+ERROR in src/app/pages/register/register.module.ts(6,34): error TS2307: Cannot find module './lecture.component'.
+
+
+Date: 2019-05-31T11:58:10.365Z - Hash: 2825ac41f7eb003522b0 - Time: 918ms
+10 unchanged chunks
+chunk {pages-pages-module} pages-pages-module.js, pages-pages-module.js.map (pages-pages-module) 116 kB  [rendered]
+
+ERROR in src/app/pages/register/register.module.ts(6,34): error TS2307: Cannot find module './lecture.component'.
+
+
+Date: 2019-05-31T11:59:48.737Z - Hash: 2825ac41f7eb003522b0 - Time: 1056ms
+11 unchanged chunks
+
+ERROR in src/app/pages/register/register.module.ts(6,34): error TS2307: Cannot find module './lecture.component'.
+
+
+Date: 2019-05-31T11:59:57.119Z - Hash: 542bde0fe56302495e99 - Time: 1827ms
+10 unchanged chunks
+chunk {pages-pages-module} pages-pages-module.js, pages-pages-module.js.map (pages-pages-module) 116 kB  [rendered]
+
+ERROR in src/app/pages/register/register.module.ts(6,34): error TS2307: Cannot find module './lecture.component'.
+
+
+Date: 2019-05-31T12:01:03.283Z - Hash: 85e20c4019b976bd400f - Time: 1494ms
+10 unchanged chunks
+chunk {pages-pages-module} pages-pages-module.js, pages-pages-module.js.map (pages-pages-module) 116 kB  [rendered]
+
+ERROR in src/app/pages/register/register.module.ts(6,34): error TS2307: Cannot find module './lecture.component'.
+
+
+Date: 2019-05-31T12:01:07.942Z - Hash: 1ad2723943bc8595bec8 - Time: 842ms
+10 unchanged chunks
+chunk {pages-pages-module} pages-pages-module.js, pages-pages-module.js.map (pages-pages-module) 116 kB  [rendered]
+
+ERROR in src/app/pages/register/register.module.ts(6,34): error TS2307: Cannot find module './lecture.component'.
+
+
+Date: 2019-05-31T12:02:25.571Z - Hash: be436dc5e6b69e9320c9 - Time: 2033ms
+10 unchanged chunks
+chunk {pages-pages-module} pages-pages-module.js, pages-pages-module.js.map (pages-pages-module) 116 kB  [rendered]
+
+ERROR in src/app/pages/register/register.module.ts(6,34): error TS2307: Cannot find module './lecture.component'.
+
+
+Date: 2019-05-31T12:03:32.996Z - Hash: 1f45bcd2fef85a8e4e06 - Time: 1446ms
+10 unchanged chunks
+chunk {pages-pages-module} pages-pages-module.js, pages-pages-module.js.map (pages-pages-module) 116 kB  [rendered]
+
+ERROR in src/app/pages/register/register.module.ts(6,34): error TS2307: Cannot find module './lecture.component'.
+
+
+Date: 2019-05-31T12:04:20.672Z - Hash: b41bb16f840723ba2783 - Time: 1022ms
+10 unchanged chunks
+chunk {pages-pages-module} pages-pages-module.js, pages-pages-module.js.map (pages-pages-module) 116 kB  [rendered]
+
+ERROR in src/app/pages/register/register.module.ts(6,34): error TS2307: Cannot find module './lecture.component'.
+
+
+Date: 2019-05-31T12:10:54.063Z - Hash: 87c526b0f04b5805ed8a - Time: 2029ms
+10 unchanged chunks
+chunk {pages-pages-module} pages-pages-module.js, pages-pages-module.js.map (pages-pages-module) 116 kB  [rendered]
+
+ERROR in src/app/pages/register/register.module.ts(6,34): error TS2307: Cannot find module './lecture.component'.
+
+
+Date: 2019-05-31T12:11:39.828Z - Hash: 34c1d8fca72eba1d95f9 - Time: 1072ms
+10 unchanged chunks
+chunk {pages-pages-module} pages-pages-module.js, pages-pages-module.js.map (pages-pages-module) 116 kB  [rendered]
+
+ERROR in src/app/pages/register/register.module.ts(6,34): error TS2307: Cannot find module './lecture.component'.
+
+
+Date: 2019-05-31T12:12:50.130Z - Hash: 50e21eacb19be45392c2 - Time: 1108ms
+10 unchanged chunks
+chunk {pages-pages-module} pages-pages-module.js, pages-pages-module.js.map (pages-pages-module) 116 kB  [rendered]
+
+ERROR in src/app/pages/register/register.module.ts(6,34): error TS2307: Cannot find module './lecture.component'.
+
+
+Date: 2019-05-31T12:13:35.757Z - Hash: 5666506a3834660fc3dc - Time: 1903ms
+10 unchanged chunks
+chunk {pages-pages-module} pages-pages-module.js, pages-pages-module.js.map (pages-pages-module) 116 kB  [rendered]
+
+ERROR in src/app/pages/register/register.module.ts(6,34): error TS2307: Cannot find module './lecture.component'.
+
+
+Date: 2019-05-31T12:16:00.336Z - Hash: a8160e950fc909116e0d - Time: 1201ms
+10 unchanged chunks
+chunk {pages-pages-module} pages-pages-module.js, pages-pages-module.js.map (pages-pages-module) 116 kB  [rendered]
+
+ERROR in src/app/pages/register/register.module.ts(6,34): error TS2307: Cannot find module './lecture.component'.
+
+
+Date: 2019-05-31T12:25:02.244Z - Hash: 942f7cde98f8bc85f454 - Time: 2051ms
+10 unchanged chunks
+chunk {pages-pages-module} pages-pages-module.js, pages-pages-module.js.map (pages-pages-module) 116 kB  [rendered]
+
+ERROR in src/app/pages/register/register.module.ts(6,34): error TS2307: Cannot find module './lecture.component'.
+
+
+Date: 2019-05-31T12:30:27.668Z - Hash: 241575e39069b780be2f - Time: 1514ms
+10 unchanged chunks
+chunk {pages-pages-module} pages-pages-module.js, pages-pages-module.js.map (pages-pages-module) 116 kB  [rendered]
+
+ERROR in src/app/pages/register/register.module.ts(6,34): error TS2307: Cannot find module './lecture.component'.
+

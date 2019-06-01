@@ -10,11 +10,14 @@ export class PageComponent implements OnInit {
 
     constructor(public router: Router) { }
 
-    ngOnInit() {
+    ngOnInit() {        
+
         if (this.router.url === '/') {
             this.router.navigate(['/starter']);
         }else if (this.router.url === 'user') {
             this.router.navigate(['/user']);
+        }else if (this.router.url === 'profile') {
+            
         }
     }
 

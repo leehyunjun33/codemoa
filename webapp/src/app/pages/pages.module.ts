@@ -10,18 +10,20 @@ import { UserComponent } from './user/user.component';
 import { LectureComponent } from './lecture/lecture.component';
 import { PortpolioComponent } from './portpolio/portpolio.component';
 import { QuestionComponent } from './user/question/question.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { RegisterComponent } from './register/register.component';
 import { BookmarkComponent } from './bookmark/bookmark.component';
 import { ProfileComponent } from './profile/profile.component';
 import { LoginComponent } from './login/login.component';
 import { LectureDetailComponent } from './lecture/lectureDetail/lectureDetail.component';
+import { CreateLectureComponent } from './lecture/createLecture/createLecture.component';
 
 @NgModule({
     imports: [
         CommonModule,
         PagesRoutingModule,
-        FormsModule
+        FormsModule,
+        ReactiveFormsModule
 
     ],
     declarations: [
@@ -38,7 +40,8 @@ import { LectureDetailComponent } from './lecture/lectureDetail/lectureDetail.co
         BookmarkComponent,
         ProfileComponent,
         LoginComponent,
-        LectureDetailComponent
+        LectureDetailComponent,
+        CreateLectureComponent
     ]
 })
 export class PagesModule { }

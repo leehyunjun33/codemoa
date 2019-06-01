@@ -7,8 +7,21 @@ const mysql = require('mysql');
 var bodyParser = require('body-parser');
 var MySQLStore = require('express-mysql-session')(session);
 
-var multer = require('multer'); // express에 multer모듈 적용 (for 파일업로드)
-let upload = multer({ dest: 'uploads/' });
+
+const cors = require('cors');
+
+const multer = require('multer'); // express에 multer모듈 적용 (for 파일업로드)
+const upload = multer({
+    limits: { fileSize: 5 * 1024 * 1024 },
+    storage: multer.diskStorage({
+      destination(req: any, file: any, cb: any) {
+        cb(null, 'avatars/'); // avatars 폴더에 파일을 저장한다.
+      },
+      filename(req: any, file: any, cb: any) {
+        cb(null, file.originalname); // 전송된 파일 자신의 이름으로 파일을 저장한다.
+      }
+    })
+  });
 
 
 
@@ -81,6 +94,8 @@ this.app.use(session({
         port : '3306'  
     })
 }));
+
+this.app.use(cors());
 this.app.use(bodyParser.json());
 this.app.use(bodyParser.urlencoded({ extended: false }));
 
@@ -207,20 +222,20 @@ console.log(`Listening at http://localhost:${this.PORT}/`);
     var name = req.body.name; 
     var email = req.body.email;
     var title = req.body.title;
-    var content = req.body.content
+    var content = req.body.content;
+    var category = req.body.category;
 
     console.log(req);
-    console.log("main", req.body.loginid);
 
-    content = content.replace(/\n/g, "<br>");
-    content = content.replaceAll("<br>", "\r\n");
+    // content = content.replace(/\n/g, "<br>");
+    // content = content.replaceAll("<br>", "\r\n");
     
 
-    var sql = 'insert into question values(0,?,?,?,?,0)';
+    var sql = 'insert into question values(0,?,?,?,?,0,?)';
     let logS = true;
     
 
-    conn.query(sql, [email, name, title, content], function(err:any, data:any){
+    conn.query(sql, [email, name, title, content, category], function(err:any, data:any){
        if(err){
            console.log("에러남", err);
            res.send(false); 
@@ -320,10 +335,15 @@ console.log(`Listening at http://localhost:${this.PORT}/`);
     });      
  });
 
- this.app.post('/upload', upload.single('userfile'), function(req:any, res){
-    res.send('Upload'+req.file);
-    console.log(req.file);
- })
+//  this.app.post('/upload', upload, function(req:any, res){
+//     res.send('Upload'+req.file);
+//     console.log(req.file);
+//  })
+
+  this.app.post('/upload', upload.single('avatar'), (req: any, res) => {
+    console.log('UPLOAD SUCCESS!', req.file);
+    res.json({ success: true, file: req.file });
+  });
 
   
 

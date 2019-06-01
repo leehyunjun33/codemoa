@@ -82,9 +82,10 @@ getRegister (form:any) {
     let email = form.email;
     let title = form.title;
     let content = form.content;
+    let category = form.category;
 
     return new Promise(resolve => {
-      this.http.post(this.SERVER_PATH + '/questInput', JSON.stringify({ 'name': name, 'email': email, 'title': title, 'content': content }), { headers: { 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8' } }).
+      this.http.post(this.SERVER_PATH + '/questInput', JSON.stringify({ 'name': name, 'email': email, 'title': title, 'content': content, 'category': category}), { headers: { 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8' } }).
       subscribe(data => {
       resolve(data);
     }, err => {

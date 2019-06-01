@@ -14,7 +14,11 @@ export class SidebarComponent implements AfterViewInit {
   showSubMenu = '';
   email = '';
 
-  constructor(public router: Router, private location: Location) { }
+  constructor(public router: Router, private location: Location) { 
+
+    
+
+  }
 
 
   logState(){
@@ -53,7 +57,7 @@ export class SidebarComponent implements AfterViewInit {
   // End open close
   ngAfterViewInit() {
 
-    this.email = sessionStorage.getItem("email");
+    
 
 
     $(function() {
@@ -95,5 +99,10 @@ export class SidebarComponent implements AfterViewInit {
 
 
 
+  }
+
+  ngOnInit(): void {
+    this.email = sessionStorage.getItem("email");
+    
   }
 }

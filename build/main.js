@@ -6,8 +6,19 @@ const session = require('express-session');
 const mysql = require('mysql');
 var bodyParser = require('body-parser');
 var MySQLStore = require('express-mysql-session')(session);
-var multer = require('multer'); // express에 multer모듈 적용 (for 파일업로드)
-let upload = multer({ dest: 'uploads/' });
+const cors = require('cors');
+const multer = require('multer'); // express에 multer모듈 적용 (for 파일업로드)
+const upload = multer({
+    limits: { fileSize: 5 * 1024 * 1024 },
+    storage: multer.diskStorage({
+        destination(req, file, cb) {
+            cb(null, 'avatars/'); // avatars 폴더에 파일을 저장한다.
+        },
+        filename(req, file, cb) {
+            cb(null, file.originalname); // 전송된 파일 자신의 이름으로 파일을 저장한다.
+        }
+    })
+});
 const conn = mysql.createConnection({
     host: '127.0.0.1',
     user: 'root',
@@ -44,6 +55,7 @@ class Server {
                 port: '3306'
             })
         }));
+        this.app.use(cors());
         this.app.use(bodyParser.json());
         this.app.use(bodyParser.urlencoded({ extended: false }));
         this.app.listen(this.PORT, () => {
@@ -130,13 +142,13 @@ class Server {
             var email = req.body.email;
             var title = req.body.title;
             var content = req.body.content;
+            var category = req.body.category;
             console.log(req);
-            console.log("main", req.body.loginid);
-            content = content.replace(/\n/g, "<br>");
-            content = content.replaceAll("<br>", "\r\n");
-            var sql = 'insert into question values(0,?,?,?,?,0)';
+            // content = content.replace(/\n/g, "<br>");
+            // content = content.replaceAll("<br>", "\r\n");
+            var sql = 'insert into question values(0,?,?,?,?,0,?)';
             let logS = true;
-            conn.query(sql, [email, name, title, content], function (err, data) {
+            conn.query(sql, [email, name, title, content, category], function (err, data) {
                 if (err) {
                     console.log("에러남", err);
                     res.send(false);
@@ -207,9 +219,13 @@ class Server {
                 res.send(json);
             });
         });
-        this.app.post('/upload', upload.single('userfile'), function (req, res) {
-            res.send('Upload' + req.file);
-            console.log(req.file);
+        //  this.app.post('/upload', upload, function(req:any, res){
+        //     res.send('Upload'+req.file);
+        //     console.log(req.file);
+        //  })
+        this.app.post('/upload', upload.single('avatar'), (req, res) => {
+            console.log('UPLOAD SUCCESS!', req.file);
+            res.json({ success: true, file: req.file });
         });
         // var sql = 'INSERT INTO topic (title, description, author) VALUES("Express", "Web framework", "jacob")';
         // conn.query(sql, function(err, rows, fields){

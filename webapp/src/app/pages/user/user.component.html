@@ -5,9 +5,7 @@
                 <!-- <a href="/user">{{subtitle}}</a> -->
                 <!-- <button type="button" class="btn btn-outline-primary guswls"  (click)="this.dbcall()">DB를 불러주세요</button> -->
 
-                <h3 class="card-subtitle">Q & A</h3>
-
-                
+                <h3 class="card-subtitle">Q & A</h3>        
 
                 <table id="question_table" mat-table class="mat-elevation-z8">
                     <tr width=50%>
@@ -28,7 +26,13 @@
                         <div class="form-field">
                             <label class="user" for="login-email"><span class="hidden">제목</span></label><br>
                             <input name="q_title" id="login-email" type="email" class="form-input" required ngModel>
-                          </div><br>
+                            </div><br>
+
+                            <div class="form-field">
+                                <label class="user" for="login-email"><span class="hidden">카테고리</span></label><br>
+                                <input name="category" id="login-email" type="email" class="form-input" required ngModel>
+                            </div><br>
+
                   
                           <div class="form-field">
                             <label class="lock" for="login-password"><span class="hidden">Content</span></label><br>

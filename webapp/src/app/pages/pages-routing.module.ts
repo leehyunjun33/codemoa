@@ -9,6 +9,7 @@ import { RegisterComponent } from './register/register.component';
 import { BookmarkComponent } from './bookmark/bookmark.component';
 import { ProfileComponent } from './profile/profile.component';
 import { LoginComponent } from './login/login.component';
+import { CreateLectureComponent } from './lecture/createLecture/createLecture.component';
 
 const routes: Routes = [
   {
@@ -30,6 +31,10 @@ const routes: Routes = [
       {
         path: 'lecture',
         component: LectureComponent
+      },
+      {
+        path: 'lecture/createLecture',
+        component: CreateLectureComponent
       },
       {
         path: 'portpolio',
