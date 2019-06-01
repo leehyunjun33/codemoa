@@ -12,18 +12,18 @@ const cors = require('cors');
 const router = require('./routes/router');
 
 
-const multer = require('multer'); // express에 multer모듈 적용 (for 파일업로드)
-const upload = multer({
-    limits: { fileSize: 5 * 1024 * 1024 },
-    storage: multer.diskStorage({
-      destination(req: any, file: any, cb: any) {
-        cb(null, 'avatars/'); // avatars 폴더에 파일을 저장한다.
-      },
-      filename(req: any, file: any, cb: any) {
-        cb(null, file.originalname); // 전송된 파일 자신의 이름으로 파일을 저장한다.
-      }
-    })
-  });
+// const multer = require('multer'); // express에 multer모듈 적용 (for 파일업로드)
+// const upload = multer({
+//     limits: { fileSize: 5 * 1024 * 1024 },
+//     storage: multer.diskStorage({
+//       destination(req: any, file: any, cb: any) {
+//         cb(null, 'avatars/'); // avatars 폴더에 파일을 저장한다.
+//       },
+//       filename(req: any, file: any, cb: any) {
+//         cb(null, file.originalname); // 전송된 파일 자신의 이름으로 파일을 저장한다.
+//       }
+//     })
+//   });
 
 
 
@@ -341,10 +341,10 @@ console.log(`Listening at http://localhost:${this.PORT}/`);
 //     console.log(req.file);
 //  })
 
-  this.app.post('/upload', upload.single('avatar'), (req: any, res) => {
-    console.log('UPLOAD SUCCESS!', req.file);
-    res.json({ success: true, file: req.file });
-  });
+//   this.app.post('/upload', upload.single('avatar'), (req: any, res) => {
+//     console.log('UPLOAD SUCCESS!', req.file);
+//     res.json({ success: true, file: req.file });
+//   });
 
   
 

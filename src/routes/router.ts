@@ -1,9 +1,30 @@
 import * as express from 'express';
 const os = require('os');
 const router = express.Router();
+const session = require('express-session');
+var bodyParser = require('body-parser');
+var MySQLStore = require('express-mysql-session')(session);
+const cors = require('cors');
 const conn = require('../dbconnection');
 
+const multer = require('multer'); // express에 multer모듈 적용 (for 파일업로드)
+const upload = multer({
+    limits: { fileSize: 5 * 1024 * 1024 },
+    storage: multer.diskStorage({
+      destination(req: any, file: any, cb: any) {
+        cb(null, 'avatars/'); // avatars 폴더에 파일을 저장한다.
+      },
+      filename(req: any, file: any, cb: any) {
+        cb(null, file.originalname); // 전송된 파일 자신의 이름으로 파일을 저장한다.
+      }
+    })
+  });
 
+  
+ router.post('/upload', upload.single('avatar'), (req: any, res) => {
+    console.log('UPLOAD SUCCESS!', req.file);
+    res.json({ success: true, file: req.file });
+  });
 
 router.get('/user', function(req, res, next){
     var sql = 'select * from question';
