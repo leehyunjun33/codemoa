@@ -10,41 +10,53 @@
                 <table id="question_table" mat-table class="mat-elevation-z8">
                     <tr width=50%>
                         <th class="th1" mat-header-cell witdth="30%">작성자</th>
-                        <th mat-header-cell width="70%">제목</th>                        
+                        <th>분야</th>
+                        <th mat-header-cell width="60%">제목</th>      
+                        <th>답변 수</th>                  
                     </tr>
                     
 
                     <tr class="table_hover" *ngFor="let question of this.data" (click)="this.qDetail(question)">
                         <td mat-cell>{{question.m_name}}</td>  
-                        <td mat-cell>{{question.q_title}}</td>    
+                        <td>{{question.c_name}}</td>
+                        <td mat-cell>{{question.q_title}}</td> 
+                        <td mat-cell>{{question.awn_count}}</td>     
                     </tr>
                     
                 </table>
 
                 <div id="questionF" class="login-item">
                     <form #myform="ngForm" (ngSubmit)="this.queust_input(myform)" class="form form-login">
-                        <div class="form-field">
+                        <div class="form-field" style="width: 30%;">
                             <label class="user" for="login-email"><span class="hidden">제목</span></label><br>
-                            <input name="q_title" id="login-email" type="email" class="form-input" required ngModel>
+                            <input name="q_title" id="login-email" type="email" class="form-input"  required ngModel>
                             </div><br>
 
                             <div class="form-field">
                                 <label class="user" for="login-email"><span class="hidden">카테고리</span></label><br>
-                                <input name="category" id="login-email" type="email" class="form-input" required ngModel>
+                                <!-- <input name="category" id="login-email" type="email" class="form-input" required ngModel> -->
+                                <select name="category" class="form-input" required ngModel>
+                                    <option value="C">C</option>
+                                    <option value="JAVA">JAVA</option>
+                                    <option value="python">Python</option>
+                                    <option value="angular">angular</option>
+                                    <option value="css">css</option>
+
+                                </select>
                             </div><br>
 
                   
                           <div class="form-field">
                             <label class="lock" for="login-password"><span class="hidden">Content</span></label><br>
                             <!-- <input name="password" id="login-password" type="password" class="form-input" placeholder="Password" required ngModel> -->
-                            <textarea name="q_content" class="form-field" required ngModel>
+                            <textarea name="q_content" class="form-field" style="width: 50%; height: 300px;"  required ngModel>
 
 
                             </textarea>
                           </div><br>
                   
                           <div class="form-field">
-                            <input id="log_button" type="submit" value="질문하기" class="btn-primary">
+                            <input id="log_button" type="submit" value="질문하기" class="btn btn-info">
                         </div>
                     </form>
                 </div>
@@ -53,7 +65,7 @@
 
                 <br>
 
-                <button id="questButton" class="btn-primary" (click)="this.showForm()">질문하기</button>
+                <button id="questButton" class="btn btn-info" (click)="this.showForm()">질문하기</button>
 
             </div>
         </div>

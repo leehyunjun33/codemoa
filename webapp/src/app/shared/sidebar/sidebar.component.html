@@ -32,10 +32,14 @@
                     <a routerLink="/starter" (click)="addExpandClass('starter')" [routerLinkActive]="['router-link-active']"><i
                             class="mdi mdi-file"></i><span class="hide-menu">Main</span></a>
                 </li>
-                <li *ngIf="this.email">
+                <!-- <li *ngIf="this.email">
                         <a routerLink="/profile" (click)="addExpandClass('component')" [routerLinkActive]="['router-link-active']"><i
                             class="mdi mdi mdi-sort-variant"></i><span class="hide-menu">프로필</span></a>
-                    </li>
+                    </li> -->
+                <li *ngIf="this.email">
+                    <a routerLink="/portpolio" (click)="addExpandClass('component')" [routerLinkActive]="['router-link-active']"><i
+                        class="mdi mdi-calendar-clock"></i><span class="hide-menu">포트폴리오</span></a>
+                </li>
                 <li class="nav-small-cap">CODEMOA ITEM</li>
                 <li>
                     <a routerLink="/user" (click)="addExpandClass('component')" [routerLinkActive]="['router-link-active']"><i
@@ -45,10 +49,7 @@
                     <a routerLink="/lecture" (click)="addExpandClass('component')" [routerLinkActive]="['router-link-active']"><i
                         class="mdi mdi-tablet"> </i><span class="hide-menu">강의</span></a>
                 </li>
-                <li *ngIf="this.email">
-                    <a routerLink="/portpolio" (click)="addExpandClass('component')" [routerLinkActive]="['router-link-active']"><i
-                        class="mdi mdi-calendar-clock"></i><span class="hide-menu">포트폴리오</span></a>
-                </li>
+                
                 <li>
                     <a routerLink="/bookmark" (click)="addExpandClass('component')" [routerLinkActive]="['router-link-active']"><i
                         class="mdi mdi mdi-image-filter-vintage"></i><span class="hide-menu">즐겨찾기</span></a>

@@ -18,12 +18,36 @@ import { LoginComponent } from './login/login.component';
 import { LectureDetailComponent } from './lecture/lectureDetail/lectureDetail.component';
 import { CreateLectureComponent } from './lecture/createLecture/createLecture.component';
 
+import { SocialLoginModule, AuthServiceConfig } from "angularx-social-login";
+import { GoogleLoginProvider, FacebookLoginProvider } from "angularx-social-login";
+
+//import {MatButtonModule, MatCheckboxModule} from '@angular/material';
+const config = new AuthServiceConfig([
+  {
+    id: GoogleLoginProvider.PROVIDER_ID,
+    provider: new GoogleLoginProvider('266477703969-sv53ens9lnbu82p2jvih5qhur9nqmovh.apps.googleusercontent.com')
+  },
+  // {
+  //   id: FacebookLoginProvider.PROVIDER_ID,
+  //   provider: new FacebookLoginProvider('561602290896109')
+  // },
+  // {
+  //   id: LinkedInLoginProvider.PROVIDER_ID,
+  //   provider: new LinkedInLoginProvider("78iqy5cu2e1fgr")
+  // }
+]);
+
+export function provideConfig() {
+  return config;
+}
+
 @NgModule({
     imports: [
         CommonModule,
         PagesRoutingModule,
         FormsModule,
-        ReactiveFormsModule
+        ReactiveFormsModule,
+        SocialLoginModule
 
     ],
     declarations: [
@@ -42,6 +66,12 @@ import { CreateLectureComponent } from './lecture/createLecture/createLecture.co
         LoginComponent,
         LectureDetailComponent,
         CreateLectureComponent
+    ],
+    providers: [
+        {
+          provide: AuthServiceConfig,
+          useFactory: provideConfig
+        }
     ]
 })
 export class PagesModule { }

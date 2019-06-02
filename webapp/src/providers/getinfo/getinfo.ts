@@ -20,9 +20,32 @@ export class GetinfoProvider {
     });
   }
 
+  getLectureList(){
+    return new Promise(resolve => {
+        this.http.get(this.SERVER_PATH + '/lectureList', { headers: { 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8' } }).
+        subscribe(data => {
+        resolve(data);
+      }, err => {
+        console.log(err);
+      });
+    });
+  }
+
+
   getMyQuestion(m_email : any) {
     return new Promise(resolve => {
         this.http.get(this.SERVER_PATH + '/myQuestion?m_email='+m_email, { headers: { 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8' } }).
+        subscribe(data => {
+        resolve(data);
+      }, err => {
+        console.log(err);
+      });
+    });
+  }
+
+  getMyLecture(m_email : any) {
+    return new Promise(resolve => {
+        this.http.get(this.SERVER_PATH + '/myLecture?m_email='+m_email, { headers: { 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8' } }).
         subscribe(data => {
         resolve(data);
       }, err => {
@@ -116,6 +139,24 @@ getRegister (form:any) {
 
     return new Promise(resolve => {
       this.http.post(this.SERVER_PATH + '/awnserList', JSON.stringify({ 'q_id': q_id , 'temp': 'temp'}), { headers: { 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8' } }).
+      subscribe(data => {
+      resolve(data);
+    }, err => {
+      console.log(err);
+    });
+  });
+  }
+
+  getCreatLecture(form:any){
+    let l_title = form.l_title;
+    let l_intro = form.l_intro;
+    let c_name = form.c_name;
+    let l_imgname = form.l_imgname;
+    let email = form.email;
+    let name = form.name;
+
+    return new Promise(resolve => {
+      this.http.post(this.SERVER_PATH + '/creatLecture', JSON.stringify({ 'l_title': l_title , 'l_intro': l_intro, 'c_name': c_name, 'l_imgname': l_imgname, 'email': email, 'name': name }), { headers: { 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8' } }).
       subscribe(data => {
       resolve(data);
     }, err => {

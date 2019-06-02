@@ -2,7 +2,50 @@
     <div class="col-12">
         <div class="card">
             <div class="card-body" >
-                <h5 class="card-title">당신의 재능을 기부해주세요</h5>
+
+                <div class="login-item" style="margin-top: 30px;">
+                        <form #myform="ngForm" (ngSubmit)="this.creatLecture(myform, fileInput.files)" class="form form-login">
+                          <div class="form-group form-field f1" style="width: 50%;">
+                            <label class="user" for="login-email"><span class="hidden">강의 제목&nbsp;&nbsp;</span></label>
+                            <input matInput name="l_title" id="login-email" type="text" class="form-control" required ngModel>
+                          </div>
+
+                          <div class="form-group form-field f1" style="width: 50%;">
+                            <label class="user" for="login-email"><span class="hidden">카테고리&nbsp;&nbsp;</span></label>
+                            <!-- <input matInput name="c_name" id="login-email" type="text" class="form-control" required ngModel> -->
+                            <select name="category" class="form-control" required ngModel>
+                                <option value="C">C</option>
+                                <option value="JAVA">JAVA</option>
+                                <option value="python">Python</option>
+                                <option value="angular">angular</option>
+                                <option value="css">css</option>
+
+                            </select>
+                          </div>
+                  
+                          <div class="form-group form-field" style="width: 50%;">
+                            <label class="lock" for="login-password"><span class="hidden">강의 소개&nbsp;&nbsp;</span></label>
+                            <textarea name="l_intro" class="form-control" required ngModel>
+
+                            </textarea>
+                          </div>
+
+                          <div class="form-group">
+                                <!-- <img *ngIf="imageSrc" [src]="imageSrc" class="avatar"> -->
+                                <label class="lock" for="login-password"><span class="hidden">강의 이미지&nbsp;&nbsp;</span></label>
+                                <div class="btns clearfix">
+                                  <label class="btn btn-primary">background Img
+                                    <input type="file" name="l_img" class="form-control" #fileInput> 
+                                  </label>
+                                </div>
+                            </div>
+                  
+                          <div class="form-group form-field">
+                            <input matInput id="log_button" type="submit" value="개설하기" class="btn-primary">
+                            
+                          </div>
+                        </form>
+                      </div>
                 
                 
             </div>

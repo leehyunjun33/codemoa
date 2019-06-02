@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { Routes, RouterModule } from '@angular/router';
 
-import { LectureComponent } from './lecture.component';
+import { LectureComponent } from '../lecture/lecture.component';
 
 const routes: Routes = [
   {

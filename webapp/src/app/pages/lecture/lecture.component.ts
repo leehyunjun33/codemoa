@@ -2,6 +2,7 @@ import { Component, AfterViewInit } from '@angular/core';
 import { FormGroup, FormControl, FormBuilder, Validators, ReactiveFormsModule } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
 import { Router } from '@angular/router';
+import { GetinfoProvider } from '../../../providers/getinfo/getinfo';
 
 
 @Component({
@@ -9,6 +10,8 @@ import { Router } from '@angular/router';
 })
 export class LectureComponent implements AfterViewInit {
   subtitle: string;
+  data : any = [];
+  lectureList : any = [];
 
   apiUrl = 'http://ec2-13-209-164-128.ap-northeast-2.compute.amazonaws.com:3000';
 
@@ -20,7 +23,7 @@ export class LectureComponent implements AfterViewInit {
 
 
 
-  constructor(private fb: FormBuilder, private http: HttpClient, private router:Router) {
+  constructor(private fb: FormBuilder, private http: HttpClient, private router:Router, private getinfoProvider: GetinfoProvider) {
     this.subtitle = 'lecture';
     console.log(this.subtitle);
 
@@ -57,9 +60,15 @@ export class LectureComponent implements AfterViewInit {
     const formData = new FormData();
     formData.append('avatar', files[0]);
 
+    console.log("난 뭐임");
+    
+    this.data = formData.get('avatar');
+    
+
     this.loading = true;
     // Send data (payload = formData)
     console.log(formData.get('avatar'));
+    console.log(this.data.name);
 
     // 폼데이터를 서버로 전송한다.
     this.http.post(`${this.apiUrl}/upload`, formData)
@@ -78,5 +87,23 @@ export class LectureComponent implements AfterViewInit {
     this.router.navigate(['/lecture/createLecture'])
   }
 
-  ngAfterViewInit() {}
+  lDetail(lecture: any){
+    this.router.navigate(['/lecture/lectureDetail', lecture]);
+    
+  }
+
+  ngAfterViewInit() {
+
+    this.getinfoProvider.getLectureList().then(
+      data => {
+        let res: any = data;
+           this.lectureList = res;
+
+
+           console.log("qdata",data);
+           
+      }
+    );
+
+  }
 }

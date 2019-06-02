@@ -40,6 +40,7 @@ export class UserComponent implements AfterViewInit {
            this.data = res;
       }
     );
+    
     this.subtitle = 'useruser';
     console.log(this.subtitle);
 

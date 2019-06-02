@@ -13,7 +13,7 @@ export class SidebarComponent implements AfterViewInit {
   showMenu = '';
   showSubMenu = '';
   email = '';
-
+  loginCheck: boolean = false;
   constructor(public router: Router, private location: Location) { 
 
     
@@ -25,12 +25,14 @@ export class SidebarComponent implements AfterViewInit {
 
     if(!sessionStorage.getItem("email")){
       this.router.navigate(['/login']);
+   
     }else{
       sessionStorage.removeItem("email");
       sessionStorage.removeItem("name");
       sessionStorage.removeItem("id");
       this.location.go('/');
       window.location.reload();
+     
     }
 
 
@@ -103,6 +105,12 @@ export class SidebarComponent implements AfterViewInit {
 
   ngOnInit(): void {
     this.email = sessionStorage.getItem("email");
+    if(this.email){
+      this.loginCheck = true;
+    }
+    else{
+      this.loginCheck = false;
+    }
     
   }
 }

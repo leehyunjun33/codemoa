@@ -8,6 +8,7 @@ import { Location } from '@angular/common';
 })
 export class LectureDetailComponent implements AfterViewInit{
   subtitle: string;
+  lecture : any = [];
 
   constructor(private router: Router, private route: ActivatedRoute, public getinfoProvider: GetinfoProvider, private location: Location) {
     this.subtitle = 'lectureDetail';
@@ -22,5 +23,14 @@ export class LectureDetailComponent implements AfterViewInit{
       
 
     })
+  }
+
+  ngOnInit(): void {
+    let qdata = this.route.params.subscribe(params =>{
+      console.log('params2',params);
+      
+      this.lecture = params;
+    })
+    
   }
 }

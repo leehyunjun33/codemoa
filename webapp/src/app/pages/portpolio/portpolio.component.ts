@@ -32,12 +32,15 @@ declare var $: any;
 export class PortpolioComponent implements AfterViewInit {
   subtitle: string;
   data: any = [];
-  
+  lectureList: any = [];
+  grade: any;
+  point: any;
   constructor(private getinfoProvider: GetinfoProvider, private router: Router, private loca: Location) {
     this.subtitle = 'portpolio';
     console.log(this.subtitle);
 
-    
+    this.grade = sessionStorage.getItem("grade");
+    this.point = sessionStorage.getItem("point");
 
   }
 
@@ -45,6 +48,11 @@ export class PortpolioComponent implements AfterViewInit {
     console.log('왜 안되는거야2222',question);
 
     this.router.navigate(['/user/question', question]);
+    
+  }
+
+  lDetail(lecture: any){
+    this.router.navigate(['/lecture/lectureDetail', lecture]);
     
   }
 
@@ -68,6 +76,19 @@ export class PortpolioComponent implements AfterViewInit {
       }
     );
 
+    this.getinfoProvider.getMyLecture(email).then(
+      data => {
+        let res: any = data;
+           this.lectureList = res;
+
+
+           console.log("qdata",data);
+           
+      }
+    );
+
+
+
 
 
 
@@ -85,5 +106,14 @@ export class PortpolioComponent implements AfterViewInit {
     //     $("#log_please").hide();
     //   }
     // })
+  }
+
+  ngOnInit(): void {
+    if(!sessionStorage.getItem("email")){
+      this.router.navigate(['/login']);
+  }else{
+      this.router.navigate(['/portpolio']);
+  } 
+    
   }
 }

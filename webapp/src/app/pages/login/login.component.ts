@@ -1,7 +1,11 @@
-import { Component, AfterViewInit } from '@angular/core';
+import { Component, AfterViewInit,OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { GetinfoProvider } from '../../../providers/getinfo/getinfo';
 import { Location } from '@angular/common';
+
+import { AuthService } from 'angularx-social-login';
+import { SocialUser } from 'angularx-social-login';
+import { GoogleLoginProvider, FacebookLoginProvider, LinkedInLoginProvider } from 'angularx-social-login';
 @Component({
 
   templateUrl: './login.component.html',
@@ -17,11 +21,23 @@ export class LoginComponent implements AfterViewInit {
   data: any;
   loginId: string = '';
   loginPw: string = '';
-  constructor(private getinfoProvider: GetinfoProvider, private router: Router, private loca: Location) {
+  user: SocialUser;
+  constructor(private getinfoProvider: GetinfoProvider,private authService: AuthService, private router: Router, private loca: Location) {
     
     this.subtitle = 'login';
     console.log(this.subtitle);
 
+  }
+
+  ngOnInit() {
+    this.authService.authState.subscribe((user) => {
+      this.user = user;
+      console.log(user);
+    });
+  }
+
+  signInWithGoogle(): void {
+    this.authService.signIn(GoogleLoginProvider.PROVIDER_ID).then(x => console.log(x));
   }
 
   login(form){
@@ -38,6 +54,8 @@ export class LoginComponent implements AfterViewInit {
             sessionStorage.setItem("email", res.m_email);
             sessionStorage.setItem("name", res.m_name);
             sessionStorage.setItem("id", res.m_id);
+            sessionStorage.setItem("point", res.m_point);
+            sessionStorage.setItem("grade",res.m_grade)
 
             //console.log(data);
 
@@ -48,7 +66,7 @@ export class LoginComponent implements AfterViewInit {
 
            }else{
             alert("아이디와 비밀번호를 확인해주세요");
-            this.loca.go('/');
+            this.loca.go('/login');
             window.location.reload();
             
            }
