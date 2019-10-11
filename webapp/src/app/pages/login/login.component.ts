@@ -3,26 +3,26 @@ import { Router } from '@angular/router';
 import { GetinfoProvider } from '../../../providers/getinfo/getinfo';
 import { Location } from '@angular/common';
 
-import { AuthService } from 'angularx-social-login';
-import { SocialUser } from 'angularx-social-login';
-import { GoogleLoginProvider, FacebookLoginProvider, LinkedInLoginProvider } from 'angularx-social-login';
+// import { AuthService } from 'angularx-social-login';
+// import { SocialUser } from 'angularx-social-login';
+// import { GoogleLoginProvider, FacebookLoginProvider, LinkedInLoginProvider } from 'angularx-social-login';
 @Component({
 
-  templateUrl: './login.component.html',
-  styles: [`#log_button {margin-right : 10px; float : left}
-           .f1 {margin-bottom : 10px;
-               margin-top : 25px;} 
-           .reg {}   
+   templateUrl: './login.component.html'
+  // styles: [`#log_button {margin-right : 10px; float : left}
+  //          .f1 {margin-bottom : 10px;
+  //              margin-top : 25px;} 
+  //          .reg {}   
   
-  `]
+  // `]
 })
 export class LoginComponent implements AfterViewInit {
   subtitle: string;
   data: any;
   loginId: string = '';
   loginPw: string = '';
-  user: SocialUser;
-  constructor(private getinfoProvider: GetinfoProvider,private authService: AuthService, private router: Router, private loca: Location) {
+  //user: SocialUser; ,private authService: AuthService
+  constructor(private getinfoProvider: GetinfoProvider, private router: Router, private loca: Location) {
     
     this.subtitle = 'login';
     console.log(this.subtitle);
@@ -30,15 +30,15 @@ export class LoginComponent implements AfterViewInit {
   }
 
   ngOnInit() {
-    this.authService.authState.subscribe((user) => {
-      this.user = user;
-      console.log(user);
-    });
+    // this.authService.authState.subscribe((user) => {
+    //   this.user = user;
+    //   console.log(user);
+    // });
   }
 
-  signInWithGoogle(): void {
-    this.authService.signIn(GoogleLoginProvider.PROVIDER_ID).then(x => console.log(x));
-  }
+  // signInWithGoogle(): void {
+  //   this.authService.signIn(GoogleLoginProvider.PROVIDER_ID).then(x => console.log(x));
+  // }
 
   login(form){
     console.log(form);
@@ -55,7 +55,8 @@ export class LoginComponent implements AfterViewInit {
             sessionStorage.setItem("name", res.m_name);
             sessionStorage.setItem("id", res.m_id);
             sessionStorage.setItem("point", res.m_point);
-            sessionStorage.setItem("grade",res.m_grade)
+            sessionStorage.setItem("grade",res.m_grade);
+            sessionStorage.setItem("m_img",res.m_img);
 
             //console.log(data);
 

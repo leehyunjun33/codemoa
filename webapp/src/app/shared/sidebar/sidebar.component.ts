@@ -13,6 +13,7 @@ export class SidebarComponent implements AfterViewInit {
   showMenu = '';
   showSubMenu = '';
   email = '';
+  m_img = null;
   loginCheck: boolean = false;
   constructor(public router: Router, private location: Location) { 
 
@@ -30,6 +31,10 @@ export class SidebarComponent implements AfterViewInit {
       sessionStorage.removeItem("email");
       sessionStorage.removeItem("name");
       sessionStorage.removeItem("id");
+      sessionStorage.removeItem("point");
+      sessionStorage.removeItem("grade");
+      sessionStorage.removeItem("m_img");
+      this.m_img = null;
       this.location.go('/');
       window.location.reload();
      
@@ -86,16 +91,7 @@ export class SidebarComponent implements AfterViewInit {
       });
 
 
-      if(!sessionStorage.getItem("email")){
-        $('#user_img').attr("src", "assets/images/users/logout.jpeg");
-        $('#user_name').text(" ");
-        $('#user_drop').hide();
-        $('#log').attr("title", "Login");
-      }else{
-        $('#user_img').attr("src", "assets/images/users/ice.jpg");
-        $('#user_name').text(sessionStorage.getItem("name"));
-      }
-
+      
 
     });
 
@@ -104,7 +100,28 @@ export class SidebarComponent implements AfterViewInit {
   }
 
   ngOnInit(): void {
+
+    if(sessionStorage.getItem("m_img")){
+      this.m_img = sessionStorage.getItem("m_img");
+    }else if(!sessionStorage.getItem("m_img")){
+      this.m_img = 'users/ice.jpg'
+    }
+
+    if(!sessionStorage.getItem("email")){
+      $('.user-profile').hide();
+      $('#log').attr('title', 'Login');
+    }else{
+
+      //$('#user_img').attr("src", "assets/images/"+this.m_img);
+      $('#user_name').text(sessionStorage.getItem("name"));
+      $('#log').attr('title', 'Logout');
+    }
+
+
+
+
     this.email = sessionStorage.getItem("email");
+    //this.m_img = sessionStorage.getItem("m_img");
     if(this.email){
       this.loginCheck = true;
     }

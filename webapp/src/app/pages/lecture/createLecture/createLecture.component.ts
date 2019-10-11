@@ -29,7 +29,7 @@ export class CreateLectureComponent implements AfterViewInit{
 
     this.data = formData.get('avatar');
 
-    this.getinfoProvider.getCreatLecture({l_title: form.value.l_title, l_intro: form.value.l_intro, c_name: form.value.c_name, l_imgname: this.data.name, email: sessionStorage.getItem("email"), name: sessionStorage.getItem("name" )}).then(
+    this.getinfoProvider.getCreatLecture({l_title: form.value.l_title, l_intro: form.value.l_intro, c_name: form.value.category, l_imgname: this.data.name, email: sessionStorage.getItem("email"), name: sessionStorage.getItem("name" )}).then(
       data => {
         let res: any = data;
 
@@ -58,5 +58,18 @@ export class CreateLectureComponent implements AfterViewInit{
       
 
     })
+  }
+
+  ngOnInit(): void {
+
+
+    if(!sessionStorage.getItem("email")){
+      alert("로그인이 필요한 서비스입니다.");
+      this.router.navigate(['/login']);
+  }else{
+      
+      this.router.navigate(['/lecture/createLecture']);
+  } 
+    
   }
 }

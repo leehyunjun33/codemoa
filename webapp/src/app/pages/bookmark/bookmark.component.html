@@ -1,38 +1,25 @@
 <div class="row">
     <div class="col-12">
-        <div class="card">
+        <div class="card" *ngIf="this.data.length == 0" style="font-style: inherit">
+            <div class="card-body">
+                <h3 class="card-title">즐겨찾기를 해주세요.</h3>
+            </div>
+        </div>
+
+        <div class="card" *ngFor="let bookmark of this.data">
             <div class="card-body">
                 <div class="lec1" style="width: 10%">              
                     <img src="../../../assets/images/users/ice.jpg " style="width: 100%; height: -1%; float: left; margin-right: 20%;border-radius: 50%;"/>
                 </div>
 
                 <div class="lec1" style="width: 40%; float: left; margin-top: 20px">              
-                        <h4 class="card-title">이름: 야후</h4>
+                        <h4 class="card-title">이름: {{bookmark.a_email}}</h4>
                         <h5 class="card-title">이메일: llee12@naver.com</h5>
                         <h5 class="card-title">등급: S</h5>
                         <h5 class="card-title">분야: JAVA</h5>
                         <br>
                        
                 </div>
-                
-                
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-body">
-                    <div class="lec1" style="width: 10%">              
-                            <img src="../../../assets/images/users/3.jpg " style="width: 100%; height: -1%; float: left; margin-right: 20%;border-radius: 50%;"/>
-                        </div>
-        
-                        <div class="lec1" style="width: 40%; float: left; margin-top: 20px">              
-                                <h4 class="card-title">이름: 네이버</h4>
-                                <h5 class="card-title">이메일: YAYA@naver.com</h5>
-                                <h5 class="card-title">등급: F</h5>
-                                <h5 class="card-title">분야: pytyon</h5>
-                                <br>
-                               
-                        </div>
                 
                 
             </div>

@@ -12,6 +12,7 @@ export class LectureComponent implements AfterViewInit {
   subtitle: string;
   data : any = [];
   lectureList : any = [];
+  email : any = [];
 
   apiUrl = 'http://ec2-13-209-164-128.ap-northeast-2.compute.amazonaws.com:3000';
 
@@ -94,16 +95,23 @@ export class LectureComponent implements AfterViewInit {
 
   ngAfterViewInit() {
 
+    console.log("왜안돼");
+
     this.getinfoProvider.getLectureList().then(
       data => {
         let res: any = data;
            this.lectureList = res;
 
 
-           console.log("qdata",data);
+           console.log("asdasd",this.lectureList);
            
       }
     );
 
+  }
+
+  ngOnInit(): void {
+    this.email = sessionStorage.getItem("email");
+    
   }
 }

@@ -40,7 +40,7 @@
                                     <option value="JAVA">JAVA</option>
                                     <option value="python">Python</option>
                                     <option value="angular">angular</option>
-                                    <option value="css">css</option>
+                                    <option value="CSS">css</option>
 
                                 </select>
                             </div><br>
@@ -49,7 +49,7 @@
                           <div class="form-field">
                             <label class="lock" for="login-password"><span class="hidden">Content</span></label><br>
                             <!-- <input name="password" id="login-password" type="password" class="form-input" placeholder="Password" required ngModel> -->
-                            <textarea name="q_content" class="form-field" style="width: 50%; height: 300px;"  required ngModel>
+                            <textarea id="q_textarea" name="q_content" class="form-field" style="width: 50%; height: 300px;"  required ngModel>
 
 
                             </textarea>
@@ -65,7 +65,7 @@
 
                 <br>
 
-                <button id="questButton" class="btn btn-info" (click)="this.showForm()">질문하기</button>
+                <button *ngIf="this.email"  id="questButton" class="btn btn-info" (click)="this.showForm()">질문하기</button>
 
             </div>
         </div>

@@ -6,23 +6,48 @@
                     <h4 class="card-title">회원가입</h4>
 
                     <div id="registerF" class="login-item">
-                            <form #myform="ngForm" (ngSubmit)="this.registerInput(myform)" class="form form-login">
-                                <div class="form-field">
-                                    <label class="user" for="login-email"><span class="hidden">e-mail</span></label><br>
+                            <!-- #myform="ngForm" (ngSubmit)="this.creatLecture(myform, fileInput.files)" -->
+                            <form #myform="ngForm" (ngSubmit)="this.registerInput(myform, fileInput.files)" class="form form-login">
+                                <div class="form-field form-group">
+                                    <label class="user" for="login-email"><span class="hidden">E-mail</span></label><br>
                                     <input name="m_email" id="login-email" type="email" class="form-input" required ngModel>
                                   </div><br>
                           
-                                  <div class="form-field">
-                                    <label class="lock" for="login-password"><span class="hidden">password</span></label><br>
+                                  <div class="form-field form-group">
+                                    <label class="lock" for="login-password"><span class="hidden">Password</span></label><br>
                                     <input name="m_password" id="login-password" type="password" class="form-input" required ngModel>
                                     
                                   </div><br>
 
-                                  <div class="form-field">
-                                        <label class="lock" for="login-name"><span class="hidden">name</span></label><br>
+                                  <div class="form-field form-group">
+                                        <label class="lock" for="login-name"><span class="hidden">Nickname</span></label><br>
                                         <input name="m_name" id="login-name" type="text" class="form-input" required ngModel>
                                         
-                                      </div><br>
+                                  </div><br>
+
+                                  <div class="form-group form-field f1" style="width: 25%;">
+                                        <label class="user" for="login-email"><span class="hidden">카테고리&nbsp;&nbsp;</span></label>
+                                        <!-- <input matInput name="c_name" id="login-email" type="text" class="form-control" required ngModel> -->
+                                        <select name="category" class="form-control" required ngModel>
+                                            <option value="C">C</option>
+                                            <option value="JAVA">JAVA</option>
+                                            <option value="Python">Python</option>
+                                            <option value="Angular">Angular</option>
+                                            <option value="CSS">CSS</option>
+                                            <option value="JavaScript">JavaScript</option>
+            
+                                        </select>
+                                  </div>
+
+                                  <div class="form-group">
+                                        <!-- <img *ngIf="imageSrc" [src]="imageSrc" class="avatar"> -->
+                                        <label class="lock" for="login-password"><span class="hidden">회원 이미지&nbsp;&nbsp;</span></label>
+                                        <div class="btns clearfix">
+                                          <label class="btn btn-warning">image
+                                            <input type="file" name="m_img" class="form-control" #fileInput> 
+                                          </label>
+                                        </div>
+                                  </div>
                           
                                   <div class="form-field">
                                     <input id="log_button" type="submit" value="회원가입" class="btn-primary">

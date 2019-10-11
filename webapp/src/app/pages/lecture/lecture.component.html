@@ -42,7 +42,7 @@
             <div class="card-body">
 
                 <h5 class="card-title">당신만의 강의를 만들어주세요</h5>
-              <button class="btn btn-info" (click)="this.creatLecture()">강의 개설하기</button>
+              <button *ngIf="this.email" class="btn btn-info" (click)="this.creatLecture()">강의 개설하기</button>
 
                 
             </div>

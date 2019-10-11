@@ -8,7 +8,7 @@
                 <input id="email_hidden" type="hidden" value="this.data.m_email"/>
 
                 <div>
-                    {{this.data.q_content}}<br>
+                    <p id="content_replace">{{this.data.q_content}}</p><br>
                 </div>
                 
             </div>
@@ -22,8 +22,8 @@
                     </p>
 
                     <!-- *ngIf="this.data.m_email != this.emailCheck"  -->
-                    <button  *ngIf="this.emailCheck == this.data.m_email" class="checkBtn btn btn-info btn-circle"><i class="fa fa-check"></i></button>
-                    <button  *ngIf="this.emailCheck == this.data.m_email"  class="checkBtn btn btn-warning btn-circle" placement="top" ngbTooltip="즐겨찾기"><i class="fa fa-heart"></i></button>
+                    <button  *ngIf="this.emailCheck == this.data.m_email" class="checkBtn btn btn-info btn-circle" (click)="this.chooseAwnser(awnser.am_email, awnser.a_id, awnser.q_id)"><i class="fa fa-check"></i></button>
+                    <button class="checkBtn btn btn-warning btn-circle" (click)="this.bookmark(awnser.am_email)" placement="top" ngbTooltip="즐겨찾기"><i class="fa fa-heart"></i></button>
                 </div>
         </div>
 

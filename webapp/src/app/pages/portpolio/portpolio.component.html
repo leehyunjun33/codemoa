@@ -3,21 +3,20 @@
 
         <div class="card loginPort">
             <div class="card-body">
-                    <img src="../../../assets/images/users/ice.jpg" style="border-radius: 50%; width: 7%; margin-right: 15px">
-                    <span>관심분야: JAVA</span>
+                    <div class="lec1" style="width: 10%">              
+                            <img id="port_img" src="../../../assets/images/{{this.m_img}}" style="width: 100%; height: -1%; float: left; margin-right: 20%;border-radius: 50%;"/>
+                    </div>
+                    
+                    <div class="lec1" style="width: 40%; float: left; margin-top: 20px">              
+                            <h4 class="card-title">닉네임: {{this.name}}</h4>
+                            <h5 class="card-title">이메일: {{this.email}}</h5>
+                            <h5 class="card-title">등급: {{this.grade}}</h5>
+                            <h5 class="card-title">관심 분야: C</h5>
+                            <br>
+                           
+                    </div>
         
 
-    
-                </div>
-        </div>
-
-        <div class="card loginPort">
-            <div class="card-body">
-                    <h4 class="card-subtitle">my grade</h4>
-    
-                    POINT: {{this.point}} <br>
-                    {{this.grade}} 입니다.
-                    
     
                 </div>
         </div>
@@ -28,10 +27,25 @@
             <div class="card-body">
                 <h4 class="card-subtitle">my questions</h4>
 
-                <table id="my_question_table" mat-table class="mat-elevation-z8">   
-                        <tr class="myq table_hover" *ngFor="let question of this.data" (click)="this.qDetail(question)"> 
+                <p *ngIf="this.data.length == 0" style="font-style: inherit">질문을 해주세요.</p>
+
+                <table id="my_question_table" mat-table class="mat-elevation-z8" *ngIf="this.data.length != 0">   
+
+                     <tr class="myq table_hover" style='text-align: center'>
+                         <td>제목</td>
+                         <td>답변 수</td>
+                         <td>채택</td>
+                     </tr>
+                     
+
+
+                        <tr class="myq table_hover" *ngFor="let question of this.data" (click)="this.qDetail(question)" style='text-align: center'> 
                             <td mat-cell>{{question.q_title}}</td>
-                            <td mat-cell>{{question.awn_count}}</td>    
+                            <td mat-cell>{{question.awn_count}}</td>
+                            <td mat-cell>
+                                <span *ngIf="question.q_choose == 1">V</span>
+                            </td>  
+                           
                         </tr>
                         
                 </table>
@@ -44,6 +58,27 @@
             <div class="card-body">
                 <h4 class="card-subtitle">choose awnsers</h4>
 
+                <p *ngIf="this.awnsers.length == 0" style="font-style: inherit">채택 된 답변이 없습니다.</p>
+
+                <table id="my_question_table" mat-table class="mat-elevation-z8" *ngIf="this.awnsers.length != 0">   
+
+                        <tr class="myq table_hover" style='text-align: center'>
+                            <td>작성자</td>
+                            <td>분야</td>
+                            <td>제목</td>
+                        </tr>
+                        
+   
+   
+                           <tr class="myq table_hover" *ngFor="let awnsers of this.awnsers" (click)="this.qDetail(awnsers)" style='text-align: center'> 
+                               <td mat-cell>{{awnsers.m_name}}</td>
+                               <td mat-cell>{{awnsers.c_name}}</td>
+                               <td mat-cell>{{awnsers.q_title}}</td>  
+                              
+                           </tr>
+                           
+                   </table>
+
               
             </div>
         </div>
@@ -51,6 +86,8 @@
         <div class="card loginPort">
             <div class="card-body">
                 <h4 class="card-subtitle">my lectures</h4>
+
+                <p *ngIf="this.lectureList.length == 0" style="font-style: inherit">강의를 올려주세요.</p>
 
                 <div class="row">
                         <!-- column -->

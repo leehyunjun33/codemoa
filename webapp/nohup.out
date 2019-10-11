@@ -11510,3 +11510,48 @@ ERROR in src/app/pages/register/register.module.ts(6,34): error TS2307: Cannot f
 Date: 2019-06-02T05:29:26.585Z - Hash: fbf5eca2c57b3034bf48 - Time: 13345ms
 10 unchanged chunks
 chunk {styles} styles.js, styles.js.map (styles) 2.72 MB [initial] [rendered]
+Browserslist: caniuse-lite is outdated. Please run next command `npm update`
+
+Date: 2019-10-10T07:53:06.956Z
+Hash: d407d1f9796c094a84d3
+Time: 18199ms
+chunk {es2015-polyfills} es2015-polyfills.js, es2015-polyfills.js.map (es2015-polyfills) 266 kB [initial] [rendered]
+chunk {main} main.js, main.js.map (main) 622 bytes [initial] [rendered]
+chunk {polyfills} polyfills.js, polyfills.js.map (polyfills) 92.4 kB [initial] [rendered]
+chunk {runtime} runtime.js, runtime.js.map (runtime) 6.08 kB [entry] [rendered]
+chunk {scripts} scripts.js, scripts.js.map (scripts) 180 kB [entry] [rendered]
+chunk {styles} styles.js, styles.js.map (styles) 2.71 MB [initial] [rendered]
+
+ERROR in src/app/pages/user/user.component.ts(70,15): error TS2339: Property 'replace' does not exist on type 'string | number | string[]'.
+  Property 'replace' does not exist on type 'number'.
+
+Browserslist: caniuse-lite is outdated. Please run next command `npm update`
+
+Date: 2019-10-10T08:03:17.938Z
+Hash: d407d1f9796c094a84d3
+Time: 23858ms
+chunk {es2015-polyfills} es2015-polyfills.js, es2015-polyfills.js.map (es2015-polyfills) 266 kB [initial] [rendered]
+chunk {main} main.js, main.js.map (main) 622 bytes [initial] [rendered]
+chunk {polyfills} polyfills.js, polyfills.js.map (polyfills) 92.4 kB [initial] [rendered]
+chunk {runtime} runtime.js, runtime.js.map (runtime) 6.08 kB [entry] [rendered]
+chunk {scripts} scripts.js, scripts.js.map (scripts) 180 kB [entry] [rendered]
+chunk {styles} styles.js, styles.js.map (styles) 2.71 MB [initial] [rendered]
+
+ERROR in src/app/pages/user/user.component.ts(70,15): error TS2339: Property 'replace' does not exist on type 'string | number | string[]'.
+  Property 'replace' does not exist on type 'number'.
+
+
+Date: 2019-10-10T16:00:14.828Z
+Hash: b46bb8ce854046f49f18
+Time: 26293ms
+chunk {common} common.js, common.js.map (common) 1.79 kB  [rendered]
+chunk {component-component-module} component-component-module.js, component-component-module.js.map (component-component-module) 313 kB  [rendered]
+chunk {es2015-polyfills} es2015-polyfills.js, es2015-polyfills.js.map (es2015-polyfills) 285 kB [initial] [rendered]
+chunk {main} main.js, main.js.map (main) 14.6 kB [initial] [rendered]
+chunk {pages-pages-module} pages-pages-module.js, pages-pages-module.js.map (pages-pages-module) 466 kB  [rendered]
+chunk {polyfills} polyfills.js, polyfills.js.map (polyfills) 236 kB [initial] [rendered]
+chunk {runtime} runtime.js, runtime.js.map (runtime) 8.9 kB [entry] [rendered]
+chunk {scripts} scripts.js, scripts.js.map (scripts) 180 kB [entry] [rendered]
+chunk {starter-starter-module} starter-starter-module.js, starter-starter-module.js.map (starter-starter-module) 9.24 kB  [rendered]
+chunk {styles} styles.js, styles.js.map (styles) 2.68 MB [initial] [rendered]
+chunk {vendor} vendor.js, vendor.js.map (vendor) 5.16 MB [initial] [rendered]

@@ -2,7 +2,6 @@ import { Component, AfterViewInit } from '@angular/core';
 import { GetinfoProvider } from '../../../providers/getinfo/getinfo';
 import { Router } from '@angular/router';
 import { Location } from '@angular/common';
-declare var $: any;
 
 @Component({
   templateUrl: './portpolio.component.html',
@@ -33,8 +32,13 @@ export class PortpolioComponent implements AfterViewInit {
   subtitle: string;
   data: any = [];
   lectureList: any = [];
+  awnsers: any = [];
   grade: any;
   point: any;
+  email: any;
+  name: any;
+  m_img: any;
+
   constructor(private getinfoProvider: GetinfoProvider, private router: Router, private loca: Location) {
     this.subtitle = 'portpolio';
     console.log(this.subtitle);
@@ -42,6 +46,11 @@ export class PortpolioComponent implements AfterViewInit {
     this.grade = sessionStorage.getItem("grade");
     this.point = sessionStorage.getItem("point");
 
+    if(sessionStorage.getItem("m_img")){
+      this.m_img = sessionStorage.getItem("m_img");
+    }else{
+      this.m_img = 'users/ice.jpg'
+    }
   }
 
   qDetail(question: any){
@@ -76,13 +85,26 @@ export class PortpolioComponent implements AfterViewInit {
       }
     );
 
+    this.getinfoProvider.getMyChooseAwnsers(email).then(
+      data => {
+        let res: any = data;
+           this.awnsers = res;
+
+
+           console.log("cadata",data);
+           
+      }
+    );
+
+
+
     this.getinfoProvider.getMyLecture(email).then(
       data => {
         let res: any = data;
            this.lectureList = res;
 
 
-           console.log("qdata",data);
+           console.log("ldata",data);
            
       }
     );
@@ -109,6 +131,14 @@ export class PortpolioComponent implements AfterViewInit {
   }
 
   ngOnInit(): void {
+
+    this.email = sessionStorage.getItem("email");
+    this.name = sessionStorage.getItem("name");
+
+
+    //$('#port_img').attr("src", "assets/images/"+sessionStorage.getItem("m_img"));
+
+
     if(!sessionStorage.getItem("email")){
       this.router.navigate(['/login']);
   }else{
