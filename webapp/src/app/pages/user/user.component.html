@@ -5,14 +5,16 @@
                 <!-- <a href="/user">{{subtitle}}</a> -->
                 <!-- <button type="button" class="btn btn-outline-primary guswls"  (click)="this.dbcall()">DB를 불러주세요</button> -->
 
-                <h3 class="card-subtitle">Q & A</h3>        
+                <h4 class="card-subtitle">질문 및 답변</h4>        
 
-                <table id="question_table" mat-table class="mat-elevation-z8">
+                <table id="question_table" mat-table class="mat-elevation-z8" style="text-align: center">
                     <tr width=50%>
                         <th class="th1" mat-header-cell witdth="30%">작성자</th>
                         <th>분야</th>
                         <th mat-header-cell width="60%">제목</th>      
-                        <th>답변 수</th>                  
+                        <th>답변 수</th> 
+                        <th>작성일</th>
+                        <th>조회수</th>                 
                     </tr>
                     
 
@@ -21,6 +23,8 @@
                         <td>{{question.c_name}}</td>
                         <td mat-cell>{{question.q_title}}</td> 
                         <td mat-cell>{{question.awn_count}}</td>     
+                        <td mat-cell>{{question.qq_date}}</td>
+                        <td mat-cell>{{question.q_view}}</td>
                     </tr>
                     
                 </table>

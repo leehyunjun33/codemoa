@@ -1,0 +1,68 @@
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-body">
+                
+                <h4 class="card-title">'{{this.data}}' 관련 질문 검색</h4>
+
+                <table id="question_table" mat-table class="mat-elevation-z8" style="text-align: center">
+                        <tr width=50%>
+                            <th class="th1" mat-header-cell witdth="30%">작성자</th>
+                            <th>분야</th>
+                            <th mat-header-cell width="60%">제목</th>      
+                            <th>답변 수</th>                  
+                        </tr>
+                        
+    
+                        <tr class="table_hover" *ngFor="let question of this.questionList" (click)="this.qDetail(question)">
+                            <td mat-cell>{{question.m_name}}</td>  
+                            <td>{{question.c_name}}</td>
+                            <td mat-cell>{{question.q_title}}</td> 
+                            <td mat-cell>{{question.awn_count}}</td>     
+                        </tr>
+                        
+                </table>
+
+                  
+                
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-body">
+                    
+                <h4 class="card-title">'{{this.data}}' 관련 강의 검색</h4>
+
+                <div class="row">
+
+                    <div class="col-lg-3 col-md-6" *ngFor="let lecture of this.lectureList">
+                            <!-- Card -->
+                        <div class="card">
+                            <img class="card-img-top img-responsive" src="../../../assets/images/{{lecture.l_img}}" alt="Card image cap" style="width: 70%; height: -1%;">
+                            <div class="card-body">
+                                <h4 class="card-title">{{lecture.l_title}}</h4>
+                                <p class="card-text">{{lecture.l_intro}}</p>
+                                <button class="btn btn-primary" (click)="this.lDetail(lecture)">보러 가기</button>
+                        </div>
+                        </div>
+                            <!-- Card -->
+                    </div>
+
+                </div>
+    
+                      
+                    
+             </div>
+        </div>
+
+        <div class="card">
+            <div class="card-body">
+                
+                <h4 class="card-title">'{{this.data}}' 관련 채택 답변</h4>
+
+                  
+                
+            </div>
+        </div>
+    </div>
+</div>

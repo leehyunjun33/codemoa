@@ -37,6 +37,7 @@ export class PortpolioComponent implements AfterViewInit {
   point: any;
   email: any;
   name: any;
+  language: any;
   m_img: any;
 
   constructor(private getinfoProvider: GetinfoProvider, private router: Router, private loca: Location) {
@@ -45,6 +46,7 @@ export class PortpolioComponent implements AfterViewInit {
 
     this.grade = sessionStorage.getItem("grade");
     this.point = sessionStorage.getItem("point");
+    this.language = sessionStorage.getItem("m_language");
 
     if(sessionStorage.getItem("m_img")){
       this.m_img = sessionStorage.getItem("m_img");
@@ -108,35 +110,41 @@ export class PortpolioComponent implements AfterViewInit {
            
       }
     );
-
-
-
-
-
-
-
-
-    // $(function(){
-    //   $("#loginF").hide();
-
-    //   if(!sessionStorage.getItem("email")){
-    //     $("#loginF").show();
-    //     $(".loginPort").hide();
-        
-    //   }else{
-    //     $("#loginF").hide();
-    //     $("#log_please").hide();
-    //   }
-    // })
   }
 
   ngOnInit(): void {
+
+    $(function(){
+      setTimeout(function(){
+        var textColor = $('.table_hover').css("color");
+
+        $('.table_hover').hover(function() {
+          $(this).css("color", "#BDBDBD");
+        }, function(){
+          $(this).css("color", textColor);
+        });
+      },500);
+    })
 
     this.email = sessionStorage.getItem("email");
     this.name = sessionStorage.getItem("name");
 
 
     //$('#port_img').attr("src", "assets/images/"+sessionStorage.getItem("m_img"));
+
+    this.m_img = sessionStorage.getItem("m_img");
+    
+    console.log("사진 확인44", this.m_img);
+
+    if(this.m_img == 'null'){
+      var a = 'assets/images/users/ice.jpg';
+      $("#port_img").attr('src', a);
+      console.log("널입니다.");
+    }else{
+      $("#port_img").attr('src', 'assets/images/'+this.m_img);
+
+      console.log("널이 아닙니다.", this.m_img);
+    }
 
 
     if(!sessionStorage.getItem("email")){

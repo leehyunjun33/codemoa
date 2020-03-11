@@ -18,6 +18,7 @@ export class SidebarComponent implements AfterViewInit {
   constructor(public router: Router, private location: Location) { 
 
     
+    
 
   }
 
@@ -66,7 +67,6 @@ export class SidebarComponent implements AfterViewInit {
 
     
 
-
     $(function() {
       $('.sidebartoggler').on('click', function() {
         if ($('body').hasClass('mini-sidebar')) {
@@ -89,36 +89,34 @@ export class SidebarComponent implements AfterViewInit {
           // $(".sidebartoggler i").removeClass("ti-menu");
         }
       });
-
-
-      
-
     });
-
-
-
   }
 
   ngOnInit(): void {
 
-    if(sessionStorage.getItem("m_img")){
-      this.m_img = sessionStorage.getItem("m_img");
-    }else if(!sessionStorage.getItem("m_img")){
-      this.m_img = 'users/ice.jpg'
+    this.m_img = sessionStorage.getItem("m_img");
+    
+    console.log("사진 확인44", this.m_img);
+
+    if(this.m_img == 'null'){
+      var a = 'assets/images/users/ice.jpg';
+      $("#user_img").attr('src', a);
+      console.log("널입니다.");
+    }else{
+      $("#user_img").attr('src', 'assets/images/'+this.m_img);
+
+      console.log("널이 아닙니다.", this.m_img);
     }
+
 
     if(!sessionStorage.getItem("email")){
       $('.user-profile').hide();
       $('#log').attr('title', 'Login');
     }else{
-
-      //$('#user_img').attr("src", "assets/images/"+this.m_img);
+      
       $('#user_name').text(sessionStorage.getItem("name"));
       $('#log').attr('title', 'Logout');
     }
-
-
-
 
     this.email = sessionStorage.getItem("email");
     //this.m_img = sessionStorage.getItem("m_img");

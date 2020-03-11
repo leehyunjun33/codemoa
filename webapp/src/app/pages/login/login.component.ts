@@ -8,13 +8,13 @@ import { Location } from '@angular/common';
 // import { GoogleLoginProvider, FacebookLoginProvider, LinkedInLoginProvider } from 'angularx-social-login';
 @Component({
 
-   templateUrl: './login.component.html'
-  // styles: [`#log_button {margin-right : 10px; float : left}
-  //          .f1 {margin-bottom : 10px;
-  //              margin-top : 25px;} 
-  //          .reg {}   
+   templateUrl: './login.component.html',
+  styles: [`#log_button {margin-right : 10px; float : left}
+           .f1 {margin-bottom : 10px;
+               margin-top : 25px;} 
+           .reg {}   
   
-  // `]
+  `]
 })
 export class LoginComponent implements AfterViewInit {
   subtitle: string;
@@ -57,6 +57,7 @@ export class LoginComponent implements AfterViewInit {
             sessionStorage.setItem("point", res.m_point);
             sessionStorage.setItem("grade",res.m_grade);
             sessionStorage.setItem("m_img",res.m_img);
+            sessionStorage.setItem('m_language', res.m_language);
 
             //console.log(data);
 

@@ -20,6 +20,17 @@ export class GetinfoProvider {
     });
   }
 
+  getChooseQuest() {
+    return new Promise(resolve => {
+        this.http.get(this.SERVER_PATH + '/chooseQuest', { headers: { 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8' } }).
+        subscribe(data => {
+        resolve(data);
+      }, err => {
+        console.log(err);
+      });
+    });
+  }
+
   getLectureList(){
     return new Promise(resolve => {
         this.http.get(this.SERVER_PATH + '/lectureList', { headers: { 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8' } }).
@@ -141,8 +152,10 @@ getRegister (form:any) {
     let content = form.content;
     let l_id = form.l_id;
 
+    console.log("a");
+
     return new Promise(resolve => {
-      this.http.post(this.SERVER_PATH + '/setMemo', JSON.stringify({ 'id': id, 'email': email, 'content': content, 'l_id': l_id}), { headers: { 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8' } }).
+      this.http.post(this.SERVER_PATH + '/setMemo', JSON.stringify({ 'id': id, 'email': email, "content":content, 'l_id': l_id}), { headers: { 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8' } }).
       subscribe(data => {
       resolve(data);
     }, err => {
@@ -251,4 +264,32 @@ getRegister (form:any) {
     });
   });
   }
+
+  getSearchQuestList(form:any){
+    let searchText = form.searchText;
+
+    return new Promise(resolve => {
+      this.http.post(this.SERVER_PATH + '/searchQuestList', JSON.stringify({ 'searchText': searchText , 'temp': 'temp'}), { headers: { 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8' } }).
+      subscribe(data => {
+      resolve(data);
+    }, err => {
+      console.log(err);
+    });
+  });
+  }
+
+  getSearchLectureList(form:any){
+    let searchText = form.searchText;
+
+    return new Promise(resolve => {
+      this.http.post(this.SERVER_PATH + '/searchLectureList', JSON.stringify({ 'searchText': searchText , 'temp': 'temp'}), { headers: { 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8' } }).
+      subscribe(data => {
+      resolve(data);
+    }, err => {
+      console.log(err);
+    });
+  });
+  }
+
+
 }

@@ -11,6 +11,8 @@ import { SpinnerComponent } from './shared/spinner.component';
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
+//import {MatButtonModule, MatCheckboxModule} from '@angular/material';
+
 
 @NgModule({
   declarations: [AppComponent, SpinnerComponent],
@@ -26,7 +28,6 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
   providers: [
     {
       provide: LocationStrategy,
-    
       //useClass: PathLocationStrategy
       useClass: HashLocationStrategy
       

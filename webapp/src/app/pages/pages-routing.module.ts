@@ -9,8 +9,11 @@ import { RegisterComponent } from './register/register.component';
 import { BookmarkComponent } from './bookmark/bookmark.component';
 import { ProfileComponent } from './profile/profile.component';
 import { LoginComponent } from './login/login.component';
+import { SearchComponent } from './search/search.component';
 import { CreateLectureComponent } from './lecture/createLecture/createLecture.component';
 import { LectureDetailComponent } from './lecture/lectureDetail/lectureDetail.component';
+import { ChooseQuestComponent } from './chooseQuest/chooseQuest.component';
+import { MemberProfileComponent } from './memberProfile/memberProfile.component';
 
 const routes: Routes = [
   {
@@ -24,6 +27,10 @@ const routes: Routes = [
       {
         path: 'user',
         component: UserComponent
+      },
+      {
+        path: 'chooseQuest',
+        component: ChooseQuestComponent
       },
       {
         path: 'user/question',
@@ -58,8 +65,12 @@ const routes: Routes = [
         component: BookmarkComponent
       },
       {
-        path: 'profile',
-        component: ProfileComponent
+        path: 'memberProfile',
+        component: MemberProfileComponent
+      },
+      {
+        path: 'search',
+        component: SearchComponent
       },
       {
         path: 'component',

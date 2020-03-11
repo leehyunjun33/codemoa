@@ -7,31 +7,43 @@
 
                 <input id="email_hidden" type="hidden" value="this.data.m_email"/>
 
-                <div>
-                    <p id="content_replace">{{this.data.q_content}}</p><br>
+                <div style="height: 250px; margin-top: 50px">
+                    <textarea id="content_replace" style="border: 0px solid white; width: 100%; height: 100%;">{{this.data.q_content}}</textarea>
+                    <br>
                 </div>
                 
             </div>
         </div>
 
         <div class="card" *ngFor="let awnser of this.awnList">
-                <div class="card-body" >
+                <div class="card-body" style="border: 1px solid royalblue; height: 120%;" *ngIf="awnser.a_choose == 1">
                     <h5 class="casd-subtitle">{{awnser.am_name}}</h5>
                     <p>
                         {{awnser.a_content}}
                     </p>
 
                     <!-- *ngIf="this.data.m_email != this.emailCheck"  -->
-                    <button  *ngIf="this.emailCheck == this.data.m_email" class="checkBtn btn btn-info btn-circle" (click)="this.chooseAwnser(awnser.am_email, awnser.a_id, awnser.q_id)"><i class="fa fa-check"></i></button>
-                    <button class="checkBtn btn btn-warning btn-circle" (click)="this.bookmark(awnser.am_email)" placement="top" ngbTooltip="즐겨찾기"><i class="fa fa-heart"></i></button>
+                    <button  *ngIf="this.emailCheck == this.data.m_email && this.data.q_choose == 0"class="checkBtn btn btn-info btn-circle" (click)="this.chooseAwnser(awnser.am_email, awnser.a_id, awnser.q_id)"><i class="fa fa-check"></i></button>
+                    <button  *ngIf="this.emailCheck != awnser.am_email" class="checkBtn btn btn-danger btn-circle" (click)="this.bookmark(awnser.am_email)" placement="top" ngbTooltip="즐겨찾기"><i class="fa fa-heart"></i></button>
                 </div>
+
+                <div class="card-body" *ngIf="awnser.a_choose == 0">
+                        <h5 class="casd-subtitle">{{awnser.am_name}}</h5>
+                        <p>
+                            {{awnser.a_content}}
+                        </p>
+    
+                        <!-- *ngIf="this.data.m_email != this.emailCheck"  -->
+                        <button  *ngIf="this.emailCheck == this.data.m_email && this.data.q_choose == 0"class="checkBtn btn btn-info btn-circle" (click)="this.chooseAwnser(awnser.am_email, awnser.a_id, awnser.q_id)"><i class="fa fa-check"></i></button>
+                        <button  *ngIf="this.emailCheck != awnser.am_email" class="checkBtn btn btn-warning btn-circle" (click)="this.bookmark(awnser.am_email)" placement="top" ngbTooltip="즐겨찾기"><i class="fa fa-heart"></i></button>
+                    </div>
         </div>
 
         
 
-        <div class="card">
+        <div class="card" *ngIf="this.data.q_choose == 0">
             <div class="card-body" >
-                <h4 id="noAwntitle" class="card-title">당신의 답변을 기다리고 있습니다.</h4>
+                <h4 id="noAwntitle" class="card-title">답변을 기다리고 있습니다.</h4>
                 <div id="awnserF" class="login-item">
                         <form #myform="ngForm" (ngSubmit)="this.awnser_input(myform)" class="form form-login">               
                               <div class="form-field">

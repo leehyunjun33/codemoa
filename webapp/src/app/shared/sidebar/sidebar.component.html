@@ -12,7 +12,7 @@
         <div class="user-profile">
             <!-- User profile image -->
             <div class="profile-img"> 
-                <img id="user_img" src="assets/images/{{this.m_img}}" alt="user" /> 
+                <img id="user_img" src="assets/images/users/ice.jpg" alt="users22" />
             </div>
             <!-- User profile text-->
             <div class="profile-text"> <span id="user_name"> </span>
@@ -48,14 +48,29 @@
                             class="mdi mdi-equal"></i><span class="hide-menu">질문 및 답변</span></a>
                 </li>
                 <li>
+                    <a routerLink="/chooseQuest" (click)="addExpandClass('component')" [routerLinkActive]="['router-link-active']"><i
+                            class="mdi mdi-backburger"></i><span class="hide-menu">채택 된 답변</span></a>
+                    </li>
+                <li>
                     <a routerLink="/lecture" (click)="addExpandClass('component')" [routerLinkActive]="['router-link-active']"><i
                         class="mdi mdi-tablet"> </i><span class="hide-menu">강의</span></a>
                 </li>
                 
                 <li>
                     <a routerLink="/bookmark" (click)="addExpandClass('component')" [routerLinkActive]="['router-link-active']"><i
-                        class="mdi mdi mdi-image-filter-vintage"></i><span class="hide-menu">즐겨찾기</span></a>
+                        class="mdi mdi-image-filter-vintage"></i><span class="hide-menu">즐겨찾기</span></a>
                 </li>
+
+                <!-- <li>
+                        <a routerLink="/component/buttons" (click)="addExpandClass('component')" [routerLinkActive]="['router-link-active']"><i
+                                class="mdi mdi-blur-radial"></i><span class="hide-menu">Button</span></a>
+                    </li>
+
+                    <li>
+                            <a routerLink="/component/rating" (click)="addExpandClass('component')" [routerLinkActive]="['router-link-active']"><i
+                                    class="mdi mdi-bandcamp"></i><span class="hide-menu">Ratings</span></a>
+                        </li> -->
+                
                 
                 <!-- <li>
                     <a routerLink="/component/accordion" (click)="addExpandClass('component')" [routerLinkActive]="['router-link-active']"><i
@@ -119,7 +134,7 @@
         <!-- item-->
         <a href="" class="link" data-toggle="tooltip" title="Settings"><i class="ti-settings"></i></a>
         <!-- item-->
-        <a href="" class="link" data-toggle="tooltip" title="Email"><i class="mdi mdi-gmail"></i></a>
+        <a href="" class="link" data-toggle="tooltip" title="Alarm"><i class="mdi mdi-gmail"></i></a>
         <!-- item-->
         <a id="log" (click)="this.logState()" class="link" data-toggle="tooltip" title="Login"><i class="mdi mdi-power"></i></a>
     </div>

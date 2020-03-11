@@ -1,14 +1,20 @@
 import { Component, AfterViewInit } from '@angular/core';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-declare var $: any;
+import { GetinfoProvider } from '../../../providers/getinfo/getinfo';
+import { Router, ActivatedRoute } from '@angular/router';
+import { Location } from '@angular/common';
+
 @Component({
   selector: 'app-navigation',
   templateUrl: './navigation.component.html'
 })
 export class NavigationComponent implements AfterViewInit {
   name: string;
+  searchText: any;
 
-  constructor() {}
+  constructor(public getinfoProvider: GetinfoProvider, private route: ActivatedRoute,private router:Router, private location: Location) {
+
+  }
 
   // This is for Notifications
   notifications: Object[] = [
@@ -74,9 +80,18 @@ export class NavigationComponent implements AfterViewInit {
     }
   ];
 
+
+  search(){
+      this.searchText = $("#search_input").val();
+      this.router.navigate(['/search',[this.searchText]]);
+  }
+
   ngAfterViewInit() {
     $(function() {
       $('.preloader').fadeOut();
+
+
+      
     });
 
     const set = function() {

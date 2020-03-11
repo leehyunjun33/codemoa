@@ -23,16 +23,18 @@ export class LectureDetailComponent implements AfterViewInit{
 
 
   ngAfterViewInit() {
-    // this.getinfoProvider.getMemo({m_id: this.id, l_id: this.lecture.l_id}).then(
-    //   data => {
-    //     let res: any = data;
+    this.getinfoProvider.getMemo({m_id: this.id, l_id: this.lecture.l_id}).then(
+      data => {
+        let res: any = data;
 
-    //       this.memo = res;
+          this.memo = res;
 
-    //        console.log('메모불러오기22222', this.memo.me_content);
+           console.log('메모불러오기22222', this.memo[0].me_content);
+
+           $("#lectureMemo").val(this.memo[0].me_content);
           
-    //   }
-    // );
+      }
+    );
     
   }
 
@@ -40,7 +42,10 @@ export class LectureDetailComponent implements AfterViewInit{
     
     var memo = $("#lectureMemo").val();
 
-    this.getinfoProvider.setMemo({id: this.id, l_id: this.lecture.l_id, email: this.email, content: memo}).then(
+    console.log("메모1", memo);
+
+
+    this.getinfoProvider.setMemo({id: this.id, l_id: this.lecture.l_id, email: this.email, "content":memo}).then(
       data => {
         let res: any = data;
 

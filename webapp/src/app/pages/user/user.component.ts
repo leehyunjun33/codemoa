@@ -21,6 +21,10 @@ import { Location } from '@angular/common';
 .th1{
 
 }
+.table_hover{
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
 #question_table td {
     padding: 10px;
     vertical-align: top;
@@ -93,6 +97,25 @@ export class UserComponent implements AfterViewInit {
     );
   }
   ngAfterViewInit() {
+
+    $(function(){
+      $("#questionF").hide();
+
+      setTimeout(function(){
+        var textColor = $('.table_hover').css("color");
+
+        $('.table_hover').hover(function() {
+          $(this).css("color", "#BDBDBD");
+        }, function(){
+          $(this).css("color", textColor);
+        });
+      },500);
+        
+
+
+      
+
+    });
     
     
   }
@@ -102,21 +125,7 @@ export class UserComponent implements AfterViewInit {
     this.email = sessionStorage.getItem("email");
 
 
-    $(function(){
-      $("#questionF").hide();
-
-      var t_color = $('.table_hover').css("color");
-
-      $('.table_hover').hover(function() {
-        $(this).css("color", "#BDBDBD");
-      }, function(){
-        $(this).css("color", t_color);
-      });
-
-      
-
-
-    });
+    
     
   }
 }

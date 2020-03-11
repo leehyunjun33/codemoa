@@ -13,41 +13,19 @@ import { QuestionComponent } from './user/question/question.component';
 import { FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { RegisterComponent } from './register/register.component';
 import { BookmarkComponent } from './bookmark/bookmark.component';
-import { ProfileComponent } from './profile/profile.component';
 import { LoginComponent } from './login/login.component';
+import { SearchComponent } from './search/search.component';
 import { LectureDetailComponent } from './lecture/lectureDetail/lectureDetail.component';
 import { CreateLectureComponent } from './lecture/createLecture/createLecture.component';
-
-import { SocialLoginModule, AuthServiceConfig } from "angularx-social-login";
-import { GoogleLoginProvider, FacebookLoginProvider } from "angularx-social-login";
-
-//import {MatButtonModule, MatCheckboxModule} from '@angular/material';
-const config = new AuthServiceConfig([
-  {
-    id: GoogleLoginProvider.PROVIDER_ID,
-    provider: new GoogleLoginProvider('266477703969-q34vct58mtp5mtqqqag8maoavleue0j5.apps.googleusercontent.com')
-  },
-  // {
-  //   id: FacebookLoginProvider.PROVIDER_ID,
-  //   provider: new FacebookLoginProvider('561602290896109')
-  // },
-  // {
-  //   id: LinkedInLoginProvider.PROVIDER_ID,
-  //   provider: new LinkedInLoginProvider("78iqy5cu2e1fgr")
-  // }
-]);
-
-export function provideConfig() {
-  return config;
-}
+import { ChooseQuestComponent } from './chooseQuest/chooseQuest.component';
+import { MemberProfileComponent } from './memberProfile/memberProfile.component';
 
 @NgModule({
     imports: [
         CommonModule,
         PagesRoutingModule,
         FormsModule,
-        ReactiveFormsModule,
-        SocialLoginModule
+        ReactiveFormsModule
 
     ],
     declarations: [
@@ -56,22 +34,18 @@ export function provideConfig() {
         SidebarComponent,
         BreadcrumbComponent,
         UserComponent,
+        ChooseQuestComponent,
         SIDEBAR_TOGGLE_DIRECTIVES,
         LectureComponent,
         PortpolioComponent,
         QuestionComponent,
         RegisterComponent,
         BookmarkComponent,
-        ProfileComponent,
+        MemberProfileComponent,
         LoginComponent,
         LectureDetailComponent,
-        CreateLectureComponent
-    ],
-    providers: [
-        {
-          provide: AuthServiceConfig,
-          useFactory: provideConfig
-        }
+        CreateLectureComponent,
+        SearchComponent
     ]
 })
 export class PagesModule { }

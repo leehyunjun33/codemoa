@@ -33,8 +33,9 @@ router.post('/creatLecture', function (req, res) {
     var l_imgname = req.body.l_imgname;
     var name = req.body.name;
     var email = req.body.email;
-    var sql = 'insert into lecture values(0,?,?,?,?,0,?,?)';
-    conn.query(sql, [email, c_name, l_title, name, l_intro, l_imgname], function (err, data) {
+    var video = 'small.mp4';
+    var sql = 'insert into lecture values(0,?,?,?,?,0,?,?,?)';
+    conn.query(sql, [email, c_name, l_title, name, l_intro, l_imgname, video], function (err, data) {
         if (err) {
             console.log("강의생성에러", err);
             res.send(false);
@@ -73,7 +74,18 @@ router.post('/upload', upload.single('avatar'), (req, res) => {
     res.json({ success: true, file: req.file });
 });
 router.get('/user', function (req, res, next) {
-    var sql = 'select * from question';
+    var sql = 'select *, date_format(q_date, "%Y-%m-%d") as "qq_date" from question where q_choose = 0';
+    conn.query(sql, function (err, data) {
+        if (err)
+            console.log(err);
+        var string = JSON.stringify(data);
+        var json = JSON.parse(string);
+        console.log('json: ', json);
+        res.send(json);
+    });
+});
+router.get('/chooseQuest', function (req, res, next) {
+    var sql = 'select *, date_format(q_date, "%Y-%m-%d") as "qq_date" from question where q_choose = 1';
     conn.query(sql, function (err, data) {
         if (err)
             console.log(err);
@@ -85,8 +97,7 @@ router.get('/user', function (req, res, next) {
 });
 router.get('/myQuestion', function (req, res, next) {
     var email = req.query.m_email;
-    console.log("reqemail", email);
-    var sql = 'select * from question where m_email = ?';
+    var sql = 'select *, date_format(q_date, "%Y-%m-%d") as "qq_date" from question where m_email = ?';
     conn.query(sql, [email], function (err, data) {
         if (err)
             console.log(err);
@@ -112,12 +123,14 @@ router.get('/myChooseAnwser', function (req, res, next) {
 router.get('/user/question', function (req, res) {
     var q_id = req.query.q_id;
     var sql = 'select * from question where q_id = ?';
+    var viewUp = 'update question set q_view = q_view + 1 where q_id = ?';
     conn.query(sql, [q_id], function (err, data) {
         if (err)
             console.log(err);
         var string = JSON.stringify(data);
         var json = JSON.parse(string);
         console.log('question: ', json);
+        conn.query(viewUp, q_id, function (err, data) { });
         res.send(json);
     });
 });
@@ -169,7 +182,7 @@ router.post('/questInput', function (req, res) {
     console.log(req);
     // content = content.replace(/\n/g, "<br>");
     // content = content.replaceAll("<br>", "\r\n");
-    var sql = 'insert into question values(0,?,?,?,?,0,?,0)';
+    var sql = 'insert into question values(0,?,?,?,?,0,?,0, now(), 0)';
     var sql2 = 'update member set m_point = m_point + 5 where m_email = ?';
     let logS = true;
     conn.query(sql, [email, name, title, content, category], function (err, data) {
@@ -296,7 +309,7 @@ router.post('/awnserList', function (req, res) {
 });
 router.get('/myBookmark', function (req, res) {
     var email = req.query.m_email;
-    var sql = 'select * from bookmark where q_email = ?';
+    var sql = 'select * from member where m_email in (select a_email from bookmark where q_email = ?)';
     conn.query(sql, [email], function (err, data) {
         if (err)
             console.log(err);
@@ -304,6 +317,29 @@ router.get('/myBookmark', function (req, res) {
         var json = JSON.parse(string);
         console.log('question: ', json);
         res.send(json);
+    });
+});
+router.post('/insertBookmark', function (req, res) {
+    req.body = Object.keys(req.body);
+    req.body = JSON.parse(req.body[0]);
+    var q_email = req.body.q_email;
+    var a_email = req.body.a_email;
+    var sql = 'insert into bookmark values(0,?,?)';
+    var bookmarkCheckSql = 'select * from bookmark where q_email = ? and a_email = ?';
+    conn.query(bookmarkCheckSql, [q_email, a_email], function (err, data) {
+        if (err) {
+            console.log("북마크에러", err);
+            res.send(false);
+        }
+        else {
+            if (data[0]) {
+                res.send(false);
+            }
+            else {
+                conn.query(sql, [q_email, a_email]);
+                res.send(true);
+            }
+        }
     });
 });
 router.post('/chooseAwnser', function (req, res) {
@@ -344,8 +380,35 @@ router.post('/chooseAwnser', function (req, res) {
                     grade = 'D';
                 }
                 conn.query(sql4_gradeUpdate, [grade, email], function (err, data) { });
+                res.send(true);
             });
         });
+    });
+});
+router.post('/searchQuestList', function (req, res) {
+    req.body = Object.keys(req.body);
+    req.body = JSON.parse(req.body[0]);
+    var searchText = req.body.searchText;
+    var sql = 'select * from question where c_name = ? or q_content like "%' + searchText + '%" or q_title like "%' + searchText + '%"';
+    conn.query(sql, [searchText], function (err, data) {
+        if (err)
+            console.log("search에러", err);
+        var string = JSON.stringify(data);
+        var json = JSON.parse(string);
+        res.send(json);
+    });
+});
+router.post('/searchLectureList', function (req, res) {
+    req.body = Object.keys(req.body);
+    req.body = JSON.parse(req.body[0]);
+    var searchText = req.body.searchText;
+    var sql = 'select * from lecture where c_name = ?';
+    conn.query(sql, [searchText], function (err, data) {
+        if (err)
+            console.log("search에러", err);
+        var string = JSON.stringify(data);
+        var json = JSON.parse(string);
+        res.send(json);
     });
 });
 module.exports = router;

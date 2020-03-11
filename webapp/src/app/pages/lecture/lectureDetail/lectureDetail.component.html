@@ -13,35 +13,36 @@
                         <h5 class="card-title">강사명: {{this.lecture.lm_name}}</h5>
                         <h5 class="card-title">이메일: {{this.lecture.lm_email}}</h5>
                         <br>
-                       
-
-                        <p>
-                            강의소개<br>
-                            {{this.lecture.l_intro}}
-
-                        </p>
                 </div>
             </div>
         </div>
 
         <div class="card">
-                <div class="card-body" >
-                  
-                    <!-- <button *ngIf="this.lecture.lm_email == this.email" class="btn btn-info">강의 업로드</button> -->
-
-                        <video controls>
-                            <source src="../../../../assets/video/small.mp4"/>
-                            <source src="../../../../assets/video/small.ogv"/>
-                        </video> 
+                <div class="card-body" style="width: 100%" >
+                    <h4 class="card-subtitle">강의소개</h4>
+                        <textarea style="border: 0px solid white; width: 100%; background-color: white" disabled="true">{{this.lecture.l_intro}}</textarea>
                     
                 </div>
             </div>
 
         <div class="card">
+                <div class="card-body" style="text-align: center">
+                  
+                    <!-- <button *ngIf="this.lecture.lm_email == this.email" class="btn btn-info">강의 업로드</button> -->
+
+                        <video controls width="70%">
+                            <source src="../../../../assets/video/{{this.lecture.l_video}}"/>
+                            <!-- <source src="../../../../assets/video/small.ogv"/> -->
+                        </video> 
+                    
+                </div>
+            </div>
+
+        <div class="card" *ngIf="this.email != null">
             <div class="card-body" >
                     <h5 class="card-title">메모하기</h5>   
-                        <textarea id="lectureMemo" class="form-group" style="width: 100%; height: 300px;"></textarea>
-                        <button class="btn btn-success" style="float: right;" (click)="this.setMemo()"></button>
+                        <textarea id="lectureMemo" class="form-group" style="width: 100%; height: 300px;"> </textarea>
+                        <button class="btn btn-success" style="float: right;" (click)="this.setMemo()">저장</button>
     
             </div>
         </div>

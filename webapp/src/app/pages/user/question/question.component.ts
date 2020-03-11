@@ -40,10 +40,14 @@ export class QuestionComponent implements AfterViewInit{
            if(data){ 
 
             //this.location.go('/user');
-            alert("즐겨찾기를 하였습니다.")
+            alert("즐겨찾기를 하였습니다.");
             window.location.reload();
 
-           }
+           }else{
+             window.location.reload();
+             alert("이미 즐겨찾기를 하셨습니다.");
+           
+            }
       }
     );
 
@@ -56,10 +60,14 @@ export class QuestionComponent implements AfterViewInit{
            this.data = res;
 
            console.log(data);
+
+           if(data){
+
+           alert("채택하였습니다.");
             
             this.location.go('/user');
-            alert("채택하였습니다.")
             window.location.reload();
+           }
       }
     )
   }
@@ -130,25 +138,14 @@ export class QuestionComponent implements AfterViewInit{
     let qdata = this.route.params.subscribe(params =>{
       console.log('params2',params);
 
-      //.q_content = "test";
 
       console.log('test', params.q_content);
 
-      //params.q_content = params.q_content.replaceAll("<br>", "\r\n");
-
-      //console.log("바꼇냐",params.q_content);
       
       this.data = params;
-
-      //this.data.q_content = "asdasd";
-
-      
-
       console.log("testtest",this.data.q_content)
 
     })
-    //console.log('왓니2222222222222222222222222 ?', this.data);
-
     this.getinfoProvider.getAwnserList({q_id: this.data.q_id}).then(
       data => {
         let res: any = data;
